@@ -7,7 +7,7 @@ import me.matl114.logitech.utils.Debug;
 import java.util.*;
 
 public class Language {
-    public static final String LANGUAGE_NAMESPACE="zh_CN";
+    public static final String LANGUAGE_NAMESPACE="en_US";
     public static final HashMap<String ,Object> LANGUAGE=new HashMap<>(){{
     }};
     public static final HashMap<String,String> PLACEHOLDERS=new HashMap<>();
