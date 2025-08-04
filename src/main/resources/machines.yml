@@ -1,50 +1,50 @@
 stack_type:
-  #用于强制改变设置某些机器为 机器 或者 生成器 并改变电力耗量
+    #Used to forcefully change the setting of certain machines or generators and the power consumption.
   LOGITECH_LOGIC_REACTOR:
-    #type支持"none","machine","generator"
-    #设置为none则会将该机器从两个堆叠中移除
+    #type supports "none","machine","generator"
+    #Change the setting to none removes the machine from both stacks
     type: "none"
-    #设置电力消耗/t*机器数
-    #设置为-1则不会更改 自动获取的电力
+    #Set power consumption/t multiply by number of machines
+    #Setting it to -1 does not change the power that is automatically obtained.
     energy: -1
   SILVER:
-    #type支持"none","machine","generator"
-    #设置为none则会将该机器从两个堆叠中移除
+    #type supports "none","machine","generator"
+    #Change the setting to none removes the machine from both stacks
     type: "generator"
-    #设置电力消耗/t*机器数
-    #设置为-1则不会更改 自动获取的电力
+    #Set power consumption/t multiply by number of machines
+    #Setting it to -1 does not change the power that is automatically obtained.
     energy: 200
 
 recipe_modify:
-  #提醒：本功能不保证修改特殊机器时不出问题，
-  #本附属的若干机器是不能修改的，但是大部分是可以修改的.
-  #使用者要承担自己的风险！
+  #Reminder: This feature does not guarantee that there will be no problems when modifying special machines.，
+  #Some machines attached to this book cannot be modified, but most of them can be.
+  #Users take their own risks!
   #*************************************************
-  #这里写要修改的sf物品id
+  #Type the id of the slimefun item you want to change here.
 
   CARBON_PRESS:
-    #mode是操作方式 允许a+ a w+ w
-    #a代表添加 w代表覆写 +代表是否尝试修改原机器配方 若不加+则只会修改堆叠机器配方
-    #警告: "+"慎用,可能造成无法预知的错误！
-    #注意 当你希望对非生成器加入生成器配方 请使用“w" 否则可能无法加载入堆叠生成器
+    #Mode is the mode of operation allow a+, a, w+, w
+    #a for add, w for overwrite, + for whether to try to modify the original machine recipe If no + is added then only the stacked machine recipe will be modified
+    #Warning: "+" is used with caution and may cause unpredictable errors!
+    #Note that when you wish to add a generator recipe to a non-generator, please use "w" or you may not be able to load a stacked generator.
     mode: "a+"
-    #机器类型 支持 machine 和 generator(材料生成器)
-    #分别会添加到堆叠机器和堆叠生成器上
-    #若为生成器则不会尝试修改原机器配方！
+    #Machine types support machine and generator (material generator)
+    #Will be added to the stacked machine and the stacked generator, respectively
+    #If it is a generator it will not attempt to modify the original machine recipe!
     type: "machine"
-    #当你不想要修改机器或者想要删除原来配方 可以不写这个
+    #You can leave this out when you don't want to modify the machine or when you want to delete the original recipe.
     recipe:
-      #名字随意 顺序读取
+      #Names are random. Read them in order.
       example_recipe:
         input:
-          #每个物品都要一个不同的标号 因为列表不支持某些设置
-          #在这里写入 数量+id 即可解析为物品
-          #铜锭将会被解析为粘液铜锭
-          #应该没人用原版铜这种垃圾吧
+          #Each item needs a different name because the list doesn't support some of the settings
+          #Write quantity + id here to parse it as an item.
+          #Copper ingots will be resolved into copper slime ingots.
+          #I don't think anyone uses crap like vanilla copper.
           1: "3BEDROCK"
         output:
           1:
-            #关于抽象物品组的说明请看下面的注释
+            #See the note below for a description of abstract item groups
             type: "ra"
             item:
               1: "DIAMOND"
@@ -52,10 +52,10 @@ recipe_modify:
             weight:
               1: 3
               2: 1
-        #耗时 粘液刻为单位
+        #Time Consumption Slimefun Scale Units
         tick: 5
 
-  #这是一个抽象示例，实际上铜粉不能产任何东西 但是我们可以配置它让他在堆叠机器中产出
+  #This is an abstract example, actually the copper powder can't produce anything but we can configure it to produce in a stacked machine
   COPPER_DUST:
     mode: "w"
     type: "machine"
@@ -64,32 +64,32 @@ recipe_modify:
         input:
           1:
             #*************************************************************************
-            #配方表支持使用抽象物品组 但是不保证对原机器配方的修改一定有效
-            #经过测试本附属机器和原版AContainer是支持修改抽象物品组的,并且都能使用
-            #类型有
-            #ra (从若干物品中按权重出一个)
-            #rc (随机数量的物品)
-            #eq (等价输入,指输入任意一个都可以匹配)
-            #rp (一定的概率为当前物品 一定概率为空)
-            #(未启用)dp(展示物品,将在整合配方的时候自动丢弃)
+            #Recipe lists support the use of abstract item groups, but do not guarantee that modifications to the original machine recipe will work.
+            #After testing, this attachment and the original AContainer support modifying abstract item groups, and both can be used.
+            #The types are
+            #ra (one out of an amount of items by weight)
+            #rc (random amount of items)
+            #eq (equal input, meaning any of the inputs will match)
+            #rp (certain probability of current item certain probability of empty)
+            #(Not enabled) dp (display item that will be automatically discarded when the recipe is integrated)
             type: "eq"
             item:
-              #其中写的物品的数量都不重要 只要是正数就行
+              #It doesn't matter how many items are in it, as long as it's a positive number.
               1: "BEDROCK"
               2: "COMMAND_BLOCK"
-            #为了统一格式 写weight
+            #To standardize the format, type weight
             weight:
-              #要求必须写amount 代表该物品组应当匹配的物品数量
+              #Requires that amount must be written to represent the number of items that should be matched for this item group.
               amount: 1
-            #这一坨我们可以看作一个物品 他是一个类型为eq的抽象物品组
+            #This lump can be thought of as an item which is an abstract group of items of type eq.
             #*************************************************************************
         output:
           1:
-            #这是输出的第一个物品组 它是一个ra类型的抽象物品组
+            #This is the first item set output, and it's an abstract item set of type ra.
             #*********************************************************************************************
             type: "ra"
             item:
-              1: #抽象物品组支持嵌套,(虽然有些嵌套可能并不像想的那样
+              1: #Abstract item groups support nesting, (although some of the nesting may not be as intended).
                 #******************************************
                 type: "rp"
                 item:
@@ -99,32 +99,33 @@ recipe_modify:
                     item:
                       1: "DIRT"
                     weight:
-                      #这里的weight指的是从3-23随机数量
-                      #我们要求使用者 在 “rc”且 仅在"rc“模式下写min和max
+                      #The weight here refers to a random number from 3-23.
+                      #We ask the user to write min and max in "rc" and only in "rc" mode.
                       min: 1
                       max: 4
 
                     #*********************
-                #每项item的标志要和weight对应 不然会加载失败，即1 :item对应1： weight
+                #The flag of each item should correspond to the weight or it will fail to load, ex: 1 :item corresponds to 1:weight.
                 weight:
-                  #这里的weight指的是百分比概率
-                  #我们要求使用者 在 “rp”且 仅在"rp“模式下写 百分比概率
+                  #The weight here refers to the percentage probability
+                  #We ask the user to write the percentage probability in "rp" and only in "rp" mode.
                   1: 66
                 #******************************************
               2: "DIAMOND"
             weight:
-              #这里的weight指的是对应的物品组的权重
-              #我们要求使用者 在 “ra”且 仅在"ra“模式下写 各个组分的权重
-              #这里的1 4 指 item里对应的第一个物品有 1/(1+4)=20%概率输出 第二个物品有4/(1+4)=80%概率输出
+              #The weight here refers to the weight of the corresponding item group
+              #We ask the user to write the weights of the components in "ra" and only in "ra" mode.
+              #Here 1 4 means that the first item in the item has 1/(1+4)=20% probability of output. The second item has 4/(1+4)=80% probability of output
               1: 1
               2: 2
-            #经过上面的配置 我们应该可以获得一个随机物品组 80%出一个钻石 20%*66%出3-23随机数量的泥土 和剩下的概率什么都不出,作为机器第一个输出
+            #With the configuration above, we should be able to get a random set of items 80% of which will produce a diamond, 20%*66% of which will produce-
+            #a random amount of dirt, from 3-23 and the rest of which will produce nothing, as the first output of the machine.
             #*********************************************************************************************
-            #这是输出的第二个物品组,他是一个正常的物品
+            #This is the second item group of the output, and it's a normal item.
           2: "LOGITECH_NOLOGIC"
-        #耗时 粘液刻为单位
+        #Time Consumption Slimefun Scale Units
         tick: 114514
-  #这是一个抽象示例，实际上铜粉不能产任何东西 但是我们可以配置它让他在堆叠机器中产出
+  #This is an abstract example, actually the copper powder can't produce anything but we can configure it to produce in a stacked machine
   SILVER_DUST:
     mode: "w"
     type: "generator"
@@ -132,11 +133,11 @@ recipe_modify:
       example_abstract_recipe:
         output:
           1:
-            #这是输出的第一个物品组 它是一个ra类型的抽象物品组
+            #This is the first item set output, and it's an abstract item set of type ra.
             #*********************************************************************************************
             type: "ra"
             item:
-              1: #抽象物品组支持嵌套,(虽然有些嵌套可能并不像想的那样
+              1: #Abstract item groups support nesting, (although some of the nesting may not be as intended).
                 #******************************************
                 type: "rp"
                 item:
@@ -146,28 +147,29 @@ recipe_modify:
                     item:
                       1: "DIRT"
                     weight:
-                      #这里的weight指的是从3-23随机数量
-                      #我们要求使用者 在 “rc”且 仅在"rc“模式下写min和max
+                      #The weight here refers to a random number from 3-23.
+                      #We ask the user to write min and max in "rc" and only in "rc" mode.
                       min: 3
                       max: 23
 
                     #*********************
-                #每项item的标志要和weight对应 不然会加载失败，即1 :item对应1： weight
+                #The flag of each item should correspond to the weight or it will fail to load, ex: 1 :item corresponds to 1:weight.
                 weight:
-                  #这里的weight指的是百分比概率
-                  #我们要求使用者 在 “rp”且 仅在"rp“模式下写 百分比概率
+                  #The weight here refers to the percentage probability
+                  #We ask the user to write the percentage probability in "rp" and only in "rp" mode.
                   1: 66
                 #******************************************
               2: "DIAMOND"
             weight:
-              #这里的weight指的是对应的物品组的权重
-              #我们要求使用者 在 “ra”且 仅在"ra“模式下写 各个组分的权重
-              #这里的1 4 指 item里对应的第一个物品有 1/(1+4)=20%概率输出 第二个物品有4/(1+4)=80%概率输出
+              #The weight here refers to the weight of the corresponding item group
+              #We ask the user to write the weights of the components in "ra" and only in "ra" mode.
+              #Here 1 4 means that the first item in the item has 1/(1+4)=20% probability of output. The second item has 4/(1+4)=80% probability of output
               1: 1
               2: 4
-            #经过上面的配置 我们应该可以获得一个随机物品组 80%出一个钻石 20%*66%出3-23随机数量的泥土 和剩下的概率什么都不出,作为机器第一个输出
+            #With the configuration above, we should be able to get a random set of items 80% of which will produce a diamond, 20%*66% of which will produce-
+            #a random amount of dirt, from 3-23 and the rest of which will produce nothing, as the first output of the machine.
             #*********************************************************************************************
-            #这是输出的第二个物品组,他是一个正常的物品
+            #This is the second item group of the output, and it's a normal item.
           2: "2LOGITECH_NOLOGIC"
-        #耗时 粘液刻为单位
+        #Time Consumption Slimefun Scale Units
         tick: 1919810
