@@ -9,6 +9,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractEnergyMachine;
+import me.matl114.logitech.Language;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import org.bukkit.Material;
@@ -40,7 +41,7 @@ public class EnergyStorage extends AbstractEnergyMachine {
     }
 
     protected ItemStack getInfoShow(int charge){
-        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&6信息","&7已存储: %sJ/%sJ".formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)));
+        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.INFO_TITLE"),Language.get("GUI.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)));
     }
     public void constructMenu(BlockMenuPreset preset){
         int[] border=BORDER;

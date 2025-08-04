@@ -7,6 +7,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import me.matl114.logitech.manager.Schedules;
+import me.matl114.logitech.Language;
 import me.matl114.logitech.core.Interface.DirectionalBlock;
 import me.matl114.logitech.utils.DataCache;
 import me.matl114.logitech.utils.UtilClass.CargoClass.Directions;
@@ -77,8 +78,8 @@ public class LineEnergyCollector extends AbstractEnergyCollector implements Dire
         return MAX_LEN;
     }
     private final int PARTICLE_SLOT=0;
-    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,"&a点击切换粒子效果","&7当前状态: &c关");
-    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&a点击切换粒子效果","&7当前状态: &a开");
+    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_OFF"));
+    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_ON"));
     @Override
     public boolean[] getStatus(BlockMenu inv) {
         ItemStack itemStack=inv.getItemInSlot(PARTICLE_SLOT);

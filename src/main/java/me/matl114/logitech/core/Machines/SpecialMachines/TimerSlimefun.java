@@ -10,6 +10,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.tasks.TickerTask;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.blocks.ChunkPosition;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
+import me.matl114.logitech.Language;
 import me.matl114.logitech.core.Interface.ChunkLimit;
 import me.matl114.logitech.core.Interface.MenuTogglableBlock;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractMachine;
@@ -38,8 +39,8 @@ import java.util.stream.IntStream;
 
 public class TimerSlimefun extends AbstractMachine implements ChunkLimit, MenuTogglableBlock {
 
-    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,"&a点击切换粒子效果","&7当前状态: &c关");
-    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&a点击切换粒子效果","&7当前状态: &a开");
+    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_OFF"));
+    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_ON"));
     /**
      * constructor of abstractMachines will keep Collections of MachineRecipes,will register energyNetwork params,
      * will set up menu by overriding constructMenu method

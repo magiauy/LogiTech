@@ -162,7 +162,7 @@ public class AddDepends {
                 s.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS,new AttributeModifier(UUID.nameUUIDFromBytes(new byte[]{1,9,1,9}),"logitech_armor_toughness",6.0, AttributeModifier.Operation.ADD_NUMBER,EquipmentSlot.HEAD));
                 s.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE,new AttributeModifier(UUID.nameUUIDFromBytes(new byte[]{8,1,0,0}),"logitech_knockback_resistence",0.2, AttributeModifier.Operation.ADD_NUMBER,EquipmentSlot.HEAD  ));
                 s.setCustomModelData(null);
-                s.setDisplayName(AddUtils.resolveColor( AddUtils.color("无尽头盔")));
+                s.setDisplayName(AddUtils.resolveColor( AddUtils.color("Infinity Crown")));
                 it.setItemMeta(s);
                 ReflectUtils.invokeSetRecursively(it,"locked",locked);
                 ReflectUtils.invokeSetRecursively(instance,"itemStackTemplate",new ConstSlimefunItemStack(it));

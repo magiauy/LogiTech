@@ -14,6 +14,7 @@ import me.matl114.logitech.utils.Algorithms.AtomicCounter;
 import me.matl114.logitech.utils.DataCache;
 import me.matl114.logitech.core.Interface.MenuTogglableBlock;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractEnergyMachine;
+import me.matl114.logitech.Language;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import org.bukkit.Location;
@@ -46,10 +47,10 @@ public abstract class AbstractEnergyCharger extends AbstractEnergyMachine implem
     protected int getInfoSlot(){
         return INFO_SLOT;
     }
-    protected final ItemStack LAZY_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,"&6点击切换懒惰模式","&7当前状态: &c关闭",
-            "&7当启用懒惰模式时,只有电力剩余不足50%的机器会被充能","&7这会大幅度的减少充能耗时");
-    protected final ItemStack LAZY_ITEM_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&6点击切换懒惰模式","&7当前状态: &a开启",
-            "&7当启用懒惰模式时,只有电力剩余不足50%的机器会被充能","&7这会大幅度的减少充能耗时");
+    protected final ItemStack LAZY_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.LAZY_MODE_TOGGLE"),Language.get("GUI.LAZY_MODE_STATUS_OFF"),
+            Language.get("GUI.LAZY_MODE_DESC1"),Language.get("GUI.LAZY_MODE_DESC2"));
+    protected final ItemStack LAZY_ITEM_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.LAZY_MODE_TOGGLE"),Language.get("GUI.LAZY_MODE_STATUS_ON"),
+            Language.get("GUI.LAZY_MODE_DESC1"),Language.get("GUI.LAZY_MODE_DESC2"));
 
     public AbstractEnergyCharger(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe,
                                int energybuffer){
@@ -57,9 +58,9 @@ public abstract class AbstractEnergyCharger extends AbstractEnergyMachine implem
     }
 
     protected ItemStack getInfoShow(int charge,int machine,int errors){
-        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&7已存储: %sJ/%sJ".formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)),
-                "&7范围用电器数目: %d/%d(max)".formatted(machine,getMaxChargeAmount()),
-                "&7充电报错数目: %d".formatted(errors));
+        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)),
+                Language.get("GUI.ENERGY_CONSUMERS").formatted(machine,getMaxChargeAmount()),
+                Language.get("GUI.CHARGE_ERRORS").formatted(errors));
     }
     public boolean isBorder(int i){
         return i!=getLazySlot();
