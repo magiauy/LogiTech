@@ -1555,3 +1555,22 @@ Theme:
     Name: '&7⇨ &a单击打开'
   FUNIT:
     Name: '&3功能单元'
+    
+GUI:
+  PARTICLE_TOGGLE: '&a点击切换粒子效果'
+  PARTICLE_STATUS: '&7当前状态: '
+  PARTICLE_OFF: '&c关闭'
+  PARTICLE_ON: '&a开启'
+  LAZY_MODE_TOGGLE: '&6点击切换懒人模式'
+  LAZY_MODE_STATUS_OFF: '&7当前状态: &c已禁用'
+  LAZY_MODE_STATUS_ON: '&7当前状态: &a已启用'
+  LAZY_MODE_DESC1: '&7启用懒人模式时，只会为能量低于50%的机器充能'
+  LAZY_MODE_DESC2: '&7这将大大减少充能时间'
+  LAZY_MODE_COLLECTOR_DESC1: '&7启用懒人模式时，只有自身能量未满时才会收集发电机能量'
+  LAZY_MODE_COLLECTOR_DESC2: '&7自身能量满时不会收集'
+  ENERGY_STORED: '&7已储存: %sJ/%sJ'
+  ENERGY_CONSUMERS: '&7范围内能量消耗者: %d/%d(最大)'
+  CHARGE_ERRORS: '&7充能错误: %d'
+  INFO_TITLE: '&6信息'
+  GENERATORS_IN_RANGE: '&7范围内发电机: %d/%d(最大)'
+  GENERATOR_ERRORS: '&7发电机错误: %d'
