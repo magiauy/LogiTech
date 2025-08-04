@@ -28,7 +28,7 @@ public class BugCrafter extends AbstractWorkBench implements ImportRecipes {
     public static final CustomRecipeType TYPE=new CustomRecipeType(
             AddUtils.getNameKey("bug_crafter"),
             new CustomItemStack(AddItem.BUG_CRAFTER, AddItem.BUG_CRAFTER.getDisplayName(),
-                    "", "&c配方显示不完整，请从%s查看正确的配方!".formatted(Language.get("Machines.BUG_CRAFTER.Name")))
+                    "", "&c配方显示不完整，请从%s查看正确的配方!".formatted(Language.get("machine.BUG_CRAFTER.name")))
     );
     protected static final int[] INPUT_SLOT=new int[]{0, 1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14,
             18, 19, 20, 21, 22, 23, 27, 28, 29, 30, 31, 32, 36, 37, 38, 39, 40, 41, 45, 46, 47, 48, 49, 50};

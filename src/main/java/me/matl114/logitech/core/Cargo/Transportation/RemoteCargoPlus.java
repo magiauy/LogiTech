@@ -22,7 +22,7 @@ public class RemoteCargoPlus extends RemoteCargo {
                         ),null,
                         AddUtils.getInfoShow("&f机制",
                                 "&7本机器可以选择任意方块参与传输",
-                                "将绑定目标方块的%s插入指定槽位以选择参与的方块".formatted(Language.get("Items.HYPER_LINK.Name"))),null
+                                "将绑定目标方块的%s插入指定槽位以选择参与的方块".formatted(Language.get("item.HYPER_LINK.name"))),null
                 )
         );
         this.transportSmarter=true;

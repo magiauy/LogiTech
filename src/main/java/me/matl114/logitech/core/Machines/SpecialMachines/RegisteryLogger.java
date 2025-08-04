@@ -52,25 +52,25 @@ public class RegisteryLogger extends AbstractMachine {
     protected final int ADDSFITEM_SLOT=26;
     protected final ItemStack LOGGER_ITEM=new CustomItemStack(Material.COMMAND_BLOCK,"&a点击打印本附属格式化配方注册字符串","&7开发者专用","&7因为其他人也不用这格式");
     protected final String LANGUAGE_CODE="%s:\n" +
-            "      Name: ''\n" +
-            "      Lore:\n" +
+            "      name: ''\n" +
+            "      lore:\n" +
             "        - ''";
-    protected final String DEFAULT_RECIPE_CODE="formatInfoRecipe(AddItem.TMP1,get(\"Tmp.TMP1.Name\"))";
+    protected final String DEFAULT_RECIPE_CODE="formatInfoRecipe(AddItem.TMP1,get(\"Tmp.TMP1.name\"))";
     protected final String[] ADDITEM_CODE=new String[]{
         "public static final SlimefunItemStack %s=themed(\"%s\",Material.%s,Theme.ITEM1,\n" +
-                "            get(\"Items.%s.Name\"),getList(\"Items.%s.Lore\"));",
+                "            get(\"item.%s.name\"),getList(\"item.%s.lore\"));",
         "public static final SlimefunItemStack %s=themed(\"%s\",Material.%s,Theme.MACHINE1,\n" +
-                "            get(\"Machines.%s.Name\"),getList(\"Machines.%s.Lore\"));",
+                "            get(\"machine.%s.name\"),getList(\"machine.%s.lore\"));",
         "public static final SlimefunItemStack %s=themed(\"%s\",Material.%s,Theme.MACHINE2,\n" +
-                "            get(\"Generators.%s.Name\"),getList(\"Generators.%s.Lore\"));",
+                "            get(\"generator.%s.name\"),getList(\"generator.%s.lore\"));",
         "public static final SlimefunItemStack %s=themed(\"%s\",Material.%s,Theme.MACHINE2,\n" +
-                "            get(\"Generators.%s.Name\"),getList(\"Generators.%s.Lore\"));",
+                "            get(\"generator.%s.name\"),getList(\"generator.%s.lore\"));",
         "public static final SlimefunItemStack %s=themed(\"%s\",Material.%s,Theme.MANUAL1,\n" +
-                "            get(\"Manuals.%s.Name\"),getList(\"Manuals.%s.Lore\"));",
+                "            get(\"manuals.%s.name\"),getList(\"manuals.%s.lore\"));",
         "public static final ItemStack %s=themed(\"%s\",Material.%s, Theme.NONE,\n" +
-                "            get(\"Groups.%s.Name\"),getList(\"Groups.%s.Lore\"));",
+                "            get(\"group.%s.name\"),getList(\"group.%s.lore\"));",
         "public static final ItemStack %s=themed(\"%s\",Material.%s, Theme.FUNIT,\n" +
-                "            get(\"Items.%s.Name\"),getList(\"Items.%s.Lore\"));"
+                "            get(\"item.%s.name\"),getList(\"item.%s.lore\"));"
     };
     protected final String[] ADDSFITEM_CODE=new String[]{
         "public static final SlimefunItem %s=new MaterialItem(MATERIAL,AddItem.%s,NULL,\n" +

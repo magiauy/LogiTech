@@ -41,7 +41,7 @@ public class EnergyStorage extends AbstractEnergyMachine {
     }
 
     protected ItemStack getInfoShow(int charge){
-        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.INFO_TITLE"),Language.get("GUI.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)));
+        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.INFO_TITLE"),Language.get("gui.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)));
     }
     public void constructMenu(BlockMenuPreset preset){
         int[] border=BORDER;

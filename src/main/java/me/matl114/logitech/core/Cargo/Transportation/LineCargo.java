@@ -32,10 +32,10 @@ public class LineCargo extends AbstractCargo {
     };
     protected final ItemStack[] INFO_ITEM=new ItemStack[]{
             new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,"&b机制",
-                    "&7在左侧配置链式方向","&7在中间的槽位插入[%s]".formatted(Language.get("Items.CARGO_CONFIG.Name")),"&7在下方放入黑/白名单物品",
+                    "&7在左侧配置链式方向","&7在中间的槽位插入[%s]".formatted(Language.get("item.CARGO_CONFIG.name")),"&7在下方放入黑/白名单物品",
                     "&e机器将进行链式传输","&c警告:只有连续方块长度长于1时才会进行传输"),
             new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,"&b机制",
-                    "&7在右侧配置链式设定","&7在中间的槽位插入[%s]".formatted(Language.get("Items.CARGO_CONFIG.Name")),"&7在下方放入黑/白名单物品",
+                    "&7在右侧配置链式设定","&7在中间的槽位插入[%s]".formatted(Language.get("item.CARGO_CONFIG.name")),"&7在下方放入黑/白名单物品",
                     "&e机器将进行链式传输","&c警告:只有连续方块长度长于1时才会进行传输")
     };
     protected final int[] CONFIG_SLOT=new int[]{

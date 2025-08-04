@@ -151,7 +151,7 @@ public class CommandShell {
                 }
             }
             else if(obj instanceof Field field){
-                return "&6<FIELD, type=%s, Name=%s, Class=%s, static=%s>".formatted(
+                return "&6<FIELD, type=%s, name=%s, Class=%s, static=%s>".formatted(
                         getObjectStringDisplay(field.getType()),field.getName(),field.getDeclaringClass().getName(), Modifier.isStatic(field.getModifiers())?"true":"false");
             }else if(obj instanceof List<?> lst&&lst.isEmpty()){
                 return "Empty List";

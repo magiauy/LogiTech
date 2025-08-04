@@ -1,96 +1,96 @@
 placeholder:
-  PLUGIN: 'LogiTech'
-  VERSION: 'v1.0.4'
-  MAX_MC_VERSION: '1.21.3'
-  DEFAULT_COLOR: '§x§E§B§3§3§E§B'
-  END_COLOR: '§x§9§7§0§0§9§7'
+  addon_name: 'LogiTech'
+  addon_version: 'v1.0.4'
+  max_supported_version: '1.21.3'
+  default_color: '§x§E§B§3§3§E§B'
+  end_color: '§x§9§7§0§0§9§7'
 
-Groups:
+group:
   ROOT:
-    Name: '&7&ka&x&5&5&f&f&7&7Logi&x&5&5&f&f&9&9Tech&x&5&5&f&f&b&b Craft&x&5&5&f&f&d&ding&6 (Release %VERSION%)&7&ka&r'
-    Lore:
+    name: '&7&ka&x&5&5&f&f&7&7Logi&x&5&5&f&f&9&9Tech&x&5&5&f&f&b&b Craft&x&5&5&f&f&d&ding&6 (Release %addon_version%)&7&ka&r'
+    lore:
       - '&7Let''s go!'
       - '&7⇨ &aClick to start LogiTech'
   INFO:
-    Name: '&d%PLUGIN% &6Version & Info'
+    name: '&d%addon_name% &6Version & Info'
   MATERIAL:
-    Name: '&d%PLUGIN% &6Basic Materials'
+    name: '&d%addon_name% &6Basic Materials'
   ALLMACHINE:
-    Name: '&d%PLUGIN% &6Stack Machine Support List'
+    name: '&d%addon_name% &6Stack Machine Support List'
   ALLRECIPE:
-    Name: '&d%PLUGIN% &6Recipe Types Guide'
+    name: '&d%addon_name% &6Recipe Types Guide'
   URL:
-    Name: "&eClick to get addon Github link"
-    Lore:
+    name: "&eClick to get addon Github link"
+    lore:
       - ""
       - "&7⇨ &aClick to get link"
   WIKI:
-    Name: "&eClick to view addon wiki"
-    Lore:
+    name: "&eClick to view addon wiki"
+    lore:
       - ""
       - "&7⇨ &aClick to get link"
   INFO1:
-    Name: "&c&lVersion"
-    Lore:
-      - "&7Current %PLUGIN% version:"
-      - "&b&m%VERSION% &6&rRelease"
+    name: "&c&lVersion"
+    lore:
+      - "&7Current %addon_name% version:"
+      - "&b&m%addon_version% &6&rRelease"
       - "&7More versions coming soon!"
 
   INFO2:
-    Name: "&e&lContact Us"
-    Lore:
+    name: "&e&lContact Us"
+    lore:
       - "&7If you want to report bugs"
       - "&7or suggest interesting ideas"
       - "&7please create an issue on the github link above"
       - "&7Any useful suggestion will be considered"
   INFO3:
-    Name: "&a&lAddon Introduction"
-    Lore:
+    name: "&a&lAddon Introduction"
+    lore:
       - "&7Our addon aims to develop new features"
       - "&7and interesting mechanics,"
       - "&7while traditional machine stacking may be inevitable"
       - "&7we hope to bring players a unique experience"
   INFO4:
-    Name: "&c&lDisclaimer"
-    Lore:
+    name: "&c&lDisclaimer"
+    lore:
       - "&7This addon may reference other addons in creation"
       - "&7You may find similar features"
       - "&7but all features in this addon are hand-written by the author"
       - "&7Implementing these features is the author's interest and goal"
       - "&7If issues/bugs occur, please contact author matl114"
   INFO5:
-    Name: "&c&lMore Disclaimers"
-    Lore:
-      - "&eMainline version doesn't provide %MAX_MC_VERSION%+ bug fixes"
-      - "&7If you experience machine issues on %MAX_MC_VERSION%+"
+    name: "&c&lMore Disclaimers"
+    lore:
+      - "&eMainline version doesn't provide %max_supported_version%+ bug fixes"
+      - "&7If you experience machine issues on %max_supported_version%+"
       - "&7you can report the issue to github"
       - "&7but the author won't guarantee fixes"
-      - "&aRecommend reporting to fork repos that support %MAX_MC_VERSION%+"
+      - "&aRecommend reporting to fork repos that support %max_supported_version%+"
   INFO6:
-    Name: "&6&lAddon Features"
-    Lore:
+    name: "&6&lAddon Features"
+    lore:
       - "&7This addon has features different from other addons"
       - "&7These will be explained below"
       - "&7When encountering unexplained mechanics during gameplay"
       - "&7please read the following explanations carefully"
   FEAT1:
-    Name: "&6&lFeature - &c&lRewritten Process Machines"
-    Lore:
+    name: "&6&lFeature - &c&lRewritten Process Machines"
+    lore:
       - "&7Process machines (with progress bars) differ from normal progress machines"
       - "&7Uses addon's custom recipe algorithm and push algorithm"
       - "&7Guarantees 0tick recipes can craft without intervals"
       - "&7If machines have issues, contact the author"
   FEAT2:
-    Name: "&6&lFeature - &c&lRecipe Machines, Generators & Directed Generators"
-    Lore:
+    name: "&6&lFeature - &c&lRecipe Machines, Generators & Directed Generators"
+    lore:
       - "&7Recipe machines use machine recipes for crafting"
       - "&7Generators produce materials without consuming items"
       - "&7This addon has various generators"
       - "&7Directed generators need specific recipe input to produce output"
       - "&7If machines have issues, contact the author"
   FEAT3:
-    Name: "&6&lFeature - &c&lAdvanced Machines & Parallel Processing"
-    Lore:
+    name: "&6&lFeature - &c&lAdvanced Machines & Parallel Processing"
+    lore:
       - "&7This addon adds advanced machines with more I/O slots and features"
       - "&7Parallel processing reduces craft time/increases craft amount"
       - "&7Machines try to reduce <process time> to <process time>/<parallel count>"
@@ -98,8 +98,8 @@ Groups:
       - "&7as max attempts to match machine recipes"
       - "&7If machines have issues, contact the author"
   FEAT4:
-    Name: "&6&lFeature - &c&lWorkbench & Quick Insert"
-    Lore:
+    name: "&6&lFeature - &c&lWorkbench & Quick Insert"
+    lore:
       - "&7Workbench can be used for organized recipe crafting"
       - "&7Workbench supports viewing current machine recipes"
       - "&7Large 6x6 workbench recipes in \"Large Recipe Display\" menu"
@@ -107,8 +107,8 @@ Groups:
       - "&7Quick Insert helps you quickly place items in recipe format"
       - "&7If machines have issues, contact the author"
   FEAT5:
-    Name: "&6&lFeature - &c&lLarge Multiblock Machines"
-    Lore:
+    name: "&6&lFeature - &c&lLarge Multiblock Machines"
+    lore:
       - "&7Large multiblock machines consist of multiblock core, parts, and I/O interfaces"
       - "&7Multiblock core has GUI and usually provides hologram for construction guidance"
       - "&eNote: Set client version to Java 1.19.4+ for proper hologram display"
@@ -124,8 +124,8 @@ Groups:
       - "&7If machines have issues, contact the author"
 
   FEAT6:
-    Name: "&6&lFeature - &c&lSequential Input Recipes & Cargo System"
-    Lore:
+    name: "&6&lFeature - &c&lSequential Input Recipes & Cargo System"
+    lore:
       - "&7Sequential input recipes for sequential progress machines"
       - "&7Consists of multiple input requirements in order"
       - "&7Match first requirement to start process"
@@ -136,8 +136,8 @@ Groups:
       - "&7Though hard to automate, we provide cargo machines for automation"
       - "&7If machines have issues, contact the author"
   FEAT7:
-    Name: "&6&lFeature - &c&lCargo Machines & Controllable Cargo"
-    Lore:
+    name: "&6&lFeature - &c&lCargo Machines & Controllable Cargo"
+    lore:
       - "&7This addon provides normal cargo and smart cargo machines"
       - "&7Difference: reading slot restrictions and controllability"
       - "&7Normal cargo supports unlimited transfer but ignores slot restrictions"
@@ -155,8 +155,8 @@ Groups:
       - "&7If machines have issues, contact the author"
 
   FEAT8:
-    Name: "&6&lFeature - &c&lStack Machines & Work Efficiency"
-    Lore:
+    name: "&6&lFeature - &c&lStack Machines & Work Efficiency"
+    lore:
       - "&7Stack machines can stack other machines into specific slots"
       - "&7Stack machines load their recipes and craft for them"
       - "&7\"Stack efficiency\" determines single machine's speed multiplier"
@@ -174,8 +174,8 @@ Groups:
       - "&aAddon will launch \"Community Creator\" program for config improvement"
       - "&aTo support weird but efficient addons and perfect stack lists"
   FEAT9:
-    Name: "&6&lFeature - &c&lUltimate Crafting"
-    Lore:
+    name: "&6&lFeature - &c&lUltimate Crafting"
+    lore:
       - "&7Ultimate crafting supports extract/insert from valid non-empty storage items"
       - "&7Crafting/processes with this feature can directly access stored items"
       - "&eIn simple terms:"
@@ -191,348 +191,348 @@ Groups:
       - "&7Machines with this feature have extreme crafting speed to support it"
       - "&7If machines have issues, contact the author"
   UPDATELOG:
-    Name: '&d%PLUGIN% &6Update Log'
-    Lore:
+    name: '&d%addon_name% &6Update Log'
+    lore:
       - '&7I don''t have dementia'
   MORE2:
-    Name: '&6Universe Safety Notice'
+    name: '&6Universe Safety Notice'
   BASIC:
-    Name: '&d%PLUGIN% &6Basic Machines'
+    name: '&d%addon_name% &6Basic Machines'
   ALLBIGRECIPES:
-    Name: '&d%PLUGIN% &6Large Recipe Display'
-    Lore:
+    name: '&d%addon_name% &6Large Recipe Display'
+    lore:
       - '&7View recipes not fully shown in slimefun book'
   CARGO:
-    Name: '&d%PLUGIN% &6Cargo Machines'
+    name: '&d%addon_name% &6Cargo Machines'
   SINGULARITY:
-    Name: '&d%PLUGIN% &6Concept Singularity Craft'
+    name: '&d%addon_name% &6Concept Singularity Craft'
   ADVANCED:
-    Name: '&d%PLUGIN% &6Advanced Machines'
+    name: '&d%addon_name% &6Advanced Machines'
   BEYOND:
-    Name: '&dFinal Chapter &6Beyond Realm'
-    Lore:
+    name: '&dFinal Chapter &6Beyond Realm'
+    lore:
       - '&7Beyond Tech'
   VANILLA:
-    Name: '&d%PLUGIN% &6Redstone Tech'
-    Lore:
+    name: '&d%addon_name% &6Redstone Tech'
+    lore:
       - '&eOh no... should be Redstone Tech'
   MANUAL:
-    Name: '&d%PLUGIN% &6Manual Machines'
-    Lore:
+    name: '&d%addon_name% &6Manual Machines'
+    lore:
       - '&7Lazy player''s blessing, nice!'
   SPECIAL:
-    Name: '&d%PLUGIN% &6Mysterious Realm'
-    Lore:
+    name: '&d%addon_name% &6Mysterious Realm'
+    lore:
       - '&7Why do these machines look pointy...'
   TOBECONTINUE:
-    Name: '&6To be continued...'
-    Lore:
+    name: '&6To be continued...'
+    lore:
       - "&7Still in development, stay tuned"
   SPACE:
-    Name: '&d%PLUGIN% &6Space Technology'
+    name: '&d%addon_name% &6Space Technology'
   GENERATORS:
-    Name: '&d%PLUGIN% &6Material Generation & Conversion'
+    name: '&d%addon_name% &6Material Generation & Conversion'
   ENERGY:
-    Name: '&d%PLUGIN% &6Power & Energy Extension'
+    name: '&d%addon_name% &6Power & Energy Extension'
   FUNCTIONAL:
-    Name: '&d%PLUGIN% &6Functional Items'
+    name: '&d%addon_name% &6Functional item'
   TOOLS:
-    Name: '&d%PLUGIN% &6Tools & Forging'
+    name: '&d%addon_name% &6Tools & Forging'
   TOOLS_SUBGROUP_1:
-    Name: '&dForge Workshop &6Amplifier Components'
+    name: '&dForge Workshop &6Amplifier Components'
 
   TOOLS_SUBGROUP_2:
-    Name: '&dForge Workshop &6Functional Units'
+    name: '&dForge Workshop &6Functional Units'
   TOOLS_RECIPES:
-    Name: '&dTools & Forging &6Special Recipe Types'
-    Lore:
+    name: '&dTools & Forging &6Special Recipe Types'
+    lore:
       - 'View crafting methods for special recipe types in this category'
 
-Items:
+item:
   BUG:
-    Name: 'BUG'
-    Lore:
+    name: 'BUG'
+    lore:
       - 'Often appears in unexpected places...'
   MATL114:
-    Name: 'MATL114'
-    Lore:
+    name: 'MATL114'
+    lore:
       - 'Yes, I''m the author of LogiTech...'
   CHIP_INGOT:
-    Name: 'Chip Alloy'
-    Lore:
+    name: 'Chip Alloy'
+    lore:
       - 'What a cold joke...'
   LOGIC:
-    Name: 'Logic'
-    Lore:
+    name: 'Logic'
+    lore:
       - 'Shattered but not broken, organized but still messy...'
   TRUE_:
-    Name: 'True '
+    name: 'True '
   FALSE_:
-    Name: 'False '
+    name: 'False '
   LOGIGATE:
-    Name: 'Logic Gate'
-    Lore:
+    name: 'Logic Gate'
+    lore:
       - 'Though it looks scary and complex...'
       - 'It''s just a material, won''t help you crash servers'
   EXISTE:
-    Name: 'Existence'
+    name: 'Existence'
   UNIQUE:
-    Name: 'Unique'
+    name: 'Unique'
   PARADOX:
-    Name: 'Paradox'
+    name: 'Paradox'
   NOLOGIC:
-    Name: 'Anti-Logic'
-    Lore:
+    name: 'Anti-Logic'
+    lore:
       - 'What, this doesn''t make any sense'
   LENGINE:
-    Name: 'Logic Engine'
+    name: 'Logic Engine'
   LFIELD:
-    Name: 'Logic Engine Field'
+    name: 'Logic Engine Field'
   LSCHEDULER:
-    Name: 'Logic Scheduler'
-    Lore:
+    name: 'Logic Scheduler'
+    lore:
       - 'Machine hub'
   LCRAFT:
-    Name: 'Logic Craft Unit'
-    Lore:
+    name: 'Logic Craft Unit'
+    lore:
       - 'Handles complex crafting tasks'
   LDIGITIZER:
-    Name: 'Digitizer Core'
+    name: 'Digitizer Core'
   LBOOLIZER:
-    Name: 'Boolizer Core'
-    Lore:
+    name: 'Boolizer Core'
+    lore:
       - 'World of true and false...'
   LIOPORT:
-    Name: 'I/O Component'
-    Lore:
+    name: 'I/O Component'
+    lore:
       - 'Handles high-speed logistics tasks'
   PALLADIUM_INGOT:
-    Name: 'Palladium (Pd)'
+    name: 'Palladium (Pd)'
   PLATINUM_INGOT:
-    Name: 'Platinum (Pt)'
+    name: 'Platinum (Pt)'
   MOLYBDENUM:
-    Name: 'Molybdenum (Mo)'
-    Lore:
+    name: 'Molybdenum (Mo)'
+    lore:
       - 'Used in chip manufacturing'
   CERIUM:
-    Name: 'Cerium (Ce)'
+    name: 'Cerium (Ce)'
   CADMIUM_INGOT:
-    Name: 'Cadmium (Cd)'
+    name: 'Cadmium (Cd)'
   MENDELEVIUM:
-    Name: 'Mendelevium (Md)'
+    name: 'Mendelevium (Md)'
   DYSPROSIUM:
-    Name: 'Dysprosium (Dy)'
+    name: 'Dysprosium (Dy)'
   BISMUTH_INGOT:
-    Name: 'Bismuth (Bi)'
+    name: 'Bismuth (Bi)'
   ANTIMONY_INGOT:
-    Name: 'Antimony (Sb)'
+    name: 'Antimony (Sb)'
   BORON:
-    Name: 'Boron (B)'
-    Lore:
+    name: 'Boron (B)'
+    lore:
       - 'Used in chip manufacturing'
   DIMENSIONAL_SHARD:
-    Name: 'Dimensional Shard'
-    Lore:
+    name: 'Dimensional Shard'
+    lore:
       - 'Contains enough power to cross dimensions'
   DIMENSIONAL_SINGULARITY:
-    Name: 'Dimensional Crystal'
-    Lore:
+    name: 'Dimensional Crystal'
+    lore:
       - 'Condensed dimensional power, easily crosses spacetime'
   STAR_GOLD:
-    Name: 'Star Gold Sand'
-    Lore:
+    name: 'Star Gold Sand'
+    lore:
       - 'Born from supernova...'
       - 'So dense it can carry spatial power'
   VIRTUAL_SPACE:
-    Name: 'Virtual Space'
-    Lore:
+    name: 'Virtual Space'
+    lore:
       - 'Space existing in void'
   WORLD_FEAT:
-    Name: 'World Feature - Overworld'
-    Lore:
+    name: 'World Feature - Overworld'
+    lore:
       - 'World fragment representing overworld features'
   NETHER_FEAT:
-    Name: 'World Feature - Nether'
-    Lore:
+    name: 'World Feature - Nether'
+    lore:
       - 'World fragment representing nether features'
   END_FEAT:
-    Name: 'World Feature - End'
-    Lore:
+    name: 'World Feature - End'
+    lore:
       - 'World fragment representing end features'
   ABSTRACT_INGOT:
-    Name: 'Abstract Ingot'
-    Lore:
+    name: 'Abstract Ingot'
+    lore:
       - 'Just the beginning...'
   PDCECDMD:
-    Name: 'Palladium Cerium Cadmium Mendelevium Alloy'
-    Lore:
+    name: 'Palladium Cerium Cadmium Mendelevium Alloy'
+    lore:
       - 'Metal frankenstein'
   HGTLPBBI:
-    Name: 'Mercury Thallium Lead Bismuth Alloy'
-    Lore:
+    name: 'Mercury Thallium Lead Bismuth Alloy'
+    lore:
       - '"Unknown super high melting point alloy"'
   REINFORCED_CHIP_INGOT:
-    Name: 'Reinforced Chip Alloy'
-    Lore:
+    name: 'Reinforced Chip Alloy'
+    lore:
       - 'More logical chip manufacturing material'
   ATOM_INGOT:
-    Name: 'Charged Atomic Alloy'
+    name: 'Charged Atomic Alloy'
   LMOTOR:
-    Name: 'Logic Power Motor'
-    Lore:
+    name: 'Logic Power Motor'
+    lore:
       - 'Endless power source'
   LPLATE:
-    Name: 'Chip Alloy Plate'
-    Lore:
+    name: 'Chip Alloy Plate'
+    lore:
       - 'Logical recipe design'
       - 'Widely used in various logic machines'
   METAL_CORE:
-    Name: 'Heavy Metal Core'
-    Lore:
+    name: 'Heavy Metal Core'
+    lore:
       - 'Condensed matter'
   SMELERY_CORE:
-    Name: 'Smeltery Core'
-    Lore:
+    name: 'Smeltery Core'
+    lore:
       - 'Condensed matter'
   MASS_CORE:
-    Name: 'Mass Core'
-    Lore:
+    name: 'Mass Core'
+    lore:
       - 'Condensed matter'
   TECH_CORE:
-    Name: 'Tech Core'
-    Lore:
+    name: 'Tech Core'
+    lore:
       - 'Condensed matter'
   SPACE_PLATE:
-    Name: 'Space Reinforced Plate'
+    name: 'Space Reinforced Plate'
   LOGIC_CORE:
-    Name: 'Logic Core'
-    Lore:
+    name: 'Logic Core'
+    lore:
       - 'Ultimate'
   FINAL_FRAME:
-    Name: 'Ultimate Logic Frame'
-    Lore:
+    name: 'Ultimate Logic Frame'
+    lore:
       - 'Ultimate foundation'
   REDSTONE_ENGINE:
-    Name: 'Redstone Source Engine'
+    name: 'Redstone Source Engine'
   STAR_GOLD_INGOT:
-    Name: 'Star Gold'
-    Lore:
+    name: 'Star Gold'
+    lore:
       - 'Essential material for space machines'
   HYPER_LINK:
-    Name: 'Hyper Link'
-    Lore:
+    name: 'Hyper Link'
+    lore:
       - 'Establish logic link with target block'
       - 'Right-click to open target slimefun/vanilla container'
       - 'Shift+right-click to bind target block position'
   SAMPLE_HEAD:
-    Name: 'Example of head display'
-    Lore:
+    name: 'Example of head display'
+    lore:
       - 'From the head analyzer.'
   RESOLVE_FAILED:
-    Name: '&cItem Resolution Failed!'
-    Lore:
+    name: '&cItem Resolution Failed!'
+    lore:
       - '&7No item found matching ID! Recipe disabled!'
   CARGO_PART:
-    Name: 'Logic Cargo Part'
-    Lore:
+    name: 'Logic Cargo Part'
+    lore:
       - 'Configure cargo transport amount'
   CARGO_CONFIG:
-    Name: 'Universal Cargo Configuration Card'
-    Lore:
+    name: 'Universal Cargo Configuration Card'
+    lore:
       - 'Insert into machine to load cargo configuration'
   CARGO_CONFIGURATOR:
-    Name: 'Universal Cargo Configurator'
-    Lore:
+    name: 'Universal Cargo Configurator'
+    lore:
       - 'Edit universal cargo config cards'
 
   CHIP:
-    Name: 'CHIP'
-    Lore:
+    name: 'CHIP'
+    lore:
       - 'Chip that can store 32-bit data'
   CHIP_CORE:
-    Name: 'Intelligent Control Core'
-    Lore:
+    name: 'Intelligent Control Core'
+    lore:
       - 'Internally coded with complex codes...'
       - 'Controls complex machine operations'
   LSINGULARITY:
-    Name: 'Logic Singularity'
-    Lore:
+    name: 'Logic Singularity'
+    lore:
       - 'Born from supernovas'
       - 'Ultimate beginning'
   THALLIUM:
-    Name: 'Thallium (Tl)'
+    name: 'Thallium (Tl)'
   HYDRAGYRUM:
-    Name: 'Mercury (Hg)'
+    name: 'Mercury (Hg)'
   RADIATION_CLEAR:
-    Name: 'Radiation Cleaner'
-    Lore:
+    name: 'Radiation Cleaner'
+    lore:
       - 'Clears radiation within 40 blocks''
   ANTIMASS_CLEAR:
-    Name: 'Anti-Matter Cleaner'
-    Lore:
+    name: 'Anti-Matter Cleaner'
+    lore:
       - 'Admin and creative mode only'
       - '右键时 Right-click: Stop all antimatter processes and delete antimatter blocks'
       - 'shift+右键时 Shift+right-click: Replace all logic cores with specified normal blocks'
   BISILVER:
-    Name: 'Bismuth Silver'
-    Lore:
+    name: 'Bismuth Silver'
+    lore:
       - 'Material born between reality and illusion'
   PAGOLD:
-    Name: 'Palladium Gold'
-    Lore:
+    name: 'Palladium Gold'
+    lore:
       - 'Smells like coconut...'
   STACKFRAME:
-    Name: 'Stack Space'
-    Lore:
+    name: 'Stack Space'
+    lore:
       - 'Compress many machines in virtual space...'
       - 'Used to craft legendary stack machines'
   LASER:
-    Name: 'Nano Laser'
-    Lore:
+    name: 'Nano Laser'
+    lore:
       - 'Used in chip manufacturing'
   ANTIMASS:
-    Name: 'Anti-Matter'
-    Lore:
+    name: 'Anti-Matter'
+    lore:
       - 'Matter existing against logic'
       - 'Will assimilate other matter, &cplace carefully!'
   SHELL:
-    Name: 'SHELL'
+    name: 'SHELL'
   VIRTUALWORLD:
-    Name: 'Virtual World'
-    Lore:
+    name: 'Virtual World'
+    lore:
       - 'World born from ERROR'
   ENTITY_FEAT:
-    Name: 'Entity Feat'
-    Lore:
+    name: 'Entity Feat'
+    lore:
       - 'Random drop from spawners'
       - ''
       - 'Type: &x&e&b&3&3&e&b<Type>'
   SAMPLE_SPAWNER:
-    Name: 'Spawner'
+    name: 'Spawner'
   HOLOGRAM_REMOVER:
-    Name: 'Hologram Remover'
-    Lore:
+    name: 'Hologram Remover'
+    lore:
       - 'Remove incorrectly placed display entities'
       - 'You might use this after the server crashes'
       - 'Right-click to clear wrong display entities within 10 blocks'
   WITHERPROOF_REDSTONE:
-    Name: 'Wither-Proof Redstone Block'
-    Lore:
+    name: 'Wither-Proof Redstone Block'
+    lore:
       - 'Very good redstone block, explosion and wither proof'
   WITHERPROOF_REDS:
-    Name: 'Wither-Proof Redstone'
-    Lore:
+    name: 'Wither-Proof Redstone'
+    lore:
       - 'Very good redstone, explosion and wither proof'
       - 'Too bad its still not waterproof'
   BEDROCK_BREAKER:
-    Name: 'Bedrock Breaker'
-    Lore:
+    name: 'Bedrock Breaker'
+    lore:
       - 'Basic tool of redstone technology'
       - 'Right-click to break any vanilla/unbreakable addon blocks'
       - 'Consumes only 1 piston per block'
   LASER_GUN:
-    Name: '&ePortable Macro Laser Launcher'
-    Lore:
+    name: '&ePortable Macro Laser Launcher'
+    lore:
       - 'Fires macro lasers'
       - 'Hold right-click to fire'
       - 'Or wear on head and &epress F&7 to use'
@@ -541,90 +541,90 @@ Items:
       - '&eBeware of laser!'
       - '&x&E&B&3&3&E&BLauncher Power: &aLevel 1/5'
   SUPERSPONGE:
-    Name: 'Seaman Brand Sponge'
-    Lore:
+    name: 'Seaman Brand Sponge'
+    lore:
       - 'Right-click to clear all liquids within 10 blocks (including waterlogged blocks and lava)'
       - 'Used sponge can be restored in furnace'
   SUPERSPONGE_USED:
-    Name: 'Used Seaman Brand Sponge'
-    Lore:
+    name: 'Used Seaman Brand Sponge'
+    lore:
       - 'About to overflow, ah~'
       - 'Used sponge can be restored in furnace'
   TRACE_ARROW:
-    Name: '%DEFAULT_COLOR%Blizzard Peach Blossom Needle'
-    Lore:
+    name: '%default_color%Blizzard Peach Blossom Needle'
+    lore:
       - 'Consumes power to fire 16 tracking needles'
       - 'Deals arrow damage to hit enemies'
-      - '%DEFAULT_COLOR%---Cyber Cultivation, Mechanical Ascension---'
+      - '%default_color%---Cyber Cultivation, Mechanical Ascension---'
   RTP_RUNE:
-    Name: '&7Ancient Rune &8&l[%DEFAULT_COLOR%&lRandom Teleport&8&l]'
-    Lore:
+    name: '&7Ancient Rune &8&l[%default_color%&lRandom Teleport&8&l]'
+    lore:
       - 'Throw for random teleport, don''t move during process'
       - 'More runes thrown, larger teleport range!'
   SPACE_CARD:
-    Name: 'Space Disk'
-    Lore:
+    name: 'Space Disk'
+    lore:
       - 'Can store a piece of space...'
       - 'Space I/O in space tower'
   UNBREAKING_SHIELD:
-    Name: '&bRiot Shield'
-    Lore:
+    name: '&bRiot Shield'
+    lore:
       - 'Cannot be disabled by axes!'
   SUPER_MACE:
-    Name: '%DEFAULT_COLOR%Thunder Hammer'
-    Lore:
+    name: '%default_color%Thunder Hammer'
+    lore:
       - 'Jump Boost V'
       - 'Fall Damage Immunity I'
       - 'Mace with built-in buffs'
       - 'Can make enemies ~fly~'
-      - '%DEFAULT_COLOR%---You... are worthy!?---'
+      - '%default_color%---You... are worthy!?---'
 
   FAKE_UI:
-    Name: 'Slot Disguise Panel'
+    name: 'Slot Disguise Panel'
   REPLACE_SF_CARD:
-    Name: 'Slimefun Replacement Card'
-    Lore:
+    name: 'Slimefun Replacement Card'
+    lore:
       - 'Replace unstackable items'
   REPLACE_CARD:
-    Name: 'Replacement Card'
-    Lore:
+    name: 'Replacement Card'
+    lore:
       - 'Replace unstackable items'
   ANTIGRAVITY:
-    Name: 'Anti-Gravity Device'
-    Lore:
+    name: 'Anti-Gravity Device'
+    lore:
       - 'Seems to have side effects..?'
       - 'Right-click: Get anti-gravity effect for 8 seconds'
   CONFIGURE:
-    Name: 'Logic Universal Configurator'
-    Lore:
+    name: 'Logic Universal Configurator'
+    lore:
       - 'Copy/paste some machine configs of this addon'
       - 'Storable configs:'
       - '⇨ Direction config'
       - '⇨ Special options'
   AMPLIFY_BASE:
-    Name: 'Basic Amplifier Component'
-    Lore:
+    name: 'Basic Amplifier Component'
+    lore:
       - 'Template for amplifier components'
   SWAMP_SPEED:
-    Name: 'Workshop Amplifier Component - Speed'
-    Lore:
+    name: 'Workshop Amplifier Component - Speed'
+    lore:
       - 'Increase workshop interface speed by 100%'
   SWAMP_RANGE:
-    Name: 'Workshop Amplifier Component - Range'
-    Lore:
+    name: 'Workshop Amplifier Component - Range'
+    lore:
       - 'Increase work range of some workshop interfaces'
   BNOISE_HEAD:
-    Name: "B-Noise Helmet"
-    Lore:
+    name: "B-Noise Helmet"
+    lore:
       - "Wear helmet to make B-noise"
       - "Big Banana special item"
   MULTIBLOCKBUILDER:
-    Name: 'Multiblock Builder (Admin Only)'
-    Lore:
+    name: 'Multiblock Builder (Admin Only)'
+    lore:
       - 'Admin only, hehehe'
   DISPLAY_FU_USE:
-    Name: '§dFunctional Unit §6Installation Guide'
-    Lore:
+    name: '§dFunctional Unit §6Installation Guide'
+    lore:
       - 'Functional units can be installed on equipment'
       - 'in smithing table connected to forge workshop'
       - 'Different units have different effects, max levels and extra materials'
@@ -632,22 +632,22 @@ Items:
       - 'to forge! Result outputs to nearby &eforge craft interface&7'
       - '⇨ &aClick to view diagram'
   DISPLAY_FU_USE_1:
-    Name: 'Any Functional Unit'
-    Lore:
+    name: 'Any Functional Unit'
+    lore:
       - 'Place in smithing table template slot (1st slot)'
   DISPLAY_FU_USE_2:
-    Name: 'Supported Tool'
-    Lore:
+    name: 'Supported Tool'
+    lore:
       - 'Place in smithing table tool slot (2nd slot)'
       - 'Different units support different tool ranges'
   DISPLAY_FU_USE_3:
-    Name: 'Required Material'
-    Lore:
+    name: 'Required Material'
+    lore:
       - 'Place in smithing table material slot (3rd slot)'
       - 'Different units require different forge materials'
   DISPLAY_REMOVE_FU:
-    Name: '§dFunctional Unit §6Removal Guide'
-    Lore:
+    name: '§dFunctional Unit §6Removal Guide'
+    lore:
       - 'Functional units can be removed from equipment'
       - 'in grindstone connected to forge workshop'
       - 'Removal won''t return forge materials, &eonly returns unit itself'
@@ -657,104 +657,104 @@ Items:
       - 'Removed level = &elower slot unit quantity'
       - '⇨ &aClick to view diagram'
   DISPLAY_REMOVE_FU_1:
-    Name: 'Tool with Installed Functional Unit'
-    Lore:
+    name: 'Tool with Installed Functional Unit'
+    lore:
       - 'Place in grindstone upper slot'
   DISPLAY_REMOVE_FU_2:
-    Name: 'Functional Unit Type to Remove'
-    Lore:
+    name: 'Functional Unit Type to Remove'
+    lore:
       - 'Place in grindstone lower slot'
   FU_BASE:
-    Name: 'Basic Functional Unit'
-    Lore:
+    name: 'Basic Functional Unit'
+    lore:
       - 'A blank unit'
       - 'A brand new start'
   DEMO_FU:
-    Name: 'Demo Functional Unit'
-    Lore:
+    name: 'Demo Functional Unit'
+    lore:
       - 'Just for padding'
   PLAYER_IDCARD:
-    Name: 'Player ID Card'
-    Lore:
+    name: 'Player ID Card'
+    lore:
       - 'Right-click to record player info'
       - 'Shift+right-click to clear player info'
-Machines:
+machine:
   LOGIC_REACTOR:
-    Name: 'Logic Reactor'
-    Lore:
+    name: 'Logic Reactor'
+    lore:
       - 'Origin of all complex logic...'
       - 'Begins with True and False'
   BOOL_GENERATOR:
-    Name: 'Boolean Generator'
+    name: 'Boolean Generator'
   BUG_CRAFTER:
-    Name: 'BUG Workbench'
-    Lore:
+    name: 'BUG Workbench'
+    lore:
       - 'Though made from bugs'
       - 'It can make more than just bugs...'
   HEAD_ANALYZER:
-    Name: 'Head Analyzer'
-    Lore:
+    name: 'Head Analyzer'
+    lore:
       - 'Supports decoding head hash'
       - 'Supports getting head texture through hash'
       - 'Supports modifying head item texture'
   RECIPE_LOGGER:
-    Name: 'Registration Code Generator'
-    Lore:
+    name: 'Registration Code Generator'
+    lore:
       - 'Convert slot recipes to this addon''s supported code format'
       - 'Generate this addon''s item registration format code'
       - 'Generate this addon''s slimefun item registration format code'
       - 'Only useful for developers'
   ENDFRAME_MACHINE:
-    Name: 'Space Frame Constructor'
+    name: 'Space Frame Constructor'
   LVOID_GENERATOR:
-    Name: 'Void Quantum Generator'
-    Lore:
+    name: 'Void Quantum Generator'
+    lore:
       - 'Attempts to capture quantum energy in virtual void'
       - 'Seems to have caught something strange too...'
       - 'Rate: 1x'
   INFINITY_AUTOCRAFT:
-    Name: 'Infinity Auto Crafter'
-    Lore:
+    name: 'Infinity Auto Crafter'
+    lore:
       - 'Consumes massive power to automate infinity recipes'
   SPECIAL_CRAFTER:
-    Name: 'Logic Simulation Craft Station'
-    Lore:
+    name: 'Logic Simulation Craft Station'
+    lore:
       - 'Simulates any special workbench/workstation through logic space'
       - 'Performs shapeless crafting'
   STAR_SMELTERY:
-    Name: 'Star Gold Smeltery'
-    Lore:
+    name: 'Star Gold Smeltery'
+    lore:
       - 'Forge rare alloys'
   CHIP_MAKER:
-    Name: 'Simple Lithography Machine'
-    Lore:
+    name: 'Simple Lithography Machine'
+    lore:
       - 'First step towards high-tech...'
       - 'Create chips that can store information'
   CHIP_CONSUMER:
-    Name: 'Single Bit Operation Unit'
-    Lore:
+    name: 'Single Bit Operation Unit'
+    lore:
       - 'Perform bit operations on chip data'
   CHIP_BICONSUMER:
-    Name: 'Dual Bit Operation Unit'
-    Lore:
+    name: 'Dual Bit Operation Unit'
+    lore:
       - 'Perform bit operations on chip data'
   SEQ_CONSTRUCTOR:
-    Name: 'Conceptual Sequence Constructor'
-    Lore:
+    name: 'Conceptual Sequence Constructor'
+    lore:
       - 'Repeatedly condense concepts...'
       - 'Sequential progress machine'
 
   STACKMACHINE:
-    Name: 'Stack Recipe Machine'
-    Lore:
+    name: 'Stack Recipe Machine'
+    lore:
       - 'Legendary stack machine'
       - 'Insert supported recipe machines into slots to load recipes'
       - 'Stack efficiency: 2.00'
       - 'Support range: All recipe machines'
       - 'Use stack generators for generators'
   QUANTUM_STACKMACHINE:
-    Name: 'Quantum Stack Recipe Machine'
-    Lore:
+    name: 'Quantum Stack Recipe Machine'
+    lore:
       - 'Insert supported recipe machines into slots to load recipes'
       - 'All slots &esupport "Ultimate Crafting" feature'
       - '&cPlease read "Ultimate Crafting" & "Quantum Entanglement Singularity" carefully'
@@ -763,33 +763,33 @@ Machines:
       - 'Support range: All recipe machines'
       - 'Use stack generators for generators'
   ENERGY_TRASH:
-    Name: 'Energy Trash Can'
-    Lore:
+    name: 'Energy Trash Can'
+    lore:
       - 'Destroy excess power from energy network'
       - 'Prioritizes power consumers'' supply and demand'
   OPPO_GEN:
-    Name: 'Opposite Generator'
-    Lore:
+    name: 'Opposite Generator'
+    lore:
       - 'Generator with positive and negative sides'
       - 'Doesn''t this feel strange?'
   ARC_REACTOR:
-    Name: 'Arc Reactor'
-    Lore:
+    name: 'Arc Reactor'
+    lore:
       - '"HE WAS ABLE TO BUILD THIS IN A CAVE! WITH A BOX OF SLIMES!"'
   CHIP_REACTOR:
-    Name: 'Chip Reactor'
-    Lore:
+    name: 'Chip Reactor'
+    lore:
       - 'Ultimate generator'
       - 'Burns chip-stored data for power'
   ADVANCED_CHIP_MAKER:
-    Name: 'Advanced Chip Lithography Machine'
-    Lore:
+    name: 'Advanced Chip Lithography Machine'
+    lore:
       - 'Ability to replicate binary bits'
       - 'Periodically selects 01 data bits'
       - 'Copies this bit data from sample chip to target chip'
   ENERGY_AMPLIFIER:
-    Name: 'Quantum Generator Overclock Device'
-    Lore:
+    name: 'Quantum Generator Overclock Device'
+    lore:
       - 'Legendary stack generator'
       - 'Place this machine below running generator'
       - 'Put same generator in slots'
@@ -797,15 +797,15 @@ Machines:
       - '&eCannot stack itself!😡'
       - 'Stack efficiency: 2.0'
   FINAL_SEQUENTIAL:
-    Name: 'Ultimate Concept Condenser'
-    Lore:
+    name: 'Ultimate Concept Condenser'
+    lore:
       - 'Condense ultimate concepts'
       - 'Sequential progress machine'
       - 'Ultimate machine'
       - 'Input slots &esupport "Ultimate Crafting" feature'
   FINAL_STACKMACHINE:
-    Name: 'Ultimate Stack - Recipe Machine'
-    Lore:
+    name: 'Ultimate Stack - Recipe Machine'
+    lore:
       - 'Legendary ultimate stack machine'
       - 'Insert supported recipe machines into slots to load recipes'
       - 'Ultimate machine'
@@ -813,38 +813,38 @@ Machines:
       - 'Stack efficiency: 16.00'
       - 'Support range: All recipe machines'
   DUST_EXTRACTOR:
-    Name: 'Dust Factory'
-    Lore:
+    name: 'Dust Factory'
+    lore:
       - 'Process all input cobblestone at once'
       - 'Processor count: 9x'
   FURNACE_FACTORY:
-    Name: 'Furnace Factory'
-    Lore:
+    name: 'Furnace Factory'
+    lore:
       - 'Can smelt 9 recipes at once'
       - 'Processor count: 9x'
   INGOT_FACTORY:
-    Name: 'Ingot Factory'
-    Lore:
+    name: 'Ingot Factory'
+    lore:
       - 'Process all input ore dust at once'
       - 'Processor count: 9x'
   SMELTRY:
-    Name: 'Advanced Smeltery Factory'
-    Lore:
+    name: 'Advanced Smeltery Factory'
+    lore:
       - 'Smelt alloys'
   CRAFTER:
-    Name: 'Logic Craft Factory'
-    Lore:
+    name: 'Logic Craft Factory'
+    lore:
       - 'Execute crafting tasks in logic space'
       - 'Insert corresponding manual machines, more quantity = more processes'
       - 'Shapeless input, instant crafting'
   PRESSOR_FACTORY:
-    Name: 'Compressor Factory'
-    Lore:
+    name: 'Compressor Factory'
+    lore:
       - 'Compress 9 recipes at once'
       - 'Processor count: 9x'
   EASYSTACKMACHINE:
-    Name: 'Stack Factory'
-    Lore:
+    name: 'Stack Factory'
+    lore:
       - 'Budget stack machine, looks unreliable'
       - 'Insert supported recipe machines into slots to load recipes'
       - 'Stack efficiency: 0.50'
@@ -852,81 +852,81 @@ Machines:
       - 'Use stack generators for generators'
       - '&e...Maybe check out the real stack machine?'
   CONVERTOR:
-    Name: 'Logic Conversion Factory'
-    Lore:
+    name: 'Logic Conversion Factory'
+    lore:
       - 'Can only convert a small portion of materials'
   FINAL_LASER:
-    Name: 'Macro Laser Launcher'
-    Lore:
+    name: 'Macro Laser Launcher'
+    lore:
       - 'Activate with redstone or place on ultimate altar'
       - 'Used to activate ultimate machines'
       - '⇨ Component of level 2 ultimate altar'
       - '&eBeware of laser!'
   FINAL_CONVERTOR:
-    Name: 'Matter Quantization Reshaper'
-    Lore:
+    name: 'Matter Quantization Reshaper'
+    lore:
       - '"Matter is just a string of numbers to it"'
       - 'Randomly fluctuate input material ID to reshape matter'
   RAND_EDITOR:
-    Name: 'Attribute Quantization Amplifier'
-    Lore:
+    name: 'Attribute Quantization Amplifier'
+    lore:
       - '"Matter is just a string of numbers to it"'
       - 'Randomly amplify item enchantments and attributes'
   VIRTUAL_KILLER:
-    Name: 'Slaughter Factory'
-    Lore:
+    name: 'Slaughter Factory'
+    lore:
       - 'Insert spawners to get special drops from that entity type'
       - 'Maybe you need a "Soul Jar" addon'
       - 'Stack efficiency: 1.0'
   INF_MOBSIMULATION:
-    Name: 'Infinite Mob Simulation Chamber'
-    Lore:
+    name: 'Infinite Mob Simulation Chamber'
+    lore:
       - 'Activate with mob chips'
   INF_GEOQUARRY:
-    Name: 'Infinite Geo Resource Quarry'
-    Lore:
+    name: 'Infinite Geo Resource Quarry'
+    lore:
       - 'Uses power to slowly obtain geo resources'
       - 'Unaffected by remaining geo resource amount'
   ATTR_OP:
-    Name: 'Forge Workshop Interface - Attribute Operator'
-    Lore:
+    name: 'Forge Workshop Interface - Attribute Operator'
+    lore:
       - 'Place at any "Workshop Interface" position in structure'
       - '⇨ Transfer enchantments/attribute modifiers between items'
       - '⇨ Supports automatic operation'
   CUSTOM_CHARGER:
-    Name: 'Forge Workshop Interface - Universal Charger'
-    Lore:
+    name: 'Forge Workshop Interface - Universal Charger'
+    lore:
       - 'Place at any "Workshop Interface" position in structure'
       - '⇨ Charge rechargeable items including this addon''s custom ones'
       - '⇨ Supports remote player charging'
   GRIND_FACTORY:
-    Name: 'Ore Grinder Factory'
-    Lore:
+    name: 'Ore Grinder Factory'
+    lore:
       - 'Grind 9 ore recipes at once'
       - 'Processor count: 9x'
   TNT_GEN:
-    Name: 'Portable TNT Generator'
-    Lore:
+    name: 'Portable TNT Generator'
+    lore:
       - 'Basic component of redstone tech'
       - 'Activate with redstone after startup'
       - 'Supports adjusting generation frequency, explosion delay, spawn position'
   ADVANCE_BREWER:
-    Name: 'Brewing Factory'
-    Lore:
+    name: 'Brewing Factory'
+    lore:
       - 'Faster auto brewing stand'
   SIMU_LVOID:
-    Name: 'Virtual Quantum Generator'
-    Lore:
+    name: 'Virtual Quantum Generator'
+    lore:
       - 'Simulates energy network operation in logic space'
       - 'Generates massive paradox without connecting to energy network'
       - 'Rate: 5x~35x'
   SPACETOWER_FRAME:
-    Name: 'Space Tower Frame'
-    Lore:
+    name: 'Space Tower Frame'
+    lore:
       - 'Extend and mark space tower I/O range'
   SPACETOWER:
-    Name: 'Space Tower'
-    Lore:
+    name: 'Space Tower'
+    lore:
       - 'AE2 style space tower'
       - 'Perform space I/O'
       - '⇨ Use space tower frames to extend selection range'
@@ -939,274 +939,274 @@ Machines:
       - '⇨ &cIf world protection plugin doesn''t register protection module with slimefun'
       - '⇨ &cAuthor takes no responsibility for any unauthorized actions'
   ITEM_OP:
-    Name: 'Item Operator'
-    Lore:
+    name: 'Item Operator'
+    lore:
       - 'Perform various operations on items'
       - 'Such as naming, dyeing, unbreakable, etc.'
   CHUNK_CHARGER:
-    Name: 'Chunk Charger'
-    Lore:
+    name: 'Chunk Charger'
+    lore:
       - 'Uses own power to charge machines in chunk'
       - '⇨ Won''t charge other power machines from this addon'
       - '⇨ Only one per chunk'
   INGOT_CONVERTOR:
-    Name: 'Ingot Converting Factory'
-    Lore:
+    name: 'Ingot Converting Factory'
+    lore:
       - 'Convert certain ingots...'
       - 'Processor count: 9x'
   ADJ_CHARGER:
-    Name: 'Adjacent Charging Tower'
-    Lore:
+    name: 'Adjacent Charging Tower'
+    lore:
       - 'Uses own power to charge'
       - 'Select ''No Direction'' to charge all adjacent machines'
       - 'Or select specific direction for adjacent machine'
   ADJ_CHARGER_PLUS:
-    Name: 'Advanced Adjacent Charging Tower'
-    Lore:
+    name: 'Advanced Adjacent Charging Tower'
+    lore:
       - 'Uses own power to charge'
       - 'Select ''No Direction'' to charge all adjacent machines'
       - 'Or select specific direction for adjacent machine'
       - 'Has larger power buffer'
   LINE_CHARGER:
-    Name: 'Line Charging Tower'
-    Lore:
+    name: 'Line Charging Tower'
+    lore:
       - 'Uses own power to charge machines in one direction'
       - '⇨ Max line distance: 64'
       - '⇨ Skips non-power machines and continues searching'
   LINE_CHARGER_PLUS:
-    Name: 'Advanced Line Charging Tower'
-    Lore:
+    name: 'Advanced Line Charging Tower'
+    lore:
       - 'Uses own power to charge machine chain in one direction'
       - 'Has larger power buffer'
       - '⇨ Max line distance: 64'
       - '⇨ Skips non-power machines and continues searching'
   ADJ_COLLECTOR:
-    Name: 'Adjacent Generator Activator'
-    Lore:
+    name: 'Adjacent Generator Activator'
+    lore:
       - 'Select ''No Direction'' to activate all adjacent generators'
       - 'Or select specific direction for adjacent generator'
       - 'Collect generated power in itself'
   ADJ_COLLECTOR_PLUS:
-    Name: 'Advanced Adjacent Generator Activator'
-    Lore:
+    name: 'Advanced Adjacent Generator Activator'
+    lore:
       - 'Select ''No Direction'' to activate all adjacent generators'
       - 'Or select specific direction for adjacent generator'
       - 'Collect generated power in itself'
       - 'Has larger power buffer'
   LINE_COLLECTOR_PLUS:
-    Name: 'Advanced Line Generator Activator'
-    Lore:
+    name: 'Advanced Line Generator Activator'
+    lore:
       - 'Activate generator chain in one direction'
       - 'Collect generated power in itself'
       - 'Has larger power buffer'
       - '⇨ Max line distance: 64'
       - '⇨ When encountering line activator, take its power and stop searching'
   LINE_COLLECTOR:
-    Name: 'Line Generator Activator'
-    Lore:
+    name: 'Line Generator Activator'
+    lore:
       - 'Activate generator chain in one direction'
       - 'Collect generated power in itself'
       - '⇨ Max line distance: 64'
       - '⇨ When encountering line activator, take its power and stop searching'
   ENERGY_STORAGE_NONE:
-    Name: 'Energy Tower - None'
-    Lore:
+    name: 'Energy Tower - None'
+    lore:
       - 'Can store certain amount of power'
       - '⇨ Cannot input power from energy network'
       - '⇨ Cannot output power to energy network'
   ENERGY_STORAGE_IN:
-    Name: 'Energy Tower - IN'
-    Lore:
+    name: 'Energy Tower - IN'
+    lore:
       - 'Can store certain amount of power'
       - '⇨ Can input power from energy network'
       - '⇨ Cannot output power to energy network'
   ENERGY_STORAGE_IO:
-    Name: 'Energy Tower - I/O'
-    Lore:
+    name: 'Energy Tower - I/O'
+    lore:
       - 'Can store certain amount of power'
       - '⇨ Can input power from energy network'
       - '⇨ Can output power to energy network'
   ENERGY_PIPE:
-    Name: 'Copper Energy Cable'
-    Lore:
+    name: 'Copper Energy Cable'
+    lore:
       - 'Attempts to transmit power to front-facing block'
       - 'When front block is same type cable'
       - 'Inherits that cable''s transmission target'
       - '⇨ Cannot change transmission direction with wrench'
   ENERGY_PIPE_PLUS:
-    Name: 'Superconducting Cable'
-    Lore:
+    name: 'Superconducting Cable'
+    lore:
       - 'Chip tech~'
       - 'Attempts to transmit power to front-facing block'
       - 'When front block is same type cable'
       - 'Inherits that cable''s transmission target'
       - '⇨ Cannot change transmission direction with wrench'
   FINAL_CRAFT:
-    Name: 'Ultimate Craft Factory'
-    Lore:
+    name: 'Ultimate Craft Factory'
+    lore:
       - 'Execute massive crafting tasks in virtual world'
       - 'Insert corresponding manual machines, processes = quantity * 4'
       - 'Shapeless input, instant crafting'
       - 'All slots &esupport "Ultimate Crafting" feature'
   VIRTUAL_EXPLORER:
-    Name: 'Virtual Explorer'
-    Lore:
+    name: 'Virtual Explorer'
+    lore:
       - 'What...?'
       - 'No need to explore anymore?'
   TIMER_BLOCKENTITY:
-    Name: 'Speed Torch - Machine Type'
-    Lore:
+    name: 'Speed Torch - Machine Type'
+    lore:
       - '&7Accelerate &evanilla block entities&7 in 15x15x15 area by 50x'
       - '&cMachine may fail in some versions'
   TIMER_RD:
-    Name: 'Speed Torch - Natural Type'
-    Lore:
+    name: 'Speed Torch - Natural Type'
+    lore:
       - '&7Accelerate &eblock random ticks&7 and &eanimal growth&7 in 21x21x21 area'
   TIMER_SF:
-    Name: 'Speed Torch - Slimefun Type'
-    Lore:
+    name: 'Speed Torch - Slimefun Type'
+    lore:
       - '&7Accelerate all slimefun machines in current chunk by 64x'
       - '⇨ Won''t accelerate other speed torches or blacklisted machines'
       - '⇨ &eIn accelerated time flow, machines not guaranteed to run in fixed order!'
       - '⇨ Only one per chunk'
       - '&cTesting only'
   TIMER_SF_SEQ:
-    Name: 'Advanced Speed Torch - Slimefun Type'
-    Lore:
+    name: 'Advanced Speed Torch - Slimefun Type'
+    lore:
       - '&7Accelerate all slimefun machines in current chunk by 64x'
       - '⇨ Won''t accelerate other speed torches or blacklisted machines'
       - '⇨ &eThis machine has stronger control, guarantees fixed order execution'
       - '⇨ &eBut takes more time'
       - '⇨ Only one per chunk'
-  Manuals:
+  manuals:
   MANUAL_CORE:
-    Name: 'Shapeless Core'
-    Lore:
+    name: 'Shapeless Core'
+    lore:
       - 'Classics last forever...'
   CRAFT_MANUAL:
-    Name: 'Fast Crafting Table'
+    name: 'Fast Crafting Table'
   FURNACE_MANUAL:
-    Name: 'Fast Furnace'
+    name: 'Fast Furnace'
   ENHANCED_CRAFT_MANUAL:
-    Name: 'Fast Enhanced Crafting Table'
+    name: 'Fast Enhanced Crafting Table'
   GRIND_MANUAL:
-    Name: 'Fast Grindstone'
+    name: 'Fast Grindstone'
   ARMOR_FORGE_MANUAL:
-    Name: 'Fast Armor Forge'
+    name: 'Fast Armor Forge'
   ORE_CRUSHER_MANUAL:
-    Name: 'Fast Ore Crusher'
+    name: 'Fast Ore Crusher'
   COMPRESSOR_MANUAL:
-    Name: 'Fast Compressor'
+    name: 'Fast Compressor'
   PRESSURE_MANUAL:
-    Name: 'Fast Pressure Chamber'
+    name: 'Fast Pressure Chamber'
   MAGIC_WORKBENCH_MANUAL:
-    Name: 'Fast Magic Workbench'
+    name: 'Fast Magic Workbench'
   ORE_WASHER_MANUAL:
-    Name: 'Fast Ore Washer'
+    name: 'Fast Ore Washer'
   GOLD_PAN_MANUAL:
-    Name: 'Fast Gold Pan'
+    name: 'Fast Gold Pan'
   ANCIENT_ALTAR_MANUAL:
-    Name: 'Fast Ancient Altar'
+    name: 'Fast Ancient Altar'
   SMELTERY_MANUAL:
-    Name: 'Fast Smeltery'
+    name: 'Fast Smeltery'
   CRUCIBLE_MANUAL:
-    Name: 'Fast Crucible'
+    name: 'Fast Crucible'
   PULVERIZER_MANUAL:
-    Name: 'Fast Pulverizer'
+    name: 'Fast Pulverizer'
   MULTICRAFTTABLE_MANUAL:
-    Name: 'Fast Multi Craft Table'
-    Lore:
+    name: 'Fast Multi Craft Table'
+    lore:
       - 'Combines crafting table, magic workbench and ancient altar'
   TABLESAW_MANUAL:
-    Name: 'Fast Table Saw'
+    name: 'Fast Table Saw'
   COMPOSTER:
-    Name: 'Fast Composter'
+    name: 'Fast Composter'
   MULTIMACHINE_MANUAL:
-    Name: 'Fast Multi Machine'
-    Lore:
+    name: 'Fast Multi Machine'
+    lore:
       - 'Combines heated pressure chamber and other useless machines'
   MOBDATA_MANUAL:
-    Name: 'Fast Mob Data Injector'
-    Lore:
+    name: 'Fast Mob Data Injector'
+    lore:
       - 'And you, my friend, are the real sloth'
   INFINITY_MANUAL:
-    Name: 'Fast Infinity Workbench'
-    Lore:
+    name: 'Fast Infinity Workbench'
+    lore:
       - 'One-click crafting! ...but watch the power'
   NTWWORKBENCH_MANUAL:
-    Name: 'Fasr Network Workbench'
-    Lore:
+    name: 'Fasr Network Workbench'
+    lore:
       - 'Another lazy dog thing'
       - 'Seems to add extended recipes too?'
   MULTIBLOCK_MANUAL:
-    Name: 'Fast Multiblock Structure Simulator'
-    Lore:
+    name: 'Fast Multiblock Structure Simulator'
+    lore:
       - 'Simulate multiblock structures in virtual space'
       - 'Supports fast crafting for all multiblock structures'
   FINAL_MANUAL:
-    Name: 'Ultimate Fast Machine'
-    Lore:
+    name: 'Ultimate Fast Machine'
+    lore:
       - 'The end of one-click crafting'
       - 'Ultimate machine'
       - 'All slots &esupport "Ultimate Crafting" feature'
   CARD_MAKER:
-    Name: 'Fast Card Maker'
-    Lore:
+    name: 'Fast Card Maker'
+    lore:
       - 'Create replacement cards for unstackable items'
       - 'Excellent'
   ADV_MANUAL:
-    Name: 'Advanced Fast Crafter'
-    Lore:
+    name: 'Advanced Fast Crafter'
+    lore:
       - 'New concept one-click crafting!'
       - 'Craft directly in player inventory'
   PORTABLE_MANUAL:
-    Name: 'Portable Advanced Fast Crafter'
-    Lore:
+    name: 'Portable Advanced Fast Crafter'
+    lore:
       - 'New concept one-click crafting'
       - 'Right-click: Open advanced fast crafting interface'
-Generators:
 
+generator:
   MAGIC_STONE:
-    Name: 'Magic Cobblestone Generator'
-    Lore:
+    name: 'Magic Cobblestone Generator'
+    lore:
       - 'Skyblock-like experience!'
       - 'Is there a slave inside this thing?'
   BOOL_MG:
-    Name: 'Boolean Component Duplicator'
-    Lore:
+    name: 'Boolean Component Duplicator'
+    lore:
       - 'This output will last a lifetime!'
       - '...Really?'
   OVERWORLD_MINER:
-    Name: 'Advanced Magic Cobblestone Generator'
-    Lore:
+    name: 'Advanced Magic Cobblestone Generator'
+    lore:
       - 'Let''s generate!'
   NETHER_MINER:
-    Name: 'Nether Magic Cobblestone Generator'
-    Lore:
+    name: 'Nether Magic Cobblestone Generator'
+    lore:
       - 'Can produce outputs from Blue Ice Magic Cobblestone Generator'
   END_MINER:
-    Name: 'End Magic Cobblestone Generator'
-    Lore:
+    name: 'End Magic Cobblestone Generator'
+    lore:
       - 'Seems to have extra outputs?'
   DIMENSION_MINER:
-    Name: 'Dimensional Miner'
-    Lore:
+    name: 'Dimensional Miner'
+    lore:
       - 'Mine in dimensional rifts'
       - 'Might mine some rare stuff'
   REDSTONE_MG:
-    Name: 'Redstone Component Generator'
+    name: 'Redstone Component Generator'
   DUPE_MG:
-    Name: 'Feature Duplicator'
+    name: 'Feature Duplicator'
   ENDDUPE_MG:
-    Name: 'End Portal Feature Duplicator'
+    name: 'End Portal Feature Duplicator'
   BNOISE_MAKER:
-    Name: "B-Noise Generator"
-    Lore:
+    name: "B-Noise Generator"
+    lore:
       - 'Creates B-noise'
       - "Voice director: Big Banana"
   STACKMGENERATOR:
-    Name: 'Stack Generator'
-    Lore:
+    name: 'Stack Generator'
+    lore:
       - 'Legendary stack machine'
       - 'Insert supported generators into slots to load recipes'
       - 'Place machine template in input slot (if any) to generate'
@@ -1214,8 +1214,8 @@ Generators:
       - 'Support range: All material generators'
       - 'Use stack recipe machines for recipe machines'
   QUANTUM_STACKMGENERATOR:
-    Name: 'Quantum Stack Generator'
-    Lore:
+    name: 'Quantum Stack Generator'
+    lore:
       - 'Insert supported generators into slots to load generation recipes'
       - 'Output slots &esupport "Ultimate Crafting" feature'
       - '&cPlease read "Ultimate Crafting" & "Quantum Entanglement Singularity" carefully'
@@ -1224,19 +1224,19 @@ Generators:
       - 'Support range: All generators'
       - 'Use stack recipe machines for recipe machines'
   REVERSE_GENERATOR:
-    Name: 'Reverse Generator'
-    Lore:
+    name: 'Reverse Generator'
+    lore:
       - 'Successfully mastered the power of basic logic'
       - 'Creates basic abstract logic materials'
   FINAL_STONE_MG:
-    Name: 'True Infinite Cobblestone Factory'
-    Lore:
+    name: 'True Infinite Cobblestone Factory'
+    lore:
       - 'Ultimate machine'
       - 'Output slots &esupport "Ultimate Crafting" feature'
       - 'Maybe you''ll find somewhere to use all these stones'
   FINAL_STACKMGENERATOR:
-    Name: 'Ultimate Stack - Generator'
-    Lore:
+    name: 'Ultimate Stack - Generator'
+    lore:
       - 'Legendary ultimate stack machine'
       - 'Insert supported generators into slots to load generation recipes'
       - 'Ultimate machine'
@@ -1244,55 +1244,55 @@ Generators:
       - 'Stack efficiency: 16.00'
       - 'Support range: All generators'
   VIRTUAL_MINER:
-    Name: 'Virtual Miner'
-    Lore:
+    name: 'Virtual Miner'
+    lore:
       - 'Mine in virtual world'
       - 'High drop rate, very high'
   VIRTUAL_PLANT:
-    Name: 'Virtual Farm'
-    Lore:
+    name: 'Virtual Farm'
+    lore:
       - 'Farm in virtual world'
       - 'Maybe with virtual slaves too'
   MAGIC_PLANT:
-    Name: 'Magic Farm'
-    Lore:
+    name: 'Magic Farm'
+    lore:
       - 'Skyblock-like experience'
       - 'Is there a slave inside this thing?'
   OVERWORLD_PLANT:
-    Name: 'Advanced Farm'
-    Lore:
+    name: 'Advanced Farm'
+    lore:
       - 'Grow overworld crops'
       - 'Beat mk2'
   NETHER_PLANT:
-    Name: 'Nether Farm'
-    Lore:
+    name: 'Nether Farm'
+    lore:
       - 'Grow nether crops'
   END_PLANT:
-    Name: 'Void Farm'
-    Lore:
+    name: 'Void Farm'
+    lore:
       - 'Grow crops'
   STONE_FACTORY:
-    Name: 'Cobblestone Factory'
-    Lore:
+    name: 'Cobblestone Factory'
+    lore:
       - 'We don''t produce cobblestone'
       - 'We''re just cobblestone carriers'
   TNT_MG:
-    Name: 'TNT Generator'
-    Lore:
+    name: 'TNT Generator'
+    lore:
       - 'Good kid, this isn''t for you to crash servers with'
 
-MultiBlock:
+multiblock:
   PORTAL_CORE:
-    Name: 'Dimensional Portal Core'
-    Lore:
+    name: 'Dimensional Portal Core'
+    lore:
       - 'Contains high-dimensional power'
       - 'Maintains stable hyperlink and allows &cany entity&7 to teleport'
       - '"You step on the teleporter, sit in the center, wait for teleportation"'
   PORTAL_FRAME:
-    Name: 'Dimensional Portal Frame'
+    name: 'Dimensional Portal Frame'
   SOLAR_REACTOR:
-    Name: 'Supernova Simulator'
-    Lore:
+    name: 'Supernova Simulator'
+    lore:
       - 'Simulate supernova explosion in virtual space'
       - 'Don''t get close to simulated supernova~ Unless you want to attend a funeral'
       - '⇨ Internal chamber must be filled with air'
@@ -1301,44 +1301,44 @@ MultiBlock:
       - '⇨ Unexpected craft process termination causes explosion'
       - '⇨ Explosion destroys terrain and slimefun head machines'
   SOLAR_REACTOR_FRAME:
-    Name: 'Supernova Simulator Frame'
-    Lore:
+    name: 'Supernova Simulator Frame'
+    lore:
       - 'Can be replaced by simulator cargo interface'
   SOLAR_REACTOR_GLASS:
-    Name: 'Supernova Simulator Glass'
-    Lore:
+    name: 'Supernova Simulator Glass'
+    lore:
       - '"Immersive experience"'
       - 'Cannot be replaced by other components'
   SOLAR_INPUT:
-    Name: 'Supernova Simulator Cargo Interface - Input'
-    Lore:
+    name: 'Supernova Simulator Cargo Interface - Input'
+    lore:
       - 'Transfer slot items to simulator input slots'
       - 'Place at any simulator frame position in structure'
       - 'Transport config:'
       - 'Strong symmetry: Enabled'
 
   SOLAR_OUTPUT:
-    Name: 'Supernova Simulator Cargo Interface - Output'
-    Lore:
+    name: 'Supernova Simulator Cargo Interface - Output'
+    lore:
       - 'Transfer simulator output slot items to slots'
       - 'Place at any simulator frame position in structure'
       - 'Transport config:'
       - 'Strong symmetry: Disabled'
   TRANSMUTATOR_FRAME:
-    Name: 'Element Transmutator Frame'
+    name: 'Element Transmutator Frame'
   TRANSMUTATOR_GLASS:
-    Name: 'Element Transmutator Glass'
-    Lore:
+    name: 'Element Transmutator Glass'
+    lore:
       - "Can effectively isolate nuclear radiation"
       - '"This time it shouldn''t explode"'
   TRANSMUTATOR_ROD:
-    Name: 'Atomic Alloy Nuclear Fuel Rod'
-    Lore:
+    name: 'Atomic Alloy Nuclear Fuel Rod'
+    lore:
       - 'Atomic structure filled with abundant nuclear energy'
       - 'Best choice for inducing transmutation reactions'
   TRANSMUTATOR:
-    Name: 'Element Transmutator'
-    Lore:
+    name: 'Element Transmutator'
+    lore:
       - 'Create elements, convert elements, control elements'
       - 'Reorganize atoms to create rare elemental materials'
       - '⇨ This multiblock is variable-height'
@@ -1349,12 +1349,12 @@ MultiBlock:
       - '⇨ Unexpected craft process termination causes meltdown'
       - '⇨ Machine meltdown releases ~1 hour radiation zone'
   FINAL_BASE:
-    Name: 'Ultimate Altar Cornerstone'
-    Lore:
+    name: 'Ultimate Altar Cornerstone'
+    lore:
       - 'Seems to contain the entire world'
   FINAL_ALTAR:
-    Name: 'Ultimate Altar'
-    Lore:
+    name: 'Ultimate Altar'
+    lore:
       - 'Key to activate certain ultimate machines'
       - 'Requires ultimate altar multiblock structure to run'
       - '⇨ This multiblock has two levels'
@@ -1363,8 +1363,8 @@ MultiBlock:
       - '⇨ Switch hologram in interface to know specific construction'
       - '⇨ Changing levels requires rebuilding multiblock machine'
   SMITH_WORKSHOP:
-    Name: 'Forge Workshop Core'
-    Lore:
+    name: 'Forge Workshop Core'
+    lore:
       - 'Multi-functional integrated forging machine'
       - 'Assemble with vanilla blocks and "Workshop Interface"'
       - '⇨ Sea lanterns in multiblock hologram represent workshop interfaces'
@@ -1372,194 +1372,194 @@ MultiBlock:
       - '⇨ Main functions implemented in &edifferent types of workshop interfaces'
       - '⇨ Different functional workshop interfaces &eneed to connect to multiblock to work'
   SMITH_INTERFACE_NONE:
-    Name: 'Forge Workshop Interface - None'
-    Lore:
+    name: 'Forge Workshop Interface - None'
+    lore:
       - 'Place at any "Workshop Interface" position in structure'
       - '⇨ What? You ask what None means?'
       - '⇨ This interface is just placeholder, has no function'
   SMITH_INTERFACE_CRAFT:
-    Name: 'Forge Workshop Interface - Forge Craft Port'
-    Lore:
+    name: 'Forge Workshop Interface - Forge Craft Port'
+    lore:
       - 'Place at any "Workshop Interface" position in structure'
       - '⇨ Adjacent blocks can place workstation blocks (like crafting table, smithing table)'
       - '⇨ These workstation blocks can craft special recipes or perform special operations'
       - '⇨ Final output will be output to this machine'
-Cargo:
+cargo:
   SIMPLE_CARGO:
-    Name: 'Adjacent Cargo'
-    Lore:
+    name: 'Adjacent Cargo'
+    lore:
       - 'Transfer items from one slot group to another...'
       - 'Select adjacent blocks as source and target'
       - '⇨ &aSupports cargo with vanilla containers'
   REMOTE_CARGO:
-    Name: 'Remote Cargo'
-    Lore:
+    name: 'Remote Cargo'
+    lore:
       - 'Transfer items from one slot group to another...'
       - 'Insert hyperlink to select blocks as source and target'
       - '⇨ &aSupports cargo with vanilla containers'
   LINE_CARGO:
-    Name: 'Chain Cargo'
-    Lore:
+    name: 'Chain Cargo'
+    lore:
       - 'Classics last forever...'
       - 'Execute transporting tasks in specified direction order'
       - 'Each block transfers to next block'
       - 'Max transport length: 64 blocks'
   BISORTER:
-    Name: 'Controllable Logistics Merger - 2-Way'
-    Lore:
+    name: 'Controllable Logistics Merger - 2-Way'
+    lore:
       - 'Use chip encoding to control logistics merger tasks'
   QUARSORTER:
-    Name: 'Controllable Logistics Merger - 4-Way'
-    Lore:
+    name: 'Controllable Logistics Merger - 4-Way'
+    lore:
       - 'Use chip encoding to control logistics merger tasks'
   OCTASORTER:
-    Name: 'Controllable Logistics Merger - 8-Way'
-    Lore:
+    name: 'Controllable Logistics Merger - 8-Way'
+    lore:
       - 'Use chip encoding to control logistics merger tasks'
   BIFILTER:
-    Name: 'Item Sorter - 2-Way'
-    Lore:
+    name: 'Item Sorter - 2-Way'
+    lore:
       - 'Sort item inputs to specified slots'
   QUARFILTER:
-    Name: 'Item Sorter - 4-Way'
-    Lore:
+    name: 'Item Sorter - 4-Way'
+    lore:
       - 'Sort item inputs to specified slots'
   OCTAFILTER:
-    Name: 'Item Sorter - 8-Way'
-    Lore:
+    name: 'Item Sorter - 8-Way'
+    lore:
       - 'Sort item inputs to specified slots'
   ADV_TRASH:
-    Name: 'Advanced Incinerator'
-    Lore:
+    name: 'Advanced Incinerator'
+    lore:
       - 'Void 54 stacks of items at once'
   QUANTUM_TRASH:
-    Name: 'Quantum Incinerator'
-    Lore:
+    name: 'Quantum Incinerator'
+    lore:
       - 'Void items stored in storage items'
       - 'Supported storage items:'
       - "LogiTech Concept Singularity Storage"
       - "LogiTech Quantum Entanglement Singularity"
       - "Networks and NetworksExpansion Quantum Storage Series"
   STORAGE_OPERATOR:
-    Name: 'Storage Item Operator'
-    Lore:
+    name: 'Storage Item Operator'
+    lore:
       - 'Transfer data between storage items'
       - 'Supported storage items:'
       - "LogiTech Concept Singularity Storage"
       - "LogiTech Quantum Entanglement Singularity"
       - "Networks (Extended) Quantum Storage Series"
   ADV_ADJACENT_CARGO:
-    Name: 'Smart Adjacent Transporter'
-    Lore:
+    name: 'Smart Adjacent Transporter'
+    lore:
       - 'Same as normal cargo machines'
       - 'Accepts target machine input slot restrictions, increasing overhead'
       - 'Transport amount limited to min(576, config card data)'
       - '⇨ &aSupports cargo with vanilla containers'
   ADV_REMOTE_CARGO:
-    Name: 'Smart Remote Transporter'
-    Lore:
+    name: 'Smart Remote Transporter'
+    lore:
       - 'Same as normal cargo machines'
       - 'Accepts target machine input slot restrictions, increasing overhead'
       - 'Transport amount limited to min(576, config card data)'
       - '⇨ &aSupports cargo with vanilla containers'
   ADV_LINE_CARGO:
-    Name: 'Smart Line Transporter'
-    Lore:
+    name: 'Smart Line Transporter'
+    lore:
       - 'Same mechanism as normal cargo machines'
       - 'Accepts target machine input slot restrictions, increasing overhead'
       - 'Transport amount limited to min(576, config card data)'
       - 'Max transport length: 64 blocks'
       - '⇨ &eDoes not support cargo with vanilla containers'
   REDSTONE_ADJACENT_CARGO:
-    Name: 'Controllable Adjacent Transporter - Redstone'
-    Lore:
+    name: 'Controllable Adjacent Transporter - Redstone'
+    lore:
       - 'Use redstone signal to control cargo tasks'
   CHIP_ADJ_CARGO:
-    Name: 'Controllable Adjacent Transporter - Chip'
-    Lore:
+    name: 'Controllable Adjacent Transporter - Chip'
+    lore:
       - 'Use chip data to control cargo tasks'
   RESETTER:
-    Name: 'Data Resetter'
-    Lore:
+    name: 'Data Resetter'
+    lore:
       - 'Delete information stored in items'
       - 'Reset storage singularity type'
       - 'Can also reset slimefun items'
   STORAGE_SINGULARITY:
-    Name: 'Concept Singularity'
-    Lore:
+    name: 'Concept Singularity'
+    lore:
       - 'Conceptually store items...'
   QUANTUM_LINK:
-    Name: 'Quantum Entanglement Singularity'
-    Lore:
+    name: 'Quantum Entanglement Singularity'
+    lore:
       - 'Establish entanglement link with storage blocks'
   INPORT:
-    Name: 'Singularity Interface - Input'
-    Lore:
+    name: 'Singularity Interface - Input'
+    lore:
       - 'Storage block carrying storage items'
       - 'Quickly extract items from storage...'
   OUTPORT:
-    Name: 'Singularity Interface - Output'
-    Lore:
+    name: 'Singularity Interface - Output'
+    lore:
       - 'Storage block carrying storage items'
       - 'Quickly store items to storage...'
   IOPORT:
-    Name: 'Singularity Interface - Balanced'
-    Lore:
+    name: 'Singularity Interface - Balanced'
+    lore:
       - 'Storage block carrying storage items'
   STORAGE:
-    Name: 'Normal Storage Unit'
-    Lore:
+    name: 'Normal Storage Unit'
+    lore:
       - 'This is a big chest~'
   STORAGE_INPUT:
-    Name: 'Storage Unit - Input Only'
-    Lore:
+    name: 'Storage Unit - Input Only'
+    lore:
       - 'This storage unit has no output slots, only input slots'
   STORAGE_OUTPUT:
-    Name: 'Storage Unit - Output Only'
-    Lore:
+    name: 'Storage Unit - Output Only'
+    lore:
       - 'This storage unit has no input slots, only output slots'
   CARGO_PIP:
-    Name: 'Cargo Pipe'
-    Lore:
+    name: 'Cargo Pipe'
+    lore:
       - 'Attempts to transport items to front-facing block'
       - 'When front block is same type pipe'
       - 'Inherits that pipe''s transport target'
       - '⇨ Cannot change transport direction with wrench'
       - '⇨ &aSupports cargo with vanilla containers'
       - 'Transport config: Default, transport amount=64'
-Theme:
+theme:
   ITEM1:
-    Name: "&3Item"
+    name: "&3Item"
   MACHINE1:
-    Name: '&3Machine'
+    name: '&3Machine'
   MACHINE2:
-    Name: "&3Generator"
+    name: "&3Generator"
   MULTIBLOCK1:
-    Name: "&3Multiblock Core"
+    name: "&3Multiblock Core"
   MULTIBLOCK2:
-    Name: "&3Multiblock Component"
+    name: "&3Multiblock Component"
   MANUAL1:
-    Name: "&3Fast Machine"
+    name: "&3Fast Machine"
   ADVANCED1:
-    Name: "&3Advanced Domain"
+    name: "&3Advanced Domain"
   CARGO1:
-    Name: "&3Cargo Machine"
+    name: "&3Cargo Machine"
   BENCH1:
-    Name: "&3Workstation"
+    name: "&3Workstation"
   CATEGORY:
-    Name: "&3Category"
+    name: "&3Category"
   TOOL:
-    Name: "&3Equipment"
+    name: "&3Equipment"
   CATEGORY2:
-    Name: '&7⇨ &aClick to open'
+    name: '&7⇨ &aClick to open'
   INFO1:
-    Name: '&7⇨ &aClick to open'
+    name: '&7⇨ &aClick to open'
   MENU1:
-    Name: '&7⇨ &aClick to open'
+    name: '&7⇨ &aClick to open'
   FUNIT:
-    Name: '&3Functional Unit'
+    name: '&3Functional Unit'
 
-GUI:
+gui:
   PARTICLE_TOGGLE: '&aClick to toggle particle effect'
   PARTICLE_STATUS: '&7Current status: '
   PARTICLE_OFF: '&cOff'

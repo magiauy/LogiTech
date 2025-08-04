@@ -31,7 +31,7 @@ public abstract class AbstractSorter extends AbstractSyncTickCargo implements  C
                                 "&7这是一个同步货运机器,属于[CHIP_SYNC]组",
                                 "&7位于同组的机器将共享同一个ticker计数器",
                                 "&7出于对时序安全性的保障,&c每1s该计数器+1并让机器工作一次",
-                                "&7机器用该计数器数值顺序读取%s中记录的01码".formatted(Language.get("Items.CHIP.Name")),
+                                "&7机器用该计数器数值顺序读取%s中记录的01码".formatted(Language.get("item.CHIP.name")),
                                 "&7具体地,机器会读取01码的第<ticker>(mod32)位",
                                 "&7机器根据读取结果是0/1会执行相应的行为"
                         ),null,
@@ -46,7 +46,7 @@ public abstract class AbstractSorter extends AbstractSyncTickCargo implements  C
                                 "&7机器会选中一个输入槽",
                                 "&7在公共ticker计数器<ticker>(mod32)=0时,机器一定会选择第0槽位",
                                 "&7每个tick机器将选中槽位的物品转移至输出槽",
-                                "&7玩家可以使用%s控制机器选择输入槽".formatted(Language.get("Items.CHIP.Name")),
+                                "&7玩家可以使用%s控制机器选择输入槽".formatted(Language.get("item.CHIP.name")),
                                 "&e当机器读取到01码中的1时会选择至下一个输入槽位,若已经为最后一槽则循环至第0槽",
                                 "&e当机器读取到01码中的0时会保持选择当前槽位不动"
                         ),null

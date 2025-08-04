@@ -47,7 +47,7 @@ public class ItemOperator extends AbstractMachine {
     protected final ItemStack[] FUNCTION_ITEM=new ItemStack[]{
         new CustomItemStack(Material.NAME_TAG,"&6重命名物品","&7点击输入名字以重命名物品","&7需消耗 [命名牌]x1","&a可以使用颜色符号","&e仅可以对粘液物品或者不可堆叠物品操作","&e一次仅可对一个物品操作"),
             new CustomItemStack(Material.LANTERN,"&6显示全部物品属性","&7点击取消所有物品属性隐藏符","&7无需消耗物品"),
-            new CustomItemStack(Material.CRYING_OBSIDIAN,"&6赋予无法破坏","&7点击赋予物品无法破坏属性","&7需消耗 [%s] x64".formatted(Language.get("Items.LSINGULARITY.Name")),"&e一次仅可对一个物品操作"),
+            new CustomItemStack(Material.CRYING_OBSIDIAN,"&6赋予无法破坏","&7点击赋予物品无法破坏属性","&7需消耗 [%s] x64".formatted(Language.get("item.LSINGULARITY.name")),"&e一次仅可对一个物品操作"),
             new CustomItemStack(Material.GRINDSTONE,"&6重置物品","&7点击重置原版物品","&7无需消耗物品","&7仅限原版物品使用"),
             new CustomItemStack(Material.WRITABLE_BOOK,"&6去除物品名字","&7点击去除物品名字","&7需消耗 [命名牌]x1","&a粘液物品将恢复至原初的名字","&e一次仅可对一个物品操作"),
             new CustomItemStack(Material.SOUL_LANTERN,"&6隐藏全部物品属性","&7点击添加所有物品属性隐藏符","&7无需消耗物品"),

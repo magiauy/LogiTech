@@ -43,34 +43,34 @@ public class CargoConfigurator extends AbstractBlock {
                    "&a点击这个按钮,即可进行配置",
                     "&e支持一次配置一组配置卡"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 强对称 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置是否使用强对称传输","&7即是否将物品按槽位进行对应的运输"),
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置是否使用强对称传输","&7即是否将物品按槽位进行对应的运输"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 仅空运输 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置是否使用仅空传输","&7即是否只传向空槽位"),
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置是否使用仅空传输","&7即是否只传向空槽位"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 懒惰模式 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置是否使用懒惰模式","&7即是否在传输一次后停止"),
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置是否使用懒惰模式","&7即是否在传输一次后停止"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 白名单 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置是否使用白名单","&7即是否将物品列表视为白名单,默认黑名单"),
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置是否使用白名单","&7即是否将物品列表视为白名单,默认黑名单"),
 
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 逆向传输 的配置槽位",
-            "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置是否使用逆向传输","&7交换原有的目标方块和源方块!即:","&7⇨ 使用目标方块模式&e从目标方块抓取","&7⇨ 使用源方块模式向源方块推送","&7⇨ &e运输模式会随着方块转换"),
+            "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置是否使用逆向传输","&7交换原有的目标方块和源方块!即:","&7⇨ 使用目标方块模式&e从目标方块抓取","&7⇨ 使用源方块模式向源方块推送","&7⇨ &e运输模式会随着方块转换"),
             //Modified
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 源方块槽位优先级 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置源方块模式(抓取)","&7若该项为True,则优先从源方块输入槽进行货运","&7蕴含最终源方块模式 &e输入槽 &7和 &e输入槽+输出槽","&7若该项为False,则优先从源方块输出槽进行货运","&7蕴含最终源方块模式 &e输出槽 &7和 &e输出槽+输入槽"),
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置源方块模式(抓取)","&7若该项为True,则优先从源方块输入槽进行货运","&7蕴含最终源方块模式 &e输入槽 &7和 &e输入槽+输出槽","&7若该项为False,则优先从源方块输出槽进行货运","&7蕴含最终源方块模式 &e输出槽 &7和 &e输出槽+输入槽"),
 
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 目标方块槽位优先级 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置目标方块模式(推送)","&7若该项为True,则优先从目标方块输出槽进行货运","&7蕴含最终目标方块模式 &e输出槽 &7和 &e输出槽+输入槽","&7若该项为False,则优先从目标方块输入槽进行货运","&7蕴含最终目标方块模式 &e输入槽 &7和 &e输入槽+输出槽"),
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置目标方块模式(推送)","&7若该项为True,则优先从目标方块输出槽进行货运","&7蕴含最终目标方块模式 &e输出槽 &7和 &e输出槽+输入槽","&7若该项为False,则优先从目标方块输入槽进行货运","&7蕴含最终目标方块模式 &e输入槽 &7和 &e输入槽+输出槽"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 源方块++ 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置是否启用源方块++模式","&7该模式为True时,货运会同时涉及输入槽和输出槽","&7++模式且抓取输入槽优先:True时,最终源方块模式为 &e输入槽+输出槽",
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置是否启用源方块++模式","&7该模式为True时,货运会同时涉及输入槽和输出槽","&7++模式且抓取输入槽优先:True时,最终源方块模式为 &e输入槽+输出槽",
                     "&7++模式且抓取输入槽优先:False,最终源方块模式为 &e输出槽+输入槽"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 目标方块++ 的配置槽位",
-                    "&e将[%s]或[%s]置于下方".formatted(Language.get("Items.TRUE_.Name"),Language.get("Items.FALSE_.Name")),"&7配置是否启用目标方块++模式","&7该模式为True时,货运会同时涉及输入槽和输出槽","&7++模式且推送输出槽优先:True时,最终目标方块模式为 &e输出槽+输入槽",
+                    "&e将[%s]或[%s]置于下方".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),"&7配置是否启用目标方块++模式","&7该模式为True时,货运会同时涉及输入槽和输出槽","&7++模式且推送输出槽优先:True时,最终目标方块模式为 &e输出槽+输入槽",
                     "&7++模式且推送输出槽优先:False,最终目标方块模式为 &e输入槽+输出槽"),
 
 
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 传输数量限制x64 的配置槽位",
-                    "&e将[%s]置于左侧".formatted(Language.get("Items.CARGO_PART.Name")),"&7配置传输数量","&a传输数量增加<物品数量>*64"),
+                    "&e将[%s]置于左侧".formatted(Language.get("item.CARGO_PART.name")),"&7配置传输数量","&a传输数量增加<物品数量>*64"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 传输数量限制x1 的配置槽位",
-                    "&e将[%s]置于右侧".formatted(Language.get("Items.CARGO_PART.Name")),"&7配置传输数量","&a传输数量增加<物品数量>"),
+                    "&e将[%s]置于右侧".formatted(Language.get("item.CARGO_PART.name")),"&7配置传输数量","&a传输数量增加<物品数量>"),
     };
     protected final ItemStack TIPS_ITEM=AddUtils.randItemStackFactory(
             new PairList(){{

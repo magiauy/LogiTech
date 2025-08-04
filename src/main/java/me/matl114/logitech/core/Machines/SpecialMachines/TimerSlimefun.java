@@ -39,8 +39,8 @@ import java.util.stream.IntStream;
 
 public class TimerSlimefun extends AbstractMachine implements ChunkLimit, MenuTogglableBlock {
 
-    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_OFF"));
-    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_ON"));
+    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("gui.PARTICLE_TOGGLE"),Language.get("gui.PARTICLE_STATUS") + Language.get("gui.PARTICLE_OFF"));
+    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.PARTICLE_TOGGLE"),Language.get("gui.PARTICLE_STATUS") + Language.get("gui.PARTICLE_ON"));
     /**
      * constructor of abstractMachines will keep Collections of MachineRecipes,will register energyNetwork params,
      * will set up menu by overriding constructMenu method

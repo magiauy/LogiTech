@@ -47,10 +47,10 @@ public abstract class AbstractEnergyCharger extends AbstractEnergyMachine implem
     protected int getInfoSlot(){
         return INFO_SLOT;
     }
-    protected final ItemStack LAZY_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.LAZY_MODE_TOGGLE"),Language.get("GUI.LAZY_MODE_STATUS_OFF"),
-            Language.get("GUI.LAZY_MODE_DESC1"),Language.get("GUI.LAZY_MODE_DESC2"));
-    protected final ItemStack LAZY_ITEM_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.LAZY_MODE_TOGGLE"),Language.get("GUI.LAZY_MODE_STATUS_ON"),
-            Language.get("GUI.LAZY_MODE_DESC1"),Language.get("GUI.LAZY_MODE_DESC2"));
+    protected final ItemStack LAZY_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("gui.LAZY_MODE_TOGGLE"),Language.get("gui.LAZY_MODE_STATUS_OFF"),
+            Language.get("gui.LAZY_MODE_DESC1"),Language.get("gui.LAZY_MODE_DESC2"));
+    protected final ItemStack LAZY_ITEM_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.LAZY_MODE_TOGGLE"),Language.get("gui.LAZY_MODE_STATUS_ON"),
+            Language.get("gui.LAZY_MODE_DESC1"),Language.get("gui.LAZY_MODE_DESC2"));
 
     public AbstractEnergyCharger(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe,
                                int energybuffer){
@@ -58,9 +58,9 @@ public abstract class AbstractEnergyCharger extends AbstractEnergyMachine implem
     }
 
     protected ItemStack getInfoShow(int charge,int machine,int errors){
-        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)),
-                Language.get("GUI.ENERGY_CONSUMERS").formatted(machine,getMaxChargeAmount()),
-                Language.get("GUI.CHARGE_ERRORS").formatted(errors));
+        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)),
+                Language.get("gui.ENERGY_CONSUMERS").formatted(machine,getMaxChargeAmount()),
+                Language.get("gui.CHARGE_ERRORS").formatted(errors));
     }
     public boolean isBorder(int i){
         return i!=getLazySlot();

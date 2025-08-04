@@ -41,10 +41,10 @@ public class RemoteCargo extends AbstractCargo {
     }
     protected final ItemStack[] INFO_ITEM=new ItemStack[]{
             new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,"&b机制",
-                    "&7在左侧配置源方方块超链接","&7在中间的槽位插入[%s]".formatted(Language.get("Items.CARGO_CONFIG.Name")),"&7在下方放入黑/白名单物品",
+                    "&7在左侧配置源方方块超链接","&7在中间的槽位插入[%s]".formatted(Language.get("item.CARGO_CONFIG.name")),"&7在下方放入黑/白名单物品",
                     "&e机器将从源方方块向目标方块进行传输","&c警告:当你设置两方块相同时,请不要让他们操作同样的槽位,否则后果自负"),
             new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,"&b机制",
-                    "&7在右侧配置目标方块超链接","&7在中间的槽位插入[%s]".formatted(Language.get("Items.CARGO_CONFIG.Name")),"&7在下方放入黑/白名单物品",
+                    "&7在右侧配置目标方块超链接","&7在中间的槽位插入[%s]".formatted(Language.get("item.CARGO_CONFIG.name")),"&7在下方放入黑/白名单物品",
                     "&e机器将从源方方块向目标方块进行传输","&c警告:当你设置两方块相同时,请不要让他们操作同样的槽位,否则后果自负")
     };
     protected final int[] LOCATION_SLOT=new int[]{
@@ -74,7 +74,7 @@ public class RemoteCargo extends AbstractCargo {
                         ),null,
                         AddUtils.getInfoShow("&f机制",
                                 "&7本机器可以选择任意方块参与传输",
-                                "将绑定目标方块的%s插入指定槽位以选择参与的方块".formatted(Language.get("Items.HYPER_LINK.Name"))),null
+                                "将绑定目标方块的%s插入指定槽位以选择参与的方块".formatted(Language.get("item.HYPER_LINK.name"))),null
                 )
         );
 
