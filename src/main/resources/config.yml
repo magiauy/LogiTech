@@ -4,3 +4,6 @@ options:
   #慎用
   clear-old-config: false
   disable-spacestorage: false
+
+# Language setting
+language: en-US

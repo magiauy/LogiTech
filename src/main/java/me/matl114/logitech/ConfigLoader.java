@@ -28,7 +28,10 @@ public class ConfigLoader {
         if(INNERCONFIG.getBoolean("options.clear-old-config")) {
             MyAddon.testmod=true;
         }
-        LANGUAGE=loadInternalConfig("language");   //new Config(plugin,"language.yml");
+        
+        // Load language using new system
+        Language.loadConfig(CONFIG, plugin);
+        
         MACHINES=loadExternalConfig("machines");
         INNER_MACHINES=loadInternalConfig("addon-machines");
         SPACE_STORAGE= loadExternalConfig("space-storage");
@@ -37,7 +40,7 @@ public class ConfigLoader {
     public static Plugin plugin;
     public static Config CONFIG;
     public static Config INNERCONFIG;
-    public static Config LANGUAGE;
+    // LANGUAGE is now handled by Language class directly
     public static Config MACHINES;
     public static Config INNER_MACHINES;
     public static Config SPACE_STORAGE;

@@ -92,7 +92,7 @@ public class MyAddon extends JavaPlugin implements SlimefunAddon {
 //            Debug.logger("Addon is running on TEST MODE");
 //        }
         ConfigLoader.load(this);
-        Language.loadConfig(ConfigLoader.LANGUAGE);
+        // Language is now loaded within ConfigLoader.load()
         try{
             DependencyNetwork.init();
         }catch (Throwable e){
