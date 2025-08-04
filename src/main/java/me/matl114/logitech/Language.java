@@ -263,10 +263,10 @@ public class Language {
                 LANGUAGE.put(path,config.getValue(String.join(".", "en_US",nextPath)));
             }else if(key.endsWith("key")||key.endsWith("enable")){
 
-            }else if(key.endsWith("Lore")||key.endsWith("Name")){
+            }else if(key.endsWith("lore")||key.endsWith("name")){
                 LANGUAGE.put(AddUtils.concat(path,".",key),config.getValue(String.join(".", "en_US",path,key)));
-            }else if(path.equals("GUI")){
-                // Load GUI keys directly
+            }else if(path.equals("gui")){
+                // Load gui keys directly
                 LANGUAGE.put(AddUtils.concat(path,".",key),config.getValue(String.join(".", "en_US",path,key)));
             }
             else {

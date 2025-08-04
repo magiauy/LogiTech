@@ -53,10 +53,10 @@ public abstract class AbstractEnergyCollector extends AbstractEnergyMachine impl
     protected int getInfoSlot(){
         return INFO_SLOT;
     }
-    protected final ItemStack LAZY_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.LAZY_MODE_TOGGLE"),Language.get("GUI.LAZY_MODE_STATUS_OFF"),
-            Language.get("GUI.LAZY_MODE_COLLECTOR_DESC1"),Language.get("GUI.LAZY_MODE_COLLECTOR_DESC2"));
-    protected final ItemStack LAZY_ITEM_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.LAZY_MODE_TOGGLE"),Language.get("GUI.LAZY_MODE_STATUS_ON"),
-            Language.get("GUI.LAZY_MODE_COLLECTOR_DESC1"),Language.get("GUI.LAZY_MODE_COLLECTOR_DESC2"));
+    protected final ItemStack LAZY_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("gui.LAZY_MODE_TOGGLE"),Language.get("gui.LAZY_MODE_STATUS_OFF"),
+            Language.get("gui.LAZY_MODE_COLLECTOR_DESC1"),Language.get("gui.LAZY_MODE_COLLECTOR_DESC2"));
+    protected final ItemStack LAZY_ITEM_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.LAZY_MODE_TOGGLE"),Language.get("gui.LAZY_MODE_STATUS_ON"),
+            Language.get("gui.LAZY_MODE_COLLECTOR_DESC1"),Language.get("gui.LAZY_MODE_COLLECTOR_DESC2"));
 
     public AbstractEnergyCollector(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe,
                                  int energybuffer){
@@ -64,9 +64,9 @@ public abstract class AbstractEnergyCollector extends AbstractEnergyMachine impl
     }
 
     protected ItemStack getInfoShow(int charge,int machine,int errors){
-        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.INFO_TITLE"),Language.get("GUI.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)),
-                Language.get("GUI.GENERATORS_IN_RANGE").formatted(machine, getMaxCollectAmount()),
-                Language.get("GUI.GENERATOR_ERRORS").formatted(errors));
+        return new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.INFO_TITLE"),Language.get("gui.ENERGY_STORED").formatted(AddUtils.formatDouble(charge),AddUtils.formatDouble(this.energybuffer)),
+                Language.get("gui.GENERATORS_IN_RANGE").formatted(machine, getMaxCollectAmount()),
+                Language.get("gui.GENERATOR_ERRORS").formatted(errors));
     }
     public boolean isBorder(int i){
         return i!=getLazySlot();

@@ -55,11 +55,11 @@ public class ChipConsumer extends AbstractMachine {
                 AddUtils.getInfoShow("&f机制",
                 "&7机器可以进行取反,左移一位,右移一位 三种位运算",
                 "&7将所需物品插入指定槽位即可消耗电力运算"),null,
-                AddUtils.getInfoShow("&f取反","&7插入%s进行取反操作".formatted(Language.get("Items.NOLOGIC.Name")),
+                AddUtils.getInfoShow("&f取反","&7插入%s进行取反操作".formatted(Language.get("item.NOLOGIC.name")),
                         "&7运算规则:","&7依次对输入芯片的01位进行'~'运算","&8⇨ &7~0=1","&8⇨ &7~1=0"),AddItem.NOLOGIC,
-                AddUtils.getInfoShow("&f左移","&7插入%s进行左移操作".formatted(Language.get("Items.EXISTE.Name")),
+                AddUtils.getInfoShow("&f左移","&7插入%s进行左移操作".formatted(Language.get("item.EXISTE.name")),
                         "&7运算规则:","&7对01码的首位加入0,丢弃最末尾"),AddItem.EXISTE,
-                AddUtils.getInfoShow("&f右移","&7插入%s进行右移操作".formatted(Language.get("Items.UNIQUE.Name")),
+                AddUtils.getInfoShow("&f右移","&7插入%s进行右移操作".formatted(Language.get("item.UNIQUE.name")),
                         "&7运算规则:","&7当最末位是1时,向01码最末尾部加1,并丢掉首位","&7当最末位是0时,向01码最末尾部加0,并丢掉首位"),AddItem.UNIQUE
         ));
     }

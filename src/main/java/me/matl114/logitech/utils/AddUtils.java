@@ -46,13 +46,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class AddUtils {
-    public static final String ADDON_NAME=Language.getPlaceHolder("PLUGIN");
-    public static final String ADDON_ID="LOGITECH";
-    public static final String VERSION=Language.getPlaceHolder("VERSION");
-    public static final String DEFAULT_COLOR=Language.getPlaceHolder("DEFAULT_COLOR");
-    public static final String END_COLOR=Language.getPlaceHolder("END_COLOR");
-    public static final SlimefunAddon ADDON_INSTANCE=MyAddon.getInstance();
-    public static boolean USE_IDDECORATOR=true;
+    public static final String ADDON_NAME = Language.getPlaceHolder("addon_name");
+    public static final String ADDON_ID = "LOGITECH";
+    public static final String VERSION = Language.getPlaceHolder("addon_version");
+    public static final String DEFAULT_COLOR = Language.getPlaceHolder("default_color");
+    public static final String END_COLOR = Language.getPlaceHolder("end_color");
+    public static final SlimefunAddon ADDON_INSTANCE = MyAddon.getInstance();
+    public static boolean USE_IDDECORATOR = true;
     private static final double SF_TPS =
             20.0 / (double) Slimefun.getTickerTask().getTickRate();
     private static final DecimalFormat FORMAT = new DecimalFormat("###,###,###,###,###,###.#");
@@ -190,7 +190,7 @@ public class AddUtils {
                         }
                         //减少开销
 //                        finallist.add("");
-//                        finallist.add(addonTag(Language.get("Theme.ITEM1.Name")));
+//                        finallist.add(addonTag(Language.get("theme.ITEM1.name")));
                         return finallist;
                 }
                 })
@@ -204,7 +204,7 @@ public class AddUtils {
                     }
                     //减少开销
                         finallist.add("");
-                        finallist.add(addonTag(Language.get("Theme.ITEM1.Name")));
+                        finallist.add(addonTag(Language.get("theme.ITEM1.name")));
                     return finallist;
                 }
                 })
@@ -217,7 +217,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.MACHINE1.Name")));
+                    finallist.add(addonTag(Language.get("theme.MACHINE1.name")));
                     return finallist;
                 }
                 })
@@ -230,7 +230,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.MACHINE2.Name")));
+                    finallist.add(addonTag(Language.get("theme.MACHINE2.name")));
                     return finallist;
                 }
                 })
@@ -243,7 +243,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.MULTIBLOCK1.Name")));
+                    finallist.add(addonTag(Language.get("theme.MULTIBLOCK1.name")));
                     return finallist;
                 }
                 })
@@ -256,7 +256,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.MULTIBLOCK2.Name")));
+                    finallist.add(addonTag(Language.get("theme.MULTIBLOCK2.name")));
                     return finallist;
                 }
                 })
@@ -269,7 +269,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.MANUAL1.Name")));
+                    finallist.add(addonTag(Language.get("theme.MANUAL1.name")));
                     return finallist;
                 }
                 })
@@ -282,7 +282,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.ADVANCED1.Name")));
+                    finallist.add(addonTag(Language.get("theme.ADVANCED1.name")));
                     return finallist;
                 }
                 })
@@ -295,7 +295,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.CARGO1.Name")));
+                    finallist.add(addonTag(Language.get("theme.CARGO1.name")));
                     return finallist;
                 }
                 })
@@ -308,7 +308,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.BENCH1.Name")));
+                    finallist.add(addonTag(Language.get("theme.BENCH1.name")));
                     return finallist;
                 }
                 })
@@ -322,7 +322,7 @@ public class AddUtils {
                 finallist.add(desc(i));
             }
             finallist.add("");
-            finallist.add(Language.get("Theme.CATEGORY.Name"));
+            finallist.add(Language.get("theme.CATEGORY.name"));
             return finallist;
         }
         })
@@ -336,7 +336,7 @@ public class AddUtils {
                 finallist.add(desc(i));
             }
             finallist.add("");
-            finallist.add(Language.get("Theme.CATEGORY2.Name"));
+            finallist.add(Language.get("theme.CATEGORY2.name"));
             return finallist;
         }
         })),
@@ -348,7 +348,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     finallist.add("");
-                    finallist.add(Language.get("Theme.INFO1.Name"));
+                    finallist.add(Language.get("theme.INFO1.name"));
                     return finallist;
                 }
                 })
@@ -361,7 +361,7 @@ public class AddUtils {
                 finallist.add(desc(i));
             }
             finallist.add("");
-            finallist.add(Language.get("Theme.MENU1.Name"));
+            finallist.add(Language.get("theme.MENU1.name"));
             return finallist;
         }
         })
@@ -374,7 +374,7 @@ public class AddUtils {
                 finallist.add(desc(i));
             }
             //finallist.add("");
-            finallist.add(addonTag(Language.get("Theme.TOOL.Name")));
+            finallist.add(addonTag(Language.get("theme.TOOL.name")));
             return finallist;
         }
         })
@@ -387,7 +387,7 @@ public class AddUtils {
                         finallist.add(desc(i));
                     }
                     //finallist.add("");
-                    finallist.add(addonTag(Language.get("Theme.FUNIT.Name")));
+                    finallist.add(addonTag(Language.get("theme.FUNIT.name")));
                     return finallist;
                 }
                 })

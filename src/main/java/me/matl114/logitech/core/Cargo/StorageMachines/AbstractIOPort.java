@@ -39,7 +39,7 @@ public abstract class AbstractIOPort extends AbstractMachine {
                                 "&7本交互接口支持的存储类物品:",
                                 "&7- 逻辑工艺 概念奇点",
                                 "&7- 网络(拓展) 量子存储系列",
-                                "&7作为存储性方块,该方块可以被[%s]绑定".formatted(Language.get("Cargo.QUANTUM_LINK.Name"))
+                                "&7作为存储性方块,该方块可以被[%s]绑定".formatted(Language.get("cargo.QUANTUM_LINK.name"))
 
                         )   ,null,
                         AddUtils.getInfoShow(

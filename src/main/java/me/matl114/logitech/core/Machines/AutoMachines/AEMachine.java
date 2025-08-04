@@ -128,7 +128,7 @@ public class AEMachine extends AbstractAdvancedProcessor {
     public void addInfo(ItemStack stack){
         super.addInfo(stack);
         stack.setItemMeta(AddUtils.addLore(stack,
-                "&7插入[%s]增加并行处理数".formatted(Language.get("Items.CHIP_CORE.Name"))).getItemMeta());
+                "&7插入[%s]增加并行处理数".formatted(Language.get("item.CHIP_CORE.name"))).getItemMeta());
     }
     public ItemStack getProgressBar() {
         return progressbar;

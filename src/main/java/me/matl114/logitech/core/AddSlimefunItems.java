@@ -190,7 +190,7 @@ public class AddSlimefunItems {
     public static final CustomRecipeType STARSMELTERY=new CustomRecipeType(
             getNameKey("star_smeltery"),
             new CustomItemStack(AddItem.STAR_SMELTERY, AddItem.STAR_SMELTERY.getDisplayName(),
-                    "", "&c在%s中锻造!".formatted(Language.get("Machines.STAR_SMELTERY.Name")))
+                    "", "&c在%s中锻造!".formatted(Language.get("machine.STAR_SMELTERY.name")))
     );
     public static HashMap<SlimefunItem,RecipeType> CRAFTTYPE_MANUAL_RECIPETYPE=new HashMap<>();
     public static final SlimefunItem MATL114=new MaterialItem(MATERIAL, AddItem.MATL114,
@@ -209,10 +209,10 @@ public class AddSlimefunItems {
             .register();
 
     public static final SlimefunItem TRUE=new MaterialItem(MATERIAL,AddItem.TRUE_,NULL,
-            formatInfoRecipe(AddItem.BOOL_GENERATOR,Language.get("Machines.BOOL_GENERATOR.Name")))
+            formatInfoRecipe(AddItem.BOOL_GENERATOR,Language.get("machine.BOOL_GENERATOR.name")))
             .register();
     public static final SlimefunItem FALSE=new MaterialItem(MATERIAL,AddItem.FALSE_,NULL,
-            formatInfoRecipe(AddItem.BOOL_GENERATOR,Language.get("Machines.BOOL_GENERATOR.Name")))
+            formatInfoRecipe(AddItem.BOOL_GENERATOR,Language.get("machine.BOOL_GENERATOR.name")))
             .register();
     public static final SlimefunItem LOGIGATE=new MaterialItem(MATERIAL,AddItem.LOGIGATE,ENHANCED_CRAFTING_TABLE,
             recipe("SILVER_INGOT","REDSTONE_TORCH","SILVER_INGOT",
@@ -220,23 +220,23 @@ public class AddSlimefunItems {
                     "SILVER_INGOT","REDSTONE_TORCH","SILVER_INGOT"))
             .register().setOutput(setC(AddItem.LOGIGATE,3));
     public static final SlimefunItem LOGIC=new MaterialItem(MATERIAL,AddItem.LOGIC,NULL,
-            formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("Machines.LOGIC_REACTOR.Name")))
+            formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")))
             .register();
     public static final SlimefunItem NOLOGIC=new MaterialItem(MATERIAL,AddItem.NOLOGIC,NULL,
-            formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("Machines.LOGIC_REACTOR.Name")))
+            formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")))
             .register();
 
 
 
         //generated
     public static final SlimefunItem EXISTE=new MaterialItem(MATERIAL,AddItem.EXISTE,NULL,
-                formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("Machines.LOGIC_REACTOR.Name")),null)
+                formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")),null)
             .register();
     public static final SlimefunItem UNIQUE=new MaterialItem(MATERIAL,AddItem.UNIQUE,NULL,
-            formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("Machines.LOGIC_REACTOR.Name")),null)
+            formatInfoRecipe(AddItem.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")),null)
             .register();
     public static final SlimefunItem PARADOX=new MaterialItem(MATERIAL,AddItem.PARADOX,NULL,
-            formatInfoRecipe(AddItem.LVOID_GENERATOR,Language.get("Machines.LVOID_GENERATOR.Name")),null)
+            formatInfoRecipe(AddItem.LVOID_GENERATOR,Language.get("machine.LVOID_GENERATOR.name")),null)
             .register();
 
     public static final SlimefunItem LENGINE=new MaterialItem(MATERIAL,AddItem.LENGINE,COMMON_TYPE,
@@ -322,7 +322,7 @@ public class AddSlimefunItems {
         put(Biome.MUSHROOM_FIELDS,1);
     }}) .registerGeo();
     public static final SlimefunItem DIMENSIONAL_SINGULARITY=new MaterialItem(MATERIAL,AddItem.DIMENSIONAL_SINGULARITY,NULL,
-            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("Machines.SEQ_CONSTRUCTOR.Name")),null)
+            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
             .register();
     public static final SlimefunItem STAR_GOLD=new MaterialItem(MATERIAL,AddItem.STAR_GOLD,NULL    ,
             recipe(null,AddItem.END_MINER,null,null,getInfoShow("&f获取方式","&7在本附属的矿机中获取")),null)
@@ -367,22 +367,22 @@ public class AddSlimefunItems {
 
 
     public static final SlimefunItem METAL_CORE=new MaterialItem(MATERIAL,AddItem.METAL_CORE,NULL,
-            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("Machines.SEQ_CONSTRUCTOR.Name")),null)
+            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
             .register();
     public static final SlimefunItem SMELERY_CORE=new MaterialItem(MATERIAL,AddItem.SMELERY_CORE,NULL,
-            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("Machines.SEQ_CONSTRUCTOR.Name")),null)
+            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
             .register();
     public static final SlimefunItem MASS_CORE=new MaterialItem(MATERIAL,AddItem.MASS_CORE,NULL,
-            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("Machines.SEQ_CONSTRUCTOR.Name")),null)
+            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
             .register();
     public static final SlimefunItem TECH_CORE=new MaterialItem(MATERIAL,AddItem.TECH_CORE,NULL,
-            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("Machines.SEQ_CONSTRUCTOR.Name")),null)
+            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
             .register();
     public static final SlimefunItem LSINGULARITY=new MaterialItem(MATERIAL,AddItem.LSINGULARITY,NULL,
-            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("MultiBlock.SOLAR_REACTOR.Name")),null)
+            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("multiblock.SOLAR_REACTOR.name")),null)
             .register();
     public static final SlimefunItem ATOM_INGOT=new MaterialItem(MATERIAL,AddItem.ATOM_INGOT,NULL,
-            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("MultiBlock.SOLAR_REACTOR.Name")),null)
+            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("multiblock.SOLAR_REACTOR.name")),null)
             .register();
 
 
@@ -395,40 +395,40 @@ public class AddSlimefunItems {
             recipe(AddItem.TRUE_,AddItem.EXISTE,AddItem.LOGIC,AddItem.NOLOGIC,AddItem.UNIQUE,AddItem.FALSE_,null,null,null))
             .register().setOutput(setC(AddItem.ABSTRACT_INGOT,4));
     public static final SlimefunItem PALLADIUM_INGOT=new MaterialItem(MATERIAL,AddItem.PALLADIUM_INGOT,NULL,
-            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("MultiBlock.SOLAR_REACTOR.Name")),null)
+            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("multiblock.SOLAR_REACTOR.name")),null)
             .register();
     public static final SlimefunItem PLATINUM_INGOT=new MaterialItem(MATERIAL,AddItem.PLATINUM_INGOT,NULL,
-            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("MultiBlock.SOLAR_REACTOR.Name")),null)
+            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("multiblock.SOLAR_REACTOR.name")),null)
             .register();
     public static final SlimefunItem MOLYBDENUM=new MaterialItem(MATERIAL,AddItem.MOLYBDENUM,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem CERIUM=new MaterialItem(MATERIAL,AddItem.CERIUM,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem CADMIUM_INGOT=new MaterialItem(MATERIAL,AddItem.CADMIUM_INGOT,NULL,
-            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("MultiBlock.SOLAR_REACTOR.Name")),null)
+            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("multiblock.SOLAR_REACTOR.name")),null)
             .register();
     public static final SlimefunItem MENDELEVIUM=new MaterialItem(MATERIAL,AddItem.MENDELEVIUM,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem DYSPROSIUM=new MaterialItem(MATERIAL,AddItem.DYSPROSIUM,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem BISMUTH_INGOT=new MaterialItem(MATERIAL,AddItem.BISMUTH_INGOT,NULL,
-            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("MultiBlock.SOLAR_REACTOR.Name")),null)
+            formatInfoRecipe(AddItem.SOLAR_REACTOR,Language.get("multiblock.SOLAR_REACTOR.name")),null)
             .register();
     public static final SlimefunItem ANTIMONY_INGOT=new MaterialItem(MATERIAL,AddItem.ANTIMONY_INGOT,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem THALLIUM=new MaterialItem(MATERIAL,AddItem.THALLIUM,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem HYDRAGYRUM=new MaterialItem(MATERIAL,AddItem.HYDRAGYRUM,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem BORON=new MaterialItem(MATERIAL,AddItem.BORON,NULL,
-            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("MultiBlock.TRANSMUTATOR.Name")),null)
+            formatInfoRecipe(AddItem.TRANSMUTATOR,Language.get("multiblock.TRANSMUTATOR.name")),null)
             .register();
     public static final SlimefunItem BISILVER=new MaterialItem(MATERIAL,AddItem.BISILVER,STARSMELTERY,
             recipe(setC(AddItem.BISMUTH_INGOT,4),setC(AddItem.PARADOX,20),"4SILVER_INGOT",
@@ -479,27 +479,27 @@ public class AddSlimefunItems {
             .register();
 
     public static final SlimefunItem SAMPLE_HEAD=new AbstractBlock(SPECIAL,AddItem.SAMPLE_HEAD,NULL,
-            formatInfoRecipe(AddItem.HEAD_ANALYZER,Language.get("Machines.HEAD_ANALYZER.Name")))
+            formatInfoRecipe(AddItem.HEAD_ANALYZER,Language.get("machine.HEAD_ANALYZER.name")))
             .register();
     public static final SlimefunItem PLAYER_IDCARD=new PlayerIdCard(SPECIAL,AddItem.PLAYER_IDCARD,ENHANCED_CRAFTING_TABLE,
             recipe(AddItem.LPLATE,null,AddItem.LPLATE,"PLAYER_HEAD",AddItem.HYPER_LINK,"PLAYER_HEAD",
                     AddItem.LPLATE,null,AddItem.LPLATE),null)
             .register();
     public static final SlimefunItem SAMPLE_SPAWNER=new AbstractSpawner(FUNCTIONAL,AddItem.SAMPLE_SPAWNER,NULL,
-            formatInfoRecipe(AddItem.ENTITY_FEAT,Language.get("Items.ENTITY_FEAT.Name")))
+            formatInfoRecipe(AddItem.ENTITY_FEAT,Language.get("item.ENTITY_FEAT.name")))
             .register();
     public static final SlimefunItem CHIP=new ChipCard(ADVANCED,AddItem.CHIP,NULL,
-            formatInfoRecipe(AddItem.CHIP_MAKER,Language.get("Machines.CHIP_MAKER.Name")))
+            formatInfoRecipe(AddItem.CHIP_MAKER,Language.get("machine.CHIP_MAKER.name")))
             .register();
     public static final SlimefunItem CHIP_CORE=new MaterialItem(ADVANCED,AddItem.CHIP_CORE,NULL,
-            formatInfoRecipe(AddItem.CHIP_MAKER,Language.get("Machines.CHIP_MAKER.Name")),null)
+            formatInfoRecipe(AddItem.CHIP_MAKER,Language.get("machine.CHIP_MAKER.name")),null)
             .register();
 
     public static final SlimefunItem LOGIC_CORE=new MaterialItem(MATERIAL,AddItem.LOGIC_CORE,NULL,
-            formatInfoRecipe(AddItem.FINAL_SEQUENTIAL,Language.get("Machines.FINAL_SEQUENTIAL.Name")),null)
+            formatInfoRecipe(AddItem.FINAL_SEQUENTIAL,Language.get("machine.FINAL_SEQUENTIAL.name")),null)
             .register();
     public static final SlimefunItem FINAL_FRAME=new MultiPart(MATERIAL,AddItem.FINAL_FRAME,NULL,
-            formatInfoRecipe(AddItem.FINAL_SEQUENTIAL,Language.get("Machines.FINAL_SEQUENTIAL.Name")),"final.frame"){
+            formatInfoRecipe(AddItem.FINAL_SEQUENTIAL,Language.get("machine.FINAL_SEQUENTIAL.name")),"final.frame"){
             public boolean redirectMenu(){
                 return false;
             }
@@ -523,7 +523,7 @@ public class AddSlimefunItems {
                     AddItem.HYDRAGYRUM,AddItem.MOLYBDENUM,AddItem.BORON,AddItem.BORON,AddItem.MOLYBDENUM,AddItem.HYDRAGYRUM),null)
             .register();
     public static final SlimefunItem VIRTUALWORLD=new MaterialItem(MATERIAL,AddItem.VIRTUALWORLD,NULL,
-            formatInfoRecipe(AddItem.FINAL_CONVERTOR,Language.get("Machines.FINAL_CONVERTOR.Name")),null)
+            formatInfoRecipe(AddItem.FINAL_CONVERTOR,Language.get("machine.FINAL_CONVERTOR.name")),null)
             .register();
 
 
@@ -850,7 +850,7 @@ public class AddSlimefunItems {
                     setC(AddItem.PLATINUM_INGOT,6),setC(AddItem.PLATINUM_INGOT,6),setC(AddItem.PLATINUM_INGOT,6),setC(AddItem.PLATINUM_INGOT,6),setC(AddItem.PLATINUM_INGOT,6),setC(AddItem.PLATINUM_INGOT,6)), 200_000_000,0.1,300)
             .register();
     public static final SlimefunItem ENERGY_AMPLIFIER=new EnergyAmplifier(ENERGY,AddItem.ENERGY_AMPLIFIER,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),1_000_000_000,2.0)
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),1_000_000_000,2.0)
             .register();
     public static final  SlimefunItem ENERGY_PIPE=new EnergyPipe(ENERGY, AddItem.ENERGY_PIPE,ENHANCED_CRAFTING_TABLE,
             recipe("COPPER_INGOT","SILVER_INGOT","COPPER_INGOT","COPPER_INGOT","SILVER_INGOT","COPPER_INGOT",
@@ -1043,11 +1043,11 @@ public class AddSlimefunItems {
                     AddItem.LENGINE,AddItem.ABSTRACT_INGOT,AddItem.LPLATE,AddItem.LPLATE,AddItem.ABSTRACT_INGOT,AddItem.LENGINE),8_000,1_000)
             .register();
     public static final SlimefunItem EASYSTACKMACHINE=new StackMachine(BASIC,AddItem.EASYSTACKMACHINE,NULL,
-            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("Machines.SEQ_CONSTRUCTOR.Name")),Material.IRON_PICKAXE,
+            formatInfoRecipe(AddItem.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),Material.IRON_PICKAXE,
             20_000,4_000_000,0.5)
             .register();
     public static final SlimefunItem STACKMACHINE=new StackMachine(ADVANCED,AddItem.STACKMACHINE,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),Material.IRON_PICKAXE,
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),Material.IRON_PICKAXE,
             2_000,40_000_000,2.0)
             .register();
     //
@@ -1578,7 +1578,7 @@ public class AddSlimefunItems {
                     AddItem.BUG, "NOTE_BLOCK",  AddItem.BUG
             )).register();
     public static final SlimefunItem BNOISE_HEAD = new BNoiseHead(VANILLA, AddItem.BNOISE_HEAD, RecipeType.NULL,
-            formatInfoRecipe(AddItem.BNOISE_MAKER,Language.get("Generators.BNOISE_MAKER.Name"))
+            formatInfoRecipe(AddItem.BNOISE_MAKER,Language.get("generator.BNOISE_MAKER.name"))
             ).register();
     public static final SlimefunItem REVERSE_GENERATOR = new MMGenerator(GENERATORS, AddItem.REVERSE_GENERATOR, COMMON_TYPE,
             recipe(null,AddItem.SPACE_PLATE,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.SPACE_PLATE,null,
@@ -1692,7 +1692,7 @@ public class AddSlimefunItems {
             }})
             .register();
     public static final SlimefunItem STACKMGENERATOR=new StackMGenerator(GENERATORS, AddItem.STACKMGENERATOR,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),1,40_000_000,2_000,2)
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),1,40_000_000,2_000,2)
             .register();
 
 
@@ -1729,7 +1729,7 @@ public class AddSlimefunItems {
             .register()
             .setOutput(setC(AddItem.PORTAL_CORE,2));
     public static final SlimefunItem PORTAL_FRAME=new MultiPart(SPACE,AddItem.PORTAL_FRAME,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),"portal.part")
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"portal.part")
             .register();
     public static final SlimefunItem SOLAR_REACTOR=new SolarReactorCore(SPACE,AddItem.SOLAR_REACTOR,COMMON_TYPE,
             recipe(AddItem.LPLATE,AddItem.STAR_GOLD_INGOT,AddItem.PARADOX,AddItem.PARADOX,AddItem.STAR_GOLD_INGOT,AddItem.LPLATE,
@@ -1797,7 +1797,7 @@ public class AddSlimefunItems {
                                     "&7该机器需要搭建超新星外壳方可运行",
                                     "&7搭建成功后需要保证外壳内部(除机器顶部)不包含任何非空气方块",
                                     "&7才可以成功启动多方块机器",
-                                    "&7在此你可以使用[%s]等远程访问工具打开内部的界面".formatted(Language.get("Items.HYPER_LINK.Name")),
+                                    "&7在此你可以使用[%s]等远程访问工具打开内部的界面".formatted(Language.get("item.HYPER_LINK.name")),
                                     "&7或者开启自动构建模式让机器自行启动"),null,
                             getInfoShow("&f机制",
                                     "&7该机器在构建/待机/运行时候拥有相同的电力消耗量",
@@ -1818,10 +1818,10 @@ public class AddSlimefunItems {
             )
             .register();
     public static final SlimefunItem SOLAR_REACTOR_FRAME=new MultiPart(SPACE,AddItem.SOLAR_REACTOR_FRAME,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),"solar.frame")
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"solar.frame")
             .register();
     public static final SlimefunItem SOLAR_REACTOR_GLASS=new MultiPart(SPACE,AddItem.SOLAR_REACTOR_GLASS,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),"solar.glass")
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"solar.glass")
             .register();
     public static final SlimefunItem SOLAR_INPUT=new MultiIOPort(SPACE,AddItem.SOLAR_INPUT,ANCIENT_ALTAR,
             recipe(AddItem.STAR_GOLD_INGOT,AddItem.PARADOX,AddItem.STAR_GOLD_INGOT,AddItem.PARADOX,AddItem.HYPER_LINK,AddItem.PARADOX,
@@ -1832,13 +1832,13 @@ public class AddSlimefunItems {
                     AddItem.PARADOX,AddItem.STAR_GOLD_INGOT,AddItem.PARADOX),"solar.frame",false,false)
             .register() ;
     public static final SlimefunItem TRANSMUTATOR_FRAME=new MultiPart(ADVANCED,AddItem.TRANSMUTATOR_FRAME,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),"nuclear.frame")
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"nuclear.frame")
             .register();
     public static final SlimefunItem TRANSMUTATOR_GLASS=new MultiPart(ADVANCED,AddItem.TRANSMUTATOR_GLASS,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),"nuclear.glass")
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"nuclear.glass")
             .register();
     public static final SlimefunItem TRANSMUTATOR_ROD=new MultiPart(ADVANCED,AddItem.TRANSMUTATOR_ROD,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),"nuclear.rod")
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"nuclear.rod")
             .register();
     public static final  SlimefunItem TRANSMUTATOR=new Transmutator(ADVANCED, AddItem.TRANSMUTATOR,COMMON_TYPE,
             recipe(setC(AddItem.TECH_CORE,64),AddItem.TRANSMUTATOR_ROD,AddItem.SPACE_PLATE,AddItem.SPACE_PLATE,AddItem.TRANSMUTATOR_ROD,setC(AddItem.MASS_CORE,64),
@@ -2047,10 +2047,10 @@ public class AddSlimefunItems {
             .register();
 
     public static final  SlimefunItem TIMER_SF=new TimerSlimefun(FUNCTIONAL, AddItem.TIMER_SF,NULL,
-            formatInfoRecipe(AddItem.TMP1,Language.get("Tmp.TMP1.Name")),0,0)
+            formatInfoRecipe(AddItem.TMP1,Language.get("Tmp.TMP1.name")),0,0)
             .register();
 //    public static final  SlimefunItem TIMER_SF_SEQ=new TimerSequentialSlimefun(ADVANCED, AddItem.TIMER_SF_SEQ,NULL,
-//            formatInfoRecipe(AddItem.TMP1,Language.get("Tmp.TMP1.Name")),0,0)
+//            formatInfoRecipe(AddItem.TMP1,Language.get("Tmp.TMP1.name")),0,0)
 //            .register();
 
     //
@@ -2190,10 +2190,10 @@ public class AddSlimefunItems {
                     "COBBLESTONE","GLASS_PANE","COBBLESTONE"),List.of(getInfoShow("&f机制 - &7伪装","&7该物品可以在快捷多方块结构模拟器中","&7填充多方块模拟部分的空白","&7多方块模拟检测会忽视该物品")))
             .register().setOutput(setC(AddItem.FAKE_UI,4));
     public static final ReplaceCard REPLACE_CARD=(ReplaceCard) (new ReplaceCard(MANUAL,AddItem.REPLACE_CARD,NULL,
-            formatInfoRecipe(AddItem.CARD_MAKER,Language.get("Manuals.CARD_MAKER.Name")), ReplaceCard.ReplaceType.MATERIAL)
+            formatInfoRecipe(AddItem.CARD_MAKER,Language.get("manuals.CARD_MAKER.name")), ReplaceCard.ReplaceType.MATERIAL)
             .register());
     public static final ReplaceCard REPLACE_SF_CARD=(ReplaceCard) new ReplaceCard(MANUAL,AddItem.REPLACE_SF_CARD,NULL,
-            formatInfoRecipe(AddItem.CARD_MAKER,Language.get("Manuals.CARD_MAKER.Name")), ReplaceCard.ReplaceType.SLIMEFUN)
+            formatInfoRecipe(AddItem.CARD_MAKER,Language.get("manuals.CARD_MAKER.name")), ReplaceCard.ReplaceType.SLIMEFUN)
             .register();
     public static final  SlimefunItem CARD_MAKER=new EWorkBench(MANUAL, AddItem.CARD_MAKER,ENHANCED_CRAFTING_TABLE,
             recipe(AddItem.MANUAL_CORE,AddItem.MANUAL_CORE,AddItem.MANUAL_CORE,AddItem.MANUAL_CORE,"CRAFTING_TABLE",AddItem.MANUAL_CORE,
@@ -2872,10 +2872,10 @@ public class AddSlimefunItems {
                     setC(AddItem.SPACE_PLATE,8),setC(AddItem.SPACE_PLATE,8),AddItem.FINAL_FRAME,AddItem.FINAL_FRAME,setC(AddItem.SPACE_PLATE,8),setC(AddItem.SPACE_PLATE,8)), 200_000_000,25_000_000)
             .register();
     public static final  SlimefunItem FINAL_STACKMACHINE=new FinalStackMachine(BEYOND, AddItem.FINAL_STACKMACHINE,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")), Material.NETHERITE_PICKAXE,100,400_000_000,16)
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")), Material.NETHERITE_PICKAXE,100,400_000_000,16)
             .register();
     public static final SlimefunItem FINAL_STACKMGENERATOR=new FinalStackMGenerator(BEYOND, AddItem.FINAL_STACKMGENERATOR,NULL,
-            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("Machines.ENDFRAME_MACHINE.Name")),1,400_000_000,100,
+            formatInfoRecipe(AddItem.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),1,400_000_000,100,
             16)
             .register();
     //stack machine maker
@@ -3041,7 +3041,7 @@ public class AddSlimefunItems {
         }
             .register();
     public static final SlimefunItem DEMO_FU=new EquipmentFUItem(TOOLS_SUBGROUP_2,AddItem.DEMO_FU,NULL,
-            formatInfoRecipe(AddItem.TMP1,Language.get("Tmp.TMP1.Name")), EFUImplements.DEMO)
+            formatInfoRecipe(AddItem.TMP1,Language.get("Tmp.TMP1.name")), EFUImplements.DEMO)
             .register();
 
 

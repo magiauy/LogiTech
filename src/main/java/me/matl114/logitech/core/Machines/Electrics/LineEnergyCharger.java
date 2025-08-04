@@ -68,8 +68,8 @@ public class LineEnergyCharger extends AbstractEnergyCharger  implements Directi
         return MAX_LEN;
     }
     private final int PARTICLE_SLOT=0;
-    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_OFF"));
-    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_ON"));
+    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("gui.PARTICLE_TOGGLE"),Language.get("gui.PARTICLE_STATUS") + Language.get("gui.PARTICLE_OFF"));
+    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.PARTICLE_TOGGLE"),Language.get("gui.PARTICLE_STATUS") + Language.get("gui.PARTICLE_ON"));
     @Override
     public boolean[] getStatus(BlockMenu inv) {
         ItemStack itemStack=inv.getItemInSlot(PARTICLE_SLOT);

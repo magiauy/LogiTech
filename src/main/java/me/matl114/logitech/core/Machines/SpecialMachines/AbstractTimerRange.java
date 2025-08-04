@@ -38,8 +38,8 @@ public abstract class AbstractTimerRange  extends AbstractMachine implements Men
     public void constructMenu(BlockMenuPreset preset) {
         IntStream.range(0,9).forEach(i->{if(i!=PARTICLE_SLOT)preset.addItem(i, ChestMenuUtils.getBackground(),ChestMenuUtils.getEmptyClickHandler());});
     }
-    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_OFF"));
-    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("GUI.PARTICLE_TOGGLE"),Language.get("GUI.PARTICLE_STATUS") + Language.get("GUI.PARTICLE_ON"));
+    private ItemStack PARTICLE_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,Language.get("gui.PARTICLE_TOGGLE"),Language.get("gui.PARTICLE_STATUS") + Language.get("gui.PARTICLE_OFF"));
+    private ItemStack PARTICLE_ON=new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,Language.get("gui.PARTICLE_TOGGLE"),Language.get("gui.PARTICLE_STATUS") + Language.get("gui.PARTICLE_ON"));
     private int PARTICLE_SLOT=4;
     @Override
     public boolean[] getStatus(BlockMenu inv) {

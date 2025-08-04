@@ -42,261 +42,261 @@ public class AddItem {
 
     //Groups
     public static final ItemStack ROOT=new CustomItemStack(Material.BUDDING_AMETHYST,
-            get("Groups.ROOT.Name"),getList("Groups.ROOT.Lore"));
+            get("group.ROOT.name"),getList("group.ROOT.lore"));
     public static final ItemStack INFO=themed(Material.PAPER,Theme.INFO1,
-            get("Groups.INFO.Name"), getList("Groups.INFO.Lore"));
+            get("group.INFO.name"), getList("group.INFO.lore"));
     public static final ItemStack MATERIAL=themed(Material.END_CRYSTAL,Theme.CATEGORY2,
-            get("Groups.MATERIAL.Name"), getList("Groups.MATERIAL.Lore"));
+            get("group.MATERIAL.name"), getList("group.MATERIAL.lore"));
     public static final ItemStack INFO1=themed(Material.PAPER,Theme.NONE,
-            get("Groups.INFO1.Name"), getList("Groups.INFO1.Lore"));
+            get("group.INFO1.name"), getList("group.INFO1.lore"));
     public static final ItemStack INFO2=themed(Material.PAPER,Theme.NONE,
-            get("Groups.INFO2.Name"), getList("Groups.INFO2.Lore"));
+            get("group.INFO2.name"), getList("group.INFO2.lore"));
     public static final ItemStack INFO3=themed(Material.PAPER,Theme.NONE,
-            get("Groups.INFO3.Name"), getList("Groups.INFO3.Lore"));
+            get("group.INFO3.name"), getList("group.INFO3.lore"));
     public static final ItemStack INFO4=themed(Material.PAPER,Theme.NONE,
-            get("Groups.INFO4.Name"), getList("Groups.INFO4.Lore"));
+            get("group.INFO4.name"), getList("group.INFO4.lore"));
     public static final ItemStack INFO5=themed(Material.PAPER,Theme.NONE,
-            get("Groups.INFO5.Name"), getList("Groups.INFO5.Lore"));
+            get("group.INFO5.name"), getList("group.INFO5.lore"));
     public static final ItemStack INFO6=themed(Material.PAPER,Theme.NONE,
-            get("Groups.INFO6.Name"), getList("Groups.INFO6.Lore"));
+            get("group.INFO6.name"), getList("group.INFO6.lore"));
     public static final ItemStack URL=themed(Material.BOOK,Theme.NONE,
-            get("Groups.URL.Name"), getList("Groups.URL.Lore"));
+            get("group.URL.name"), getList("group.URL.lore"));
     public static final ItemStack WIKI=themed(Material.KNOWLEDGE_BOOK,Theme.NONE,
-            get("Groups.WIKI.Name"), getList("Groups.WIKI.Lore"));
+            get("group.WIKI.name"), getList("group.WIKI.lore"));
     public static final ItemStack ALLMACHINE=themed(Material.BLAST_FURNACE,Theme.MENU1,
-            get("Groups.ALLMACHINE.Name"), getList("Groups.ALLMACHINE.Lore"));
+            get("group.ALLMACHINE.name"), getList("group.ALLMACHINE.lore"));
     public static final ItemStack ALLRECIPE=themed(Material.KNOWLEDGE_BOOK,Theme.MENU1,
-            get("Groups.ALLRECIPE.Name"), getList("Groups.ALLRECIPE.Lore"));
+            get("group.ALLRECIPE.name"), getList("group.ALLRECIPE.lore"));
     public static final ItemStack BASIC=themed(Material.FURNACE,Theme.CATEGORY2,
-            get("Groups.BASIC.Name"),getList("Groups.BASIC.Lore")  );
+            get("group.BASIC.name"),getList("group.BASIC.lore")  );
     public static final ItemStack ALLBIGRECIPES =themed(Material.LODESTONE, Theme.CATEGORY2,
-            get("Groups.ALLBIGRECIPES.Name"),getList("Groups.ALLBIGRECIPES.Lore"));
+            get("group.ALLBIGRECIPES.name"),getList("group.ALLBIGRECIPES.lore"));
     public static final ItemStack CARGO=themed(Material.BAMBOO_CHEST_RAFT,Theme.CATEGORY2,
-            get("Groups.CARGO.Name"),getList("Groups.CARGO.Lore"));
+            get("group.CARGO.name"),getList("group.CARGO.lore"));
     public static final ItemStack SINGULARITY=themed(Material.NETHER_STAR,Theme.CATEGORY2,
-            get("Groups.SINGULARITY.Name"),getList("Groups.SINGULARITY.Lore"));
+            get("group.SINGULARITY.name"),getList("group.SINGULARITY.lore"));
     public static final ItemStack ADVANCED=themed(Material.BEACON,Theme.CATEGORY2,
-            get("Groups.ADVANCED.Name"),getList("Groups.ADVANCED.Lore"));
+            get("group.ADVANCED.name"),getList("group.ADVANCED.lore"));
     public static final ItemStack BEYOND=themed(Material.REPEATING_COMMAND_BLOCK,Theme.CATEGORY2,
-            get("Groups.BEYOND.Name"),getList("Groups.BEYOND.Lore"));
+            get("group.BEYOND.name"),getList("group.BEYOND.lore"));
     public static final ItemStack VANILLA=themed(Material.OBSERVER,Theme.CATEGORY2,
-            get("Groups.VANILLA.Name"),getList("Groups.VANILLA.Lore"));
+            get("group.VANILLA.name"),getList("group.VANILLA.lore"));
     public static final ItemStack MANUAL=themed(Material.CRAFTING_TABLE,Theme.CATEGORY2,
-            get("Groups.MANUAL.Name"),getList("Groups.MANUAL.Lore") );
+            get("group.MANUAL.name"),getList("group.MANUAL.lore") );
     public static final ItemStack SPECIAL=themed(Material.SCULK_CATALYST,Theme.CATEGORY2,
-            get("Groups.SPECIAL.Name"),getList("Groups.SPECIAL.Lore"));
+            get("group.SPECIAL.name"),getList("group.SPECIAL.lore"));
     public static final ItemStack TOOLS=themed(Material.NETHERITE_AXE, Theme.CATEGORY2,
-            get("Groups.TOOLS.Name"),getList("Groups.TOOLS.Lore"));
+            get("group.TOOLS.name"),getList("group.TOOLS.lore"));
     public static final ItemStack TOOLS_SUBGROUP_1=themed(Material.MUSIC_DISC_RELIC, Theme.CATEGORY2,
-            get("Groups.TOOLS_SUBGROUP_1.Name"),getList("Groups.TOOLS_SUBGROUP_1.Lore"));
+            get("group.TOOLS_SUBGROUP_1.name"),getList("group.TOOLS_SUBGROUP_1.lore"));
     public static final ItemStack TOOLS_SUBGROUP_2=themed(Material.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Theme.CATEGORY2,
-            get("Groups.TOOLS_SUBGROUP_2.Name"),getList("Groups.TOOLS_SUBGROUP_2.Lore"));
+            get("group.TOOLS_SUBGROUP_2.name"),getList("group.TOOLS_SUBGROUP_2.lore"));
     public static final ItemStack TOOLS_RECIPES=themed("TOOLS_RECIPES",Material.CRAFTING_TABLE, Theme.CATEGORY2,
-            get("Groups.TOOLS_RECIPES.Name"),getList("Groups.TOOLS_RECIPES.Lore"));
+            get("group.TOOLS_RECIPES.name"),getList("group.TOOLS_RECIPES.lore"));
     //public static final ItemStack TEMPLATE=themed()
     public static final ItemStack TOBECONTINUE=themed(Material.STRUCTURE_VOID,Theme.CATEGORY2,
-            get("Groups.TOBECONTINUE.Name"),getList("Groups.TOBECONTINUE.Lore"));
+            get("group.TOBECONTINUE.name"),getList("group.TOBECONTINUE.lore"));
     public static final ItemStack SPACE =themed(Material.TOTEM_OF_UNDYING, Theme.CATEGORY2,
-            get("Groups.SPACE.Name"),getList("Groups.SPACE.Lore"));
+            get("group.SPACE.name"),getList("group.SPACE.lore"));
     public static final ItemStack GENERATORS=themed(Material.LAVA_BUCKET, Theme.CATEGORY2,
-            get("Groups.GENERATORS.Name"),getList("Groups.GENERATORS.Lore"));
+            get("group.GENERATORS.name"),getList("group.GENERATORS.lore"));
     public static final ItemStack ENERGY=themed(Material.LIGHTNING_ROD, Theme.CATEGORY2,
-            get("Groups.ENERGY.Name"),getList("Groups.ENERGY.Lore"));
+            get("group.ENERGY.name"),getList("group.ENERGY.lore"));
     public static final ItemStack FUNCTIONAL=themed(Material.STRUCTURE_VOID, Theme.CATEGORY2,
-            get("Groups.FUNCTIONAL.Name"),getList("Groups.FUNCTIONAL.Lore"));
+            get("group.FUNCTIONAL.name"),getList("group.FUNCTIONAL.lore"));
     public static final ItemStack UPDATELOG=themed(Material.WRITABLE_BOOK,Theme.NONE,
-            get("Groups.UPDATELOG.Name"), getList("Groups.UPDATELOG.Lore"));
+            get("group.UPDATELOG.name"), getList("group.UPDATELOG.lore"));
     public static final ItemStack MORE2=themed("MORE2",Material.WRITABLE_BOOK, Theme.NONE,
-            get("Groups.MORE2.Name"),getList("Groups.MORE2.Lore"));
+            get("group.MORE2.name"),getList("group.MORE2.lore"));
     //feat
     public static final ItemStack FEAT1=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT1.Name"),getList("Groups.FEAT1.Lore"));
+            get("group.FEAT1.name"),getList("group.FEAT1.lore"));
     public static final ItemStack FEAT2=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT2.Name"),getList("Groups.FEAT2.Lore"));
+            get("group.FEAT2.name"),getList("group.FEAT2.lore"));
     public static final ItemStack FEAT3=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT3.Name"),getList("Groups.FEAT3.Lore"));
+            get("group.FEAT3.name"),getList("group.FEAT3.lore"));
     public static final ItemStack FEAT4=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT4.Name"),getList("Groups.FEAT4.Lore"));
+            get("group.FEAT4.name"),getList("group.FEAT4.lore"));
     public static final ItemStack FEAT5=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT5.Name"),getList("Groups.FEAT5.Lore"));
+            get("group.FEAT5.name"),getList("group.FEAT5.lore"));
     public static final ItemStack FEAT6=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT6.Name"),getList("Groups.FEAT6.Lore"));
+            get("group.FEAT6.name"),getList("group.FEAT6.lore"));
     public static final ItemStack FEAT7=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT7.Name"),getList("Groups.FEAT7.Lore"));
+            get("group.FEAT7.name"),getList("group.FEAT7.lore"));
     public static final ItemStack FEAT8=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT8.Name"),getList("Groups.FEAT8.Lore"));
+            get("group.FEAT8.name"),getList("group.FEAT8.lore"));
     public static final ItemStack FEAT9=themed(Material.BOOK, Theme.NONE,
-            get("Groups.FEAT9.Name"),getList("Groups.FEAT9.Lore"));
+            get("group.FEAT9.name"),getList("group.FEAT9.lore"));
 
 
     //items
     public static final SlimefunItemStack ENTITY_FEAT=themed("ENTITY_FEAT",Material.SPAWNER,Theme.ITEM1,
-            get("Items.ENTITY_FEAT.Name"),getList("Items.ENTITY_FEAT.Lore"));
+            get("item.ENTITY_FEAT.name"),getList("item.ENTITY_FEAT.lore"));
     public static final SlimefunItemStack BUG= themed("BUG", Material.BONE_MEAL, Theme.ITEM1,
-            get("Items.BUG.Name"),getList("Items.BUG.Lore"));
+            get("item.BUG.name"),getList("item.BUG.lore"));
     public static final SlimefunItemStack MATL114 = themed("MATL114", CustomHead.MATL114.getItem(), Theme.ITEM1,
-            get("Items.MATL114.Name"),getList("Items.MATL114.Lore"));
+            get("item.MATL114.name"),getList("item.MATL114.lore"));
     public static final SlimefunItemStack CHIP_INGOT=themed("CHIP_INGOT",Material.BAKED_POTATO,Theme.ITEM1,
-            get("Items.CHIP_INGOT.Name"),getList("Items.CHIP_INGOT.Lore"));
+            get("item.CHIP_INGOT.name"),getList("item.CHIP_INGOT.lore"));
     public static final SlimefunItemStack TITANIUM_INGOT=themed("TITANIUM_INGOT",Material.IRON_INGOT,Theme.ITEM1,
-            get("Items.TITANIUM_INGOT.Name"),getList("Items.TITANIUM_INGOT.Lore"));
+            get("item.TITANIUM_INGOT.name"),getList("item.TITANIUM_INGOT.lore"));
     public static final SlimefunItemStack TUNGSTEN_INGOT=themed("TUNGSTEN_INGOT",Material.NETHERITE_INGOT,Theme.ITEM1,
-            get("Items.TUNGSTEN_INGOT.Name"),getList("Items.TUNGSTEN_INGOT.Lore"));
+            get("item.TUNGSTEN_INGOT.name"),getList("item.TUNGSTEN_INGOT.lore"));
     public static final SlimefunItemStack LOGIC= themed("LOGIC",Material.STRING,Theme.ITEM1,
-            get("Items.LOGIC.Name"),getList("Items.LOGIC.Lore"));
+            get("item.LOGIC.name"),getList("item.LOGIC.lore"));
     public static final SlimefunItemStack TRUE_ =themed("TRUE_",Material.MUSIC_DISC_5,Theme.ITEM1,
-            get("Items.TRUE_.Name"),getList("Items.TRUE_.Lore"));
+            get("item.TRUE_.name"),getList("item.TRUE_.lore"));
     public static final SlimefunItemStack FALSE_ =themed("FALSE_",Material.MUSIC_DISC_5,Theme.ITEM1,
-            get("Items.FALSE_.Name"),getList("Items.FALSE_.Lore"));
+            get("item.FALSE_.name"),getList("item.FALSE_.lore"));
     public static final SlimefunItemStack LOGIGATE=themed("LOGIGATE",Material.COMPARATOR,Theme.ITEM1,
-            get("Items.LOGIGATE.Name"),getList("Items.LOGIGATE.Lore"));
+            get("item.LOGIGATE.name"),getList("item.LOGIGATE.lore"));
         //generated items
     public static final SlimefunItemStack EXISTE=themed("EXISTE",Material.SLIME_BALL,Theme.ITEM1,
-            get("Items.EXISTE.Name"),getList("Items.EXISTE.Lore"));
+            get("item.EXISTE.name"),getList("item.EXISTE.lore"));
     public static final SlimefunItemStack UNIQUE=themed("UNIQUE",Material.MAGMA_CREAM,Theme.ITEM1,
-            get("Items.UNIQUE.Name"),getList("Items.UNIQUE.Lore"));
+            get("item.UNIQUE.name"),getList("item.UNIQUE.lore"));
     public static final SlimefunItemStack PARADOX=themed("PARADOX",Material.NAUTILUS_SHELL,Theme.ITEM1,
-            get("Items.PARADOX.Name"),getList("Items.PARADOX.Lore"));
+            get("item.PARADOX.name"),getList("item.PARADOX.lore"));
     public static final SlimefunItemStack NOLOGIC=themed("NOLOGIC",Material.STRING,Theme.ITEM1,
-            get("Items.NOLOGIC.Name"),getList("Items.NOLOGIC.Lore"));
+            get("item.NOLOGIC.name"),getList("item.NOLOGIC.lore"));
     public static final SlimefunItemStack LENGINE=themed("LENGINE",Material.MAGENTA_GLAZED_TERRACOTTA,Theme.ITEM1,
-            get("Items.LENGINE.Name"),getList("Items.LENGINE.Lore"));
+            get("item.LENGINE.name"),getList("item.LENGINE.lore"));
     public static final SlimefunItemStack LFIELD=themed("LFIELD",Material.END_CRYSTAL,Theme.ITEM1,
-            get("Items.LFIELD.Name"),getList("Items.LFIELD.Lore"));
+            get("item.LFIELD.name"),getList("item.LFIELD.lore"));
     public static final SlimefunItemStack LSCHEDULER=themed("LSCHEDULER",Material.RECOVERY_COMPASS,Theme.ITEM1,
-            get("Items.LSCHEDULER.Name"),getList("Items.LSCHEDULER.Lore"));
+            get("item.LSCHEDULER.name"),getList("item.LSCHEDULER.lore"));
     public static final SlimefunItemStack LCRAFT=themed("LCRAFT",Material.CONDUIT,Theme.ITEM1,
-            get("Items.LCRAFT.Name"),getList("Items.LCRAFT.Lore"));
+            get("item.LCRAFT.name"),getList("item.LCRAFT.lore"));
     public static final SlimefunItemStack LDIGITIZER=themed("LDIGITIZER",Material.TARGET,Theme.ITEM1,
-            get("Items.LDIGITIZER.Name"),getList("Items.LDIGITIZER.Lore"));
+            get("item.LDIGITIZER.name"),getList("item.LDIGITIZER.lore"));
     public static final SlimefunItemStack LBOOLIZER=themed("LBOOLIZER",Material.LEVER,Theme.ITEM1,
-            get("Items.LBOOLIZER.Name"),getList("Items.LBOOLIZER.Lore"));
+            get("item.LBOOLIZER.name"),getList("item.LBOOLIZER.lore"));
     public static final SlimefunItemStack LIOPORT=themed("LIOPORT",Material.CALIBRATED_SCULK_SENSOR,Theme.ITEM1,
-            get("Items.LIOPORT.Name"),getList("Items.LIOPORT.Lore"));
+            get("item.LIOPORT.name"),getList("item.LIOPORT.lore"));
     public static final SlimefunItemStack PALLADIUM_INGOT=themed("PALLADIUM_INGOT",Material.COPPER_INGOT,Theme.ITEM1,
-            get("Items.PALLADIUM_INGOT.Name"),getList("Items.PALLADIUM_INGOT.Lore"));
+            get("item.PALLADIUM_INGOT.name"),getList("item.PALLADIUM_INGOT.lore"));
     public static final SlimefunItemStack PLATINUM_INGOT=themed("PLATINUM_INGOT",Material.GOLD_INGOT,Theme.ITEM1,
-            get("Items.PLATINUM_INGOT.Name"),getList("Items.PLATINUM_INGOT.Lore"));
+            get("item.PLATINUM_INGOT.name"),getList("item.PLATINUM_INGOT.lore"));
     public static final SlimefunItemStack MOLYBDENUM=themed("MOLYBDENUM",Material.GUNPOWDER,Theme.ITEM1,
-            get("Items.MOLYBDENUM.Name"),getList("Items.MOLYBDENUM.Lore"));
+            get("item.MOLYBDENUM.name"),getList("item.MOLYBDENUM.lore"));
     public static final SlimefunItemStack CERIUM=themed("CERIUM",Material.GUNPOWDER,Theme.ITEM1,
-            get("Items.CERIUM.Name"),getList("Items.CERIUM.Lore"));
+            get("item.CERIUM.name"),getList("item.CERIUM.lore"));
     public static final SlimefunItemStack CADMIUM_INGOT=themed("CADMIUM_INGOT",Material.NETHERITE_INGOT,Theme.ITEM1,
-            get("Items.CADMIUM_INGOT.Name"),getList("Items.CADMIUM_INGOT.Lore"));
+            get("item.CADMIUM_INGOT.name"),getList("item.CADMIUM_INGOT.lore"));
     public static final SlimefunItemStack MENDELEVIUM=themed("MENDELEVIUM",Material.GLOWSTONE_DUST,Theme.ITEM1,
-            get("Items.MENDELEVIUM.Name"),getList("Items.MENDELEVIUM.Lore"));
+            get("item.MENDELEVIUM.name"),getList("item.MENDELEVIUM.lore"));
     public static final SlimefunItemStack DYSPROSIUM=themed("DYSPROSIUM",Material.REDSTONE,Theme.ITEM1,
-            get("Items.DYSPROSIUM.Name"),getList("Items.DYSPROSIUM.Lore"));
+            get("item.DYSPROSIUM.name"),getList("item.DYSPROSIUM.lore"));
     public static final SlimefunItemStack BISMUTH_INGOT=themed("BISMUTH_INGOT",Material.IRON_INGOT,Theme.ITEM1,
-            get("Items.BISMUTH_INGOT.Name"),getList("Items.BISMUTH_INGOT.Lore"));
+            get("item.BISMUTH_INGOT.name"),getList("item.BISMUTH_INGOT.lore"));
     public static final SlimefunItemStack ANTIMONY_INGOT=themed("ANTIMONY_INGOT",Material.IRON_INGOT,Theme.ITEM1,
-            get("Items.ANTIMONY_INGOT.Name"),getList("Items.ANTIMONY_INGOT.Lore"));
+            get("item.ANTIMONY_INGOT.name"),getList("item.ANTIMONY_INGOT.lore"));
     public static final SlimefunItemStack BORON=themed("BORON",Material.CLAY_BALL,Theme.ITEM1,
-            get("Items.BORON.Name"),getList("Items.BORON.Lore"));
+            get("item.BORON.name"),getList("item.BORON.lore"));
     public static final SlimefunItemStack THALLIUM=themed("THALLIUM",Material.BRICK,Theme.ITEM1,
-            get("Items.THALLIUM.Name"),getList("Items.THALLIUM.Lore"));
+            get("item.THALLIUM.name"),getList("item.THALLIUM.lore"));
     public static final SlimefunItemStack HYDRAGYRUM=themed("HYDRAGYRUM",Material.PRISMARINE_CRYSTALS,Theme.ITEM1,
-            get("Items.HYDRAGYRUM.Name"),getList("Items.HYDRAGYRUM.Lore"));
+            get("item.HYDRAGYRUM.name"),getList("item.HYDRAGYRUM.lore"));
     public static final SlimefunItemStack HGTLPBBI=themed("HGTLPBBI",CustomHead.SUPPORTER2.getItem(), Theme.ITEM1,
-            get("Items.HGTLPBBI.Name"),getList("Items.HGTLPBBI.Lore"));
+            get("item.HGTLPBBI.name"),getList("item.HGTLPBBI.lore"));
     public static final SlimefunItemStack DIMENSIONAL_SHARD=themed("DIMENSIONAL_SHARD",Material.PRISMARINE_SHARD,Theme.ITEM1,
-            get("Items.DIMENSIONAL_SHARD.Name"),getList("Items.DIMENSIONAL_SHARD.Lore"));
+            get("item.DIMENSIONAL_SHARD.name"),getList("item.DIMENSIONAL_SHARD.lore"));
     public static final SlimefunItemStack STAR_GOLD=themed("STAR_GOLD",Material.NETHER_STAR,Theme.ITEM1,
-            get("Items.STAR_GOLD.Name"),getList("Items.STAR_GOLD.Lore"));
+            get("item.STAR_GOLD.name"),getList("item.STAR_GOLD.lore"));
     public static final SlimefunItemStack VIRTUAL_SPACE=themed("VIRTUAL_SPACE",CustomHead.VSPACE.getItem(), Theme.ITEM1,
-            get("Items.VIRTUAL_SPACE.Name"),getList("Items.VIRTUAL_SPACE.Lore"));
+            get("item.VIRTUAL_SPACE.name"),getList("item.VIRTUAL_SPACE.lore"));
     public static final SlimefunItemStack WORLD_FEAT=themed("WORLD_FEAT",Material.GRASS_BLOCK,Theme.ITEM1,
-            get("Items.WORLD_FEAT.Name"),getList("Items.WORLD_FEAT.Lore"));
+            get("item.WORLD_FEAT.name"),getList("item.WORLD_FEAT.lore"));
     public static final SlimefunItemStack NETHER_FEAT=themed("NETHER_FEAT",Material.NETHERITE_SCRAP,Theme.ITEM1,
-            get("Items.NETHER_FEAT.Name"),getList("Items.NETHER_FEAT.Lore"));
+            get("item.NETHER_FEAT.name"),getList("item.NETHER_FEAT.lore"));
     public static final SlimefunItemStack END_FEAT=themed("END_FEAT",Material.CHORUS_PLANT,Theme.ITEM1,
-            get("Items.END_FEAT.Name"),getList("Items.END_FEAT.Lore"));
+            get("item.END_FEAT.name"),getList("item.END_FEAT.lore"));
     public static final SlimefunItemStack STACKFRAME=themed("STACKFRAME",Material.BEDROCK,Theme.ITEM1,
-            get("Items.STACKFRAME.Name"),getList("Items.STACKFRAME.Lore"));
+            get("item.STACKFRAME.name"),getList("item.STACKFRAME.lore"));
 
     public static final SlimefunItemStack STAR_GOLD_INGOT=themed("STAR_GOLD_INGOT",Material.GOLD_INGOT,Theme.ITEM1,
-            get("Items.STAR_GOLD_INGOT.Name"),getList("Items.STAR_GOLD_INGOT.Lore"));
+            get("item.STAR_GOLD_INGOT.name"),getList("item.STAR_GOLD_INGOT.lore"));
     public static final SlimefunItemStack ABSTRACT_INGOT=themed("ABSTRACT_INGOT",Material.IRON_INGOT,Theme.ITEM1,
-            get("Items.ABSTRACT_INGOT.Name"),getList("Items.ABSTRACT_INGOT.Lore"));
+            get("item.ABSTRACT_INGOT.name"),getList("item.ABSTRACT_INGOT.lore"));
     public static final SlimefunItemStack PDCECDMD=themed("PDCECDMD",CustomHead.BUSHIGEMEN.getItem(), Theme.ITEM1,
-            get("Items.PDCECDMD.Name"),getList("Items.PDCECDMD.Lore"));
+            get("item.PDCECDMD.name"),getList("item.PDCECDMD.lore"));
     public static final SlimefunItemStack REINFORCED_CHIP_INGOT=themed("REINFORCED_CHIP_INGOT",Material.POISONOUS_POTATO,Theme.ITEM1,
-            get("Items.REINFORCED_CHIP_INGOT.Name"),getList("Items.REINFORCED_CHIP_INGOT.Lore"));
+            get("item.REINFORCED_CHIP_INGOT.name"),getList("item.REINFORCED_CHIP_INGOT.lore"));
     public static final SlimefunItemStack ATOM_INGOT=themed("ATOM_INGOT",Material.ECHO_SHARD,Theme.ITEM1,
-            get("Items.ATOM_INGOT.Name"),getList("Items.ATOM_INGOT.Lore"));
+            get("item.ATOM_INGOT.name"),getList("item.ATOM_INGOT.lore"));
 
     public static final SlimefunItemStack LMOTOR=themed("LMOTOR",CustomHead.MOTOR.getItem(),Theme.ITEM1,
-            get("Items.LMOTOR.Name"),getList("Items.LMOTOR.Lore"));
+            get("item.LMOTOR.name"),getList("item.LMOTOR.lore"));
     public static final SlimefunItemStack LPLATE=themed("LPLATE",Material.PAPER,Theme.ITEM1,
-            get("Items.LPLATE.Name"),getList("Items.LPLATE.Lore"));
+            get("item.LPLATE.name"),getList("item.LPLATE.lore"));
     public static final SlimefunItemStack METAL_CORE=themed("METAL_CORE",Material.NETHERITE_BLOCK,Theme.ITEM1,
-            get("Items.METAL_CORE.Name"),getList("Items.METAL_CORE.Lore"));
+            get("item.METAL_CORE.name"),getList("item.METAL_CORE.lore"));
     public static final SlimefunItemStack SMELERY_CORE=themed("SMELERY_CORE",Material.IRON_BLOCK,Theme.ITEM1,
-            get("Items.SMELERY_CORE.Name"),getList("Items.SMELERY_CORE.Lore"));
+            get("item.SMELERY_CORE.name"),getList("item.SMELERY_CORE.lore"));
     public static final SlimefunItemStack MASS_CORE=themed("MASS_CORE",Material.COAL_BLOCK,Theme.ITEM1,
-            get("Items.MASS_CORE.Name"),getList("Items.MASS_CORE.Lore"));
+            get("item.MASS_CORE.name"),getList("item.MASS_CORE.lore"));
     public static final SlimefunItemStack TECH_CORE=themed("TECH_CORE",Material.BEACON,Theme.ITEM1,
-            get("Items.TECH_CORE.Name"),getList("Items.TECH_CORE.Lore"));
+            get("item.TECH_CORE.name"),getList("item.TECH_CORE.lore"));
     public static final SlimefunItemStack SPACE_PLATE=themed("SPACE_PLATE",Material.PAPER,Theme.ITEM1,
-            get("Items.SPACE_PLATE.Name"),getList("Items.SPACE_PLATE.Lore"));
+            get("item.SPACE_PLATE.name"),getList("item.SPACE_PLATE.lore"));
     public static final SlimefunItemStack LOGIC_CORE=themed("LOGIC_CORE",Material.NETHER_STAR,Theme.ITEM1,
-            get("Items.LOGIC_CORE.Name"),getList("Items.LOGIC_CORE.Lore"));
+            get("item.LOGIC_CORE.name"),getList("item.LOGIC_CORE.lore"));
     public static final SlimefunItemStack FINAL_FRAME=themed("FINAL_FRAME",Material.BUDDING_AMETHYST,Theme.MULTIBLOCK1,
-            get("Items.FINAL_FRAME.Name"),getList("Items.FINAL_FRAME.Lore"));
+            get("item.FINAL_FRAME.name"),getList("item.FINAL_FRAME.lore"));
     public static final SlimefunItemStack REDSTONE_ENGINE=themed("REDSTONE_ENGINE",Material.SLIME_BLOCK,Theme.ITEM1,
-            get("Items.REDSTONE_ENGINE.Name"),getList("Items.REDSTONE_ENGINE.Lore"));
+            get("item.REDSTONE_ENGINE.name"),getList("item.REDSTONE_ENGINE.lore"));
     public static final SlimefunItemStack HYPER_LINK=themed("HYPER_LINK",Material.NETHER_STAR,Theme.ITEM1,
-            get("Items.HYPER_LINK.Name"),getList("Items.HYPER_LINK.Lore"));
+            get("item.HYPER_LINK.name"),getList("item.HYPER_LINK.lore"));
 
     public static final SlimefunItemStack SAMPLE_HEAD=themed("SAMPLE_HEAD",Material.PLAYER_HEAD,Theme.ITEM1,
-            get("Items.SAMPLE_HEAD.Name"),getList("Items.SAMPLE_HEAD.Lore"));
+            get("item.SAMPLE_HEAD.name"),getList("item.SAMPLE_HEAD.lore"));
     public static final SlimefunItemStack CHIP=themed("CHIP",Material.NAME_TAG,Theme.ITEM1,
-            get("Items.CHIP.Name"),getList("Items.CHIP.Lore"));
+            get("item.CHIP.name"),getList("item.CHIP.lore"));
     public static final SlimefunItemStack CHIP_CORE=themed("CHIP_CORE",CustomHead.CORE.getItem(), Theme.ITEM1,
-            get("Items.CHIP_CORE.Name"),getList("Items.CHIP_CORE.Lore"));
+            get("item.CHIP_CORE.name"),getList("item.CHIP_CORE.lore"));
     public static final SlimefunItemStack LSINGULARITY=themed("LSINGULARITY",Material.FIREWORK_STAR,Theme.ITEM1,
-            get("Items.LSINGULARITY.Name"),getList("Items.LSINGULARITY.Lore"));
+            get("item.LSINGULARITY.name"),getList("item.LSINGULARITY.lore"));
     public static final SlimefunItemStack RADIATION_CLEAR=themed("RADIATION_CLEAR",Material.GLASS_BOTTLE,Theme.ITEM1,
-            get("Items.RADIATION_CLEAR.Name"),getList("Items.RADIATION_CLEAR.Lore"));
+            get("item.RADIATION_CLEAR.name"),getList("item.RADIATION_CLEAR.lore"));
     public static final SlimefunItemStack ANTIMASS_CLEAR=themed("ANTIMASS_CLEAR",Material.GLASS_BOTTLE,Theme.ITEM1,
-            get("Items.ANTIMASS_CLEAR.Name"),getList("Items.ANTIMASS_CLEAR.Lore"));
+            get("item.ANTIMASS_CLEAR.name"),getList("item.ANTIMASS_CLEAR.lore"));
     public static final SlimefunItemStack BISILVER=themed("BISILVER",Material.IRON_INGOT,Theme.ITEM1,
-            get("Items.BISILVER.Name"),getList("Items.BISILVER.Lore"));
+            get("item.BISILVER.name"),getList("item.BISILVER.lore"));
     public static final SlimefunItemStack PAGOLD=themed("PAGOLD",Material.GOLD_INGOT,Theme.ITEM1,
-            get("Items.PAGOLD.Name"),getList("Items.PAGOLD.Lore"));
+            get("item.PAGOLD.name"),getList("item.PAGOLD.lore"));
     public static final SlimefunItemStack LASER=themed("LASER",CustomHead.LASER.getItem(), Theme.ITEM1,
-            get("Items.LASER.Name"),getList("Items.LASER.Lore"));
+            get("item.LASER.name"),getList("item.LASER.lore"));
     public static final SlimefunItemStack ANTIMASS=themed("ANTIMASS",Material.SCULK,Theme.ITEM1,
-            get("Items.ANTIMASS.Name"),getList("Items.ANTIMASS.Lore"));
+            get("item.ANTIMASS.name"),getList("item.ANTIMASS.lore"));
     public static final SlimefunItemStack VIRTUALWORLD=themed("VIRTUALWORLD",CustomHead.END_BLOCK.getItem(), Theme.ITEM1,
-            get("Items.VIRTUALWORLD.Name"),getList("Items.VIRTUALWORLD.Lore"));
+            get("item.VIRTUALWORLD.name"),getList("item.VIRTUALWORLD.lore"));
     public static final SlimefunItemStack SAMPLE_SPAWNER=themed("SAMPLE_SPAWNER",Material.SPAWNER,Theme.ITEM1,
-            get("Items.SAMPLE_SPAWNER.Name"),getList("Items.SAMPLE_SPAWNER.Lore"));
+            get("item.SAMPLE_SPAWNER.name"),getList("item.SAMPLE_SPAWNER.lore"));
     public static final SlimefunItemStack HOLOGRAM_REMOVER=themed("HOLOGRAM_REMOVER",Material.LIGHT,Theme.ITEM1,
-            get("Items.HOLOGRAM_REMOVER.Name"),getList("Items.HOLOGRAM_REMOVER.Lore"));
+            get("item.HOLOGRAM_REMOVER.name"),getList("item.HOLOGRAM_REMOVER.lore"));
     public static final SlimefunItemStack WITHERPROOF_REDSTONE=themed("WITHERPROOF_REDSTONE",Material.REDSTONE_BLOCK,Theme.ITEM1,
-            get("Items.WITHERPROOF_REDSTONE.Name"),getList("Items.WITHERPROOF_REDSTONE.Lore"));
+            get("item.WITHERPROOF_REDSTONE.name"),getList("item.WITHERPROOF_REDSTONE.lore"));
     public static final SlimefunItemStack WITHERPROOF_REDS=themed("WITHERPROOF_REDS",Material.REDSTONE,Theme.ITEM1,
-            get("Items.WITHERPROOF_REDS.Name"),getList("Items.WITHERPROOF_REDS.Lore"));
+            get("item.WITHERPROOF_REDS.name"),getList("item.WITHERPROOF_REDS.lore"));
     public static final SlimefunItemStack BEDROCK_BREAKER=themed("BEDROCK_BREAKER",Material.PISTON,Theme.ITEM1,
-            get("Items.BEDROCK_BREAKER.Name"),getList("Items.BEDROCK_BREAKER.Lore"));
+            get("item.BEDROCK_BREAKER.name"),getList("item.BEDROCK_BREAKER.lore"));
     public static final SlimefunItemStack LASER_GUN=themed("LASER_GUN",CustomHead.LASER_GUN.getItem(), Theme.TOOL,
-            get("Items.LASER_GUN.Name"),getList("Items.LASER_GUN.Lore"));
+            get("item.LASER_GUN.name"),getList("item.LASER_GUN.lore"));
     public static final SlimefunItemStack SUPERSPONGE=themed("SUPERSPONGE",Material.SPONGE,Theme.ITEM1,
-            get("Items.SUPERSPONGE.Name"),getList("Items.SUPERSPONGE.Lore"));
+            get("item.SUPERSPONGE.name"),getList("item.SUPERSPONGE.lore"));
     public static final SlimefunItemStack SUPERSPONGE_USED=themed("SUPERSPONGE_USED",Material.WET_SPONGE,Theme.ITEM1,
-            get("Items.SUPERSPONGE_USED.Name"),getList("Items.SUPERSPONGE_USED.Lore"));
+            get("item.SUPERSPONGE_USED.name"),getList("item.SUPERSPONGE_USED.lore"));
     public static final SlimefunItemStack TRACE_ARROW=themed("TRACE_ARROW",Material.CHERRY_SAPLING,Theme.TOOL,
-            get("Items.TRACE_ARROW.Name"),getList("Items.TRACE_ARROW.Lore"));
+            get("item.TRACE_ARROW.name"),getList("item.TRACE_ARROW.lore"));
     public static final SlimefunItemStack DIMENSIONAL_SINGULARITY=themed("DIMENSIONAL_SINGULARITY",Material.AMETHYST_SHARD,Theme.ITEM1,
-            get("Items.DIMENSIONAL_SINGULARITY.Name"),getList("Items.DIMENSIONAL_SINGULARITY.Lore"));
+            get("item.DIMENSIONAL_SINGULARITY.name"),getList("item.DIMENSIONAL_SINGULARITY.lore"));
     public static final SlimefunItemStack RTP_RUNE=themed("RTP_RUNE", CustomFireworkStar.RTP_RUNE.getItem(),Theme.ITEM1,
-            get("Items.RTP_RUNE.Name"),getList("Items.RTP_RUNE.Lore"));
+            get("item.RTP_RUNE.name"),getList("item.RTP_RUNE.lore"));
     public static final SlimefunItemStack SPACE_CARD=themed("SPACE_CARD",Material.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("Items.SPACE_CARD.Name"),getList("Items.SPACE_CARD.Lore"));
+            get("item.SPACE_CARD.name"),getList("item.SPACE_CARD.lore"));
 
     public static final SlimefunItemStack UNBREAKING_SHIELD=themed("UNBREAKING_SHIELD",Material.SHIELD, Theme.TOOL,
-            get("Items.UNBREAKING_SHIELD.Name"),getList("Items.UNBREAKING_SHIELD.Lore"));
+            get("item.UNBREAKING_SHIELD.name"),getList("item.UNBREAKING_SHIELD.lore"));
     public static final ItemStack MACE_ITEM=new InitializeSafeProvider<>(ItemStack.class,()->{
         Material material= VersionedRegistry.material("MACE");
         return material==null?null: new ItemStack(material);
@@ -312,232 +312,232 @@ public class AddItem {
         return item;
     }).v();
     public static final SlimefunItemStack FAKE_UI=themed("FAKE_UI",Material.LIGHT_GRAY_STAINED_GLASS_PANE,Theme.ITEM1,
-            get("Items.FAKE_UI.Name"),getList("Items.FAKE_UI.Lore"));
+            get("item.FAKE_UI.name"),getList("item.FAKE_UI.lore"));
     public static final SlimefunItemStack ANTIGRAVITY=themed("ANTIGRAVITY",Material.NETHERITE_INGOT,Theme.ITEM1,
-            get("Items.ANTIGRAVITY.Name"),getList("Items.ANTIGRAVITY.Lore"));
+            get("item.ANTIGRAVITY.name"),getList("item.ANTIGRAVITY.lore"));
     public static final SlimefunItemStack CONFIGURE=themed("CONFIGURE",Material.BLAZE_ROD,Theme.CARGO1,
-            get("Items.CONFIGURE.Name"),getList("Items.CONFIGURE.Lore"));
+            get("item.CONFIGURE.name"),getList("item.CONFIGURE.lore"));
     public static final SlimefunItemStack AMPLIFY_BASE=themed("AMPLIFY_BASE",Material.NETHERITE_UPGRADE_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("Items.AMPLIFY_BASE.Name"),getList("Items.AMPLIFY_BASE.Lore"));
+            get("item.AMPLIFY_BASE.name"),getList("item.AMPLIFY_BASE.lore"));
     public static final SlimefunItemStack SWAMP_SPEED=themed("SWAMP_SPEED",Material.MUSIC_DISC_13,Theme.ITEM1,
-            get("Items.SWAMP_SPEED.Name"),getList("Items.SWAMP_SPEED.Lore"));
+            get("item.SWAMP_SPEED.name"),getList("item.SWAMP_SPEED.lore"));
     public static final SlimefunItemStack SWAMP_RANGE=themed("SWAMP_RANGE",Material.MUSIC_DISC_CHIRP,Theme.ITEM1,
-            get("Items.SWAMP_RANGE.Name"),getList("Items.SWAMP_RANGE.Lore"));
+            get("item.SWAMP_RANGE.name"),getList("item.SWAMP_RANGE.lore"));
     public static final SlimefunItemStack MULTIBLOCKBUILDER=themed("MULTIBLOCKBUILDER",Material.BOOK,Theme.ITEM1,
-            get("Items.MULTIBLOCKBUILDER.Name"),getList("Items.MULTIBLOCKBUILDER.Lore"));
+            get("item.MULTIBLOCKBUILDER.name"),getList("item.MULTIBLOCKBUILDER.lore"));
     public static final SlimefunItemStack DISPLAY_FU_USE=themed("DISPLAY_FU_USE",Material.SMITHING_TABLE,Theme.TOOL,
-            get("Items.DISPLAY_FU_USE.Name"),getList("Items.DISPLAY_FU_USE.Lore"));
+            get("item.DISPLAY_FU_USE.name"),getList("item.DISPLAY_FU_USE.lore"));
     public static final ItemStack DISPLAY_FU_USE_1=themed(Material.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Theme.ITEM1,
-            get("Items.DISPLAY_FU_USE_1.Name"),getList("Items.DISPLAY_FU_USE_1.Lore"));
+            get("item.DISPLAY_FU_USE_1.name"),getList("item.DISPLAY_FU_USE_1.lore"));
     public static final ItemStack DISPLAY_FU_USE_2=themed(Material.NETHERITE_SWORD,Theme.ITEM1,
-            get("Items.DISPLAY_FU_USE_2.Name"),getList("Items.DISPLAY_FU_USE_2.Lore"));
+            get("item.DISPLAY_FU_USE_2.name"),getList("item.DISPLAY_FU_USE_2.lore"));
     public static final ItemStack DISPLAY_FU_USE_3=themed(Material.AMETHYST_SHARD,Theme.ITEM1,
-            get("Items.DISPLAY_FU_USE_3.Name"),getList("Items.DISPLAY_FU_USE_3.Lore"));
+            get("item.DISPLAY_FU_USE_3.name"),getList("item.DISPLAY_FU_USE_3.lore"));
     public static final SlimefunItemStack DISPLAY_REMOVE_FU=themed("DISPLAY_REMOVE_FU",Material.GRINDSTONE,Theme.TOOL,
-            get("Items.DISPLAY_REMOVE_FU.Name"),getList("Items.DISPLAY_REMOVE_FU.Lore"));
+            get("item.DISPLAY_REMOVE_FU.name"),getList("item.DISPLAY_REMOVE_FU.lore"));
     public static final ItemStack DISPLAY_REMOVE_FU_1=themed(Material.NETHERITE_SWORD,Theme.ITEM1,
-            get("Items.DISPLAY_REMOVE_FU_1.Name"),getList("Items.DISPLAY_REMOVE_FU_1.Lore"));
+            get("item.DISPLAY_REMOVE_FU_1.name"),getList("item.DISPLAY_REMOVE_FU_1.lore"));
     public static final ItemStack DISPLAY_REMOVE_FU_2=themed(Material.NETHERITE_UPGRADE_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("Items.DISPLAY_REMOVE_FU_2.Name"),getList("Items.DISPLAY_REMOVE_FU_2.Lore"));
+            get("item.DISPLAY_REMOVE_FU_2.name"),getList("item.DISPLAY_REMOVE_FU_2.lore"));
     public static final SlimefunItemStack FU_BASE=themed("FU_BASE",Material.EYE_ARMOR_TRIM_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("Items.FU_BASE.Name"),getList("Items.FU_BASE.Lore"));
+            get("item.FU_BASE.name"),getList("item.FU_BASE.lore"));
     public static final SlimefunItemStack DEMO_FU=themed("DEMO_FU",Material.NETHERITE_UPGRADE_SMITHING_TEMPLATE,Theme.FUNIT,
-            get("Items.DEMO_FU.Name"),getList("Items.DEMO_FU.Lore"));
+            get("item.DEMO_FU.name"),getList("item.DEMO_FU.lore"));
     public static final SlimefunItemStack PLAYER_IDCARD=themed("PLAYER_IDCARD",Material.PAPER,Theme.ITEM1,
-            get("Items.PLAYER_IDCARD.Name"),getList("Items.PLAYER_IDCARD.Lore"));
+            get("item.PLAYER_IDCARD.name"),getList("item.PLAYER_IDCARD.lore"));
     //nachines
     public static final SlimefunItemStack HEAD_ANALYZER=themed("HEAD_ANALYZER",Material.SOUL_CAMPFIRE, Theme.MACHINE1,
-            get("Machines.HEAD_ANALYZER.Name"),getList("Machines.HEAD_ANALYZER.Lore"));
+            get("machine.HEAD_ANALYZER.name"),getList("machine.HEAD_ANALYZER.lore"));
     public static final SlimefunItemStack RECIPE_LOGGER=themed("RECIPE_LOGGER",Material.FLETCHING_TABLE, Theme.MACHINE1,
-            get("Machines.RECIPE_LOGGER.Name"),getList("Machines.RECIPE_LOGGER.Lore"));
+            get("machine.RECIPE_LOGGER.name"),getList("machine.RECIPE_LOGGER.lore"));
     public static final SlimefunItemStack BOOL_GENERATOR=themed("BOOL_GENERATOR",Material.REDSTONE_TORCH,Theme.MACHINE1,
-            get("Machines.BOOL_GENERATOR.Name"),getList("Machines.BOOL_GENERATOR.Lore"));
+            get("machine.BOOL_GENERATOR.name"),getList("machine.BOOL_GENERATOR.lore"));
     public static final SlimefunItemStack LOGIC_REACTOR=themed("LOGIC_REACTOR",CustomHead.LOGIC_REACTOR.getItem(),Theme.MACHINE1,
-            get("Machines.LOGIC_REACTOR.Name"),getList("Machines.LOGIC_REACTOR.Lore"));
+            get("machine.LOGIC_REACTOR.name"),getList("machine.LOGIC_REACTOR.lore"));
     public static final SlimefunItemStack BUG_CRAFTER=themed("BUG_CRAFTER",CustomHead.BUG_CRATFER.getItem(),Theme.MACHINE1,
-            get("Machines.BUG_CRAFTER.Name"),getList("Machines.BUG_CRAFTER.Lore"));
+            get("machine.BUG_CRAFTER.name"),getList("machine.BUG_CRAFTER.lore"));
     public static final SlimefunItemStack ENDFRAME_MACHINE=themed("ENDFRAME_MACHINE",Material.END_PORTAL_FRAME,Theme.MACHINE1,
-            get("Machines.ENDFRAME_MACHINE.Name"),getList("Machines.ENDFRAME_MACHINE.Lore"));
+            get("machine.ENDFRAME_MACHINE.name"),getList("machine.ENDFRAME_MACHINE.lore"));
     public static final SlimefunItemStack LVOID_GENERATOR=themed("LVOID_GENERATOR",Material.SOUL_LANTERN,Theme.MACHINE1,
-            get("Machines.LVOID_GENERATOR.Name"),getList("Machines.LVOID_GENERATOR.Lore"));
+            get("machine.LVOID_GENERATOR.name"),getList("machine.LVOID_GENERATOR.lore"));
     public static final SlimefunItemStack SPECIAL_CRAFTER=themed("SPECIAL_CRAFTER",Material.LOOM,Theme.MACHINE1,
-            get("Machines.SPECIAL_CRAFTER.Name"),getList("Machines.SPECIAL_CRAFTER.Lore"));
+            get("machine.SPECIAL_CRAFTER.name"),getList("machine.SPECIAL_CRAFTER.lore"));
     public static final SlimefunItemStack STAR_SMELTERY=themed("STAR_SMELTERY",Material.BLAST_FURNACE,Theme.MACHINE1,
-            get("Machines.STAR_SMELTERY.Name"),getList("Machines.STAR_SMELTERY.Lore"));
+            get("machine.STAR_SMELTERY.name"),getList("machine.STAR_SMELTERY.lore"));
 
     public static final SlimefunItemStack INFINITY_AUTOCRAFT=themed("INFINITY_AUTOCRAFT",Material.CRYING_OBSIDIAN,Theme.MACHINE1,
-            get("Machines.INFINITY_AUTOCRAFT.Name"),getList("Machines.INFINITY_AUTOCRAFT.Lore"));
+            get("machine.INFINITY_AUTOCRAFT.name"),getList("machine.INFINITY_AUTOCRAFT.lore"));
     public static final SlimefunItemStack CHIP_MAKER=themed("CHIP_MAKER",Material.CHISELED_BOOKSHELF,Theme.MACHINE1,
-            get("Machines.CHIP_MAKER.Name"),getList("Machines.CHIP_MAKER.Lore"));
+            get("machine.CHIP_MAKER.name"),getList("machine.CHIP_MAKER.lore"));
     public static final SlimefunItemStack CHIP_CONSUMER=themed("CHIP_CONSUMER",Material.TORCH,Theme.MACHINE1,
-            get("Machines.CHIP_CONSUMER.Name"),getList("Machines.CHIP_CONSUMER.Lore"));
+            get("machine.CHIP_CONSUMER.name"),getList("machine.CHIP_CONSUMER.lore"));
     public static final SlimefunItemStack CHIP_BICONSUMER=themed("CHIP_BICONSUMER",Material.LANTERN,Theme.MACHINE1,
-            get("Machines.CHIP_BICONSUMER.Name"),getList("Machines.CHIP_BICONSUMER.Lore"));
+            get("machine.CHIP_BICONSUMER.name"),getList("machine.CHIP_BICONSUMER.lore"));
     public static final SlimefunItemStack SEQ_CONSTRUCTOR=themed("SEQ_CONSTRUCTOR",Material.BAMBOO_MOSAIC,Theme.MACHINE1,
-            get("Machines.SEQ_CONSTRUCTOR.Name"),getList("Machines.SEQ_CONSTRUCTOR.Lore"));
+            get("machine.SEQ_CONSTRUCTOR.name"),getList("machine.SEQ_CONSTRUCTOR.lore"));
     public static final SlimefunItemStack STACKMACHINE=themed("STACKMACHINE",Material.FURNACE,Theme.MACHINE1,
-            get("Machines.STACKMACHINE.Name"),getList("Machines.STACKMACHINE.Lore"));
+            get("machine.STACKMACHINE.name"),getList("machine.STACKMACHINE.lore"));
     public static final SlimefunItemStack ENERGY_TRASH=themed("ENERGY_TRASH", SlimefunItems.PORTABLE_DUSTBIN.getItem().getItem().clone()
-            ,Theme.MACHINE1, get("Machines.ENERGY_TRASH.Name"),getList("Machines.ENERGY_TRASH.Lore"));
+            ,Theme.MACHINE1, get("machine.ENERGY_TRASH.name"),getList("machine.ENERGY_TRASH.lore"));
     public static final SlimefunItemStack OPPO_GEN=themed("OPPO_GEN",CustomHead.HOT_MACHINE.getItem(), Theme.MACHINE1,
-            get("Machines.OPPO_GEN.Name"),getList("Machines.OPPO_GEN.Lore"));
+            get("machine.OPPO_GEN.name"),getList("machine.OPPO_GEN.lore"));
     public static final SlimefunItemStack ARC_REACTOR=themed("ARC_REACTOR",CustomHead.REACTOR.getItem(),Theme.MACHINE1,
-            get("Machines.ARC_REACTOR.Name"),getList("Machines.ARC_REACTOR.Lore"));
+            get("machine.ARC_REACTOR.name"),getList("machine.ARC_REACTOR.lore"));
     public static final SlimefunItemStack ENERGY_AMPLIFIER=themed("ENERGY_AMPLIFIER",Material.NETHERITE_BLOCK,Theme.MACHINE1,
-            get("Machines.ENERGY_AMPLIFIER.Name"),getList("Machines.ENERGY_AMPLIFIER.Lore"));
+            get("machine.ENERGY_AMPLIFIER.name"),getList("machine.ENERGY_AMPLIFIER.lore"));
     public static final SlimefunItemStack ADVANCED_CHIP_MAKER=themed("ADVANCED_CHIP_MAKER",Material.CHISELED_BOOKSHELF,Theme.MACHINE1,
-            get("Machines.ADVANCED_CHIP_MAKER.Name"),getList("Machines.ADVANCED_CHIP_MAKER.Lore"));
+            get("machine.ADVANCED_CHIP_MAKER.name"),getList("machine.ADVANCED_CHIP_MAKER.lore"));
     public static final SlimefunItemStack CHIP_REACTOR=themed("CHIP_REACTOR",Material.JUKEBOX,Theme.MACHINE1,
-            get("Machines.CHIP_REACTOR.Name"),getList("Machines.CHIP_REACTOR.Lore"));
+            get("machine.CHIP_REACTOR.name"),getList("machine.CHIP_REACTOR.lore"));
     public static final SlimefunItemStack DUST_EXTRACTOR=themed("DUST_EXTRACTOR",Material.CHISELED_STONE_BRICKS,Theme.MACHINE1,
-            get("Machines.DUST_EXTRACTOR.Name"),getList("Machines.DUST_EXTRACTOR.Lore"));
+            get("machine.DUST_EXTRACTOR.name"),getList("machine.DUST_EXTRACTOR.lore"));
     public static final SlimefunItemStack FURNACE_FACTORY=themed("FURNACE_FACTORY",Material.FURNACE,Theme.MACHINE1,
-            get("Machines.FURNACE_FACTORY.Name"),getList("Machines.FURNACE_FACTORY.Lore"));
+            get("machine.FURNACE_FACTORY.name"),getList("machine.FURNACE_FACTORY.lore"));
     public static final SlimefunItemStack INGOT_FACTORY=themed("INGOT_FACTORY",Material.RED_GLAZED_TERRACOTTA,Theme.MACHINE1,
-            get("Machines.INGOT_FACTORY.Name"),getList("Machines.INGOT_FACTORY.Lore"));
+            get("machine.INGOT_FACTORY.name"),getList("machine.INGOT_FACTORY.lore"));
     public static final SlimefunItemStack FINAL_LASER=themed("FINAL_LASER",Material.DROPPER,Theme.MACHINE1,
-            get("Machines.FINAL_LASER.Name"),getList("Machines.FINAL_LASER.Lore"));
+            get("machine.FINAL_LASER.name"),getList("machine.FINAL_LASER.lore"));
     public static final SlimefunItemStack FINAL_CONVERTOR=themed("FINAL_CONVERTOR",Material.WARPED_HYPHAE,Theme.MACHINE1,
-            get("Machines.FINAL_CONVERTOR.Name"),getList("Machines.FINAL_CONVERTOR.Lore"));
+            get("machine.FINAL_CONVERTOR.name"),getList("machine.FINAL_CONVERTOR.lore"));
     public static final SlimefunItemStack PRESSOR_FACTORY=themed("PRESSOR_FACTORY",Material.PISTON,Theme.MACHINE1,
-            get("Machines.PRESSOR_FACTORY.Name"),getList("Machines.PRESSOR_FACTORY.Lore"));
+            get("machine.PRESSOR_FACTORY.name"),getList("machine.PRESSOR_FACTORY.lore"));
     public static final SlimefunItemStack CRAFTER=themed("CRAFTER",Material.CRAFTING_TABLE,Theme.MACHINE1,
-            get("Machines.CRAFTER.Name"),getList("Machines.CRAFTER.Lore"));
+            get("machine.CRAFTER.name"),getList("machine.CRAFTER.lore"));
     public static final SlimefunItemStack EASYSTACKMACHINE=themed("EASYSTACKMACHINE",Material.FURNACE,Theme.MACHINE1,
-            get("Machines.EASYSTACKMACHINE.Name"),getList("Machines.EASYSTACKMACHINE.Lore"));
+            get("machine.EASYSTACKMACHINE.name"),getList("machine.EASYSTACKMACHINE.lore"));
     public static final SlimefunItemStack CONVERTOR=themed("CONVERTOR",Material.SEA_LANTERN,Theme.MACHINE1,
-            get("Machines.CONVERTOR.Name"),getList("Machines.CONVERTOR.Lore"));
+            get("machine.CONVERTOR.name"),getList("machine.CONVERTOR.lore"));
     public static final SlimefunItemStack VIRTUAL_KILLER=themed("VIRTUAL_KILLER",Material.STONECUTTER,Theme.MACHINE1,
-            get("Machines.VIRTUAL_KILLER.Name"),getList("Machines.VIRTUAL_KILLER.Lore"));
+            get("machine.VIRTUAL_KILLER.name"),getList("machine.VIRTUAL_KILLER.lore"));
     public static final SlimefunItemStack INF_MOBSIMULATION=themed("INF_MOBSIMULATION",Material.GILDED_BLACKSTONE,Theme.MACHINE1,
-            get("Machines.INF_MOBSIMULATION.Name"),getList("Machines.INF_MOBSIMULATION.Lore"));
+            get("machine.INF_MOBSIMULATION.name"),getList("machine.INF_MOBSIMULATION.lore"));
     public static final SlimefunItemStack INF_GEOQUARRY=themed("INF_GEOQUARRY",Material.CHISELED_QUARTZ_BLOCK,Theme.MACHINE1,
-            get("Machines.INF_GEOQUARRY.Name"),getList("Machines.INF_GEOQUARRY.Lore"));
+            get("machine.INF_GEOQUARRY.name"),getList("machine.INF_GEOQUARRY.lore"));
     public static final SlimefunItemStack RAND_EDITOR=themed("RAND_EDITOR",Material.ENCHANTING_TABLE,Theme.MACHINE1,
-            get("Machines.RAND_EDITOR.Name"),getList("Machines.RAND_EDITOR.Lore"));
+            get("machine.RAND_EDITOR.name"),getList("machine.RAND_EDITOR.lore"));
     public static final SlimefunItemStack ATTR_OP=themed("ATTR_OP",Material.ENCHANTING_TABLE,Theme.MACHINE1,
-            get("Machines.ATTR_OP.Name"),getList("Machines.ATTR_OP.Lore"));
+            get("machine.ATTR_OP.name"),getList("machine.ATTR_OP.lore"));
     public static final SlimefunItemStack CUSTOM_CHARGER=themed("CUSTOM_CHARGER",Material.LODESTONE,Theme.MACHINE1,
-            get("Machines.CUSTOM_CHARGER.Name"),getList("Machines.CUSTOM_CHARGER.Lore"));
+            get("machine.CUSTOM_CHARGER.name"),getList("machine.CUSTOM_CHARGER.lore"));
     public static final SlimefunItemStack GRIND_FACTORY=themed("GRIND_FACTORY",Material.GRINDSTONE,Theme.MACHINE1,
-            get("Machines.GRIND_FACTORY.Name"),getList("Machines.GRIND_FACTORY.Lore"));
+            get("machine.GRIND_FACTORY.name"),getList("machine.GRIND_FACTORY.lore"));
     public static final SlimefunItemStack TNT_GEN=themed("TNT_GEN",Material.NOTE_BLOCK,Theme.MACHINE1,
-            get("Machines.TNT_GEN.Name"),getList("Machines.TNT_GEN.Lore"));
+            get("machine.TNT_GEN.name"),getList("machine.TNT_GEN.lore"));
     public static final SlimefunItemStack ADVANCE_BREWER=themed("ADVANCE_BREWER",Material.SMOKER,Theme.MACHINE1,
-            get("Machines.ADVANCE_BREWER.Name"),getList("Machines.ADVANCE_BREWER.Lore"));
+            get("machine.ADVANCE_BREWER.name"),getList("machine.ADVANCE_BREWER.lore"));
     public static final SlimefunItemStack SIMU_LVOID=themed("SIMU_LVOID",Material.SOUL_TORCH,Theme.MACHINE1,
-            get("Machines.SIMU_LVOID.Name"),getList("Machines.SIMU_LVOID.Lore"));
+            get("machine.SIMU_LVOID.name"),getList("machine.SIMU_LVOID.lore"));
     public static final SlimefunItemStack SPACETOWER =themed("SPACETOWER",Material.SHROOMLIGHT,Theme.MACHINE1,
-            get("Machines.SPACETOWER.Name"),getList("Machines.SPACETOWER.Lore"));
+            get("machine.SPACETOWER.name"),getList("machine.SPACETOWER.lore"));
     public static final SlimefunItemStack SPACETOWER_FRAME=themed("SPACETOWER_FRAME",Material.AMETHYST_BLOCK,Theme.MACHINE1,
-            get("Machines.SPACETOWER_FRAME.Name"),getList("Machines.SPACETOWER_FRAME.Lore"));
+            get("machine.SPACETOWER_FRAME.name"),getList("machine.SPACETOWER_FRAME.lore"));
     public static final SlimefunItemStack ITEM_OP=themed("ITEM_OP",Material.SMITHING_TABLE,Theme.MACHINE1,
-            get("Machines.ITEM_OP.Name"),getList("Machines.ITEM_OP.Lore"));
+            get("machine.ITEM_OP.name"),getList("machine.ITEM_OP.lore"));
     public static final SlimefunItemStack CHUNK_CHARGER=themed("CHUNK_CHARGER",Material.SCULK_SHRIEKER,Theme.MACHINE1,
-            get("Machines.CHUNK_CHARGER.Name"),getList("Machines.CHUNK_CHARGER.Lore"));
+            get("machine.CHUNK_CHARGER.name"),getList("machine.CHUNK_CHARGER.lore"));
     public static final SlimefunItemStack INGOT_CONVERTOR=themed("INGOT_CONVERTOR",Material.PINK_GLAZED_TERRACOTTA,Theme.MACHINE1,
-            get("Machines.INGOT_CONVERTOR.Name"),getList("Machines.INGOT_CONVERTOR.Lore"));
+            get("machine.INGOT_CONVERTOR.name"),getList("machine.INGOT_CONVERTOR.lore"));
     public static final SlimefunItemStack LINE_CHARGER=themed("LINE_CHARGER",Material.DEEPSLATE_TILE_WALL,Theme.MACHINE1,
-            get("Machines.LINE_CHARGER.Name"),getList("Machines.LINE_CHARGER.Lore"));
+            get("machine.LINE_CHARGER.name"),getList("machine.LINE_CHARGER.lore"));
     public static final SlimefunItemStack LINE_CHARGER_PLUS=themed("LINE_CHARGER_PLUS",Material.DEEPSLATE_TILE_WALL,Theme.MACHINE1,
-            get("Machines.LINE_CHARGER_PLUS.Name"),getList("Machines.LINE_CHARGER_PLUS.Lore"));
+            get("machine.LINE_CHARGER_PLUS.name"),getList("machine.LINE_CHARGER_PLUS.lore"));
     public static final SlimefunItemStack ADJ_COLLECTOR=themed("ADJ_COLLECTOR",Material.RED_NETHER_BRICKS,Theme.MACHINE1,
-            get("Machines.ADJ_COLLECTOR.Name"),getList("Machines.ADJ_COLLECTOR.Lore"));
+            get("machine.ADJ_COLLECTOR.name"),getList("machine.ADJ_COLLECTOR.lore"));
     public static final SlimefunItemStack ADJ_COLLECTOR_PLUS=themed("ADJ_COLLECTOR_PLUS",Material.RED_NETHER_BRICKS,Theme.MACHINE1,
-            get("Machines.ADJ_COLLECTOR_PLUS.Name"),getList("Machines.ADJ_COLLECTOR_PLUS.Lore"));
+            get("machine.ADJ_COLLECTOR_PLUS.name"),getList("machine.ADJ_COLLECTOR_PLUS.lore"));
     public static final SlimefunItemStack LINE_COLLECTOR=themed("LINE_COLLECTOR",Material.RED_NETHER_BRICK_WALL,Theme.MACHINE1,
-            get("Machines.LINE_COLLECTOR.Name"),getList("Machines.LINE_COLLECTOR.Lore"));
+            get("machine.LINE_COLLECTOR.name"),getList("machine.LINE_COLLECTOR.lore"));
     public static final SlimefunItemStack LINE_COLLECTOR_PLUS=themed("LINE_COLLECTOR_PLUS",Material.RED_NETHER_BRICK_WALL,Theme.MACHINE1,
-            get("Machines.LINE_COLLECTOR_PLUS.Name"),getList("Machines.LINE_COLLECTOR_PLUS.Lore"));
+            get("machine.LINE_COLLECTOR_PLUS.name"),getList("machine.LINE_COLLECTOR_PLUS.lore"));
     public static final SlimefunItemStack ENERGY_STORAGE_NONE=themed("ENERGY_STORAGE_NONE",Material.CRACKED_DEEPSLATE_TILES,Theme.MACHINE1,
-            get("Machines.ENERGY_STORAGE_NONE.Name"),getList("Machines.ENERGY_STORAGE_NONE.Lore"));
+            get("machine.ENERGY_STORAGE_NONE.name"),getList("machine.ENERGY_STORAGE_NONE.lore"));
     public static final SlimefunItemStack ENERGY_STORAGE_IN=themed("ENERGY_STORAGE_IN",Material.CHISELED_DEEPSLATE,Theme.MACHINE1,
-            get("Machines.ENERGY_STORAGE_IN.Name"),getList("Machines.ENERGY_STORAGE_IN.Lore"));
+            get("machine.ENERGY_STORAGE_IN.name"),getList("machine.ENERGY_STORAGE_IN.lore"));
     public static final SlimefunItemStack ENERGY_STORAGE_IO=themed("ENERGY_STORAGE_IO",Material.CHISELED_POLISHED_BLACKSTONE,Theme.MACHINE1,
-            get("Machines.ENERGY_STORAGE_IO.Name"),getList("Machines.ENERGY_STORAGE_IO.Lore"));
+            get("machine.ENERGY_STORAGE_IO.name"),getList("machine.ENERGY_STORAGE_IO.lore"));
     public static final SlimefunItemStack ADJ_CHARGER=themed("ADJ_CHARGER",Material.DEEPSLATE_BRICKS,Theme.MACHINE1,
-            get("Machines.ADJ_CHARGER.Name"),getList("Machines.ADJ_CHARGER.Lore"));
+            get("machine.ADJ_CHARGER.name"),getList("machine.ADJ_CHARGER.lore"));
     public static final SlimefunItemStack ADJ_CHARGER_PLUS=themed("ADJ_CHARGER_PLUS",Material.DEEPSLATE_BRICKS,Theme.MACHINE1,
-            get("Machines.ADJ_CHARGER_PLUS.Name"),getList("Machines.ADJ_CHARGER_PLUS.Lore"));
+            get("machine.ADJ_CHARGER_PLUS.name"),getList("machine.ADJ_CHARGER_PLUS.lore"));
     public static final SlimefunItemStack ENERGY_PIPE=themed("ENERGY_PIPE",Material.LIGHTNING_ROD,Theme.MACHINE1,
-            get("Machines.ENERGY_PIPE.Name"),getList("Machines.ENERGY_PIPE.Lore"));
+            get("machine.ENERGY_PIPE.name"),getList("machine.ENERGY_PIPE.lore"));
     public static final SlimefunItemStack ENERGY_PIPE_PLUS=themed("ENERGY_PIPE_PLUS",Material.END_ROD,Theme.MACHINE1,
-            get("Machines.ENERGY_PIPE_PLUS.Name"),getList("Machines.ENERGY_PIPE_PLUS.Lore"));
+            get("machine.ENERGY_PIPE_PLUS.name"),getList("machine.ENERGY_PIPE_PLUS.lore"));
     public static final SlimefunItemStack FINAL_CRAFT=themed("FINAL_CRAFT",Material.BEACON,Theme.MACHINE1,
-            get("Machines.FINAL_CRAFT.Name"),getList("Machines.FINAL_CRAFT.Lore"));
+            get("machine.FINAL_CRAFT.name"),getList("machine.FINAL_CRAFT.lore"));
     public static final SlimefunItemStack VIRTUAL_EXPLORER=themed("VIRTUAL_EXPLORER",Material.DECORATED_POT,Theme.MACHINE1,
-            get("Machines.VIRTUAL_EXPLORER.Name"),getList("Machines.VIRTUAL_EXPLORER.Lore"));
+            get("machine.VIRTUAL_EXPLORER.name"),getList("machine.VIRTUAL_EXPLORER.lore"));
     public static final SlimefunItemStack TIMER_BLOCKENTITY=themed("TIMER_BLOCKENTITY",Material.REDSTONE_TORCH,Theme.MACHINE1,
-            get("Machines.TIMER_BLOCKENTITY.Name"),getList("Machines.TIMER_BLOCKENTITY.Lore"));
+            get("machine.TIMER_BLOCKENTITY.name"),getList("machine.TIMER_BLOCKENTITY.lore"));
     public static final SlimefunItemStack TIMER_RD=themed("TIMER_RD",Material.TORCH,Theme.MACHINE1,
-            get("Machines.TIMER_RD.Name"),getList("Machines.TIMER_RD.Lore"));
+            get("machine.TIMER_RD.name"),getList("machine.TIMER_RD.lore"));
     public static final SlimefunItemStack TIMER_SF=new InitializeSafeProvider<>(SlimefunItemStack.class,()->themed("TIMER_SF_入机",Material.SOUL_TORCH,Theme.MACHINE1,
-            get("Machines.TIMER_SF.Name"),getList("Machines.TIMER_SF.Lore"))).v();
+            get("machine.TIMER_SF.name"),getList("machine.TIMER_SF.lore"))).v();
 
 //    public static final SlimefunItemStack TIMER_SF_SEQ=themed("TIMER_SF_SEQ",Material.SOUL_TORCH,Theme.MACHINE1,
-//            get("Machines.TIMER_SF_SEQ.Name"),getList("Machines.TIMER_SF_SEQ.Lore"));
+//            get("machine.TIMER_SF_SEQ.name"),getList("machine.TIMER_SF_SEQ.lore"));
     //manuals
     public static final SlimefunItemStack MANUAL_CORE=themed("MANUAL_CORE",Material.AMETHYST_SHARD,Theme.ITEM1,
-            get("Manuals.MANUAL_CORE.Name"),getList("Manuals.MANUAL_CORE.Lore"));
+            get("manuals.MANUAL_CORE.name"),getList("manuals.MANUAL_CORE.lore"));
     public static final SlimefunItemStack CRAFT_MANUAL=themed("CRAFT_MANUAL",Material.CRAFTING_TABLE,Theme.MANUAL1,
-            get("Manuals.CRAFT_MANUAL.Name"),getList("Manuals.CRAFT_MANUAL.Lore"));
+            get("manuals.CRAFT_MANUAL.name"),getList("manuals.CRAFT_MANUAL.lore"));
     public static final SlimefunItemStack FURNACE_MANUAL=themed("FURNACE_MANUAL",Material.FURNACE,Theme.MANUAL1,
-            get("Manuals.FURNACE_MANUAL.Name"),getList("Manuals.FURNACE_MANUAL.Lore"));
+            get("manuals.FURNACE_MANUAL.name"),getList("manuals.FURNACE_MANUAL.lore"));
     public static final SlimefunItemStack ENHANCED_CRAFT_MANUAL=themed("ENHANCED_CRAFT_MANUAL",Material.CRAFTING_TABLE,Theme.MANUAL1,
-            get("Manuals.ENHANCED_CRAFT_MANUAL.Name"),getList("Manuals.ENHANCED_CRAFT_MANUAL.Lore"));
+            get("manuals.ENHANCED_CRAFT_MANUAL.name"),getList("manuals.ENHANCED_CRAFT_MANUAL.lore"));
     public static final SlimefunItemStack GRIND_MANUAL=themed("GRIND_MANUAL",Material.DISPENSER,Theme.MANUAL1,
-            get("Manuals.GRIND_MANUAL.Name"),getList("Manuals.GRIND_MANUAL.Lore"));
+            get("manuals.GRIND_MANUAL.name"),getList("manuals.GRIND_MANUAL.lore"));
     public static final SlimefunItemStack ARMOR_FORGE_MANUAL=themed("ARMOR_FORGE_MANUAL",Material.IRON_BLOCK,Theme.MANUAL1,
-            get("Manuals.ARMOR_FORGE_MANUAL.Name"),getList("Manuals.ARMOR_FORGE_MANUAL.Lore"));
+            get("manuals.ARMOR_FORGE_MANUAL.name"),getList("manuals.ARMOR_FORGE_MANUAL.lore"));
     public static final SlimefunItemStack ORE_CRUSHER_MANUAL=themed("ORE_CRUSHER_MANUAL",Material.DROPPER,Theme.MANUAL1,
-            get("Manuals.ORE_CRUSHER_MANUAL.Name"),getList("Manuals.ORE_CRUSHER_MANUAL.Lore"));
+            get("manuals.ORE_CRUSHER_MANUAL.name"),getList("manuals.ORE_CRUSHER_MANUAL.lore"));
     public static final SlimefunItemStack COMPRESSOR_MANUAL=themed("COMPRESSOR_MANUAL",Material.PISTON,Theme.MANUAL1,
-            get("Manuals.COMPRESSOR_MANUAL.Name"),getList("Manuals.COMPRESSOR_MANUAL.Lore"));
+            get("manuals.COMPRESSOR_MANUAL.name"),getList("manuals.COMPRESSOR_MANUAL.lore"));
     public static final SlimefunItemStack PRESSURE_MANUAL=themed("PRESSURE_MANUAL",Material.GLASS,Theme.MANUAL1,
-            get("Manuals.PRESSURE_MANUAL.Name"),getList("Manuals.PRESSURE_MANUAL.Lore"));
+            get("manuals.PRESSURE_MANUAL.name"),getList("manuals.PRESSURE_MANUAL.lore"));
     public static final SlimefunItemStack MAGIC_WORKBENCH_MANUAL=themed("MAGIC_WORKBENCH_MANUAL",Material.BOOKSHELF,Theme.MANUAL1,
-            get("Manuals.MAGIC_WORKBENCH_MANUAL.Name"),getList("Manuals.MAGIC_WORKBENCH_MANUAL.Lore"));
+            get("manuals.MAGIC_WORKBENCH_MANUAL.name"),getList("manuals.MAGIC_WORKBENCH_MANUAL.lore"));
     public static final SlimefunItemStack ORE_WASHER_MANUAL=themed("ORE_WASHER_MANUAL",Material.BLUE_STAINED_GLASS,Theme.MANUAL1,
-            get("Manuals.ORE_WASHER_MANUAL.Name"),getList("Manuals.ORE_WASHER_MANUAL.Lore"));
+            get("manuals.ORE_WASHER_MANUAL.name"),getList("manuals.ORE_WASHER_MANUAL.lore"));
     public static final SlimefunItemStack GOLD_PAN_MANUAL=themed("GOLD_PAN_MANUAL",Material.BROWN_TERRACOTTA,Theme.MANUAL1,
-            get("Manuals.GOLD_PAN_MANUAL.Name"),getList("Manuals.GOLD_PAN_MANUAL.Lore"));
+            get("manuals.GOLD_PAN_MANUAL.name"),getList("manuals.GOLD_PAN_MANUAL.lore"));
     public static final SlimefunItemStack ANCIENT_ALTAR_MANUAL=themed("ANCIENT_ALTAR_MANUAL",Material.ENCHANTING_TABLE,Theme.MANUAL1,
-            get("Manuals.ANCIENT_ALTAR_MANUAL.Name"),getList("Manuals.ANCIENT_ALTAR_MANUAL.Lore"));
+            get("manuals.ANCIENT_ALTAR_MANUAL.name"),getList("manuals.ANCIENT_ALTAR_MANUAL.lore"));
     public static final SlimefunItemStack SMELTERY_MANUAL=themed("SMELTERY_MANUAL",Material.BLAST_FURNACE,Theme.MANUAL1,
-            get("Manuals.SMELTERY_MANUAL.Name"),getList("Manuals.SMELTERY_MANUAL.Lore"));
+            get("manuals.SMELTERY_MANUAL.name"),getList("manuals.SMELTERY_MANUAL.lore"));
     public static final SlimefunItemStack CRUCIBLE_MANUAL=themed("CRUCIBLE_MANUAL",Material.RED_TERRACOTTA,Theme.MANUAL1,
-            get("Manuals.CRUCIBLE_MANUAL.Name"),getList("Manuals.CRUCIBLE_MANUAL.Lore"));
+            get("manuals.CRUCIBLE_MANUAL.name"),getList("manuals.CRUCIBLE_MANUAL.lore"));
     public static final SlimefunItemStack PULVERIZER_MANUAL=themed("PULVERIZER_MANUAL",Material.GRINDSTONE,Theme.MANUAL1,
-            get("Manuals.PULVERIZER_MANUAL.Name"),getList("Manuals.PULVERIZER_MANUAL.Lore"));
+            get("manuals.PULVERIZER_MANUAL.name"),getList("manuals.PULVERIZER_MANUAL.lore"));
     public static final SlimefunItemStack MULTICRAFTTABLE_MANUAL=themed("MULTICRAFTTABLE_MANUAL",Material.CRAFTING_TABLE,Theme.MANUAL1,
-            get("Manuals.MULTICRAFTTABLE_MANUAL.Name"),getList("Manuals.MULTICRAFTTABLE_MANUAL.Lore"));
+            get("manuals.MULTICRAFTTABLE_MANUAL.name"),getList("manuals.MULTICRAFTTABLE_MANUAL.lore"));
     public static final SlimefunItemStack TABLESAW_MANUAL=themed("TABLESAW_MANUAL",Material.STONECUTTER,Theme.MANUAL1,
-            get("Manuals.TABLESAW_MANUAL.Name"),getList("Manuals.TABLESAW_MANUAL.Lore"));
+            get("manuals.TABLESAW_MANUAL.name"),getList("manuals.TABLESAW_MANUAL.lore"));
     public static final SlimefunItemStack COMPOSTER=themed("COMPOSTER",Material.CAULDRON,Theme.MANUAL1,
-            get("Manuals.COMPOSTER.Name"),getList("Manuals.COMPOSTER.Lore"));
+            get("manuals.COMPOSTER.name"),getList("manuals.COMPOSTER.lore"));
     public static final SlimefunItemStack MULTIMACHINE_MANUAL=themed("MULTIMACHINE_MANUAL",Material.GRAY_STAINED_GLASS,Theme.MANUAL1,
-            get("Manuals.MULTIMACHINE_MANUAL.Name"),getList("Manuals.MULTIMACHINE_MANUAL.Lore"));
+            get("manuals.MULTIMACHINE_MANUAL.name"),getList("manuals.MULTIMACHINE_MANUAL.lore"));
     public static final SlimefunItemStack MOBDATA_MANUAL=themed("MOBDATA_MANUAL",Material.LODESTONE,Theme.MANUAL1,
-            get("Manuals.MOBDATA_MANUAL.Name"),getList("Manuals.MOBDATA_MANUAL.Lore"));
+            get("manuals.MOBDATA_MANUAL.name"),getList("manuals.MOBDATA_MANUAL.lore"));
     public static final SlimefunItemStack INFINITY_MANUAL=themed("INFINITY_MANUAL",Material.RESPAWN_ANCHOR,Theme.MANUAL1,
-            get("Manuals.INFINITY_MANUAL.Name"),getList("Manuals.INFINITY_MANUAL.Lore"));
+            get("manuals.INFINITY_MANUAL.name"),getList("manuals.INFINITY_MANUAL.lore"));
     public static final SlimefunItemStack NTWWORKBENCH_MANUAL=themed("NTWWORKBENCH_MANUAL",Material.BAMBOO_BLOCK,Theme.MANUAL1,
-            get("Manuals.NTWWORKBENCH_MANUAL.Name"),getList("Manuals.NTWWORKBENCH_MANUAL.Lore"));
+            get("manuals.NTWWORKBENCH_MANUAL.name"),getList("manuals.NTWWORKBENCH_MANUAL.lore"));
     public static final SlimefunItemStack MULTIBLOCK_MANUAL=themed("MULTIBLOCK_MANUAL",Material.BRICKS,Theme.MANUAL1,
-            get("Manuals.MULTIBLOCK_MANUAL.Name"),getList("Manuals.MULTIBLOCK_MANUAL.Lore"));
+            get("manuals.MULTIBLOCK_MANUAL.name"),getList("manuals.MULTIBLOCK_MANUAL.lore"));
     public static final SlimefunItemStack FINAL_MANUAL=themed("FINAL_MANUAL",Material.REINFORCED_DEEPSLATE,Theme.MANUAL1,
-            get("Manuals.FINAL_MANUAL.Name"),getList("Manuals.FINAL_MANUAL.Lore"));
+            get("manuals.FINAL_MANUAL.name"),getList("manuals.FINAL_MANUAL.lore"));
     public static final SlimefunItemStack REPLACE_CARD=themed("REPLACE_CARD",Material.PRIZE_POTTERY_SHERD,Theme.ITEM1,
-            get("Items.REPLACE_CARD.Name"),getList("Items.REPLACE_CARD.Lore"));
+            get("item.REPLACE_CARD.name"),getList("item.REPLACE_CARD.lore"));
     public static final SlimefunItemStack REPLACE_SF_CARD=themed("REPLACE_SF_CARD",Material.WILD_ARMOR_TRIM_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("Items.REPLACE_SF_CARD.Name"),getList("Items.REPLACE_SF_CARD.Lore"));
+            get("item.REPLACE_SF_CARD.name"),getList("item.REPLACE_SF_CARD.lore"));
     public static final SlimefunItemStack CARD_MAKER=themed("CARD_MAKER",Material.FLETCHING_TABLE,Theme.MACHINE1,
-            get("Manuals.CARD_MAKER.Name"),getList("Manuals.CARD_MAKER.Lore"));
+            get("manuals.CARD_MAKER.name"),getList("manuals.CARD_MAKER.lore"));
     public static final SlimefunItemStack ADV_MANUAL=themed("ADV_MANUAL",Material.LECTERN,Theme.MANUAL1,
-            get("Manuals.ADV_MANUAL.Name"),getList("Manuals.ADV_MANUAL.Lore"));
+            get("manuals.ADV_MANUAL.name"),getList("manuals.ADV_MANUAL.lore"));
     public static final SlimefunItemStack PORTABLE_MANUAL=new InitializeProvider<>(()->{
         SlimefunItemStack item= themed("PORTABLE_MANUAL",CustomHead.CRAFTER.getItem(),Theme.MANUAL1,
-                get("Manuals.PORTABLE_MANUAL.Name"),getList("Manuals.PORTABLE_MANUAL.Lore"));
+                get("manuals.PORTABLE_MANUAL.name"),getList("manuals.PORTABLE_MANUAL.lore"));
         try{
             int portableCrafter = Slimefun.getItemTextureService().getModelData("PORTABLE_CRAFTER");
             if(portableCrafter!=0){
@@ -553,143 +553,143 @@ public class AddItem {
     }).v();
     //generators
     public static final SlimefunItemStack MAGIC_STONE=themed("MAGIC_STONE",Material.COBBLESTONE,Theme.MACHINE2,
-            get("Generators.MAGIC_STONE.Name"),getList("Generators.MAGIC_STONE.Lore"));
+            get("generator.MAGIC_STONE.name"),getList("generator.MAGIC_STONE.lore"));
     public static final SlimefunItemStack BOOL_MG=themed("BOOL_MG",Material.REDSTONE_TORCH,Theme.MACHINE2,
-            get("Generators.BOOL_MG.Name"),getList("Generators.BOOL_MG.Lore"));
+            get("generator.BOOL_MG.name"),getList("generator.BOOL_MG.lore"));
     public static final SlimefunItemStack OVERWORLD_MINER=themed("OVERWORLD_MINER",Material.SMOOTH_STONE,Theme.MACHINE2,
-            get("Generators.OVERWORLD_MINER.Name"),getList("Generators.OVERWORLD_MINER.Lore"));
+            get("generator.OVERWORLD_MINER.name"),getList("generator.OVERWORLD_MINER.lore"));
     public static final SlimefunItemStack NETHER_MINER=themed("NETHER_MINER",Material.CRIMSON_NYLIUM,Theme.MACHINE2,
-            get("Generators.NETHER_MINER.Name"),getList("Generators.NETHER_MINER.Lore"));
+            get("generator.NETHER_MINER.name"),getList("generator.NETHER_MINER.lore"));
     public static final SlimefunItemStack END_MINER =themed("END_MINER",Material.END_STONE_BRICKS,Theme.MACHINE2,
-            get("Generators.END_MINER.Name"),getList("Generators.END_MINER.Lore"));
+            get("generator.END_MINER.name"),getList("generator.END_MINER.lore"));
     public static final SlimefunItemStack DIMENSION_MINER=themed("DIMENSION_MINER",Material.CRYING_OBSIDIAN,Theme.MACHINE2,
-            get("Generators.DIMENSION_MINER.Name"),getList("Generators.DIMENSION_MINER.Lore"));
+            get("generator.DIMENSION_MINER.name"),getList("generator.DIMENSION_MINER.lore"));
     public static final SlimefunItemStack REDSTONE_MG=themed("REDSTONE_MG",Material.OBSERVER,Theme.MACHINE2,
-            get("Generators.REDSTONE_MG.Name"),getList("Generators.REDSTONE_MG.Lore"));
+            get("generator.REDSTONE_MG.name"),getList("generator.REDSTONE_MG.lore"));
     public static final SlimefunItemStack DUPE_MG=themed("DUPE_MG",Material.STICKY_PISTON,Theme.MACHINE2,
-            get("Generators.DUPE_MG.Name"),getList("Generators.DUPE_MG.Lore"));
+            get("generator.DUPE_MG.name"),getList("generator.DUPE_MG.lore"));
     public static final SlimefunItemStack ENDDUPE_MG=themed("ENDDUPE_MG",Material.END_PORTAL_FRAME,Theme.MACHINE2,
-            get("Generators.ENDDUPE_MG.Name"),getList("Generators.ENDDUPE_MG.Lore"));
+            get("generator.ENDDUPE_MG.name"),getList("generator.ENDDUPE_MG.lore"));
     public static final SlimefunItemStack BNOISE_MAKER = themed("BNOISE_MAKER", Material.JUKEBOX, Theme.MACHINE2,
-            get("Generators.BNOISE_MAKER.Name"), getList("Generators.BNOISE_MAKER.Lore"));
+            get("generator.BNOISE_MAKER.name"), getList("generator.BNOISE_MAKER.lore"));
     public static final SlimefunItemStack BNOISE_HEAD = themed("BNOISE_HEAD", CustomHead.BNOISE_HEAD.getItem(), Theme.ITEM1,
-            get("Items.BNOISE_HEAD.Name"), getList("Items.BNOISE_HEAD.Lore"));
+            get("item.BNOISE_HEAD.name"), getList("item.BNOISE_HEAD.lore"));
     public static final SlimefunItemStack STACKMGENERATOR=themed("STACKMGENERATOR",Material.SMOOTH_STONE,Theme.MACHINE2,
-            get("Generators.STACKMGENERATOR.Name"),getList("Generators.STACKMGENERATOR.Lore"));
+            get("generator.STACKMGENERATOR.name"),getList("generator.STACKMGENERATOR.lore"));
     public static final SlimefunItemStack REVERSE_GENERATOR=themed("REVERSE_GENERATOR",CustomHead.REVERSE.getItem(), Theme.MACHINE2,
-            get("Generators.REVERSE_GENERATOR.Name"),getList("Generators.REVERSE_GENERATOR.Lore"));
+            get("generator.REVERSE_GENERATOR.name"),getList("generator.REVERSE_GENERATOR.lore"));
     public static final SlimefunItemStack VIRTUAL_MINER=themed("VIRTUAL_MINER",Material.CHERRY_WOOD,Theme.MACHINE2,
-            get("Generators.VIRTUAL_MINER.Name"),getList("Generators.VIRTUAL_MINER.Lore"));
+            get("generator.VIRTUAL_MINER.name"),getList("generator.VIRTUAL_MINER.lore"));
     public static final SlimefunItemStack VIRTUAL_PLANT=themed("VIRTUAL_PLANT",Material.STRIPPED_CHERRY_WOOD,Theme.MACHINE2,
-            get("Generators.VIRTUAL_PLANT.Name"),getList("Generators.VIRTUAL_PLANT.Lore"));
+            get("generator.VIRTUAL_PLANT.name"),getList("generator.VIRTUAL_PLANT.lore"));
     public static final SlimefunItemStack MAGIC_PLANT=themed("MAGIC_PLANT",Material.DIRT,Theme.MACHINE2,
-            get("Generators.MAGIC_PLANT.Name"),getList("Generators.MAGIC_PLANT.Lore"));
+            get("generator.MAGIC_PLANT.name"),getList("generator.MAGIC_PLANT.lore"));
     public static final SlimefunItemStack OVERWORLD_PLANT=themed("OVERWORLD_PLANT",Material.PODZOL,Theme.MACHINE2,
-            get("Generators.OVERWORLD_PLANT.Name"),getList("Generators.OVERWORLD_PLANT.Lore"));
+            get("generator.OVERWORLD_PLANT.name"),getList("generator.OVERWORLD_PLANT.lore"));
     public static final SlimefunItemStack NETHER_PLANT=themed("NETHER_PLANT",Material.WARPED_NYLIUM,Theme.MACHINE2,
-            get("Generators.NETHER_PLANT.Name"),getList("Generators.NETHER_PLANT.Lore"));
+            get("generator.NETHER_PLANT.name"),getList("generator.NETHER_PLANT.lore"));
     public static final SlimefunItemStack END_PLANT=themed("END_PLANT",Material.END_STONE,Theme.MACHINE2,
-            get("Generators.END_PLANT.Name"),getList("Generators.END_PLANT.Lore"));
+            get("generator.END_PLANT.name"),getList("generator.END_PLANT.lore"));
     public static final SlimefunItemStack SMELTRY=themed("SMELTRY",Material.FURNACE,Theme.MACHINE1,
-            get("Machines.SMELTRY.Name"),getList("Machines.SMELTRY.Lore"));
+            get("machine.SMELTRY.name"),getList("machine.SMELTRY.lore"));
     public static final SlimefunItemStack STONE_FACTORY=themed("STONE_FACTORY",Material.STONE_BRICKS,Theme.MACHINE2,
-            get("Generators.STONE_FACTORY.Name"),getList("Generators.STONE_FACTORY.Lore"));
+            get("generator.STONE_FACTORY.name"),getList("generator.STONE_FACTORY.lore"));
     public static final SlimefunItemStack TNT_MG=themed("TNT_MG",Material.ANCIENT_DEBRIS,Theme.MACHINE2,
-            get("Generators.TNT_MG.Name"),getList("Generators.TNT_MG.Lore"));
+            get("generator.TNT_MG.name"),getList("generator.TNT_MG.lore"));
     //cargos
     public static final SlimefunItemStack CARGO_PART=themed("CARGO_PART",Material.SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("Items.CARGO_PART.Name"),getList("Items.CARGO_PART.Lore"));
+            get("item.CARGO_PART.name"),getList("item.CARGO_PART.lore"));
     public static final SlimefunItemStack CARGO_CONFIG=themed("CARGO_CONFIG",Material.TIDE_ARMOR_TRIM_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("Items.CARGO_CONFIG.Name"),getList("Items.CARGO_CONFIG.Lore"));
+            get("item.CARGO_CONFIG.name"),getList("item.CARGO_CONFIG.lore"));
     public static final SlimefunItemStack CARGO_CONFIGURATOR=themed("CARGO_CONFIGURATOR",Material.JUKEBOX,Theme.CARGO1,
-            get("Items.CARGO_CONFIGURATOR.Name"),getList("Items.CARGO_CONFIGURATOR.Lore"));
+            get("item.CARGO_CONFIGURATOR.name"),getList("item.CARGO_CONFIGURATOR.lore"));
     public static final SlimefunItemStack SIMPLE_CARGO=themed("SIMPLE_CARGO",Material.TARGET,Theme.CARGO1,
-            get("Cargo.SIMPLE_CARGO.Name"),getList("Cargo.SIMPLE_CARGO.Lore"));
+            get("cargo.SIMPLE_CARGO.name"),getList("cargo.SIMPLE_CARGO.lore"));
     public static final SlimefunItemStack REMOTE_CARGO=themed("REMOTE_CARGO",Material.CALIBRATED_SCULK_SENSOR,Theme.CARGO1,
-            get("Cargo.REMOTE_CARGO.Name"),getList("Cargo.REMOTE_CARGO.Lore"));
+            get("cargo.REMOTE_CARGO.name"),getList("cargo.REMOTE_CARGO.lore"));
     public static final SlimefunItemStack LINE_CARGO=themed("LINE_CARGO",Material.OBSERVER,Theme.CARGO1,
-            get("Cargo.LINE_CARGO.Name"),getList("Cargo.LINE_CARGO.Lore"));
+            get("cargo.LINE_CARGO.name"),getList("cargo.LINE_CARGO.lore"));
     public static final SlimefunItemStack BISORTER=themed("BISORTER",Material.VERDANT_FROGLIGHT,Theme.CARGO1,
-            get("Cargo.BISORTER.Name"),getList("Cargo.BISORTER.Lore"));
+            get("cargo.BISORTER.name"),getList("cargo.BISORTER.lore"));
     public static final SlimefunItemStack QUARSORTER=themed("QUARSORTER",Material.PEARLESCENT_FROGLIGHT,Theme.CARGO1,
-            get("Cargo.QUARSORTER.Name"),getList("Cargo.QUARSORTER.Lore"));
+            get("cargo.QUARSORTER.name"),getList("cargo.QUARSORTER.lore"));
     public static final SlimefunItemStack OCTASORTER=themed("OCTASORTER",Material.OCHRE_FROGLIGHT,Theme.CARGO1,
-            get("Cargo.OCTASORTER.Name"),getList("Cargo.OCTASORTER.Lore"));
+            get("cargo.OCTASORTER.name"),getList("cargo.OCTASORTER.lore"));
     public static final SlimefunItemStack ADV_TRASH=themed("ADV_TRASH",CustomHead.FIRE_GENERATOR.getItem(), Theme.CARGO1,
-            get("Cargo.ADV_TRASH.Name"),getList("Cargo.ADV_TRASH.Lore"));
+            get("cargo.ADV_TRASH.name"),getList("cargo.ADV_TRASH.lore"));
     public static final SlimefunItemStack QUANTUM_TRASH=themed("QUANTUM_TRASH",CustomHead.TRASHCAN_RECYCLE.getItem(), Theme.CARGO1,
-            get("Cargo.QUANTUM_TRASH.Name"),getList("Cargo.QUANTUM_TRASH.Lore"));
+            get("cargo.QUANTUM_TRASH.name"),getList("cargo.QUANTUM_TRASH.lore"));
     public static final SlimefunItemStack STORAGE_OPERATOR=themed("STORAGE_OPERATOR",Material.CARTOGRAPHY_TABLE,Theme.CARGO1,
-            get("Cargo.STORAGE_OPERATOR.Name"),getList("Cargo.STORAGE_OPERATOR.Lore"));
+            get("cargo.STORAGE_OPERATOR.name"),getList("cargo.STORAGE_OPERATOR.lore"));
     public static final SlimefunItemStack ADV_ADJACENT_CARGO=themed("ADV_ADJACENT_CARGO",Material.TARGET,Theme.CARGO1,
-            get("Cargo.ADV_ADJACENT_CARGO.Name"),getList("Cargo.ADV_ADJACENT_CARGO.Lore"));
+            get("cargo.ADV_ADJACENT_CARGO.name"),getList("cargo.ADV_ADJACENT_CARGO.lore"));
     public static final SlimefunItemStack ADV_REMOTE_CARGO=themed("ADV_REMOTE_CARGO",Material.CALIBRATED_SCULK_SENSOR,Theme.CARGO1,
-            get("Cargo.ADV_REMOTE_CARGO.Name"),getList("Cargo.ADV_REMOTE_CARGO.Lore"));
+            get("cargo.ADV_REMOTE_CARGO.name"),getList("cargo.ADV_REMOTE_CARGO.lore"));
     public static final SlimefunItemStack ADV_LINE_CARGO=themed("ADV_LINE_CARGO",Material.OBSERVER,Theme.CARGO1,
-            get("Cargo.ADV_LINE_CARGO.Name"),getList("Cargo.ADV_LINE_CARGO.Lore"));
+            get("cargo.ADV_LINE_CARGO.name"),getList("cargo.ADV_LINE_CARGO.lore"));
     public static final SlimefunItemStack REDSTONE_ADJACENT_CARGO=themed("REDSTONE_ADJACENT_CARGO",Material.REDSTONE_LAMP,Theme.CARGO1,
-            get("Cargo.REDSTONE_ADJACENT_CARGO.Name"),getList("Cargo.REDSTONE_ADJACENT_CARGO.Lore"));
+            get("cargo.REDSTONE_ADJACENT_CARGO.name"),getList("cargo.REDSTONE_ADJACENT_CARGO.lore"));
     public static final SlimefunItemStack CHIP_ADJ_CARGO=themed("CHIP_ADJ_CARGO",Material.SHROOMLIGHT,Theme.CARGO1,
-            get("Cargo.CHIP_ADJ_CARGO.Name"),getList("Cargo.CHIP_ADJ_CARGO.Lore"));
+            get("cargo.CHIP_ADJ_CARGO.name"),getList("cargo.CHIP_ADJ_CARGO.lore"));
     public static final SlimefunItemStack RESETTER=themed("RESETTER",Material.FLETCHING_TABLE,Theme.CARGO1,
-            get("Cargo.RESETTER.Name"),getList("Cargo.RESETTER.Lore"));
+            get("cargo.RESETTER.name"),getList("cargo.RESETTER.lore"));
     public static final SlimefunItemStack STORAGE_SINGULARITY= themed("STORAGE_SINGULARITY",Material.NETHER_STAR,Theme.ITEM1,
-            get("Cargo.STORAGE_SINGULARITY.Name"),getList("Cargo.STORAGE_SINGULARITY.Lore"));
+            get("cargo.STORAGE_SINGULARITY.name"),getList("cargo.STORAGE_SINGULARITY.lore"));
     public static final SlimefunItemStack QUANTUM_LINK=themed("QUANTUM_LINK",Material.NETHER_STAR,Theme.ITEM1,
-            get("Cargo.QUANTUM_LINK.Name"),getList("Cargo.QUANTUM_LINK.Lore"));
+            get("cargo.QUANTUM_LINK.name"),getList("cargo.QUANTUM_LINK.lore"));
     public static final SlimefunItemStack INPORT=themed("INPORT",Material.END_STONE,Theme.MACHINE1,
-            get("Cargo.INPORT.Name"),getList("Cargo.INPORT.Lore"));
+            get("cargo.INPORT.name"),getList("cargo.INPORT.lore"));
     public static final SlimefunItemStack OUTPORT=themed("OUTPORT",Material.END_STONE,Theme.MACHINE1,
-            get("Cargo.OUTPORT.Name"),getList("Cargo.OUTPORT.Lore"));
+            get("cargo.OUTPORT.name"),getList("cargo.OUTPORT.lore"));
     public static final SlimefunItemStack IOPORT=themed("IOPORT",Material.PURPUR_PILLAR,Theme.MACHINE1,
-            get("Cargo.IOPORT.Name"),getList("Cargo.IOPORT.Lore"));
+            get("cargo.IOPORT.name"),getList("cargo.IOPORT.lore"));
     public static final SlimefunItemStack STORAGE=themed("STORAGE",Material.LIGHT_GRAY_STAINED_GLASS,Theme.CARGO1,
-            get("Cargo.STORAGE.Name"),getList("Cargo.STORAGE.Lore"));
+            get("cargo.STORAGE.name"),getList("cargo.STORAGE.lore"));
     public static final SlimefunItemStack STORAGE_INPUT=themed("STORAGE_INPUT",Material.BLUE_STAINED_GLASS,Theme.CARGO1,
-            get("Cargo.STORAGE_INPUT.Name"),getList("Cargo.STORAGE_INPUT.Lore"));
+            get("cargo.STORAGE_INPUT.name"),getList("cargo.STORAGE_INPUT.lore"));
     public static final SlimefunItemStack STORAGE_OUTPUT=themed("STORAGE_OUTPUT",Material.RED_STAINED_GLASS,Theme.CARGO1,
-            get("Cargo.STORAGE_OUTPUT.Name"),getList("Cargo.STORAGE_OUTPUT.Lore"));
+            get("cargo.STORAGE_OUTPUT.name"),getList("cargo.STORAGE_OUTPUT.lore"));
     public static final SlimefunItemStack BIFILTER=themed("BIFILTER",Material.PRISMARINE,Theme.CARGO1,
-            get("Cargo.BIFILTER.Name"),getList("Cargo.BIFILTER.Lore"));
+            get("cargo.BIFILTER.name"),getList("cargo.BIFILTER.lore"));
     public static final SlimefunItemStack QUARFILTER=themed("QUARFILTER",Material.PRISMARINE_BRICKS,Theme.CARGO1,
-            get("Cargo.QUARFILTER.Name"),getList("Cargo.QUARFILTER.Lore"));
+            get("cargo.QUARFILTER.name"),getList("cargo.QUARFILTER.lore"));
     public static final SlimefunItemStack OCTAFILTER=themed("OCTAFILTER",Material.DARK_PRISMARINE,Theme.CARGO1,
-            get("Cargo.OCTAFILTER.Name"),getList("Cargo.OCTAFILTER.Lore"));
+            get("cargo.OCTAFILTER.name"),getList("cargo.OCTAFILTER.lore"));
     public static final SlimefunItemStack CARGO_PIP=themed("CARGO_PIP",Material.END_ROD,Theme.CARGO1,
-            get("Cargo.CARGO_PIP.Name"),getList("Cargo.CARGO_PIP.Lore"));
+            get("cargo.CARGO_PIP.name"),getList("cargo.CARGO_PIP.lore"));
     //multiblock
     public static final SlimefunItemStack PORTAL_CORE=themed("PORTAL_CORE",Material.CRYING_OBSIDIAN,Theme.MULTIBLOCK1,
-            get("MultiBlock.PORTAL_CORE.Name"),getList("MultiBlock.PORTAL_CORE.Lore"));
+            get("multiblock.PORTAL_CORE.name"),getList("multiblock.PORTAL_CORE.lore"));
     public static final SlimefunItemStack PORTAL_FRAME=themed("PORTAL_FRAME",Material.IRON_BLOCK,Theme.MULTIBLOCK2,
-            get("MultiBlock.PORTAL_FRAME.Name"),getList("MultiBlock.PORTAL_FRAME.Lore"));
+            get("multiblock.PORTAL_FRAME.name"),getList("multiblock.PORTAL_FRAME.lore"));
     public static final SlimefunItemStack SOLAR_REACTOR=themed("SOLAR_REACTOR",Material.LODESTONE,Theme.MULTIBLOCK1,
-            get("MultiBlock.SOLAR_REACTOR.Name"),getList("MultiBlock.SOLAR_REACTOR.Lore"));
+            get("multiblock.SOLAR_REACTOR.name"),getList("multiblock.SOLAR_REACTOR.lore"));
     public static final SlimefunItemStack SOLAR_REACTOR_FRAME=themed("SOLAR_REACTOR_FRAME",Material.CHISELED_QUARTZ_BLOCK,Theme.MULTIBLOCK2,
-            get("MultiBlock.SOLAR_REACTOR_FRAME.Name"),getList("MultiBlock.SOLAR_REACTOR_FRAME.Lore"));
+            get("multiblock.SOLAR_REACTOR_FRAME.name"),getList("multiblock.SOLAR_REACTOR_FRAME.lore"));
     public static final SlimefunItemStack SOLAR_REACTOR_GLASS=themed("SOLAR_REACTOR_GLASS",Material.TINTED_GLASS,Theme.MULTIBLOCK2,
-            get("MultiBlock.SOLAR_REACTOR_GLASS.Name"),getList("MultiBlock.SOLAR_REACTOR_GLASS.Lore"));
+            get("multiblock.SOLAR_REACTOR_GLASS.name"),getList("multiblock.SOLAR_REACTOR_GLASS.lore"));
     public static final SlimefunItemStack SOLAR_INPUT=themed("SOLAR_INPUT",Material.WAXED_OXIDIZED_COPPER,Theme.MULTIBLOCK2,
-            get("MultiBlock.SOLAR_INPUT.Name"),getList("MultiBlock.SOLAR_INPUT.Lore"));
+            get("multiblock.SOLAR_INPUT.name"),getList("multiblock.SOLAR_INPUT.lore"));
     public static final SlimefunItemStack SOLAR_OUTPUT=themed("SOLAR_OUTPUT",Material.WAXED_COPPER_BLOCK,Theme.MULTIBLOCK2,
-            get("MultiBlock.SOLAR_OUTPUT.Name"),getList("MultiBlock.SOLAR_OUTPUT.Lore"));
+            get("multiblock.SOLAR_OUTPUT.name"),getList("multiblock.SOLAR_OUTPUT.lore"));
     public static final SlimefunItemStack TRANSMUTATOR_FRAME=themed("TRANSMUTATOR_FRAME",Material.SMOOTH_STONE, Theme.MULTIBLOCK2,
-            get("MultiBlock.TRANSMUTATOR_FRAME.Name"),getList("MultiBlock.TRANSMUTATOR_FRAME.Lore"));
+            get("multiblock.TRANSMUTATOR_FRAME.name"),getList("multiblock.TRANSMUTATOR_FRAME.lore"));
     public static final SlimefunItemStack TRANSMUTATOR_GLASS=themed("TRANSMUTATOR_GLASS",Material.LIGHT_GRAY_STAINED_GLASS,Theme.MULTIBLOCK2,
-            get("MultiBlock.TRANSMUTATOR_GLASS.Name"),getList("MultiBlock.TRANSMUTATOR_GLASS.Lore"));
+            get("multiblock.TRANSMUTATOR_GLASS.name"),getList("multiblock.TRANSMUTATOR_GLASS.lore"));
     public static final SlimefunItemStack TRANSMUTATOR_ROD=themed("TRANSMUTATOR_ROD",Material.REINFORCED_DEEPSLATE,Theme.MULTIBLOCK2,
-            get("MultiBlock.TRANSMUTATOR_ROD.Name"),getList("MultiBlock.TRANSMUTATOR_ROD.Lore"));
+            get("multiblock.TRANSMUTATOR_ROD.name"),getList("multiblock.TRANSMUTATOR_ROD.lore"));
     public static final SlimefunItemStack TRANSMUTATOR=themed("TRANSMUTATOR",Material.FURNACE,Theme.MULTIBLOCK1,
-            get("MultiBlock.TRANSMUTATOR.Name"),getList("MultiBlock.TRANSMUTATOR.Lore"));
+            get("multiblock.TRANSMUTATOR.name"),getList("multiblock.TRANSMUTATOR.lore"));
     public static final SlimefunItemStack FINAL_BASE=themed("FINAL_BASE",Material.POLISHED_DEEPSLATE,Theme.MULTIBLOCK1,
-            get("MultiBlock.FINAL_BASE.Name"),getList("MultiBlock.FINAL_BASE.Lore"));
+            get("multiblock.FINAL_BASE.name"),getList("multiblock.FINAL_BASE.lore"));
     public static final SlimefunItemStack FINAL_ALTAR=themed("FINAL_ALTAR",Material.CHISELED_DEEPSLATE,Theme.MULTIBLOCK2,
-            get("MultiBlock.FINAL_ALTAR.Name"),getList("MultiBlock.FINAL_ALTAR.Lore"));
+            get("multiblock.FINAL_ALTAR.name"),getList("multiblock.FINAL_ALTAR.lore"));
     public static final SlimefunItemStack SMITH_WORKSHOP=themed("SMITH_WORKSHOP",Material.RESPAWN_ANCHOR,Theme.MACHINE1,
-            get("MultiBlock.SMITH_WORKSHOP.Name"),getList("MultiBlock.SMITH_WORKSHOP.Lore"));
+            get("multiblock.SMITH_WORKSHOP.name"),getList("multiblock.SMITH_WORKSHOP.lore"));
     public static final SlimefunItemStack SMITH_INTERFACE_NONE=themed("SMITH_INTERFACE_NONE",Material.SEA_LANTERN,Theme.MACHINE1,
-            get("MultiBlock.SMITH_INTERFACE_NONE.Name"),getList("MultiBlock.SMITH_INTERFACE_NONE.Lore"));
+            get("multiblock.SMITH_INTERFACE_NONE.name"),getList("multiblock.SMITH_INTERFACE_NONE.lore"));
     public static final SlimefunItemStack SMITH_INTERFACE_CRAFT=themed("SMITH_INTERFACE_CRAFT",Material.TARGET,Theme.MACHINE1,
-            get("MultiBlock.SMITH_INTERFACE_CRAFT.Name"),getList("MultiBlock.SMITH_INTERFACE_CRAFT.Lore"));
+            get("multiblock.SMITH_INTERFACE_CRAFT.name"),getList("multiblock.SMITH_INTERFACE_CRAFT.lore"));
     //feat
     public static final SlimefunItemStack CUSTOM1=
             themed("CUSTOM1",new ItemStack(Material.COMMAND_BLOCK),Theme.ITEM1,"测试物件1","只是一个简单的测试");
@@ -740,21 +740,21 @@ public class AddItem {
             themed("WORKBENCH1",new ItemStack(Material.ENCHANTING_TABLE),Theme.BENCH1,"测试工作站","测试测试");
     //final
     public static final SlimefunItemStack FINAL_SEQUENTIAL=themed("FINAL_SEQUENTIAL",Material.STRIPPED_BAMBOO_BLOCK,Theme.MACHINE1,
-            get("Machines.FINAL_SEQUENTIAL.Name"),getList("Machines.FINAL_SEQUENTIAL.Lore"));
+            get("machine.FINAL_SEQUENTIAL.name"),getList("machine.FINAL_SEQUENTIAL.lore"));
 
     public static final SlimefunItemStack FINAL_STACKMACHINE=themed("FINAL_STACKMACHINE",Material.BLAST_FURNACE,Theme.MACHINE1,
-            get("Machines.FINAL_STACKMACHINE.Name"),getList("Machines.FINAL_STACKMACHINE.Lore"));
+            get("machine.FINAL_STACKMACHINE.name"),getList("machine.FINAL_STACKMACHINE.lore"));
     public static final SlimefunItemStack FINAL_STACKMGENERATOR=themed("FINAL_STACKMGENERATOR",Material.POLISHED_ANDESITE,Theme.MACHINE2,
-            get("Generators.FINAL_STACKMGENERATOR.Name"),getList("Generators.FINAL_STACKMGENERATOR.Lore"));
+            get("generator.FINAL_STACKMGENERATOR.name"),getList("generator.FINAL_STACKMGENERATOR.lore"));
     public static final SlimefunItemStack FINAL_STONE_MG=themed("FINAL_STONE_MG",Material.DEEPSLATE_TILES,Theme.MACHINE2,
-            get("Generators.FINAL_STONE_MG.Name"),getList("Generators.FINAL_STONE_MG.Lore"));
+            get("generator.FINAL_STONE_MG.name"),getList("generator.FINAL_STONE_MG.lore"));
 
     //tmp占位符
     public static final SlimefunItemStack TMP1= new SlimefunItemStack("TMP1",Material.STONE,"&b占位符","&7暂未开发");
     public static final SlimefunItemStack RESOLVE_FAILED=themed("RESOLVE_FAILED0",Material.STRUCTURE_VOID,Theme.NONE,
-            get("Items.RESOLVE_FAILED.Name"),getList("Items.RESOLVE_FAILED.Lore"));
+            get("item.RESOLVE_FAILED.name"),getList("item.RESOLVE_FAILED.lore"));
     public static final SlimefunItemStack SHELL=themed("调试终端",Material.BOOK,Theme.ITEM1,
-            get("Items.SHELL.Name"),getList("Items.SHELL.Lore"));
+            get("item.SHELL.name"),getList("item.SHELL.lore"));
     public static final HashSet<ItemStack> ADDGLOW=new HashSet<>(){{
         add(RESOLVE_FAILED);
         add(BUG);
