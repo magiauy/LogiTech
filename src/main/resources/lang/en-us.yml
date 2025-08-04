@@ -264,7 +264,7 @@ Items:
   LOGIC:
     Name: 'Logic'
     Lore:
-      - 'Cut but not broken, organize but still messy...'
+      - 'Shattered but not broken, organized but still messy...'
   TRUE_:
     Name: 'True '
   FALSE_:
@@ -277,13 +277,13 @@ Items:
   EXISTE:
     Name: 'Existence'
   UNIQUE:
-    Name: 'Uniqueness'
+    Name: 'Unique'
   PARADOX:
     Name: 'Paradox'
   NOLOGIC:
     Name: 'Anti-Logic'
     Lore:
-      - 'What, this is unscientific'
+      - 'What, this doesn''t make any sense'
   LENGINE:
     Name: 'Logic Engine'
   LFIELD:
@@ -301,7 +301,7 @@ Items:
   LBOOLIZER:
     Name: 'Boolizer Core'
     Lore:
-      - 'World of 0s and 1s...'
+      - 'World of true and false...'
   LIOPORT:
     Name: 'I/O Component'
     Lore:
@@ -333,16 +333,16 @@ Items:
   DIMENSIONAL_SHARD:
     Name: 'Dimensional Shard'
     Lore:
-      - 'Contains power to cross dimensions'
+      - 'Contains enough power to cross dimensions'
   DIMENSIONAL_SINGULARITY:
     Name: 'Dimensional Crystal'
     Lore:
-      - 'Condensed dimensional power, easily crosses space'
+      - 'Condensed dimensional power, easily crosses spacetime'
   STAR_GOLD:
     Name: 'Star Gold Sand'
     Lore:
-      - 'Born from stellar explosions...'
-      - 'Structure solid enough to carry spatial power'
+      - 'Born from supernova...'
+      - 'So dense it can carry spatial power'
   VIRTUAL_SPACE:
     Name: 'Virtual Space'
     Lore:
@@ -366,7 +366,7 @@ Items:
   PDCECDMD:
     Name: 'Palladium Cerium Cadmium Mendelevium Alloy'
     Lore:
-      - 'Bush, Go Men'
+      - 'Metal frankenstein'
   HGTLPBBI:
     Name: 'Mercury Thallium Lead Bismuth Alloy'
     Lore:
@@ -389,19 +389,19 @@ Items:
   METAL_CORE:
     Name: 'Heavy Metal Core'
     Lore:
-      - 'Condensed concept'
+      - 'Condensed matter'
   SMELERY_CORE:
     Name: 'Smeltery Core'
     Lore:
-      - 'Condensed concept'
+      - 'Condensed matter'
   MASS_CORE:
     Name: 'Mass Core'
     Lore:
-      - 'Condensed concept'
+      - 'Condensed matter'
   TECH_CORE:
     Name: 'Tech Core'
     Lore:
-      - 'Condensed concept'
+      - 'Condensed matter'
   SPACE_PLATE:
     Name: 'Space Reinforced Plate'
   LOGIC_CORE:
@@ -425,9 +425,9 @@ Items:
       - 'Right-click to open target slimefun/vanilla container'
       - 'Shift+right-click to bind target block position'
   SAMPLE_HEAD:
-    Name: 'Head Display Sample'
+    Name: 'Example of head display'
     Lore:
-      - 'From head analyzer'
+      - 'From the head analyzer.'
   RESOLVE_FAILED:
     Name: '&cItem Resolution Failed!'
     Lore:
@@ -437,9 +437,9 @@ Items:
     Lore:
       - 'Configure cargo transport amount'
   CARGO_CONFIG:
-    Name: 'Universal Cargo Config Card'
+    Name: 'Universal Cargo Configuration Card'
     Lore:
-      - 'Insert into machine to load cargo config'
+      - 'Insert into machine to load cargo configuration'
   CARGO_CONFIGURATOR:
     Name: 'Universal Cargo Configurator'
     Lore:
@@ -448,11 +448,11 @@ Items:
   CHIP:
     Name: 'CHIP'
     Lore:
-      - 'Chip storing 32-bit data'
+      - 'Chip that can store 32-bit data'
   CHIP_CORE:
-    Name: 'Smart Control Core'
+    Name: 'Intelligent Control Core'
     Lore:
-      - 'Internally coded with complex programs...'
+      - 'Internally coded with complex codes...'
       - 'Controls complex machine operations'
   LSINGULARITY:
     Name: 'Logic Singularity'
@@ -464,19 +464,19 @@ Items:
   HYDRAGYRUM:
     Name: 'Mercury (Hg)'
   RADIATION_CLEAR:
-    Name: 'Radiation Area Cleaner'
+    Name: 'Radiation Cleaner'
     Lore:
-      - 'Clears radiation centers within 40 blocks'
+      - 'Clears radiation within 40 blocks''
   ANTIMASS_CLEAR:
-    Name: 'Anti-Concept Matter Cleaner'
+    Name: 'Anti-Matter Cleaner'
     Lore:
       - 'Admin and creative mode only'
-      - 'Right-click: Stop all antimatter processes and delete antimatter blocks'
-      - 'Shift+right-click: Replace all logic cores with specified normal blocks'
+      - '右键时 Right-click: Stop all antimatter processes and delete antimatter blocks'
+      - 'shift+右键时 Shift+right-click: Replace all logic cores with specified normal blocks'
   BISILVER:
     Name: 'Bismuth Silver'
     Lore:
-      - 'Material between reality and illusion'
+      - 'Material born between reality and illusion'
   PAGOLD:
     Name: 'Palladium Gold'
     Lore:
@@ -487,11 +487,11 @@ Items:
       - 'Compress many machines in virtual space...'
       - 'Used to craft legendary stack machines'
   LASER:
-    Name: 'Nano Laser Generator'
+    Name: 'Nano Laser'
     Lore:
       - 'Used in chip manufacturing'
   ANTIMASS:
-    Name: 'Anti-Concept Matter'
+    Name: 'Anti-Matter'
     Lore:
       - 'Matter existing against logic'
       - 'Will assimilate other matter, &cplace carefully!'
@@ -502,7 +502,7 @@ Items:
     Lore:
       - 'World born from ERROR'
   ENTITY_FEAT:
-    Name: 'Entity Feature'
+    Name: 'Entity Feat'
     Lore:
       - 'Random drop from spawners'
       - ''
@@ -513,7 +513,7 @@ Items:
     Name: 'Hologram Remover'
     Lore:
       - 'Remove incorrectly placed display entities'
-      - 'You might use this after server crashes'
+      - 'You might use this after the server crashes'
       - 'Right-click to clear wrong display entities within 10 blocks'
   WITHERPROOF_REDSTONE:
     Name: 'Wither-Proof Redstone Block'
@@ -522,12 +522,12 @@ Items:
   WITHERPROOF_REDS:
     Name: 'Wither-Proof Redstone'
     Lore:
-      - 'Very good redstone wire, explosion and wither proof'
-      - 'Too bad it''s still not waterproof'
+      - 'Very good redstone, explosion and wither proof'
+      - 'Too bad its still not waterproof'
   BEDROCK_BREAKER:
-    Name: 'Portable Bedrock Breaker'
+    Name: 'Bedrock Breaker'
     Lore:
-      - 'Basic tool of redstone tech'
+      - 'Basic tool of redstone technology'
       - 'Right-click to break any vanilla/unbreakable addon blocks'
       - 'Consumes only 1 piston per block'
   LASER_GUN:
@@ -536,7 +536,7 @@ Items:
       - 'Fires macro lasers'
       - 'Hold right-click to fire'
       - 'Or wear on head and &epress F&7 to use'
-      - 'Hold shift+right-click to change power level (5 levels)'
+      - 'Hold shift+right-click to change powe level (5 levels)'
       - 'Power consumption: 64*10^<power level>'
       - '&eBeware of laser!'
       - '&x&E&B&3&3&E&BLauncher Power: &aLevel 1/5'
@@ -577,7 +577,7 @@ Items:
       - 'Fall Damage Immunity I'
       - 'Mace with built-in buffs'
       - 'Can make enemies ~fly~'
-      - '%DEFAULT_COLOR%---Not Thor, but Hammer God---'
+      - '%DEFAULT_COLOR%---You... are worthy!?---'
 
   FAKE_UI:
     Name: 'Slot Disguise Panel'
@@ -775,7 +775,7 @@ Machines:
   ARC_REACTOR:
     Name: 'Arc Reactor'
     Lore:
-      - 'IronMan edition~'
+      - '"HE WAS ABLE TO BUILD THIS IN A CAVE! WITH A BOX OF SLIMES!"'
   CHIP_REACTOR:
     Name: 'Chip Reactor'
     Lore:
@@ -905,7 +905,7 @@ Machines:
       - 'Grind 9 ore recipes at once'
       - 'Processor count: 9x'
   TNT_GEN:
-    Name: 'Portable TNT Duplicator'
+    Name: 'Portable TNT Generator'
     Lore:
       - 'Basic component of redstone tech'
       - 'Activate with redstone after startup'
@@ -944,13 +944,13 @@ Machines:
       - 'Perform various operations on items'
       - 'Such as naming, dyeing, unbreakable, etc.'
   CHUNK_CHARGER:
-    Name: 'Chunk Charging Tower'
+    Name: 'Chunk Charger'
     Lore:
       - 'Uses own power to charge machines in chunk'
       - '⇨ Won''t charge other power machines from this addon'
       - '⇨ Only one per chunk'
   INGOT_CONVERTOR:
-    Name: 'Ingot Conversion Factory'
+    Name: 'Ingot Converting Factory'
     Lore:
       - 'Convert certain ingots...'
       - 'Processor count: 9x'
@@ -1009,19 +1009,19 @@ Machines:
       - '⇨ Max line distance: 64'
       - '⇨ When encountering line activator, take its power and stop searching'
   ENERGY_STORAGE_NONE:
-    Name: 'Energy Storage Tower - None'
+    Name: 'Energy Tower - None'
     Lore:
       - 'Can store certain amount of power'
       - '⇨ Cannot input power from energy network'
       - '⇨ Cannot output power to energy network'
   ENERGY_STORAGE_IN:
-    Name: 'Energy Storage Tower - IN'
+    Name: 'Energy Tower - IN'
     Lore:
       - 'Can store certain amount of power'
       - '⇨ Can input power from energy network'
       - '⇨ Cannot output power to energy network'
   ENERGY_STORAGE_IO:
-    Name: 'Energy Storage Tower - IO'
+    Name: 'Energy Tower - I/O'
     Lore:
       - 'Can store certain amount of power'
       - '⇨ Can input power from energy network'
@@ -1084,86 +1084,86 @@ Machines:
     Lore:
       - 'Classics last forever...'
   CRAFT_MANUAL:
-    Name: 'Quick Crafting Table'
+    Name: 'Fast Crafting Table'
   FURNACE_MANUAL:
-    Name: 'Quick Furnace'
+    Name: 'Fast Furnace'
   ENHANCED_CRAFT_MANUAL:
-    Name: 'Quick Enhanced Crafting Table'
+    Name: 'Fast Enhanced Crafting Table'
   GRIND_MANUAL:
-    Name: 'Quick Grindstone'
+    Name: 'Fast Grindstone'
   ARMOR_FORGE_MANUAL:
-    Name: 'Quick Armor Forge'
+    Name: 'Fast Armor Forge'
   ORE_CRUSHER_MANUAL:
-    Name: 'Quick Ore Crusher'
+    Name: 'Fast Ore Crusher'
   COMPRESSOR_MANUAL:
-    Name: 'Quick Compressor'
+    Name: 'Fast Compressor'
   PRESSURE_MANUAL:
-    Name: 'Quick Pressure Chamber'
+    Name: 'Fast Pressure Chamber'
   MAGIC_WORKBENCH_MANUAL:
-    Name: 'Quick Magic Workbench'
+    Name: 'Fast Magic Workbench'
   ORE_WASHER_MANUAL:
-    Name: 'Quick Ore Washer'
+    Name: 'Fast Ore Washer'
   GOLD_PAN_MANUAL:
-    Name: 'Quick Gold Pan'
+    Name: 'Fast Gold Pan'
   ANCIENT_ALTAR_MANUAL:
-    Name: 'Quick Ancient Altar'
+    Name: 'Fast Ancient Altar'
   SMELTERY_MANUAL:
-    Name: 'Quick Smeltery'
+    Name: 'Fast Smeltery'
   CRUCIBLE_MANUAL:
-    Name: 'Quick Crucible'
+    Name: 'Fast Crucible'
   PULVERIZER_MANUAL:
-    Name: 'Quick Pulverizer'
+    Name: 'Fast Pulverizer'
   MULTICRAFTTABLE_MANUAL:
-    Name: 'Quick Multi Craft Table'
+    Name: 'Fast Multi Craft Table'
     Lore:
       - 'Combines crafting table, magic workbench and ancient altar'
   TABLESAW_MANUAL:
-    Name: 'Quick Table Saw'
+    Name: 'Fast Table Saw'
   COMPOSTER:
-    Name: 'Quick Composter'
+    Name: 'Fast Composter'
   MULTIMACHINE_MANUAL:
-    Name: 'Quick Multi Machine'
+    Name: 'Fast Multi Machine'
     Lore:
       - 'Combines heated pressure chamber and other useless machines'
   MOBDATA_MANUAL:
-    Name: 'Quick Mob Data Injector'
+    Name: 'Fast Mob Data Injector'
     Lore:
-      - 'And you, my friend, are the real lazy dog'
+      - 'And you, my friend, are the real sloth'
   INFINITY_MANUAL:
-    Name: 'Quick Infinity Workbench'
+    Name: 'Fast Infinity Workbench'
     Lore:
       - 'One-click crafting! ...but watch the power'
   NTWWORKBENCH_MANUAL:
-    Name: 'Quick Network Workbench'
+    Name: 'Fasr Network Workbench'
     Lore:
       - 'Another lazy dog thing'
       - 'Seems to add extended recipes too?'
   MULTIBLOCK_MANUAL:
-    Name: 'Quick Multiblock Structure Simulator'
+    Name: 'Fast Multiblock Structure Simulator'
     Lore:
       - 'Simulate multiblock structures in virtual space'
-      - 'Supports quick crafting for all multiblock structures'
+      - 'Supports fast crafting for all multiblock structures'
   FINAL_MANUAL:
-    Name: 'Ultimate Quick Machine'
+    Name: 'Ultimate Fast Machine'
     Lore:
       - 'The end of one-click crafting'
       - 'Ultimate machine'
       - 'All slots &esupport "Ultimate Crafting" feature'
   CARD_MAKER:
-    Name: 'Quick Card Maker'
+    Name: 'Fast Card Maker'
     Lore:
       - 'Create replacement cards for unstackable items'
       - 'Excellent'
   ADV_MANUAL:
-    Name: 'Advanced Quick Crafter'
+    Name: 'Advanced Fast Crafter'
     Lore:
       - 'New concept one-click crafting!'
       - 'Craft directly in player inventory'
   PORTABLE_MANUAL:
-    Name: 'Portable Advanced Quick Crafter'
+    Name: 'Portable Advanced Fast Crafter'
     Lore:
       - 'New concept one-click crafting'
-      - 'Right-click: Open advanced quick crafting interface'
+      - 'Right-click: Open advanced fast crafting interface'
 Generators:
 
   MAGIC_STONE:
@@ -1244,12 +1244,12 @@ Generators:
       - 'Stack efficiency: 16.00'
       - 'Support range: All generators'
   VIRTUAL_MINER:
-    Name: 'Minecraft Miner'
+    Name: 'Virtual Miner'
     Lore:
       - 'Mine in virtual world'
       - 'High drop rate, very high'
   VIRTUAL_PLANT:
-    Name: 'Minecraft Farm'
+    Name: 'Virtual Farm'
     Lore:
       - 'Farm in virtual world'
       - 'Maybe with virtual slaves too'
@@ -1262,7 +1262,7 @@ Generators:
     Name: 'Advanced Farm'
     Lore:
       - 'Grow overworld crops'
-      - 'Beat mk2😋'
+      - 'Beat mk2'
   NETHER_PLANT:
     Name: 'Nether Farm'
     Lore:
@@ -1305,7 +1305,7 @@ MultiBlock:
     Lore:
       - 'Can be replaced by simulator cargo interface'
   SOLAR_REACTOR_GLASS:
-    Name: 'Supernova Simulator Shield'
+    Name: 'Supernova Simulator Glass'
     Lore:
       - '"Immersive experience"'
       - 'Cannot be replaced by other components'
@@ -1327,7 +1327,7 @@ MultiBlock:
   TRANSMUTATOR_FRAME:
     Name: 'Element Transmutator Frame'
   TRANSMUTATOR_GLASS:
-    Name: 'Element Transmutator Shield'
+    Name: 'Element Transmutator Glass'
     Lore:
       - "Can effectively isolate nuclear radiation"
       - '"This time it shouldn''t explode"'
@@ -1381,27 +1381,27 @@ MultiBlock:
     Name: 'Forge Workshop Interface - Forge Craft Port'
     Lore:
       - 'Place at any "Workshop Interface" position in structure'
-      - '⇨ Adjacent blocks can place work blocks (like crafting table, smithing table)'
-      - '⇨ These work blocks can craft special recipes or perform special operations'
+      - '⇨ Adjacent blocks can place workstation blocks (like crafting table, smithing table)'
+      - '⇨ These workstation blocks can craft special recipes or perform special operations'
       - '⇨ Final output will be output to this machine'
 Cargo:
   SIMPLE_CARGO:
-    Name: 'Adjacent Transporter'
+    Name: 'Adjacent Cargo'
     Lore:
       - 'Transfer items from one slot group to another...'
       - 'Select adjacent blocks as source and target'
       - '⇨ &aSupports cargo with vanilla containers'
   REMOTE_CARGO:
-    Name: 'Remote Transporter'
+    Name: 'Remote Cargo'
     Lore:
       - 'Transfer items from one slot group to another...'
       - 'Insert hyperlink to select blocks as source and target'
       - '⇨ &aSupports cargo with vanilla containers'
   LINE_CARGO:
-    Name: 'Chain Transporter'
+    Name: 'Chain Cargo'
     Lore:
       - 'Classics last forever...'
-      - 'Execute transport tasks in specified direction order'
+      - 'Execute transporting tasks in specified direction order'
       - 'Each block transfers to next block'
       - 'Max transport length: 64 blocks'
   BISORTER:
@@ -1429,17 +1429,17 @@ Cargo:
     Lore:
       - 'Sort item inputs to specified slots'
   ADV_TRASH:
-    Name: 'Advanced Trash Incinerator'
+    Name: 'Advanced Incinerator'
     Lore:
-      - 'Incinerate 54 stacks of items at once'
+      - 'Void 54 stacks of items at once'
   QUANTUM_TRASH:
-    Name: 'Quantum Trash Incinerator'
+    Name: 'Quantum Incinerator'
     Lore:
-      - 'Incinerate items stored in storage items'
+      - 'Void items stored in storage items'
       - 'Supported storage items:'
       - "LogiTech Concept Singularity Storage"
       - "LogiTech Quantum Entanglement Singularity"
-      - "Networks (Extended) Quantum Storage Series"
+      - "Networks and NetworksExpansion Quantum Storage Series"
   STORAGE_OPERATOR:
     Name: 'Storage Item Operator'
     Lore:
@@ -1451,19 +1451,19 @@ Cargo:
   ADV_ADJACENT_CARGO:
     Name: 'Smart Adjacent Transporter'
     Lore:
-      - 'Same mechanism as normal cargo machines'
+      - 'Same as normal cargo machines'
       - 'Accepts target machine input slot restrictions, increasing overhead'
       - 'Transport amount limited to min(576, config card data)'
       - '⇨ &aSupports cargo with vanilla containers'
   ADV_REMOTE_CARGO:
     Name: 'Smart Remote Transporter'
     Lore:
-      - 'Same mechanism as normal cargo machines'
+      - 'Same as normal cargo machines'
       - 'Accepts target machine input slot restrictions, increasing overhead'
       - 'Transport amount limited to min(576, config card data)'
       - '⇨ &aSupports cargo with vanilla containers'
   ADV_LINE_CARGO:
-    Name: 'Smart Chain Transporter'
+    Name: 'Smart Line Transporter'
     Lore:
       - 'Same mechanism as normal cargo machines'
       - 'Accepts target machine input slot restrictions, increasing overhead'
@@ -1481,7 +1481,7 @@ Cargo:
   RESETTER:
     Name: 'Data Resetter'
     Lore:
-      - 'Delete special information stored in items'
+      - 'Delete information stored in items'
       - 'Reset storage singularity type'
       - 'Can also reset slimefun items'
   STORAGE_SINGULARITY:
@@ -1539,7 +1539,7 @@ Theme:
   MULTIBLOCK2:
     Name: "&3Multiblock Component"
   MANUAL1:
-    Name: "&3Quick Machine"
+    Name: "&3Fast Machine"
   ADVANCED1:
     Name: "&3Advanced Domain"
   CARGO1:
