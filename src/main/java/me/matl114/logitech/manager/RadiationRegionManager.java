@@ -1,5 +1,6 @@
 package me.matl114.logitech.manager;
 
+import me.matl114.logitech.Language;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.UtilClass.EffectClass.PlayerEffects;
 import me.matl114.logitech.core.Registries.CustomEffects;
@@ -86,7 +87,7 @@ public class RadiationRegionManager {
                 ,(entity -> entity instanceof Player));
         for(Entity entity:entities){
             if(entity instanceof  Player player){
-                AddUtils.sendMessage(player,"&e警告!您已进入危险的辐射区!");
+                AddUtils.sendMessage(player, Language.get("Messages.RADIATION_WARNING"));
                 PlayerEffects.grantEffect(CustomEffects.RADIATION,
                         player,level,60,(player1 -> true));
             }

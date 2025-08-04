@@ -3,6 +3,7 @@ package me.matl114.logitech.utils;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import lombok.Getter;
+import me.matl114.logitech.Language;
 import me.matl114.logitech.MyAddon;
 import me.matl114.logitech.core.CustomSlimefunItem;
 import me.matl114.logitech.manager.Schedules;
@@ -38,7 +39,7 @@ public class ContainerUtils {
         }else return preCalculatedSlots[size];
     }
     @Getter
-    protected static BlockMenuPreset containerWrapperMenuPreset =new BlockMenuPreset("LOGITECH_FUNCTIONAL_BLOCKMENU","&c容器") {
+    protected static BlockMenuPreset containerWrapperMenuPreset =new BlockMenuPreset("LOGITECH_FUNCTIONAL_BLOCKMENU", Language.get("Messages.CONTAINER_TITLE")) {
         @Override
         public void init() {
             for(int i=0;i<54;++i){

@@ -1574,3 +1574,12 @@ GUI:
   INFO_TITLE: '&6信息'
   GENERATORS_IN_RANGE: '&7范围内发电机: %d/%d(最大)'
   GENERATOR_ERRORS: '&7发电机错误: %d'
+
+Messages:
+  RADIATION_WARNING: '&e警告!您已进入危险的辐射区!'
+  CONTAINER_TITLE: '&c容器'
+  ORIGIN_WORKBENCH: '&6万物起源 工作台'
+  VANILLA_FURNACE: '&6原版熔炉'
+  SAVING_DATA: '保存附属数据中'
+  DATA_SAVED: '附属数据保存完成'
+  LANGUAGE_LOADED: '语言配置加载完毕'

@@ -275,8 +275,8 @@ public class EquipmentFUManager implements Manager, Listener {
     private void asyncTriggerPlayerFUUpdate(Event trigger, Player player,int mainHandSlot,boolean delayed ){
         long timeStamp=System.currentTimeMillis();
         UUID uuid=player.getUniqueId();
-        //1个玩家1秒内不得触发超过1次
-        //如果触发吵过一次，计划在20t后执行一次update 期间所有update全部忽视
+        //One player cannot trigger more than once within 1 second
+        //If triggered more than once, schedule an update after 20t, ignoring all updates during that period
         if(!delayed&&(runningTasks.containsKey(uuid)||updateTimeStamps.getOrDefault(player.getUniqueId(),0L)+500>timeStamp)){
             runningTasks.computeIfAbsent(uuid,(uid)->{
                 return new BukkitRunnable() {

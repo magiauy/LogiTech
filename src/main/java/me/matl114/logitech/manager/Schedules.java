@@ -3,6 +3,7 @@ package me.matl114.logitech.manager;
 
 import com.google.common.base.Preconditions;
 import lombok.Getter;
+import me.matl114.logitech.Language;
 import me.matl114.logitech.utils.Debug;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
@@ -24,7 +25,7 @@ public class Schedules {
                 ScheduleSave.onPeriodicSave();
             }
         };
-        int periodAutoSave=3 * 60 * 20;//三分钟保存一次
+        int periodAutoSave=3 * 60 * 20; // Save every 3 minutes
         autoSaveThread.runTaskTimerAsynchronously(plugin, periodAutoSave, periodAutoSave);
 
         effectThread = new BukkitRunnable() {
@@ -44,9 +45,9 @@ public class Schedules {
         postRegisterTask.runTaskLater(plugin,delayPostRegister);
     }
     public static void onDisableSchedules(Plugin plugin){
-        Debug.logger("保存附属数据中");
+        Debug.logger(Language.get("Messages.SAVING_DATA"));
         ScheduleSave.onFinalSave();
-        Debug.logger("附属数据保存完成");
+        Debug.logger(Language.get("Messages.DATA_SAVED"));
     }
     public static void execute(Runnable task,boolean isSync){
         if(Bukkit.isPrimaryThread()){

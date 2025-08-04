@@ -3,6 +3,7 @@ package me.matl114.logitech.utils;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import me.matl114.logitech.Language;
 import me.matl114.logitech.manager.Schedules;
 import me.matl114.logitech.utils.Algorithms.PairList;
 import me.matl114.logitech.core.AddSlimefunItems;
@@ -17,9 +18,9 @@ import java.util.Optional;
 
 public class BukkitUtils {
     public static final RecipeType VANILLA_CRAFTTABLE =new RecipeType(AddUtils.getNameKey("vanilla_crafttable"),
-            new CustomItemStack(Material.CRAFTING_TABLE,null,"","&6万物起源 工作台"));
+            new CustomItemStack(Material.CRAFTING_TABLE,null,"", Language.get("Messages.ORIGIN_WORKBENCH")));
     public static final RecipeType VANILLA_FURNACE=new RecipeType(AddUtils.getNameKey("vanilla_furnace"),
-            new CustomItemStack(Material.FURNACE,null,"","&6原版熔炉"));
+            new CustomItemStack(Material.FURNACE,null,"", Language.get("Messages.VANILLA_FURNACE")));
 
     public static void sendRecipeToVanilla(NamespacedKey key,ShapedMachineRecipe recipe){
         sendShapedRecipeToVanilla(key,recipe.getInput(),recipe.getOutput()[0]);

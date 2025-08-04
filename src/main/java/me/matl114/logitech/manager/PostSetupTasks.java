@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class PostSetupTasks {
-    //在服务器启动之后执行的初始化
+    //Tasks to be executed after server startup initialization
     public static boolean startPostRegister=false;
     public static boolean recipeSupportorInit=false;
     public static HashSet<Runnable> registerTasks=new LinkedHashSet<>();
