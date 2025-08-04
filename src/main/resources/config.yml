@@ -1,9 +1,9 @@
 options:
   auto-update: false
   test: false
-  #慎用
+  #Use with caution
   clear-old-config: false
   disable-spacestorage: false
 
-# Language setting
+#Language setting
 language: en-US
