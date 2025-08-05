@@ -14,7 +14,7 @@ import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import lombok.AccessLevel;
 import lombok.Getter;
 import me.matl114.logitech.utils.UtilClass.ItemClass.ItemCounter;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.ItemClass.ItemGreedyConsumer;
 import me.matl114.logitech.utils.UtilClass.RecipeClass.MultiCraftingOperation;
@@ -154,7 +154,7 @@ public class SmithInterfaceProcessor extends SmithingInterface implements Machin
                     }
                     if(durability>0||hasName){
                         ItemStack fix=anvilInventory.getItem(1);
-                        if(CraftUtils.matchItemStack(fix, AddItem.ABSTRACT_INGOT,false)){
+                        if(CraftUtils.matchItemStack(fix, LogiTechSlimefunItemStacks.ABSTRACT_INGOT,false)){
                             int supply=fix.getAmount();
                             int expectedDurabilityCost = (durability+249)/250;
                             int cost= Math.min( expectedDurabilityCost+ (hasName?1:0),supply);

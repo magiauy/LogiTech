@@ -4,7 +4,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import lombok.Getter;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Items.Abstracts.MaterialItem;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.MenuUtils;
@@ -40,7 +40,7 @@ public class EquipmentFUItem extends MaterialItem {
         return this;
     }
     private ItemStack cost = null;
-    private ItemStack costSample = AddItem.ABSTRACT_INGOT;
+    private ItemStack costSample = LogiTechSlimefunItemStacks.ABSTRACT_INGOT;
     public EquipmentFUItem cost(ItemStack costSample,String... description){
         cost = new CleanItemStack(Material.BOOK,"&a所需锻造材料",description);
         this.costSample = costSample;

@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Set;
 
 import static me.matl114.logitech.utils.AddUtils.*;
-import static me.matl114.logitech.core.AddItem.*;
+import static me.matl114.logitech.core.LogiTechSlimefunItemStacks.*;
 import static org.bukkit.inventory.EquipmentSlot.*;
 
 public class EFUImplements {

@@ -87,7 +87,7 @@ public class RadiationRegionManager {
                 ,(entity -> entity instanceof Player));
         for(Entity entity:entities){
             if(entity instanceof  Player player){
-                AddUtils.sendMessage(player, Language.get("Messages.RADIATION_WARNING"));
+                AddUtils.sendMessage(player, Language.get("message.RADIATION_WARNING"));
                 PlayerEffects.grantEffect(CustomEffects.RADIATION,
                         player,level,60,(player1 -> true));
             }

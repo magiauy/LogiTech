@@ -7,7 +7,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractEnergyProvider;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.UtilClass.ItemClass.DisplayItemStack;
@@ -49,8 +49,8 @@ public class BiReactor extends AbstractEnergyProvider {
 
 
     protected final ItemStack[] INFO_ITEMS=new ItemStack[]{
-            new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&6[%s]输入槽".formatted(Language.get("item.FALSE_.name"))),
-            new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&6[%s]输入槽".formatted(Language.get("item.TRUE_.name")))
+            new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&6[%s]输入槽".formatted(Language.get("item.boolean_false.name"))),
+            new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&6[%s]输入槽".formatted(Language.get("item.boolean_true.name")))
     };
     public int[] getInputSlots(){
         return INPUT_SLOTS;
@@ -76,11 +76,11 @@ public class BiReactor extends AbstractEnergyProvider {
         STATUS_ITEM[0]=AddUtils.addGlow( new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,"&e状态: &a正","&7发电量: %dJ/t".formatted(this.energyConsumption)));
         STATUS_ITEM[1]=AddUtils.addGlow( new CustomItemStack(Material.RED_STAINED_GLASS_PANE,"&e状态: &c负","&7发电量: %dJ/t".formatted(-this.energyConsumptionFalse)));
         this.setDisplayRecipes(Utils.list(AddUtils.getInfoShow("&f机制 &a正","&7当同时输入%s和%s时,视为满足条件,发电 %dJ".
-                formatted(Language.get("item.FALSE_.name"),Language.get("item.TRUE_.name"),this.energyConsumption)),
-                new DisplayItemStack(AddItem.TRUE_),
+                formatted(Language.get("item.boolean_false.name"),Language.get("item.boolean_true.name"),this.energyConsumption)),
+                new DisplayItemStack(LogiTechSlimefunItemStacks.BOOLEAN_TRUE),
                 AddUtils.getInfoShow("&f机制 &c负","&7当不满足’正‘的输入条件时候,视为不满足条件,发电 -%dJ".
                         formatted(this.energyConsumptionFalse)),
-                new DisplayItemStack(AddItem.FALSE_)));
+                new DisplayItemStack(LogiTechSlimefunItemStacks.BOOLEAN_FALSE)));
     }
 
     public void constructMenu(BlockMenuPreset preset){

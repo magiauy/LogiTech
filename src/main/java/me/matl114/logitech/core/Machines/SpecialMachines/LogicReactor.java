@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractProcessor;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.ItemClass.ItemConsumer;
@@ -55,30 +55,30 @@ public class LogicReactor extends AbstractProcessor {
                 Utils.list(
                         AddUtils.getInfoShow("&f机制",
                                 "&7该机器拥有四对布尔输入槽,分别在&c同一列&7由相同颜色(蓝色或者黄色)的玻璃板标出",
-                                "&7这些槽位用于输入布尔组件,即 %s 和 %s".formatted(Language.get("item.TRUE_.name"),Language.get("item.FALSE_.name")),
+                                "&7这些槽位用于输入布尔组件,即 %s 和 %s".formatted(Language.get("item.boolean_true.name"),Language.get("item.boolean_false.name")),
                                 "&7只有这些槽位的物品满足一定机制时,合成才会尝试进行"),null,
                         AddUtils.getInfoShow("&f机制",
-                                "&7机器还有一个&c正常输入槽&7和&e正常输出槽&7,分别位于第三排的&e左侧&7和&e右侧空格,分别用于输入所需的 [%s] 和输出产物 ".formatted(Language.get("item.LOGIGATE.name")),
+                                "&7机器还有一个&c正常输入槽&7和&e正常输出槽&7,分别位于第三排的&e左侧&7和&e右侧空格,分别用于输入所需的 [%s] 和输出产物 ".formatted(Language.get("item.logic_gate.name")),
                                 "&7机器中间一个开关,用于调控机器是否会进行合成进程,当点击关闭时,当前进程将被强制终止",
                                 "&7当机器为开启状态且为空闲,输出槽非满,四对布尔输入槽&c非空&7且满足右侧某个输入条件时",
-                                "&7才会尝试&e消耗&7正常输入槽内的 [%s] 进行合成".formatted(Language.get("item.LOGIGATE.name")),
+                                "&7才会尝试&e消耗&7正常输入槽内的 [%s] 进行合成".formatted(Language.get("item.logic_gate.name")),
                                 "&7警告:当机器尝试匹配输入条件进行合成时,四对布尔输入槽内的物品会被&c清空&7!",
                                 "&7指示:当机器在合成进程中运行时,四对布尔输入槽内的物品不会被&c清空!",
                                 "&7指示:不过玩家使用普通货运输入时,布尔槽位只会被输入布尔组件",
                                 "&7指示:你可以关闭机器来停止布尔组件的消耗"
-                        ),AddItem.LOGIGATE
+                        ),LogiTechSlimefunItemStacks.LOGIC_GATE
 
                 )
         );
         this.machineRecipes=new ArrayList<>(){{
-            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(AddItem.LOGIC),tick,
-                    "&7当四对输入槽物品均为同样的布尔组件时","&7将会尝试生成 %s".formatted(Language.get("item.LOGIC.name")))));
-            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(AddItem.NOLOGIC),tick,
-                    "&7当四对输入槽物品均为相反的布尔组件时","&7将会尝试生成 %s".formatted(Language.get("item.NOLOGIC.name")))));
-            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(AddItem.UNIQUE),tick,
-                    "&7当四对输入槽物品中只有一对布尔组件相异","&7将会尝试生成 %s".formatted(Language.get("item.UNIQUE.name")))));
-            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(AddItem.EXISTE),tick,
-                    "&7当前三个材料的生成条件均不满足","&7将会尝试生成 %s".formatted(Language.get("item.EXISTE.name")))));
+            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(LogiTechSlimefunItemStacks.LOGIC),tick,
+                    "&7当四对输入槽物品均为同样的布尔组件时","&7将会尝试生成 %s".formatted(Language.get("item.logic.name")))));
+            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(LogiTechSlimefunItemStacks.NOLOGIC),tick,
+                    "&7当四对输入槽物品均为相反的布尔组件时","&7将会尝试生成 %s".formatted(Language.get("item.antilogic.name")))));
+            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(LogiTechSlimefunItemStacks.UNIQUE),tick,
+                    "&7当四对输入槽物品中只有一对布尔组件相异","&7将会尝试生成 %s".formatted(Language.get("item.uniqueness.name")))));
+            add(MachineRecipeUtils.FromMachine(AddUtils.formatInfoMachineRecipe(Utils.array(LogiTechSlimefunItemStacks.EXISTE),tick,
+                    "&7当前三个材料的生成条件均不满足","&7将会尝试生成 %s".formatted(Language.get("item.existence.name")))));
         }};
     }
     public void constructMenu(BlockMenuPreset preset) {
@@ -133,10 +133,10 @@ public class LogicReactor extends AbstractProcessor {
             it=inv.getItemInSlot(inputs[i]);
             if (it!=null){
 
-                if(CraftUtils.matchItemStack(it, AddItem.TRUE_,false)){
+                if(CraftUtils.matchItemStack(it, LogiTechSlimefunItemStacks.BOOLEAN_TRUE,false)){
                     code1=2*code1+1;
                     ++cnt;
-                }else if (CraftUtils.matchItemStack(it, AddItem.FALSE_,false)){
+                }else if (CraftUtils.matchItemStack(it, LogiTechSlimefunItemStacks.BOOLEAN_FALSE,false)){
                     code1=2*code1;
                 }else {
                     cnt=-64;
@@ -147,10 +147,10 @@ public class LogicReactor extends AbstractProcessor {
         for (int i=4;i<8;++i){
             it=inv.getItemInSlot(inputs[i]);
             if (it!=null){
-                if(CraftUtils.matchItemStack(it, AddItem.TRUE_,false)){
+                if(CraftUtils.matchItemStack(it, LogiTechSlimefunItemStacks.BOOLEAN_TRUE,false)){
                     code2=2*code2+1;
                     ++cnt;
-                }else if (CraftUtils.matchItemStack(it, AddItem.FALSE_,false)){
+                }else if (CraftUtils.matchItemStack(it, LogiTechSlimefunItemStacks.BOOLEAN_FALSE,false)){
                     code2=2*code2;
 
                 }else {
@@ -184,7 +184,7 @@ public class LogicReactor extends AbstractProcessor {
     protected Pair<MachineRecipe, ItemConsumer[]> findNextRecipe(BlockMenu inv,int[] inputs,int[] outputs){
         ItemStack iv=inv.getItemInSlot(inputs[0]);
         ItemStack ov=inv.getItemInSlot(outputs[0]);
-        if(iv!=null&&CraftUtils.matchItemStack(iv, AddItem.LOGIGATE,false)&&(ov==null||ov.getAmount()<ov.getMaxStackSize())){
+        if(iv!=null&&CraftUtils.matchItemStack(iv, LogiTechSlimefunItemStacks.LOGIC_GATE,false)&&(ov==null||ov.getAmount()<ov.getMaxStackSize())){
             int code=checkLogic(inv,BOOL_SLOT);
             if(code==-1){
                 return null;

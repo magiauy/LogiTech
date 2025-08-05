@@ -2,7 +2,7 @@ package me.matl114.logitech.core.Registries;
 
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Blocks.Laser;
 import me.matl114.logitech.core.Blocks.MultiBlock.FinalAltarCore;
 import me.matl114.logitech.core.Items.SpecialItems.ReplaceCard;
@@ -116,7 +116,7 @@ public class FinalFeature {
             if(item !=null){
                 ItemMeta meta = item.getItemMeta();
                 if(meta !=null){
-                    if(AddSlimefunItems.FAKE_UI.getId().equals( CraftUtils.parseSfId(meta) )){
+                    if(LogiTechSlimefunItems.FAKE_UI.getId().equals( CraftUtils.parseSfId(meta) )){
                         return CraftUtils.getpusher.get(settings, null, slot);
                     }
                     ItemStack stack= ReplaceCard.getAllCardReplacement(item,meta);

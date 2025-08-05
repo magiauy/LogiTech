@@ -10,7 +10,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.common.ChatColors;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.manager.PostSetupTasks;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Interface.MultiCraftType;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.ItemClass.DisplayItemStack;
@@ -288,7 +288,7 @@ public class MultiBlockManual extends AbstractManual implements MultiCraftType, 
             if(recipe!=null&&recipe.length>=9){
                 for(int j=0;j<9;j++){
                     if(recipe[j]==null){
-                        if(multimachineRecipe[j]!=null&&SlimefunItem.getByItem(multimachineRecipe[j])!= AddSlimefunItems.FAKE_UI){
+                        if(multimachineRecipe[j]!=null&&SlimefunItem.getByItem(multimachineRecipe[j])!= LogiTechSlimefunItems.FAKE_UI){
                             match=false;
                         }
                     }

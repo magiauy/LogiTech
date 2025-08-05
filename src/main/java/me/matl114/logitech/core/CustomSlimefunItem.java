@@ -19,7 +19,7 @@ public abstract class CustomSlimefunItem extends SlimefunItem implements RecipeD
         this(itemGroup, item, recipeType, recipe,new ArrayList<>());
     }
     public CustomSlimefunItem(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe,List<ItemStack> displayInfo){
-        super(itemGroup, item!=null?item:AddItem.RESOLVE_FAILED, recipeType, recipe);
+        super(itemGroup, item!=null?item:LogiTechSlimefunItemStacks.RESOLVE_FAILED, recipeType, recipe);
         if (displayInfo != null) {
             this.originalMemory = new ArrayList<>(displayInfo);
         }else{
@@ -79,8 +79,8 @@ public abstract class CustomSlimefunItem extends SlimefunItem implements RecipeD
         return this;
     }
     public CustomSlimefunItem register(){
-        if(AddSlimefunItems.INSTANCE!=null){
-            register(AddSlimefunItems.INSTANCE);
+        if(LogiTechSlimefunItems.INSTANCE!=null){
+            register(LogiTechSlimefunItems.INSTANCE);
         }else{
             Debug.logger("找不到附属实例!  注册信息: "+this.toString());
         }

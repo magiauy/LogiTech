@@ -11,7 +11,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.manager.RadiationRegionManager;
 import me.matl114.logitech.manager.Schedules;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.FunctionalClass.OutputStream;
 import me.matl114.logitech.utils.UtilClass.ItemClass.ItemCounter;
@@ -207,9 +207,9 @@ public class Transmutator extends MultiBlockAdvancedProcessor  {
         }
     }
     public HashMap<String,ItemStack> MBID_TO_ITEM=new HashMap<>(){{
-        put("nuclear.frame", AddUtils.addGlow(AddItem.TRANSMUTATOR_FRAME.clone()));
-        put("nuclear.glass", AddUtils.addGlow(AddItem.TRANSMUTATOR_GLASS.clone()));
-        put("nuclear.rod", AddUtils.addGlow(AddItem.TRANSMUTATOR_ROD.clone()));
+        put("nuclear.frame", AddUtils.addGlow(LogiTechSlimefunItemStacks.TRANSMUTATOR_FRAME.clone()));
+        put("nuclear.glass", AddUtils.addGlow(LogiTechSlimefunItemStacks.TRANSMUTATOR_GLASS.clone()));
+        put("nuclear.rod", AddUtils.addGlow(LogiTechSlimefunItemStacks.TRANSMUTATOR_ROD.clone()));
     }};
     public Map<String,ItemStack> getIdMappingDisplayUse(){
         return Map.copyOf(MBID_TO_ITEM);

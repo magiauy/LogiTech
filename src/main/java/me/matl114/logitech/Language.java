@@ -247,7 +247,7 @@ public class Language {
             Map.Entry<String, Object> entry=it.next();
             entry.setValue(replacePlaceHolder(entry.getValue()));
         }
-        Debug.logger(get("Messages.LANGUAGE_LOADED"));
+        Debug.logger(get("debug_message.language_loaded"));
         return true;
     }
     

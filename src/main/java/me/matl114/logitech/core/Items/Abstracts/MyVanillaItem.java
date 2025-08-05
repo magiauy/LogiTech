@@ -4,7 +4,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemHandler;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.items.VanillaItem;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Interface.RecipeDisplay;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.Debug;
@@ -50,8 +50,8 @@ public class MyVanillaItem extends VanillaItem implements RecipeDisplay {
         return this;
     }
     public MyVanillaItem register(){
-        if(AddSlimefunItems.INSTANCE!=null){
-            register(AddSlimefunItems.INSTANCE);
+        if(LogiTechSlimefunItems.INSTANCE!=null){
+            register(LogiTechSlimefunItems.INSTANCE);
         }else{
             Debug.logger("找不到附属实例!  注册信息: "+this.toString());
         }

@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
 
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractEnergyProvider;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.TickerClass.Ticking;
@@ -30,7 +30,7 @@ public class TestGenerator extends AbstractEnergyProvider {
     public final int ENERGY_ABSMAX;
     public final int OUTPUT_MIN;
     public final int OUTPUT_MAX;
-    public final ItemStack OUTPUT= AddItem.PARADOX;
+    public final ItemStack OUTPUT= LogiTechSlimefunItemStacks.PARADOX;
     public final int DISPLAY_SLOT=0;
     public final int[] OUTPUT_SLOT=new int[]{1,2,3,4,5,6,7,8};
     public int[] getInputSlots(){

@@ -23,7 +23,7 @@ public class ConfigLoader {
         if(INNERCONFIG.getBoolean("options.test")) {
             MyAddon.testmod=true;
             TESTMODE=true;
-            Debug.debug("Addon is running on TEST MODE");
+            Debug.debug(Language.get("debug_message.running_on_test_mode"));
         }
         if(INNERCONFIG.getBoolean("options.clear-old-config")) {
             MyAddon.testmod=true;
@@ -54,7 +54,7 @@ public class ConfigLoader {
             try{
                 Files.delete(file.toPath());
             }catch(Throwable e){
-                Debug.logger("[TEST MODE] FAILED TO DELETE FILE: "+file.getAbsolutePath());
+                Debug.logger(Language.get("debug_message.failed_to_delete_file") + file.getAbsolutePath());
             }
         }
         if (!file.exists()) {

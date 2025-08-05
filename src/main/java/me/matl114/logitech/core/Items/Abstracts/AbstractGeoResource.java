@@ -6,7 +6,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import me.matl114.logitech.core.Registries.AddHandlers;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.Debug;
 import org.bukkit.NamespacedKey;
@@ -78,8 +78,8 @@ public class AbstractGeoResource extends SlimefunItem implements GEOResource {
         return NSKEY;
     }
     public SlimefunItem registerGeo(){
-        if(AddSlimefunItems.INSTANCE!=null){
-            register(AddSlimefunItems.INSTANCE);
+        if(LogiTechSlimefunItems.INSTANCE!=null){
+            register(LogiTechSlimefunItems.INSTANCE);
         }else{
             Debug.logger("找不到附属实例!  注册信息: "+this.toString());
         }

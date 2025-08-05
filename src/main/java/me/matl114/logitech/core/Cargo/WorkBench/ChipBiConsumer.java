@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
 import me.matl114.logitech.manager.Schedules;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Cargo.Config.ChipCardCode;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractMachine;
 import me.matl114.logitech.utils.AddUtils;
@@ -57,20 +57,20 @@ public class ChipBiConsumer extends AbstractMachine {
                 AddUtils.getInfoShow("&f机制",
                         "&7机器可以进行 且 或 异或 三种位运算",
                         "&7将所需物品插入指定槽位即可消耗电力运算"),null,
-                AddUtils.getInfoShow("&f且","&7插入%s进行且操作".formatted(Language.get("item.TRUE_.name")),
-                        "&7运算规则:","&7依次对两个芯片的对应01位进行'&'运算","&8⇨ &70&&71=1&&70=0&&70=0","&8⇨ &71&&71=1"),AddItem.TRUE_,
-                AddUtils.getInfoShow("&f或","&7插入%s进行或操作".formatted(Language.get("item.FALSE_.name")),
-                        "&7运算规则:","&7依次对两个芯片的对应01位进行'|'运算","&8⇨ &70|1=1|0=1|1=1","&8⇨ &70|0=0"),AddItem.FALSE_,
-                AddUtils.getInfoShow("&f异或","&7插入%s进行异或操作".formatted(Language.get("item.LOGIC.name")),
-                        "&7运算规则:","&7依次对两个芯片的对应01位进行'^'运算","&8⇨ &70^1=1^0=1","&8⇨ &70^0=1^1=0"),AddItem.LOGIC
+                AddUtils.getInfoShow("&f且","&7插入%s进行且操作".formatted(Language.get("item.boolean_true.name")),
+                        "&7运算规则:","&7依次对两个芯片的对应01位进行'&'运算","&8⇨ &70&&71=1&&70=0&&70=0","&8⇨ &71&&71=1"),LogiTechSlimefunItemStacks.BOOLEAN_TRUE,
+                AddUtils.getInfoShow("&f或","&7插入%s进行或操作".formatted(Language.get("item.boolean_false.name")),
+                        "&7运算规则:","&7依次对两个芯片的对应01位进行'|'运算","&8⇨ &70|1=1|0=1|1=1","&8⇨ &70|0=0"),LogiTechSlimefunItemStacks.BOOLEAN_FALSE,
+                AddUtils.getInfoShow("&f异或","&7插入%s进行异或操作".formatted(Language.get("item.logic.name")),
+                        "&7运算规则:","&7依次对两个芯片的对应01位进行'^'运算","&8⇨ &70^1=1^0=1","&8⇨ &70^0=1^1=0"),LogiTechSlimefunItemStacks.LOGIC
         ));
     }
-    protected Material ChipMaterial=AddItem.CHIP.getType();
+    protected Material ChipMaterial=LogiTechSlimefunItemStacks.CHIP.getType();
 
     protected final ItemCounter[] MATCH_ITEM=new ItemCounter[]{
-            CraftUtils.getConsumer( AddItem.TRUE_),
-            CraftUtils.getConsumer(  AddItem.FALSE_),
-            CraftUtils.getConsumer(  AddItem.LOGIC),
+            CraftUtils.getConsumer( LogiTechSlimefunItemStacks.BOOLEAN_TRUE),
+            CraftUtils.getConsumer(  LogiTechSlimefunItemStacks.BOOLEAN_FALSE),
+            CraftUtils.getConsumer(  LogiTechSlimefunItemStacks.LOGIC),
     };
     public void constructMenu(BlockMenuPreset preset){
         int[] border=BORDER;
@@ -108,7 +108,7 @@ public class ChipBiConsumer extends AbstractMachine {
             final int indexer=index;
             progressorCost(b,inv);
             Schedules.launchSchedules(()->{
-            ItemStack itout=AddItem.CHIP.clone();
+            ItemStack itout=LogiTechSlimefunItemStacks.CHIP.clone();
             int code=ChipCardCode.getConfig(meta);
             int code2=ChipCardCode.getConfig(meta3);
             switch(indexer){

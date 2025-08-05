@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
 import me.matl114.logitech.manager.PostSetupTasks;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractAdvancedProcessor;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.ItemClass.ItemCounter;
@@ -120,7 +120,7 @@ public class AEMachine extends AbstractAdvancedProcessor {
         preset.addItem(PROCESSOR_SLOT, MenuUtils.PROCESSOR_NULL, ChestMenuUtils.getEmptyClickHandler());
     }
 
-    protected final ItemCounter CORE_SAMPLE= CraftUtils.getConsumer(AddItem.CHIP_CORE);
+    protected final ItemCounter CORE_SAMPLE= CraftUtils.getConsumer(LogiTechSlimefunItemStacks.CHIP_CORE);
     protected final int CORE_SLOT=13;
     public int getCraftLimit(Block b, BlockMenu inv){
         return DataCache.getCustomData(inv.getLocation(),MAXCRAFT_KEY,1);

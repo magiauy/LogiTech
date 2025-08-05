@@ -7,8 +7,8 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
-import me.matl114.logitech.core.AddItem;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractProcessor;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.ItemClass.ItemConsumer;
@@ -42,12 +42,12 @@ public class BoolGenerator extends AbstractProcessor {
         super(category,item,recipeType,recipe,progressItem,5,100,null);
         this.processtick=tick;
         setDisplayRecipes(Utils.list(
-                AddUtils.getInfoShow("&f生成机制","&7当所有输入槽内物品全部相同且非空时,生成%s".formatted(Language.get("item.TRUE_.name"))),AddItem.TRUE_,
-                AddUtils.getInfoShow("&f生成机制","&7当输入槽均非空且任两输入槽内物品互不相同时,生成%s".formatted(Language.get("item.FALSE_.name"))),AddItem.FALSE_,
+                AddUtils.getInfoShow("&f生成机制","&7当所有输入槽内物品全部相同且非空时,生成%s".formatted(Language.get("item.boolean_true.name"))),LogiTechSlimefunItemStacks.BOOLEAN_TRUE,
+                AddUtils.getInfoShow("&f生成机制","&7当输入槽均非空且任两输入槽内物品互不相同时,生成%s".formatted(Language.get("item.boolean_false.name"))),LogiTechSlimefunItemStacks.BOOLEAN_FALSE,
                 AddUtils.getInfoShow("&f生成机制","&7当配方匹配时,槽位依次消耗min(槽位物品数,%s)个物品".formatted(inputCost) ),null));
         this.machineRecipes=new ArrayList<>();
-        this.machineRecipes.add(MachineRecipeUtils.stackFrom(tick,new ItemStack[0],new ItemStack[]{AddSlimefunItems.setC( AddItem.TRUE_,3)}));
-        this.machineRecipes.add(MachineRecipeUtils.stackFrom(tick,new ItemStack[0],new ItemStack[]{AddSlimefunItems.setC( AddItem.FALSE_,3)}));
+        this.machineRecipes.add(MachineRecipeUtils.stackFrom(tick,new ItemStack[0],new ItemStack[]{LogiTechSlimefunItems.setC( LogiTechSlimefunItemStacks.BOOLEAN_TRUE,3)}));
+        this.machineRecipes.add(MachineRecipeUtils.stackFrom(tick,new ItemStack[0],new ItemStack[]{LogiTechSlimefunItems.setC( LogiTechSlimefunItemStacks.BOOLEAN_FALSE,3)}));
         AddUtils.addGlow(this.getProgressBar());
     }
     public void constructMenu(BlockMenuPreset preset) {

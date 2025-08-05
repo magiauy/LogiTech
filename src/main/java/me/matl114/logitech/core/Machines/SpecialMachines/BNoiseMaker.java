@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.manager.Schedules;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Items.SpecialItems.BNoiseHead;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractMachine;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
@@ -59,7 +59,7 @@ public class BNoiseMaker extends AbstractMachine {
             if (sound == null) {
                 return false;
             }
-            blockMenu.replaceExistingItem(HEAD_SLOT, ((BNoiseHead) AddSlimefunItems.BNOISE_HEAD).of(sound));
+            blockMenu.replaceExistingItem(HEAD_SLOT, ((BNoiseHead) LogiTechSlimefunItems.BNOISE_HEAD).of(sound));
             return false;
         });
     }

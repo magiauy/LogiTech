@@ -4,9 +4,9 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.paperlib.PaperLib;
 import lombok.Getter;
-import me.matl114.logitech.core.AddGroups;
-import me.matl114.logitech.core.AddItem;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechItemGroups;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Cargo.SpaceStorage.StorageSpace;
 import me.matl114.logitech.core.Cargo.Storages;
 import me.matl114.logitech.core.Depends.DependencyInfinity;
@@ -112,14 +112,14 @@ public class MyAddon extends JavaPlugin implements SlimefunAddon {
             Debug.logger(e);
         }
         Debug.logger("软依赖检测完毕");
-        AddGroups.registerGroups(this);
+        LogiTechItemGroups.registerGroups(this);
         Debug.logger("物品组加载完毕");
         Debug.logger("自定义物品加载完毕");
         //物品注册
-        AddItem.registerItemStack();
+        LogiTechSlimefunItemStacks.registerItemStack();
         Debug.logger("物品模板加载完毕");
         //粘液物品注册
-        AddSlimefunItems.registerSlimefunItems();
+        LogiTechSlimefunItems.registerSlimefunItems();
         Debug.logger("粘液物品注册完毕");
         //世界配置
         StorageSpace.setup();

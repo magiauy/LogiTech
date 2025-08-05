@@ -9,7 +9,7 @@ import io.github.thebusybiscuit.slimefun4.utils.ChatUtils;
 import me.matl114.logitech.ConfigLoader;
 import me.matl114.logitech.core.Depends.SupportedPluginManager;
 import me.matl114.logitech.manager.Schedules;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.CraftUtils;
 import me.matl114.logitech.utils.Utils;
@@ -52,7 +52,7 @@ public class EntityFeat extends CustomItemWithHandler<ItemDropHandler> {
         }
     }
     public static ItemStack getItemFromEntityType(EntityType entityType) {
-        ItemStack item = AddItem.ENTITY_FEAT.clone();
+        ItemStack item = LogiTechSlimefunItemStacks.ENTITY_FEAT.clone();
         ItemMeta meta = item.getItemMeta();
 
         // Fixes #2583 - Proper NBT handling of Spawners
@@ -175,7 +175,7 @@ public class EntityFeat extends CustomItemWithHandler<ItemDropHandler> {
     }
     public static ItemStack generateSpawnerFrom(EntityType type,int delay,int maxNearbyEntities,int requirePlayerRange,int spawnRange,int spawnCount,boolean displayAttribute){
 
-        ItemStack item = AddItem.SAMPLE_SPAWNER.clone();
+        ItemStack item = LogiTechSlimefunItemStacks.SAMPLE_SPAWNER.clone();
         if(!isAvailableEntityType(type)){
             return item;
         }

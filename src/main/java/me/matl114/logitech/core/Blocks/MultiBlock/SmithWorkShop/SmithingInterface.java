@@ -7,7 +7,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Blocks.MultiBlockCore.MultiBlockPart;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractMachine;
 import me.matl114.logitech.utils.DataCache;
@@ -99,7 +99,7 @@ public class SmithingInterface extends AbstractMachine implements MultiBlockPart
         if(core!=null){
             INTERFACE_MAP.put(loc,this);
             if(DataCache.getSfItem(core) instanceof SmithingWorkshop ws){
-                int speedLevel=ws.getAmplifyCompentLevel(core, AddSlimefunItems.SWAMP_SPEED);
+                int speedLevel=ws.getAmplifyCompentLevel(core, LogiTechSlimefunItems.SWAMP_SPEED);
                 processInterface(b,menu,data,core,speedLevel);
             }
 

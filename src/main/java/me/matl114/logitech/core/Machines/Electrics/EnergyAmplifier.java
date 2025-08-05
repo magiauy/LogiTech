@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetProvider;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Interface.MenuTogglableBlock;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractEnergyMachine;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractEnergyProvider;
@@ -67,7 +67,7 @@ public class EnergyAmplifier extends AbstractEnergyProvider implements MenuToggl
                         "&7该机器将会发电<槽位中读取的机器数>*%.2f*<上方环境中发电机的发电量>J".formatted(this.multiply),
                         "&a该槽位中支持的存储类物品与&c\"终极合成\"&a特性中的存储类物品相同"),null,
                 AddUtils.getInfoShow("&f示例",
-                        "&7右侧是一个示意图,讲述了该如何使用该机器"),AddUtils.resolveItem("ENERGY_REGULATOR"), AddItem.OPPO_GEN,
+                        "&7右侧是一个示意图,讲述了该如何使用该机器"),AddUtils.resolveItem("ENERGY_REGULATOR"), LogiTechSlimefunItemStacks.OPPO_GEN,
                 item,null,AddUtils.getInfoShow("&f说明","&7你将会看见下方的机器发电")
         ));
     }

@@ -12,7 +12,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import me.matl114.logitech.utils.UtilClass.SpecialItemClass.CustomHead;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractMachine;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.CraftUtils;
@@ -129,7 +129,7 @@ public class HeadAnalyzer extends AbstractMachine{
                             Slimefun.instance(),
                             player,
                             msg ->{
-                                ItemStack it2=AddItem.SAMPLE_HEAD.clone();
+                                ItemStack it2=LogiTechSlimefunItemStacks.SAMPLE_HEAD.clone();
                                 ItemMeta meta2=it2.getItemMeta();
                                 ItemMeta target_meta=CustomHead.getHead(msg).getItemMeta();
 
@@ -144,7 +144,7 @@ public class HeadAnalyzer extends AbstractMachine{
                 }else{
                     ItemMeta meta=it.getItemMeta();
                     String id= CraftUtils.parseSfId(meta);
-                    if(id==null||id.equals( AddItem.SAMPLE_HEAD.getItemId())){
+                    if(id==null||id.equals( LogiTechSlimefunItemStacks.SAMPLE_HEAD.getItemId())){
                         it.setItemMeta(null);
                     }else{
                         AddUtils.sendMessage(player,"&c不是合法物品,无法清除头颅数据!");

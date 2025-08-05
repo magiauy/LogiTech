@@ -7,7 +7,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Cargo.Config.ChipCardCode;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractEnergyProcessor;
 import me.matl114.logitech.utils.AddUtils;
@@ -58,7 +58,7 @@ public class ChipReactor extends AbstractEnergyProcessor {
         this.multiple=multiple;
         this.PROCESSOR_SLOT=22;
         this.time=time;
-        ItemStack example=AddItem.CHIP.clone();
+        ItemStack example=LogiTechSlimefunItemStacks.CHIP.clone();
         example.setItemMeta(ChipCardCode.getCard(114514));
         AddUtils.addGlow(this.processor.getProgressBar());
         this.setDisplayRecipes(Utils.list(

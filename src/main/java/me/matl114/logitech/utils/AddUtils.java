@@ -12,7 +12,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 import me.matl114.logitech.Language;
 import me.matl114.logitech.MyAddon;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.utils.Algorithms.PairList;
 import me.matl114.logitech.utils.UtilClass.ItemClass.*;
 import me.matl114.logitech.utils.UtilClass.FunctionalClass.LoreDecorator;
@@ -538,12 +538,12 @@ public class AddUtils {
                         return AllMatchItem.ofAmount(cnt>0?cnt:1);
                     }
                     Debug.logger("WARNING: Object %s can not be solved ! Required Addon not installed ! Disabling relavent recipes...".formatted(a));
-                    return AddItem.RESOLVE_FAILED;
+                    return LogiTechSlimefunItemStacks.RESOLVE_FAILED;
                 }
             }
         } else {
             Debug.logger("WARNING: failed to solve Object "+a.toString());
-            return AddItem.RESOLVE_FAILED;
+            return LogiTechSlimefunItemStacks.RESOLVE_FAILED;
         }
 
     }

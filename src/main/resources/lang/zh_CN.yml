@@ -6,51 +6,108 @@ placeholder:
   end_color: '§x§9§7§0§0§9§7'
 
 group:
-  ROOT:
+  root:
     name: '&7&ka&x&5&5&f&f&7&7逻&x&5&5&f&f&9&9辑&x&5&5&f&f&b&b工&x&5&5&f&f&d&d艺&6(正式版 %addon_version%)&7&ka&r'
     lore:
       - '&7芜湖起飞'
       - '&7⇨ &a单击启动LogiTech'
-  INFO:
-    name: '&d%addon_name% &6版本与说明'
-  MATERIAL:
-    name: '&d%addon_name% &6基础材料'
-  ALLMACHINE:
-    name: '&d%addon_name% &6堆叠机器支持列表'
-  ALLRECIPE:
-    name: '&d%addon_name% &6合成配方类型大全'
-  URL:
+  information:
+    name: '&d%addon_name% &6版本与说明' #Addon Information
+  basic_material:
+    name: '&d%addon_name% &6基础材料' #Basic Materials
+  stackable_machine:
+    name: '&d%addon_name% &6堆叠机器支持列表' #Stackable Machines
+  recipe_type:
+    name: '&d%addon_name% &6合成配方类型大全' #Recipe Types
+  github_url:
     name: "&e点击获取附属Github链接"
     lore:
       - ""
       - "&7⇨ &a点击获取链接"
-  WIKI:
+  update_log:
+    name: '&d%addon_name% &6更新日志'
+    lore:
+      - '&7我可没有痴呆症'
+  notice:
+    name: '&6宇宙安全说明'
+  basic_machine:
+    name: '&d%addon_name% &6基础机器'
+  big_recipe:
+    name: '&d%addon_name% &6大型配方表展示'
+    lore:
+      - '&7用于查看粘液书中展示不完整的配方'
+  cargo_machine:
+    name: '&d%addon_name% &6货运机器'
+  singularity_technology:
+    name: '&d%addon_name% &6概念奇点工艺'
+  advanced_machine:
+    name: '&d%addon_name% &6进阶机器'
+  transcendence_realm:
+    name: '&d终章 &6超越领域'
+    lore:
+      - '&7Beyond Tech'
+  redstone_technology:
+    name: '&d%addon_name% &6赤石科技' #Redstone Technology
+    lore:
+      - '&e哦不...应该是红石科技辣'
+  fast_machine:
+    name: '&d%addon_name% &6快捷机器'
+    lore:
+      - '&7懒人福音,好耶'
+  mysterious_realm:
+    name: '&d%addon_name% &6谜之领域'
+    lore:
+      - '&7这些机器怎么看起来头尖尖的...'
+  to_be_continue:
+    name: '&6未完待续...'
+    lore:
+      - "&7仍在开发,敬请期待"
+  space_technology:
+    name: '&d%addon_name% &6空间技艺' #Space Technology
+  resource_generator:
+    name: '&d%addon_name% &6材料生成与转化'
+  electricity:
+    name: '&d%addon_name% &6电力与能源拓展'
+  tools:
+    name: '&d%addon_name% &6工具与锻造' #Tools & Forging
+  tools_subgroup_1:
+    name: '&d锻铸工坊 &6增幅组件'
+  tools_subgroup_2:
+    name: '&d锻铸工坊 &6功能单元'
+  tools_recipes: #Not available
+    name: '&d工具与锻铸 &6特殊配方类型说明'
+    lore:
+      - '用于查看本分类中特殊配方类型的合成方法'
+  functional: #Not available
+    name: '&d%addon_name% &6功能性物品'
+
+information:
+  wiki:
     name: "&e点击查看附属wiki"
     lore:
       - ""
       - "&7⇨ &a点击获取链接"
-  INFO1:
+  info_1:
     name: "&c&l版本号"
     lore:
       - "&7当前%addon_name%版本："
       - "&b&m%addon_version% &6&r正式版"
       - "&7更多版本,敬请期待!"
-
-  INFO2:
+  info_2:
     name: "&e&l联系我们"
     lore:
       - "&7如果您想要汇报bug"
       - "&7或者提出一些有趣的点子"
       - "&7请在上方的github链接中提出issue"
       - "&7但凡是有用的提议作者都会考虑采纳"
-  INFO3:
+  info_3:
     name: "&a&l附属介绍"
     lore:
       - "&7我们的附属立志于开发新功能"
       - "&7以及有趣的机制,"
       - "&7虽然传统的堆机器或许不可避免"
       - "&7但是我们希望能为玩家带来别样的体验"
-  INFO4:
+  info_4:
     name: "&c&l一些声明"
     lore:
       - "&7本附属可能在创作上会借鉴一些附属"
@@ -58,7 +115,7 @@ group:
       - "&7但是本附属特性实现均为作者手写"
       - "&7实现这些有趣的特性也是作者兴趣所致,也是作者的目标"
       - "&7若出现问题/BUG请找作者matl114"
-  INFO5:
+  info_5:
     name: "&c&l更多的声明"
     lore:
       - "&e主线版本不提供%max_supported_version%+的问题修复"
@@ -66,21 +123,21 @@ group:
       - "&7你可以将问题反馈到github的issue"
       - "&7不过作者不会保证修复该问题"
       - "&a建议将问题反馈到你所使用的支持%max_supported_version%+的fork仓库"
-  INFO6:
+  info_6:
     name: "&6&l附属特性"
     lore:
       - "&7本附属拥有一些和其他附属不同的特性"
       - "&7在此会在下方指出"
       - "&7当您在游玩的时候遇见无法理解的设定"
       - "&7请仔细阅读以下的说明"
-  FEAT1:
+  feature_1:
     name: "&6&l特性 - &c&l重写的进程机器"
     lore:
       - "&7本附属的进程机器(即拥有进度条)的机器与普通进度机器不同"
       - "&7采用了附属自研的配方算法和推送算法"
       - "&7并且机器保证0tick配方可以无间隔合成"
       - "&7若机器出现问题,请找作者"
-  FEAT2:
+  feature_2:
     name: "&6&l特性 - &c&l配方机器,生成器与定向生成器"
     lore:
       - "&7配方机器指的是使用机器配方进行合成的机器"
@@ -88,7 +145,7 @@ group:
       - "&7本附属拥有多种生成器"
       - "&7其中定向生成器需要输入槽插入指定配方才能进行对应产出"
       - "&7若机器出现问题,请找作者"
-  FEAT3:
+  feature_3:
     name: "&6&l特性 - &c&l高级机器与并行处理数"
     lore:
       - "&7本附属新增了高级机器,拥有更多输入输出槽和更多特性"
@@ -96,7 +153,7 @@ group:
       - "&7机器会尝试减少<进程时间>为<进程时间>/<并行处理数>"
       - "&7若<进程时间>无法继续减少,则会按<并行处理数>/<进程时间>为最大次数尽可能多的匹配机器配方"
       - "&7若机器出现问题,请找作者"
-  FEAT4:
+  feature_4:
     name: "&6&l特性 - &c&l工作站与一键放入"
     lore:
       - "&7工作站可以用来进行有序的配方合成"
@@ -105,7 +162,7 @@ group:
       - "&7或对应工作站的配方按钮查看"
       - "&7一键放入支持你快速将物品以配方格式放入工作站"
       - "&7若机器出现问题,请找作者"
-  FEAT5:
+  feature_5:
     name: "&6&l特性 - &c&l大型多方块机器"
     lore:
       - "&7大型多方块机器由多方块核心,多方块部件,多方块IO接口组成"
@@ -121,8 +178,7 @@ group:
       - "&7点击多方块部件将会尝试打开该多方块部件所属的多方块机器界面,shift点击则正常交互"
       - "&7多方块IO接口可以替换指定的多方块部件作为多方块机器的一部分,对多方块机器界面进行推送/抓取"
       - "&7若机器出现问题,请找作者"
-
-  FEAT6:
+  feature_6:
     name: "&6&l特性 - &c&l序列输入配方与货运系统"
     lore:
       - "&7序列输入配方应用于序列进度机器,其由若干输入需求顺序组成"
@@ -133,7 +189,7 @@ group:
       - "&7机器一般提供自动清除按钮,启动则会在当前阶段物品不匹配输入槽全部物品时清除输入槽全部物品"
       - "&7虽然这很难自动化,但是相应的,我们会提供货运机器作为一个自动化手段"
       - "&7若机器出现问题,请找作者"
-  FEAT7:
+  feature_7:
     name: "&6&l特性 - &c&l货运机器与可调控货运机器"
     lore:
       - "&7本附属提供普通货运机器与智能货运机器两种分类"
@@ -150,8 +206,7 @@ group:
       - "&e本附属的货运机器使用货运配置卡配置"
       - '&e当你在货运机器的槽位说明中看到\"需要放入配置卡\",请在配置卡配置台中阅读说明'
       - "&7若机器出现问题,请找作者"
-
-  FEAT8:
+  feature_8:
     name: "&6&l特性 - &c&l堆叠机器类与工作效率"
     lore:
       - "&7堆叠机器,顾名思义,指可以将其他机器堆叠入指定槽位"
@@ -170,7 +225,7 @@ group:
       - "&e因热重载而导致堆叠机器失效,作者不负任何责任"
       - "&a附属即将开启\"全民创作者\"计划,鼓励大家参与完善配置文件"
       - "&a用于兼容那些奇怪但高效的附属,让堆叠列表更加完善"
-  FEAT9:
+  feature_9:
     name: "&6&l特性 - &c&l终极合成"
     lore:
       - "&7终极合成支持从合法的非空存储类物品中进行取出/存入"
@@ -187,155 +242,101 @@ group:
       - "&c备注:由于网络拓展版本更迭过快,不保证支持全部版本"
       - "&7拥有这类特性的机器通常拥有极致的合成速度来支持此特性"
       - "&7若机器出现问题,请找作者"
-  UPDATELOG:
-    name: '&d%addon_name% &6更新日志'
-    lore:
-      - '&7我可没有痴呆症'
-  MORE2:
-    name: '&6宇宙安全说明'
-  BASIC:
-    name: '&d%addon_name% &6基础机器'
-  ALLBIGRECIPES:
-    name: '&d%addon_name% &6大型配方表展示'
-    lore:
-      - '&7用于查看粘液书中展示不完整的配方'
-  CARGO:
-    name: '&d%addon_name% &6货运机器'
-  SINGULARITY:
-    name: '&d%addon_name% &6概念奇点工艺'
-  ADVANCED:
-    name: '&d%addon_name% &6进阶机器'
-  BEYOND:
-    name: '&d终章 &6超越领域'
-    lore:
-      - '&7Beyond Tech'
-  VANILLA:
-    name: '&d%addon_name% &6赤石科技'
-    lore:
-      - '&e哦不...应该是红石科技辣'
-  MANUAL:
-    name: '&d%addon_name% &6快捷机器'
-    lore:
-      - '&7懒人福音,好耶'
-  SPECIAL:
-    name: '&d%addon_name% &6谜之领域'
-    lore:
-      - '&7这些机器怎么看起来头尖尖的...'
-  TOBECONTINUE:
-    name: '&6未完待续...'
-    lore:
-      - "&7仍在开发,敬请期待"
-  SPACE:
-    name: '&d%addon_name% &6空间技艺'
-  GENERATORS:
-    name: '&d%addon_name% &6材料生成与转化'
-  ENERGY:
-    name: '&d%addon_name% &6电力与能源拓展'
-  FUNCTIONAL:
-    name: '&d%addon_name% &6功能性物品'
-  TOOLS:
-    name: '&d%addon_name% &6工具与锻造'
-  TOOLS_SUBGROUP_1:
-    name: '&d锻铸工坊 &6增幅组件'
-
-  TOOLS_SUBGROUP_2:
-    name: '&d锻铸工坊 &6功能单元'
-  TOOLS_RECIPES:
-    name: '&d工具与锻铸 &6特殊配方类型说明'
-    lore:
-      - '用于查看本分类中特殊配方类型的合成方法'
 
 item:
-  BUG:
+  bug:
     name: 'BUG'
     lore:
       - '经常出现在意想不到的地方...'
-  MATL114:
+  matl114:
     name: 'MATL114'
     lore:
       - '没错,我是逻辑工艺的作者...'
-  CHIP_INGOT:
+  potato_chip:
     name: '薯片合金'
     lore:
       - '真是亿个冷笑话..'
-  LOGIC:
+  logic:
     name: '逻辑'
     lore:
       - '剪不断,理还乱..'
-  TRUE_:
-    name: 'True '
-  FALSE_:
-    name: 'False '
-  LOGIGATE:
+  boolean_true:
+    name: 'True'
+    lore:
+  boolean_false:
+    name: 'False'
+    lore:
+  logic_gate:
     name: '逻辑门'
     lore:
       - '虽然它看起来很可怕与难懂...'
       - '但这只是个材料,并不能帮你炸服'
-  EXISTE:
+  existence:
     name: '存在性'
-  UNIQUE:
+  uniqueness:
     name: '唯一性'
-  PARADOX:
+  paradox:
     name: '悖论'
-  NOLOGIC:
+  antilogic:
     name: '反逻辑'
     lore:
       - '什么,这不科学'
-  LENGINE:
+  logical_engine:
     name: '逻辑引擎'
-  LFIELD:
+  logical_engine_force_field:
     name: '逻辑引擎力场'
-  LSCHEDULER:
+  logical_scheduler:
     name: '逻辑调度器'
     lore:
       - '机器枢纽'
-  LCRAFT:
+  logical_crafting_unit:
     name: '逻辑合成单元'
     lore:
       - '负责复杂的合成任务'
-  LDIGITIZER:
+  digital_core:
     name: '数字化核心'
-  LBOOLIZER:
+    lore:
+  boolean_core:
     name: '布尔化核心'
     lore:
       - '0与1的世界...'
-  LIOPORT:
+  io_component:
     name: 'IO组件'
     lore:
       - '负责执行高速物流任务'
-  PALLADIUM_INGOT:
+  palladium_ingot:
     name: '钯 (pd)'
-  PLATINUM_INGOT:
+  platinum_ingot:
     name: '铂 (pt)'
-  MOLYBDENUM:
+  molybdenum:
     name: '钼 (mo)'
     lore:
       - '用于芯片制造'
-  CERIUM:
+  cerium:
     name: '铈 (ce)'
-  CADMIUM_INGOT:
+  cadmium_ingot:
     name: '镉 (cd)'
-  MENDELEVIUM:
+  mendelevium:
     name: '钔 (md)'
-  DYSPROSIUM:
+  dysprosium:
     name: '镝 (dy)'
-  BISMUTH_INGOT:
+  bismuit_ingot:
     name: '铋 (bi)'
-  ANTIMONY_INGOT:
+  antimony_ingot:
     name: '锑 (sb)'
-  BORON:
+  boron:
     name: '硼 (B)'
     lore:
       - '用于芯片制造'
-  DIMENSIONAL_SHARD:
+  dimensional_shard:
     name: '维度碎片'
     lore:
       - '蕴含着跨越维度的力量'
-  DIMENSIONAL_SINGULARITY:
+  dimensional_singularity:
     name: '维度结晶'
     lore:
       - '浓缩维度之力,可以轻而易举的跨越空间'
-  STAR_GOLD:
+  star_gold:
     name: '星辰金砂'
     lore:
       - '随星系爆发而生...'
@@ -576,7 +577,6 @@ item:
       - '自带增益的重锤'
       - '可以让敌人~飞起来~'
       - '%default_color%---并非雷神,实则锤神---'
-
   FAKE_UI:
     name: '槽位伪装板'
   REPLACE_SF_CARD:
@@ -1529,6 +1529,29 @@ cargo:
       - '⇨ &a支持与原版容器的货运'
       - '运输配置: 默认,传输量=64'
 
+recipe_guide:
+
+recipe_description:
+
+gui:
+  PARTICLE_TOGGLE: '&a点击切换粒子效果'
+  PARTICLE_STATUS: '&7当前状态: '
+  PARTICLE_OFF: '&c关闭'
+  PARTICLE_ON: '&a开启'
+  LAZY_MODE_TOGGLE: '&6点击切换懒人模式'
+  LAZY_MODE_STATUS_OFF: '&7当前状态: &c已禁用'
+  LAZY_MODE_STATUS_ON: '&7当前状态: &a已启用'
+  LAZY_MODE_DESC1: '&7启用懒人模式时，只会为能量低于50%的机器充能'
+  LAZY_MODE_DESC2: '&7这将大大减少充能时间'
+  LAZY_MODE_COLLECTOR_DESC1: '&7启用懒人模式时，只有自身能量未满时才会收集发电机能量'
+  LAZY_MODE_COLLECTOR_DESC2: '&7自身能量满时不会收集'
+  ENERGY_STORED: '&7已储存: %sJ/%sJ'
+  ENERGY_CONSUMERS: '&7范围内能量消耗者: %d/%d(最大)'
+  CHARGE_ERRORS: '&7充能错误: %d'
+  INFO_TITLE: '&6信息'
+  GENERATORS_IN_RANGE: '&7范围内发电机: %d/%d(最大)'
+  GENERATOR_ERRORS: '&7发电机错误: %d'
+
 theme:
   ITEM1:
     name: "&3物品"
@@ -1560,31 +1583,16 @@ theme:
     name: '&7⇨ &a单击打开'
   FUNIT:
     name: '&3功能单元'
-    
-gui:
-  PARTICLE_TOGGLE: '&a点击切换粒子效果'
-  PARTICLE_STATUS: '&7当前状态: '
-  PARTICLE_OFF: '&c关闭'
-  PARTICLE_ON: '&a开启'
-  LAZY_MODE_TOGGLE: '&6点击切换懒人模式'
-  LAZY_MODE_STATUS_OFF: '&7当前状态: &c已禁用'
-  LAZY_MODE_STATUS_ON: '&7当前状态: &a已启用'
-  LAZY_MODE_DESC1: '&7启用懒人模式时，只会为能量低于50%的机器充能'
-  LAZY_MODE_DESC2: '&7这将大大减少充能时间'
-  LAZY_MODE_COLLECTOR_DESC1: '&7启用懒人模式时，只有自身能量未满时才会收集发电机能量'
-  LAZY_MODE_COLLECTOR_DESC2: '&7自身能量满时不会收集'
-  ENERGY_STORED: '&7已储存: %sJ/%sJ'
-  ENERGY_CONSUMERS: '&7范围内能量消耗者: %d/%d(最大)'
-  CHARGE_ERRORS: '&7充能错误: %d'
-  INFO_TITLE: '&6信息'
-  GENERATORS_IN_RANGE: '&7范围内发电机: %d/%d(最大)'
-  GENERATOR_ERRORS: '&7发电机错误: %d'
 
-Messages:
+message:
   RADIATION_WARNING: '&e警告!您已进入危险的辐射区!'
   CONTAINER_TITLE: '&c容器'
   ORIGIN_WORKBENCH: '&6万物起源 工作台'
   VANILLA_FURNACE: '&6原版熔炉'
-  SAVING_DATA: '保存附属数据中'
-  DATA_SAVED: '附属数据保存完成'
-  LANGUAGE_LOADED: '语言配置加载完毕'
+
+debug_message:
+  language_loaded: '语言配置加载完毕'
+  data_saved: '附属数据保存完成'
+  saving_data: '保存附属数据中'
+  running_on_test_mode: "Addon is running on TEST MODE"
+  failed_to_delete_file: "[TEST MODE] FAILED TO DELETE FILE: "

@@ -12,7 +12,7 @@ import me.matl114.logitech.core.Registries.CustomEffects;
 import me.matl114.logitech.utils.UtilClass.EffectClass.PlayerEffects;
 import me.matl114.logitech.manager.ScheduleSave;
 import me.matl114.logitech.manager.Schedules;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.FunctionalClass.OutputStream;
 import me.matl114.logitech.utils.UtilClass.MultiBlockClass.AbstractMultiBlockHandler;
@@ -310,8 +310,8 @@ public class SolarReactorCore extends MultiBlockProcessor {
         }),100,true,0);
     }
     public HashMap<String,ItemStack> MBID_TO_ITEM=new HashMap<>(){{
-        put("solar.frame", AddUtils.addGlow(AddItem.SOLAR_REACTOR_FRAME.clone()));
-        put("solar.glass", AddUtils.addGlow(AddItem.SOLAR_REACTOR_GLASS.clone()));
+        put("solar.frame", AddUtils.addGlow(LogiTechSlimefunItemStacks.SOLAR_REACTOR_FRAME.clone()));
+        put("solar.glass", AddUtils.addGlow(LogiTechSlimefunItemStacks.SOLAR_REACTOR_GLASS.clone()));
     }};
     public Map<String,ItemStack> getIdMappingDisplayUse(){
         return Map.copyOf(MBID_TO_ITEM);

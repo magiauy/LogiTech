@@ -4,7 +4,7 @@ import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Items.Abstracts.CustomProps;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -18,7 +18,7 @@ public class PortableManual extends CustomProps {
     public void onClickAction(PlayerRightClickEvent event) {
         event.cancel();
         Player player = event.getPlayer();
-        if(AddSlimefunItems.ADV_MANUAL instanceof AdvancedManual adv){
+        if(LogiTechSlimefunItems.ADV_MANUAL instanceof AdvancedManual adv){
             adv.openManualGui(player);
         }
     }

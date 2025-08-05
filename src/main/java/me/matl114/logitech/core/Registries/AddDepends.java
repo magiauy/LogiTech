@@ -11,9 +11,9 @@ import io.github.thebusybiscuit.slimefun4.core.handlers.GlobalItemHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import me.matl114.logitech.utils.UtilClass.SpecialItemClass.CustomHead;
-import me.matl114.logitech.core.AddGroups;
-import me.matl114.logitech.core.AddItem;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechItemGroups;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.core.Items.Abstracts.MyVanillaItem;
 import me.matl114.logitech.core.Machines.AutoMachines.AdvanceRecipeCrafter;
 import me.matl114.logitech.core.Machines.ManualMachines.ManualCrafter;
@@ -45,12 +45,12 @@ public class AddDepends {
     public static void registerSlimefunItems(SlimefunAddon plugin){
         try{
             if(hasInfiniteExpansion)
-            MOBDATA_MANUAL=new ManualCrafter(AddGroups.MANUAL, AddItem.MOBDATA_MANUAL, BugCrafter.TYPE,
-                    AddSlimefunItems.recipe(null,null,AddItem.BUG,AddItem.BUG,null,null,
-                            null,AddItem.BUG,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.BUG,null,
-                            null,AddItem.LFIELD,"DATA_INFUSER","DATA_INFUSER",AddItem.LFIELD,null,
-                            null,AddItem.LFIELD,"DATA_INFUSER","DATA_INFUSER",AddItem.LFIELD,null,
-                            null,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,null
+            MOBDATA_MANUAL=new ManualCrafter(LogiTechItemGroups.MANUAL, LogiTechSlimefunItemStacks.MOBDATA_MANUAL, BugCrafter.TYPE,
+                    LogiTechSlimefunItems.recipe(null,null,LogiTechSlimefunItemStacks.BUG,LogiTechSlimefunItemStacks.BUG,null,null,
+                            null,LogiTechSlimefunItemStacks.BUG,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.BUG,null,
+                            null,LogiTechSlimefunItemStacks.LFIELD,"DATA_INFUSER","DATA_INFUSER",LogiTechSlimefunItemStacks.LFIELD,null,
+                            null,LogiTechSlimefunItemStacks.LFIELD,"DATA_INFUSER","DATA_INFUSER",LogiTechSlimefunItemStacks.LFIELD,null,
+                            null,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,null
                             ),600_000,20_000,MOBDATA_TYPE)
                     .register();
         }catch (Throwable e){
@@ -59,12 +59,12 @@ public class AddDepends {
         }
         try{
             if(hasInfiniteExpansion)
-            INFINITY_MANUAL=new ManualCrafter(AddGroups.MANUAL,AddItem.INFINITY_MANUAL,BugCrafter.TYPE,
-                    AddSlimefunItems.recipe(null,null,null,null,null,null,
-                            AddItem.ABSTRACT_INGOT,"REINFORCED_PLATE","REINFORCED_PLATE","REINFORCED_PLATE","REINFORCED_PLATE",AddItem.ABSTRACT_INGOT,
-                            AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,
-                            AddItem.ABSTRACT_INGOT,"MACHINE_PLATE","INFINITY_FORGE","INFINITY_FORGE","MACHINE_PLATE",AddItem.ABSTRACT_INGOT,
-                            AddItem.ABSTRACT_INGOT,AddItem.LFIELD,AddItem.LFIELD,AddItem.LFIELD,AddItem.LFIELD,AddItem.ABSTRACT_INGOT),
+            INFINITY_MANUAL=new ManualCrafter(LogiTechItemGroups.MANUAL,LogiTechSlimefunItemStacks.INFINITY_MANUAL,BugCrafter.TYPE,
+                    LogiTechSlimefunItems.recipe(null,null,null,null,null,null,
+                            LogiTechSlimefunItemStacks.ABSTRACT_INGOT,"REINFORCED_PLATE","REINFORCED_PLATE","REINFORCED_PLATE","REINFORCED_PLATE",LogiTechSlimefunItemStacks.ABSTRACT_INGOT,
+                            LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,
+                            LogiTechSlimefunItemStacks.ABSTRACT_INGOT,"MACHINE_PLATE","INFINITY_FORGE","INFINITY_FORGE","MACHINE_PLATE",LogiTechSlimefunItemStacks.ABSTRACT_INGOT,
+                            LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.ABSTRACT_INGOT),
                     100_000_000,2_500_000,INFINITYWORKBENCH_TYPE)
                     .register();
         }catch (Throwable e){
@@ -73,13 +73,13 @@ public class AddDepends {
         }
         try{
             if(hasNetwork)
-            NTWWORKBENCH_MANUAL=new ManualCrafter(AddGroups.MANUAL,AddItem.NTWWORKBENCH_MANUAL,BugCrafter.TYPE,
-                    AddSlimefunItems.recipe(null,null,null,null,null,null,
+            NTWWORKBENCH_MANUAL=new ManualCrafter(LogiTechItemGroups.MANUAL,LogiTechSlimefunItemStacks.NTWWORKBENCH_MANUAL,BugCrafter.TYPE,
+                    LogiTechSlimefunItems.recipe(null,null,null,null,null,null,
                             null,"NTW_BRIDGE","ADVANCED_CIRCUIT_BOARD","ADVANCED_CIRCUIT_BOARD","NTW_BRIDGE",null,
-                            null,"NTW_BRIDGE",AddItem.LFIELD,AddItem.LFIELD,"NTW_BRIDGE",null,
-                            null,AddItem.ABSTRACT_INGOT,"NTW_QUANTUM_WORKBENCH","NTW_QUANTUM_WORKBENCH",AddItem.ABSTRACT_INGOT,null,
-                            null,AddItem.ABSTRACT_INGOT,"NTW_QUANTUM_WORKBENCH","NTW_QUANTUM_WORKBENCH",AddItem.ABSTRACT_INGOT,null,
-                            null,AddItem.ABSTRACT_INGOT,AddItem.LFIELD,AddItem.LFIELD,AddItem.ABSTRACT_INGOT,null),
+                            null,"NTW_BRIDGE",LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,"NTW_BRIDGE",null,
+                            null,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,"NTW_QUANTUM_WORKBENCH","NTW_QUANTUM_WORKBENCH",LogiTechSlimefunItemStacks.ABSTRACT_INGOT,null,
+                            null,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,"NTW_QUANTUM_WORKBENCH","NTW_QUANTUM_WORKBENCH",LogiTechSlimefunItemStacks.ABSTRACT_INGOT,null,
+                            null,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,null),
                     0,0, Stream.of( NTWQTWORKBENCH_TYPE,NTWEP_WORKBENCH_TYPE,NTWEP_DRAWER_TYPE).filter(Objects::nonNull).toArray(RecipeType[]::new))
                     .register();
         }catch (Throwable e){
@@ -88,13 +88,13 @@ public class AddDepends {
         }
         try{
             if(hasInfiniteExpansion)
-            INFINITY_AUTOCRAFT =new AdvanceRecipeCrafter(AddGroups.BASIC, AddItem.INFINITY_AUTOCRAFT,BugCrafter.TYPE,
-                  AddSlimefunItems.recipe(AddItem.LFIELD,AddItem.LFIELD,"INFINITE_INGOT","INFINITE_INGOT",AddItem.LFIELD,AddItem.LFIELD,
-                          AddItem.LFIELD,AddItem.LCRAFT,"VOID_INGOT","VOID_INGOT",AddItem.LMOTOR,AddItem.LFIELD,
+            INFINITY_AUTOCRAFT =new AdvanceRecipeCrafter(LogiTechItemGroups.BASIC, LogiTechSlimefunItemStacks.INFINITY_AUTOCRAFT,BugCrafter.TYPE,
+                  LogiTechSlimefunItems.recipe(LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,"INFINITE_INGOT","INFINITE_INGOT",LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,
+                          LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LCRAFT,"VOID_INGOT","VOID_INGOT",LogiTechSlimefunItemStacks.LMOTOR,LogiTechSlimefunItemStacks.LFIELD,
                           "INFINITE_INGOT","VOID_INGOT","INFINITY_FORGE","INFINITY_FORGE","VOID_INGOT","INFINITE_INGOT",
                           "INFINITE_INGOT","VOID_INGOT","INFINITY_FORGE","INFINITY_FORGE","VOID_INGOT","INFINITE_INGOT",
-                          AddItem.LFIELD,AddItem.LMOTOR,"VOID_INGOT","VOID_INGOT",AddItem.LCRAFT,AddItem.LFIELD,
-                            AddItem.LFIELD,AddItem.LFIELD,"INFINITE_INGOT","INFINITE_INGOT",AddItem.LFIELD,AddItem.LFIELD)
+                          LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LMOTOR,"VOID_INGOT","VOID_INGOT",LogiTechSlimefunItemStacks.LCRAFT,LogiTechSlimefunItemStacks.LFIELD,
+                            LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD,"INFINITE_INGOT","INFINITE_INGOT",LogiTechSlimefunItemStacks.LFIELD,LogiTechSlimefunItemStacks.LFIELD)
                     , Material.RESPAWN_ANCHOR,100_000,1_500_000,8,INFINITYWORKBENCH_TYPE)
                     .register();
         }catch (Throwable e){
@@ -103,10 +103,10 @@ public class AddDepends {
         }
         try {
             if(hasNetwork)
-                NTW_STORAGE_DISPLAY=new MyVanillaItem(AddGroups.SINGULARITY,SlimefunItem.getById("NTW_QUANTUM_STORAGE_8").getItem().clone(),"NTW_QUANTUM_STORAGE_DISPLAY",RecipeType.ENHANCED_CRAFTING_TABLE,
-                     AddSlimefunItems.recipe(AddItem.ABSTRACT_INGOT,"NTW_QUANTUM_STORAGE_1",AddItem.ABSTRACT_INGOT,
-                             AddItem.ABSTRACT_INGOT,AddItem.IOPORT,AddItem.ABSTRACT_INGOT,
-                             AddItem.STORAGE_SINGULARITY,AddItem.ABSTRACT_INGOT,AddItem.STORAGE_SINGULARITY)   )
+                NTW_STORAGE_DISPLAY=new MyVanillaItem(LogiTechItemGroups.SINGULARITY,SlimefunItem.getById("NTW_QUANTUM_STORAGE_8").getItem().clone(),"NTW_QUANTUM_STORAGE_DISPLAY",RecipeType.ENHANCED_CRAFTING_TABLE,
+                     LogiTechSlimefunItems.recipe(LogiTechSlimefunItemStacks.ABSTRACT_INGOT,"NTW_QUANTUM_STORAGE_1",LogiTechSlimefunItemStacks.ABSTRACT_INGOT,
+                             LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.IOPORT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,
+                             LogiTechSlimefunItemStacks.STORAGE_SINGULARITY,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.STORAGE_SINGULARITY)   )
                         .setDisplayRecipes(
                                 Utils.list(
                                         AddUtils.getInfoShow("&f机制 - &c终极合成",
@@ -188,13 +188,13 @@ public class AddDepends {
                 Class infinityMobDataClass=SlimefunItem.getById("MOB_SIMULATION_CHAMBER").getClass();
                 Constructor constructor=ReflectUtils.getSuitableConstructor(infinityMobDataClass,
                        ItemGroup.class,SlimefunItemStack.class,RecipeType.class,ItemStack[].class,int.class,int.class);
-                AddItem.INF_MOBSIMULATION.setItemMeta(  AddUtils.addLore(AddItem.INF_MOBSIMULATION, AddUtils.speedDisplay(64),AddUtils.energyPerSecond(800)).getItemMeta());
-                INFINITY_MOBSIMNULATOR=(SlimefunItem) constructor.newInstance(AddGroups.BASIC,AddItem.INF_MOBSIMULATION,INFINITYWORKBENCH_TYPE,
-                        AddSlimefunItems.recipe(null,"MACHINE_PLATE","MACHINE_PLATE","MACHINE_PLATE","MACHINE_PLATE",null,
-                                null,"VOID_INGOT",AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,"VOID_INGOT",null,
+                LogiTechSlimefunItemStacks.INF_MOBSIMULATION.setItemMeta(  AddUtils.addLore(LogiTechSlimefunItemStacks.INF_MOBSIMULATION, AddUtils.speedDisplay(64),AddUtils.energyPerSecond(800)).getItemMeta());
+                INFINITY_MOBSIMNULATOR=(SlimefunItem) constructor.newInstance(LogiTechItemGroups.BASIC,LogiTechSlimefunItemStacks.INF_MOBSIMULATION,INFINITYWORKBENCH_TYPE,
+                        LogiTechSlimefunItems.recipe(null,"MACHINE_PLATE","MACHINE_PLATE","MACHINE_PLATE","MACHINE_PLATE",null,
+                                null,"VOID_INGOT",LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,"VOID_INGOT",null,
                                 null,"VOID_INGOT","MOB_SIMULATION_CHAMBER","MOB_SIMULATION_CHAMBER","VOID_INGOT",null,
                                 null,"VOID_INGOT","MOB_SIMULATION_CHAMBER","MOB_SIMULATION_CHAMBER","VOID_INGOT",null,
-                                null,"INFINITE_INGOT",AddItem.LENGINE,AddItem.LENGINE,"INFINITE_INGOT",null,
+                                null,"INFINITE_INGOT",LogiTechSlimefunItemStacks.LENGINE,LogiTechSlimefunItemStacks.LENGINE,"INFINITE_INGOT",null,
                                 "INFINITE_INGOT","INFINITE_INGOT","INFINITE_INGOT","INFINITE_INGOT","INFINITE_INGOT","INFINITE_INGOT"),800,1);
 
                 INFINITY_MOBSIMNULATOR.register(plugin);
@@ -207,14 +207,14 @@ public class AddDepends {
                 Class infinityGeoMiner=SlimefunItem.getById("GEO_QUARRY").getClass();
                 Constructor constructor=ReflectUtils.getSuitableConstructor(infinityGeoMiner,
                         ItemGroup.class,SlimefunItemStack.class,RecipeType.class,ItemStack[].class);
-                AddItem.INF_GEOQUARRY.setItemMeta( AddUtils.addLore(  AddItem.INF_GEOQUARRY,AddUtils.speedDisplay(64),AddUtils.energyPerSecond(4500)).getItemMeta());
-                INFINITY_GEOQURRY=(SlimefunItem) constructor.newInstance(AddGroups.BASIC,AddItem.INF_GEOQUARRY,INFINITYWORKBENCH_TYPE,
-                        AddSlimefunItems.recipe(AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,
+                LogiTechSlimefunItemStacks.INF_GEOQUARRY.setItemMeta( AddUtils.addLore(  LogiTechSlimefunItemStacks.INF_GEOQUARRY,AddUtils.speedDisplay(64),AddUtils.energyPerSecond(4500)).getItemMeta());
+                INFINITY_GEOQURRY=(SlimefunItem) constructor.newInstance(LogiTechItemGroups.BASIC,LogiTechSlimefunItemStacks.INF_GEOQUARRY,INFINITYWORKBENCH_TYPE,
+                        LogiTechSlimefunItems.recipe(LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,
                                 "MYTHRIL","VOID_INGOT","VOID_INGOT","VOID_INGOT","VOID_INGOT","MYTHRIL",
                                 "MYTHRIL","VOID_INGOT","INFINITE_MACHINE_CIRCUIT","INFINITE_MACHINE_CIRCUIT","VOID_INGOT","MYTHRIL",
                                 "MYTHRIL","VOID_INGOT","GEO_QUARRY","GEO_QUARRY","VOID_INGOT","MYTHRIL",
                                 "MYTHRIL","VOID_INGOT","VOID_INGOT","VOID_INGOT","VOID_INGOT","MYTHRIL",
-                                AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT,AddItem.ABSTRACT_INGOT));
+                                LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.ABSTRACT_INGOT));
                 ReflectUtils.invokeSetRecursively(INFINITY_GEOQURRY,"ticksPerOutput",6);
                 ReflectUtils.invokeSetRecursively(INFINITY_GEOQURRY,"energyPerTick",4500);
                 INFINITY_GEOQURRY.register(plugin);

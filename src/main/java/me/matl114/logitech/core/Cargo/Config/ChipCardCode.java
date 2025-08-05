@@ -1,7 +1,7 @@
 package me.matl114.logitech.core.Cargo.Config;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.CraftUtils;
 import me.matl114.logitech.utils.MathUtils;
@@ -24,20 +24,20 @@ public class ChipCardCode {
     public final static String LORE_MATCH=AddUtils.resolveColor( "&8⇨ &3Code:&f ");
     //public final static Pattern LORE_PATTERN=Pattern.compile(AddUtils.resolveColor("^&8⇨ &7Code:&f.*$"));
     public final static Pattern CODE_GROUP_PATTERN=Pattern.compile(AddUtils.resolveColor("^&8⇨ &7Code:&f([0-1]*?)$"));
-    public static ItemMeta meta=AddItem.CHIP.getItemMeta();
+    public static ItemMeta meta=LogiTechSlimefunItemStacks.CHIP.getItemMeta();
     public final static ItemStack CHIP_0=((Supplier<ItemStack>)()->{
-        ItemStack stack=AddItem.CHIP.clone();
+        ItemStack stack=LogiTechSlimefunItemStacks.CHIP.clone();
         stack.setItemMeta(createCard(0));
         return stack;
     }).get();
     public final static ItemMeta chip0meta=CHIP_0.getItemMeta();
     public final static ItemStack CHIP_1=((Supplier<ItemStack>)()->{
-        ItemStack stack=AddItem.CHIP.clone();
+        ItemStack stack=LogiTechSlimefunItemStacks.CHIP.clone();
         stack.setItemMeta(createCard(1));
         return stack;
     }).get();
     public final static ItemStack CHIP_FINAL=((Supplier<ItemStack>)()->{
-        ItemStack stack=AddItem.CHIP.clone();
+        ItemStack stack=LogiTechSlimefunItemStacks.CHIP.clone();
         stack.setItemMeta(createCard(1431655765));
         return stack;
     }).get();

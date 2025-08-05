@@ -45,9 +45,9 @@ public class Schedules {
         postRegisterTask.runTaskLater(plugin,delayPostRegister);
     }
     public static void onDisableSchedules(Plugin plugin){
-        Debug.logger(Language.get("Messages.SAVING_DATA"));
+        Debug.logger(Language.get("debug_message.saving_data"));
         ScheduleSave.onFinalSave();
-        Debug.logger(Language.get("Messages.DATA_SAVED"));
+        Debug.logger(Language.get("debug_message.data_saved"));
     }
     public static void execute(Runnable task,boolean isSync){
         if(Bukkit.isPrimaryThread()){

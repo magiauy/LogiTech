@@ -6,7 +6,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractMachine;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.ItemClass.ItemCounter;
@@ -34,7 +34,7 @@ public class SimulateTestGenerator extends AbstractMachine {
     public final int ENERGY_ABSMAX;
     public final int OUTPUT_MIN;
     public final int OUTPUT_MAX;
-    public final ItemStack OUTPUT= AddItem.PARADOX;
+    public final ItemStack OUTPUT= LogiTechSlimefunItemStacks.PARADOX;
     public final int RANDOM_THREASHOLD;
     public void addInfo(ItemStack stack){
         stack.setItemMeta(AddUtils.addLore(stack,

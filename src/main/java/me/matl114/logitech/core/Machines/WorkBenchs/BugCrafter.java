@@ -6,7 +6,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractWorkBench;
 import me.matl114.logitech.utils.*;
 import me.matl114.logitech.utils.UtilClass.RecipeClass.ImportRecipes;
@@ -27,7 +27,7 @@ public class BugCrafter extends AbstractWorkBench implements ImportRecipes {
 
     public static final CustomRecipeType TYPE=new CustomRecipeType(
             AddUtils.getNameKey("bug_crafter"),
-            new CustomItemStack(AddItem.BUG_CRAFTER, AddItem.BUG_CRAFTER.getDisplayName(),
+            new CustomItemStack(LogiTechSlimefunItemStacks.BUG_CRAFTER, LogiTechSlimefunItemStacks.BUG_CRAFTER.getDisplayName(),
                     "", "&c配方显示不完整，请从%s查看正确的配方!".formatted(Language.get("machine.BUG_CRAFTER.name")))
     );
     protected static final int[] INPUT_SLOT=new int[]{0, 1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14,

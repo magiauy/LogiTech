@@ -6,51 +6,51 @@ placeholder:
   end_color: '§x§9§7§0§0§9§7'
 
 group:
-  ROOT:
+  root:
     name: '&7&ka&x&5&5&f&f&7&7Logi&x&5&5&f&f&9&9Tech&x&5&5&f&f&b&b Craft&x&5&5&f&f&d&ding&6 (Release %addon_version%)&7&ka&r'
     lore:
       - '&7Let''s go!'
       - '&7⇨ &aClick to start LogiTech'
-  INFO:
+  information:
     name: '&d%addon_name% &6Version & Info'
-  MATERIAL:
+  basic_material:
     name: '&d%addon_name% &6Basic Materials'
-  ALLMACHINE:
+  stackable_machine:
     name: '&d%addon_name% &6Stack Machine Support List'
-  ALLRECIPE:
+  recipe_type:
     name: '&d%addon_name% &6Recipe Types Guide'
-  URL:
+  github_url:
     name: "&eClick to get addon Github link"
     lore:
       - ""
       - "&7⇨ &aClick to get link"
-  WIKI:
+  wiki:
     name: "&eClick to view addon wiki"
     lore:
       - ""
       - "&7⇨ &aClick to get link"
-  INFO1:
+  info_1:
     name: "&c&lVersion"
     lore:
       - "&7Current %addon_name% version:"
       - "&b&m%addon_version% &6&rRelease"
       - "&7More versions coming soon!"
 
-  INFO2:
+  info_2:
     name: "&e&lContact Us"
     lore:
       - "&7If you want to report bugs"
       - "&7or suggest interesting ideas"
       - "&7please create an issue on the github link above"
       - "&7Any useful suggestion will be considered"
-  INFO3:
+  info_3:
     name: "&a&lAddon Introduction"
     lore:
       - "&7Our addon aims to develop new features"
       - "&7and interesting mechanics,"
       - "&7while traditional machine stacking may be inevitable"
       - "&7we hope to bring players a unique experience"
-  INFO4:
+  info_4:
     name: "&c&lDisclaimer"
     lore:
       - "&7This addon may reference other addons in creation"
@@ -58,7 +58,7 @@ group:
       - "&7but all features in this addon are hand-written by the author"
       - "&7Implementing these features is the author's interest and goal"
       - "&7If issues/bugs occur, please contact author matl114"
-  INFO5:
+  info_5:
     name: "&c&lMore Disclaimers"
     lore:
       - "&eMainline version doesn't provide %max_supported_version%+ bug fixes"
@@ -66,21 +66,21 @@ group:
       - "&7you can report the issue to github"
       - "&7but the author won't guarantee fixes"
       - "&aRecommend reporting to fork repos that support %max_supported_version%+"
-  INFO6:
+  info_6:
     name: "&6&lAddon Features"
     lore:
       - "&7This addon has features different from other addons"
       - "&7These will be explained below"
       - "&7When encountering unexplained mechanics during gameplay"
       - "&7please read the following explanations carefully"
-  FEAT1:
+  feature_1:
     name: "&6&lFeature - &c&lRewritten Process Machines"
     lore:
       - "&7Process machines (with progress bars) differ from normal progress machines"
       - "&7Uses addon's custom recipe algorithm and push algorithm"
       - "&7Guarantees 0tick recipes can craft without intervals"
       - "&7If machines have issues, contact the author"
-  FEAT2:
+  feature_2:
     name: "&6&lFeature - &c&lRecipe Machines, Generators & Directed Generators"
     lore:
       - "&7Recipe machines use machine recipes for crafting"
@@ -88,7 +88,7 @@ group:
       - "&7This addon has various generators"
       - "&7Directed generators need specific recipe input to produce output"
       - "&7If machines have issues, contact the author"
-  FEAT3:
+  feature_3:
     name: "&6&lFeature - &c&lAdvanced Machines & Parallel Processing"
     lore:
       - "&7This addon adds advanced machines with more I/O slots and features"
@@ -97,7 +97,7 @@ group:
       - "&7If <process time> can't be reduced further, uses <parallel count>/<process time>"
       - "&7as max attempts to match machine recipes"
       - "&7If machines have issues, contact the author"
-  FEAT4:
+  feature_4:
     name: "&6&lFeature - &c&lWorkbench & Quick Insert"
     lore:
       - "&7Workbench can be used for organized recipe crafting"
@@ -106,7 +106,7 @@ group:
       - "&7or recipe buttons in corresponding workbench"
       - "&7Quick Insert helps you quickly place items in recipe format"
       - "&7If machines have issues, contact the author"
-  FEAT5:
+  feature_5:
     name: "&6&lFeature - &c&lLarge Multiblock Machines"
     lore:
       - "&7Large multiblock machines consist of multiblock core, parts, and I/O interfaces"
@@ -115,15 +115,14 @@ group:
       - "&eNote: Use /logitech multiblock to view construction tutorial"
       - "&7Multiblock construction requires: valid structure, no conflicts, may have extra requirements"
       - "&7Multiblock operation requires: complete structure only"
-      - "&7Running multiblock will auto-shutdown if special requirements aren't met"
+      - "&7Running multiblock will auto-shutdown if mysterious_realm requirements aren't met"
       - "&eNote: Some multiblocks have shutdown checks, serious consequences may occur!"
       - "&7With auto-build disabled, manually click build button after construction"
       - "&7Auto-build disables build button and async detects structure/activates machine"
       - "&7Click multiblock part to open GUI, shift+click for normal interaction"
       - "&7Multiblock I/O interfaces replace specific parts for push/pull operations"
       - "&7If machines have issues, contact the author"
-
-  FEAT6:
+  feature_6:
     name: "&6&lFeature - &c&lSequential Input Recipes & Cargo System"
     lore:
       - "&7Sequential input recipes for sequential progress machines"
@@ -135,7 +134,7 @@ group:
       - "&7Machines usually provide auto-clear button for mismatched items"
       - "&7Though hard to automate, we provide cargo machines for automation"
       - "&7If machines have issues, contact the author"
-  FEAT7:
+  feature_7:
     name: "&6&lFeature - &c&lCargo Machines & Controllable Cargo"
     lore:
       - "&7This addon provides normal cargo and smart cargo machines"
@@ -153,8 +152,7 @@ group:
       - "&eWhen you see \"Insert config card\" in cargo slot description,"
       - "&eread instructions in cargo config station"
       - "&7If machines have issues, contact the author"
-
-  FEAT8:
+  feature_8:
     name: "&6&lFeature - &c&lStack Machines & Work Efficiency"
     lore:
       - "&7Stack machines can stack other machines into specific slots"
@@ -173,7 +171,7 @@ group:
       - "&eAuthor takes no responsibility for stack machine failures from hot reload"
       - "&aAddon will launch \"Community Creator\" program for config improvement"
       - "&aTo support weird but efficient addons and perfect stack lists"
-  FEAT9:
+  feature_9:
     name: "&6&lFeature - &c&lUltimate Crafting"
     lore:
       - "&7Ultimate crafting supports extract/insert from valid non-empty storage items"
@@ -190,86 +188,85 @@ group:
       - "&cNote: Due to Networks Extended rapid updates, not all versions guaranteed"
       - "&7Machines with this feature have extreme crafting speed to support it"
       - "&7If machines have issues, contact the author"
-  UPDATELOG:
+  update_log:
     name: '&d%addon_name% &6Update Log'
     lore:
       - '&7I don''t have dementia'
-  MORE2:
+  notice:
     name: '&6Universe Safety Notice'
-  BASIC:
+  basic_machine:
     name: '&d%addon_name% &6Basic Machines'
-  ALLBIGRECIPES:
+  big_recipe:
     name: '&d%addon_name% &6Large Recipe Display'
     lore:
       - '&7View recipes not fully shown in slimefun book'
-  CARGO:
+  cargo:
     name: '&d%addon_name% &6Cargo Machines'
-  SINGULARITY:
+  singularity:
     name: '&d%addon_name% &6Concept Singularity Craft'
-  ADVANCED:
+  advanced_machine:
     name: '&d%addon_name% &6Advanced Machines'
-  BEYOND:
+  transcendence_realm:
     name: '&dFinal Chapter &6Beyond Realm'
     lore:
       - '&7Beyond Tech'
-  VANILLA:
+  redstone_technology:
     name: '&d%addon_name% &6Redstone Tech'
     lore:
       - '&eOh no... should be Redstone Tech'
-  MANUAL:
+  fast_machine:
     name: '&d%addon_name% &6Manual Machines'
     lore:
       - '&7Lazy player''s blessing, nice!'
-  SPECIAL:
+  mysterious_realm:
     name: '&d%addon_name% &6Mysterious Realm'
     lore:
       - '&7Why do these machines look pointy...'
-  TOBECONTINUE:
+  to_be_continue:
     name: '&6To be continued...'
     lore:
       - "&7Still in development, stay tuned"
-  SPACE:
+  space_technology:
     name: '&d%addon_name% &6Space Technology'
-  GENERATORS:
+  resource_generator:
     name: '&d%addon_name% &6Material Generation & Conversion'
-  ENERGY:
+  electricity:
     name: '&d%addon_name% &6Power & Energy Extension'
-  FUNCTIONAL:
+  functional:
     name: '&d%addon_name% &6Functional item'
-  TOOLS:
+  tools:
     name: '&d%addon_name% &6Tools & Forging'
-  TOOLS_SUBGROUP_1:
+  tools_subgroup_1:
     name: '&dForge Workshop &6Amplifier Components'
-
-  TOOLS_SUBGROUP_2:
+  tools_subgroup_2:
     name: '&dForge Workshop &6Functional Units'
-  TOOLS_RECIPES:
+  tools_recipes:
     name: '&dTools & Forging &6Special Recipe Types'
     lore:
       - 'View crafting methods for special recipe types in this category'
 
 item:
-  BUG:
+  bug:
     name: 'BUG'
     lore:
       - 'Often appears in unexpected places...'
-  MATL114:
+  matl114:
     name: 'MATL114'
     lore:
       - 'Yes, I''m the author of LogiTech...'
-  CHIP_INGOT:
+  chip_ingot:
     name: 'Chip Alloy'
     lore:
       - 'What a cold joke...'
-  LOGIC:
+  logic:
     name: 'Logic'
     lore:
       - 'Shattered but not broken, organized but still messy...'
-  TRUE_:
-    name: 'True '
-  FALSE_:
-    name: 'False '
-  LOGIGATE:
+  boolean_true:
+    name: 'True'
+  boolean_false:
+    name: 'False'
+  logic_gate:
     name: 'Logic Gate'
     lore:
       - 'Though it looks scary and complex...'

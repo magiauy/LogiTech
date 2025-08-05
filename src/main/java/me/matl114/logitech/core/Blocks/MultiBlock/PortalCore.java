@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.manager.Schedules;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Blocks.MultiBlockCore.MultiCore;
 import me.matl114.logitech.core.Cargo.Links.HyperLink;
 import me.matl114.logitech.utils.*;
@@ -41,7 +41,7 @@ public class PortalCore extends MultiCore {
     protected final ItemStack HOLOGRAM_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,"&6点击切换全息投影","&e或使用/logitech multiblock 查看搭建教程","&7当前状态: &c关闭");
     protected final MultiBlockType MBTYPE;
     public HashMap<String,ItemStack> MBID_TO_ITEM=new HashMap<>(){{
-        put("portal.part", AddItem.PORTAL_FRAME.clone());
+        put("portal.part", LogiTechSlimefunItemStacks.PORTAL_FRAME.clone());
     }};
     public Map<String,ItemStack> getIdMappingDisplayUse(){
         return Map.copyOf(MBID_TO_ITEM);

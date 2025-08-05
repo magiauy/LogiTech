@@ -6,7 +6,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import me.matl114.logitech.Language;
 import me.matl114.logitech.manager.Schedules;
 import me.matl114.logitech.utils.Algorithms.PairList;
-import me.matl114.logitech.core.AddSlimefunItems;
+import me.matl114.logitech.core.LogiTechSlimefunItems;
 import me.matl114.logitech.utils.UtilClass.RecipeClass.ShapedMachineRecipe;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -18,9 +18,9 @@ import java.util.Optional;
 
 public class BukkitUtils {
     public static final RecipeType VANILLA_CRAFTTABLE =new RecipeType(AddUtils.getNameKey("vanilla_crafttable"),
-            new CustomItemStack(Material.CRAFTING_TABLE,null,"", Language.get("Messages.ORIGIN_WORKBENCH")));
+            new CustomItemStack(Material.CRAFTING_TABLE,null,"", Language.get("message.ORIGIN_WORKBENCH")));
     public static final RecipeType VANILLA_FURNACE=new RecipeType(AddUtils.getNameKey("vanilla_furnace"),
-            new CustomItemStack(Material.FURNACE,null,"", Language.get("Messages.VANILLA_FURNACE")));
+            new CustomItemStack(Material.FURNACE,null,"", Language.get("message.VANILLA_FURNACE")));
 
     public static void sendRecipeToVanilla(NamespacedKey key,ShapedMachineRecipe recipe){
         sendShapedRecipeToVanilla(key,recipe.getInput(),recipe.getOutput()[0]);
@@ -77,9 +77,9 @@ public class BukkitUtils {
         addMoreRecipes();
     }
     public static void addMoreRecipes(){
-        sendRecipeToVanilla(AddSlimefunItems.CRAFT_MANUAL,ShapedRecipe.class);
-        sendRecipeToVanilla(AddSlimefunItems.ENHANCED_CRAFT_MANUAL,ShapedRecipe.class);
-        sendRecipeToVanilla(AddSlimefunItems.MAGIC_WORKBENCH_MANUAL,ShapedRecipe.class);
+        sendRecipeToVanilla(LogiTechSlimefunItems.CRAFT_MANUAL,ShapedRecipe.class);
+        sendRecipeToVanilla(LogiTechSlimefunItems.ENHANCED_CRAFT_MANUAL,ShapedRecipe.class);
+        sendRecipeToVanilla(LogiTechSlimefunItems.MAGIC_WORKBENCH_MANUAL,ShapedRecipe.class);
         moreVanillaRecipes.forEach(pair->sendRecipeToVanilla(pair.getFirstValue(),pair.getSecondValue()));
     }
     public static void sendShapedRecipeToVanilla(NamespacedKey key, ItemStack[] input, ItemStack output){

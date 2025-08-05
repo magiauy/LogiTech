@@ -39,7 +39,7 @@ public class ContainerUtils {
         }else return preCalculatedSlots[size];
     }
     @Getter
-    protected static BlockMenuPreset containerWrapperMenuPreset =new BlockMenuPreset("LOGITECH_FUNCTIONAL_BLOCKMENU", Language.get("Messages.CONTAINER_TITLE")) {
+    protected static BlockMenuPreset containerWrapperMenuPreset =new BlockMenuPreset("LOGITECH_FUNCTIONAL_BLOCKMENU", Language.get("message.CONTAINER_TITLE")) {
         @Override
         public void init() {
             for(int i=0;i<54;++i){

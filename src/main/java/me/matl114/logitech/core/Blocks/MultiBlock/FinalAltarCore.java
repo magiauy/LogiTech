@@ -7,7 +7,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Registries.MultiBlockTypes;
 import me.matl114.logitech.core.Blocks.MultiBlockCore.MultiCore;
 import me.matl114.logitech.utils.AddUtils;
@@ -79,9 +79,9 @@ public class FinalAltarCore  extends MultiCore {
     protected final ItemStack HOLOGRAM_ITEM_OFF=new CustomItemStack(Material.RED_STAINED_GLASS_PANE,"&6点击切换全息投影","&e或使用/logitech multiblock 查看搭建教程","&7当前状态: &c关闭");
     protected final MultiLevelBlockType MBTYPE;
     public HashMap<String,ItemStack> MBID_TO_ITEM=new HashMap<>(){{
-        put("final.sub", AddItem.FINAL_LASER.clone());
-        put("final.frame", AddItem.FINAL_FRAME.clone());
-        put("final.base", AddItem.FINAL_BASE.clone());
+        put("final.sub", LogiTechSlimefunItemStacks.FINAL_LASER.clone());
+        put("final.frame", LogiTechSlimefunItemStacks.FINAL_FRAME.clone());
+        put("final.base", LogiTechSlimefunItemStacks.FINAL_BASE.clone());
     }};
     public Map<String,ItemStack> getIdMappingDisplayUse(){
         return Map.copyOf(MBID_TO_ITEM);

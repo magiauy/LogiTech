@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.matl114.logitech.Language;
-import me.matl114.logitech.core.AddItem;
+import me.matl114.logitech.core.LogiTechSlimefunItemStacks;
 import me.matl114.logitech.core.Machines.Abstracts.AbstractMachine;
 import me.matl114.logitech.utils.AddUtils;
 import me.matl114.logitech.utils.CraftUtils;
@@ -58,7 +58,7 @@ public class ItemOperator extends AbstractMachine {
     protected final String RENAME_SF_SUFFIX=AddUtils.resolveColor("&7&kB&f&r");
     protected final String RENAME_VANILLA_PREFIX= AddUtils.resolveColor("&7&kT&f&r");
     protected final String RENAME_VANILLA_SUFFIX=AddUtils.resolveColor("&7&kM&f&r");
-    protected final ItemCounter LSIN=CraftUtils.getCounter(AddItem.LSINGULARITY);
+    protected final ItemCounter LSIN=CraftUtils.getCounter(LogiTechSlimefunItemStacks.LSINGULARITY);
     protected final ItemCounter NAMETAG=CraftUtils.getCounter(new ItemStack(Material.NAME_TAG));
     protected final HashSet<String> COLORS=new HashSet<>(){{
         for (Material material : Material.values()) {
