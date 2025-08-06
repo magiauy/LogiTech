@@ -252,7 +252,7 @@ item:
     name: 'MATL114'
     lore:
       - '没错,我是逻辑工艺的作者...'
-  potato_chip:
+  chip_alloy:
     name: '薯片合金'
     lore:
       - '真是亿个冷笑话..'
@@ -281,15 +281,15 @@ item:
     name: '反逻辑'
     lore:
       - '什么,这不科学'
-  logical_engine:
+  logic_engine:
     name: '逻辑引擎'
-  logical_engine_force_field:
+  logic_engine_force_field:
     name: '逻辑引擎力场'
-  logical_scheduler:
+  logic_scheduler:
     name: '逻辑调度器'
     lore:
       - '机器枢纽'
-  logical_crafting_unit:
+  logic_crafting_unit:
     name: '逻辑合成单元'
     lore:
       - '负责复杂的合成任务'
@@ -304,9 +304,9 @@ item:
     name: 'IO组件'
     lore:
       - '负责执行高速物流任务'
-  palladium_ingot:
+  palladium:
     name: '钯 (pd)'
-  platinum_ingot:
+  platinum:
     name: '铂 (pt)'
   molybdenum:
     name: '钼 (mo)'
@@ -314,15 +314,15 @@ item:
       - '用于芯片制造'
   cerium:
     name: '铈 (ce)'
-  cadmium_ingot:
+  cadmium:
     name: '镉 (cd)'
   mendelevium:
     name: '钔 (md)'
   dysprosium:
     name: '镝 (dy)'
-  bismuit_ingot:
+  bismuth:
     name: '铋 (bi)'
-  antimony_ingot:
+  antimony:
     name: '锑 (sb)'
   boron:
     name: '硼 (B)'
@@ -336,200 +336,198 @@ item:
     name: '维度结晶'
     lore:
       - '浓缩维度之力,可以轻而易举的跨越空间'
-  star_gold:
+  astral_gold_dust:
     name: '星辰金砂'
     lore:
       - '随星系爆发而生...'
       - '其结构坚固到足以承载空间力量'
-  VIRTUAL_SPACE:
+  virtual_space:
     name: '虚拟空间'
     lore:
       - '存在于虚无中的空间'
-  WORLD_FEAT:
+  overworld_feature:
     name: '世界特征 - 主世界'
     lore:
       - '代表着主世界特征的世界碎片'
-  NETHER_FEAT:
+  nether_feature:
     name: '世界特征 - 下界'
     lore:
       - '代表着下界特征的世界碎片'
-  END_FEAT:
+  the_end_feature:
     name: '世界特征 - 末地'
     lore:
       - '代表着末地特征的世界碎片'
-  ABSTRACT_INGOT:
+  abstract_ingot:
     name: '抽象锭'
     lore:
       - '仅仅是个开始...'
-  PDCECDMD:
+  pd_ce_cd_md_alloy:
     name: '钚铈镉钔合金'
     lore:
       - '布什,戈门'
-  HGTLPBBI:
+  hg_tl_pb_bi_alloy:
     name: '汞铊铅铋合金'
     lore:
       - '“不知道为什么熔点超高的合金”'
-  REINFORCED_CHIP_INGOT:
+  reinforced_chip_alloy:
     name: '强化薯片合金'
     lore:
       - '更符合逻辑的芯片制造原料'
-  ATOM_INGOT:
+  charged_atomic_alloy:
     name: '充能原子合金'
-
-  LMOTOR:
+  logic_motor:
     name: '逻辑动力马达'
     lore:
       - '源源不断的动力'
-  LPLATE:
+  chip_alloy_plate:
     name: '薯片合金板'
     lore:
       - '符合逻辑的配方'
       - '让他广泛用于各种逻辑机器中'
-  METAL_CORE:
+  heavy_metal_core:
     name: '重金核心'
     lore:
       - '凝聚概念'
-  SMELERY_CORE:
+  refined_core:
     name: '精炼核心'
     lore:
       - '凝聚概念'
-  MASS_CORE:
+  matter_core:
     name: '物质核心'
     lore:
       - '凝聚概念'
-  TECH_CORE:
+  technology_core:
     name: '科技核心'
     lore:
       - '凝聚概念'
-  SPACE_PLATE:
+  space_reinforcement_plate:
     name: '空间强化板'
-  LOGIC_CORE:
+  logic_core:
     name: '逻辑核心'
     lore:
       - '终极'
-  FINAL_FRAME:
+  ultimate_logic_frame:
     name: '终极逻辑框架'
     lore:
       - '终极之基'
-  REDSTONE_ENGINE:
+  redstone_power_engine:
     name: '赤石源力引擎'
-  STAR_GOLD_INGOT:
+  astral_gold:
     name: '星辰金'
     lore:
       - '制造空间机器必不可少的材料'
-  HYPER_LINK:
+  hyperlink:
     name: '超链接'
     lore:
       - '和目标方块建立逻辑链接'
       - '右键打开目标粘液容器或原版容器'
       - 'shift+右键绑定目标方块位置'
-  SAMPLE_HEAD:
+  sample_head:
     name: '头颅展示示例'
     lore:
       - '来自头颅解析仪'
-  RESOLVE_FAILED:
+  item_parsing_failed:
     name: '&c物品解析失败!'
     lore:
       - '&7并未找到符合id的物品! 该配方已被禁用!'
-  CARGO_PART:
+  logic_cargo_unit:
     name: '逻辑货运零件'
     lore:
       - '用于配置货运运输数量'
-  CARGO_CONFIG:
+  cargo_config_card:
     name: '通用货运机器配置卡'
     lore:
       - '插入机器以载入货运配置'
-  CARGO_CONFIGURATOR:
+  cargo_configurator:
     name: '通用货运配置台'
     lore:
       - '用于编辑通用货运配置卡'
-
-  CHIP:
+  chip:
     name: 'CHIP'
     lore:
       - '可存储32位数据的芯片'
-  CHIP_CORE:
+  smart_control_unit:
     name: '智能控制核心'
     lore:
       - '内部编码了复杂的代码..'
       - '用于控制复杂机器运行'
-  LSINGULARITY:
+  logic_singularity:
     name: '逻辑奇点'
     lore:
       - '伴生于超新星'
       - '终极之始'
-  THALLIUM:
+  thallium:
     name: '铊 (Tl)'
-  HYDRAGYRUM:
+  mercury:
     name: '汞 (Hg)'
-  RADIATION_CLEAR:
+  radiation_cleaner:
     name: '辐射区域清除器'
     lore:
       - '清除附近40格内的辐射中心'
-  ANTIMASS_CLEAR:
+  anticoncept_matter_cleaner:
     name: '反概念物质清除器'
     lore:
       - '管理和创造模式专用'
       - '右键时 中断全部反物质进程并删除反物质方块'
       - 'shift+右键时 将当前世界中的全部逻辑核心替换成指定的普通方块'
-  BISILVER:
+  bismuth_silver:
     name: '铋银'
     lore:
       - '介于真实和虚幻的材料'
-  PAGOLD:
+  palladium_gold:
     name: '钯金'
     lore:
       - '有股椰子的味道..'
-  STACKFRAME:
+  stacking_space:
     name: '堆叠空间'
     lore:
       - '在虚拟空间中压缩大量机器..'
       - '用于合成传说中的堆叠机器'
-  LASER:
+  nano_laser_unit:
     name: '纳米级激光发生器'
     lore:
       - '用于芯片制造'
-  ANTIMASS:
+  anticoncept_matter:
     name: '反概念物质'
     lore:
       - '反逻辑而存在的物质'
       - '会同化其余物质,&c小心放置!'
-  SHELL:
+  shell:
     name: 'SHELL'
-  VIRTUALWORLD:
+  virtual_world:
     name: '虚拟世界'
     lore:
       - '诞生自ERROR的世界'
-  ENTITY_FEAT:
+  entity_feature:
     name: '生物特征'
     lore:
       - '随机掉落于刷怪笼'
       - ''
       - '类型: &x&e&b&3&3&e&b<类型>'
-  SAMPLE_SPAWNER:
+  sample_spawner:
     name: '刷怪笼'
-  HOLOGRAM_REMOVER:
+  hologram_remover:
     name: '全息投影清除器'
     lore:
       - '用来清除因错误而未正确移除的展示实体'
       - '你或许会在崩服之后使用他'
       - '右键清除附近10格的错误展示实体'
-  WITHERPROOF_REDSTONE:
-    name: '防凋零红石块'
-    lore:
-      - '非常好红石块,防爆防凋零'
-  WITHERPROOF_REDS:
+  witherproof_redstone:
     name: '防凋零红石'
     lore:
       - '非常好红石线,防爆防凋零'
       - '可惜还是不防水'
-  BEDROCK_BREAKER:
+  witherproof_redstone_block:
+    name: '防凋零红石块'
+    lore:
+      - '非常好红石块,防爆防凋零'
+  portable_bedrock_breaker:
     name: '便捷式破基岩装置'
     lore:
       - '赤石科技的基础道具'
-      - '右键破坏任何原版方块/本附属无法破坏方块'
+      - '右键破坏任何原版方块/本附属无法破坏方块' #Right click to break any vanilla block or this addon's unbreakable block
       - '每方块仅消耗 1 活塞'
-  LASER_GUN:
+  portable_laser_cannon:
     name: '&e便捷式宏激光发射器'
     lore:
       - '发射宏激光'
@@ -539,37 +537,37 @@ item:
       - '耗电: 64*10^<功率档>'
       - '&e小心激光!'
       - '&x&E&B&3&3&E&B发射器功率: &a第1档/共5档'
-  SUPERSPONGE:
+  super_sponge:
     name: '海曼牌海绵'
     lore:
       - '右键清除周身10格内的全部液体(包括含水方块和岩浆)'
       - '使用过的海绵可在熔炉里恢复'
-  SUPERSPONGE_USED:
+  super_sponge_used:
     name: '使用过的海曼牌海绵'
     lore:
       - '要溢出来了,啊~'
       - '使用过的海绵可在熔炉里恢复'
-  TRACE_ARROW:
+  peach_blossom_needle_cannon:
     name: '%default_color%暴雪桃花针'
     lore:
       - '消耗电力发射16根追踪飞针'
       - '对命中的敌人造成箭矢伤害'
       - '%default_color%---赛博修仙 机械飞升---'
-  RTP_RUNE:
+  rtp_rune:
     name: '&7古代符文 &8&l[%default_color%&l随机传送&8&l]'
     lore:
       - '丢出后进行随机传送,期间请不要移动'
       - '丢出数目越多,传送范围越大!'
-  SPACE_CARD:
+  space_disk:
     name: '空间磁盘'
     lore:
       - '可以存储一片空间...'
       - '在空间塔中进行空间IO'
-  UNBREAKING_SHIELD:
+  armored_shield:
     name: '&b防暴盾牌'
     lore:
       - '将无法被斧头禁用!'
-  SUPER_MACE:
+  SUPER_MACE: #Not available
     name: '%default_color%雷霆重锤'
     lore:
       - '跳跃提升 V'
@@ -577,50 +575,50 @@ item:
       - '自带增益的重锤'
       - '可以让敌人~飞起来~'
       - '%default_color%---并非雷神,实则锤神---'
-  FAKE_UI:
+  slot_filler_panel:
     name: '槽位伪装板'
-  REPLACE_SF_CARD:
-    name: '粘液替代卡片'
-    lore:
-      - '替代不可堆叠物品'
-  REPLACE_CARD:
+  replacement_card:
     name: '替代卡片'
     lore:
       - '替代不可堆叠物品'
-  ANTIGRAVITY:
+  slimefun_replacement_card:
+    name: '粘液替代卡片'
+    lore:
+      - '替代不可堆叠物品'
+  levitation_device:
     name: '反重力装置'
     lore:
       - '似乎有些后遗症..?'
       - '右键 获取反重力效果8秒'
-  CONFIGURE:
+  logic_configurator:
     name: '逻辑通用配置器'
     lore:
       - '拷贝/粘贴本附属的部分机器配置'
       - '可存储的配置'
       - '⇨ 方向配置'
       - '⇨ 特殊选项'
-  AMPLIFY_BASE:
+  basic_amplifier_module:
     name: '基础增幅组件'
     lore:
       - '增幅组件的模板'
-  SWAMP_SPEED:
+  workshop_amplifier_module_speed:
     name: '工坊增幅组件 - 速度'
     lore:
       - '增加工坊接口 100% 速度'
-  SWAMP_RANGE:
+  workshop_amplifier_module_range:
     name: '工坊增幅组件 - 范围'
     lore:
       - '增加部分工坊接口的工作范围'
-  BNOISE_HEAD:
+  bnoise_helmet:
     name: "B动静头盔"
     lore:
       - "带上头盔以制造B动静"
       - "大香蕉特供道具"
-  MULTIBLOCKBUILDER:
+  multiblock_builder:
     name: '多方块构建器(管理专用版)'
     lore:
       - '管理专用,嘿嘿嘿'
-  DISPLAY_FU_USE:
+  functional_unit_installation_guide:
     name: '§d功能单元 §6安装说明'
     lore:
       - '功能单元可以在接入锻造工坊的锻造台中'
@@ -629,21 +627,21 @@ item:
       - '功能单元置于&e模板槽位&7,工具置于&e工具槽位&7,额外材料置于&e锻造材料位'
       - '即可进行锻造! 结果将输出到附近的&e锻造合成接口&7中'
       - '⇨ &a点击查看示意图'
-  DISPLAY_FU_USE_1:
+  functional_unit_installation_guide_1:
     name: '任一功能单元'
     lore:
       - '置于锻造台的模板槽位(第1个槽)'
-  DISPLAY_FU_USE_2:
+  functional_unit_installation_guide_2:
     name: '支持的工具'
     lore:
       - '置于锻造台的工具槽位(第2个槽)'
       - '不同的功能单元有不同的支持工具范围'
-  DISPLAY_FU_USE_3:
+  functional_unit_installation_guide_3:
     name: '需求的材料'
     lore:
       - '置于锻造台的材料槽位(第3个槽)'
       - '不同的功能单元需求不同的锻造材料'
-  DISPLAY_REMOVE_FU:
+  functional_unit_removal_guide:
     name: '§d功能单元 §6卸载说明'
     lore:
       - '功能单元可以在接入锻造工坊的砂轮中'
@@ -654,24 +652,24 @@ item:
       - '即可卸载掉装备上的功能单元并返还物品于锻造合成接口'
       - '卸载掉的等级=&e下方槽位的功能单元数量'
       - '⇨ &a点击查看示意图'
-  DISPLAY_REMOVE_FU_1:
+  functional_unit_removal_guide_1:
     name: '装配了功能单元的工具'
     lore:
       - '置于砂轮的上方槽位'
-  DISPLAY_REMOVE_FU_2:
+  functional_unit_removal_guide_2:
     name: '需要卸载的功能单元类型'
     lore:
       - '置于砂轮的下方槽位'
-  FU_BASE:
+  basic_functional_unit:
     name: '基础功能单元'
     lore:
       - '一个空白的单元'
       - '一个船新的开始'
-  DEMO_FU:
+  demo_functional_unit:
     name: '样例功能单元'
     lore:
       - '凑数用的'
-  PLAYER_IDCARD:
+  player_id_card:
     name: '玩家ID信息卡'
     lore:
       - '右键记录玩家信息'
@@ -1078,7 +1076,7 @@ machine:
       - '⇨ &e但是会花费更多的时间'
       - '⇨ 每个区块仅限一个'
 
-manuals:
+fast_machine:
   MANUAL_CORE:
     name: '乱序核心'
     lore:

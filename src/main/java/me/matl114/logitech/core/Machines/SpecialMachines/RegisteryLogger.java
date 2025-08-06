@@ -66,7 +66,7 @@ public class RegisteryLogger extends AbstractMachine {
         "public static final SlimefunItemStack %s=themed(\"%s\",Material.%s,Theme.MACHINE2,\n" +
                 "            get(\"generator.%s.name\"),getList(\"generator.%s.lore\"));",
         "public static final SlimefunItemStack %s=themed(\"%s\",Material.%s,Theme.MANUAL1,\n" +
-                "            get(\"manuals.%s.name\"),getList(\"manuals.%s.lore\"));",
+                "            get(\"fast_machine.%s.name\"),getList(\"fast_machine.%s.lore\"));",
         "public static final ItemStack %s=themed(\"%s\",Material.%s, Theme.NONE,\n" +
                 "            get(\"group.%s.name\"),getList(\"group.%s.lore\"));",
         "public static final ItemStack %s=themed(\"%s\",Material.%s, Theme.FUNIT,\n" +

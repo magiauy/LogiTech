@@ -68,9 +68,9 @@ public class CargoConfigurator extends AbstractBlock {
 
 
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 传输数量限制x64 的配置槽位",
-                    "&e将[%s]置于左侧".formatted(Language.get("item.CARGO_PART.name")),"&7配置传输数量","&a传输数量增加<物品数量>*64"),
+                    "&e将[%s]置于左侧".formatted(Language.get("item.logic_cargo_unit.name")),"&7配置传输数量","&a传输数量增加<物品数量>*64"),
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6配置 传输数量限制x1 的配置槽位",
-                    "&e将[%s]置于右侧".formatted(Language.get("item.CARGO_PART.name")),"&7配置传输数量","&a传输数量增加<物品数量>"),
+                    "&e将[%s]置于右侧".formatted(Language.get("item.logic_cargo_unit.name")),"&7配置传输数量","&a传输数量增加<物品数量>"),
     };
     protected final ItemStack TIPS_ITEM=AddUtils.randItemStackFactory(
             new PairList(){{

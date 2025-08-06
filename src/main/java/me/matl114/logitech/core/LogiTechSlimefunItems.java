@@ -441,13 +441,13 @@ public class LogiTechSlimefunItems {
             .register();
 
     public static final SlimefunItem PDCECDMD=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.PDCECDMD,LogiTechSlimefunItems.STARSMELTERY,
-            recipe("32PLUTONIUM",setC(LogiTechSlimefunItemStacks.CERIUM,64),setC(LogiTechSlimefunItemStacks.CADMIUM_INGOT,64),
+            recipe(setC(LogiTechSlimefunItemStacks.PALLADIUM_INGOT, 32),setC(LogiTechSlimefunItemStacks.CERIUM,64),setC(LogiTechSlimefunItemStacks.CADMIUM_INGOT,64),
                     setC(LogiTechSlimefunItemStacks.MENDELEVIUM,48),setC(LogiTechSlimefunItemStacks.LSINGULARITY,1)
                     ),null)
             .register();
     public static final SlimefunItem HGTLPBBI=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.HGTLPBBI,LogiTechSlimefunItems.STARSMELTERY,
             recipe(setC(LogiTechSlimefunItemStacks.HYDRAGYRUM,64),setC(LogiTechSlimefunItemStacks.THALLIUM,64),
-                    "64LEAD_INGOT",setC(LogiTechSlimefunItemStacks.BISILVER,12),setC(LogiTechSlimefunItemStacks.LSINGULARITY,1)),null)
+                    "64LEAD_INGOT",setC(LogiTechSlimefunItemStacks.BISMUTH_INGOT,12),setC(LogiTechSlimefunItemStacks.LSINGULARITY,1)),null)
             .register();
     public static final SlimefunItem REINFORCED_CHIP_INGOT=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.REINFORCED_CHIP_INGOT,LogiTechSlimefunItems.STARSMELTERY,
             recipe(setC(LogiTechSlimefunItemStacks.STAR_GOLD_INGOT,40),setC(LogiTechSlimefunItemStacks.CHIP_INGOT,16),
@@ -486,7 +486,7 @@ public class LogiTechSlimefunItems {
                     LogiTechSlimefunItemStacks.LPLATE,null,LogiTechSlimefunItemStacks.LPLATE),null)
             .register();
     public static final SlimefunItem SAMPLE_SPAWNER=new AbstractSpawner(FUNCTIONAL,LogiTechSlimefunItemStacks.SAMPLE_SPAWNER,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENTITY_FEAT,Language.get("item.ENTITY_FEAT.name")))
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENTITY_FEAT,Language.get("item.entity_feature.name")))
             .register();
     public static final SlimefunItem CHIP=new ChipCard(ADVANCED,LogiTechSlimefunItemStacks.CHIP,NULL,
             formatInfoRecipe(LogiTechSlimefunItemStacks.CHIP_MAKER,Language.get("machine.CHIP_MAKER.name")))
@@ -1797,7 +1797,7 @@ public class LogiTechSlimefunItems {
                                     "&7该机器需要搭建超新星外壳方可运行",
                                     "&7搭建成功后需要保证外壳内部(除机器顶部)不包含任何非空气方块",
                                     "&7才可以成功启动多方块机器",
-                                    "&7在此你可以使用[%s]等远程访问工具打开内部的界面".formatted(Language.get("item.HYPER_LINK.name")),
+                                    "&7在此你可以使用[%s]等远程访问工具打开内部的界面".formatted(Language.get("item.hyperlink.name")),
                                     "&7或者开启自动构建模式让机器自行启动"),null,
                             getInfoShow("&f机制",
                                     "&7该机器在构建/待机/运行时候拥有相同的电力消耗量",
@@ -2054,7 +2054,7 @@ public class LogiTechSlimefunItems {
 //            .register();
 
     //
-    //manuals
+    //Fast Machines
     public static final SlimefunItem MANUAL_CORE=new MaterialItem(MANUAL,LogiTechSlimefunItemStacks.MANUAL_CORE,ENHANCED_CRAFTING_TABLE,
             recipe("SAND","COBBLESTONE","GRAVEL",
                     "SAND","COBBLESTONE","GRAVEL",
@@ -2190,10 +2190,10 @@ public class LogiTechSlimefunItems {
                     "COBBLESTONE","GLASS_PANE","COBBLESTONE"),List.of(getInfoShow("&f机制 - &7伪装","&7该物品可以在快捷多方块结构模拟器中","&7填充多方块模拟部分的空白","&7多方块模拟检测会忽视该物品")))
             .register().setOutput(setC(LogiTechSlimefunItemStacks.FAKE_UI,4));
     public static final ReplaceCard REPLACE_CARD=(ReplaceCard) (new ReplaceCard(MANUAL,LogiTechSlimefunItemStacks.REPLACE_CARD,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.CARD_MAKER,Language.get("manuals.CARD_MAKER.name")), ReplaceCard.ReplaceType.MATERIAL)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.CARD_MAKER,Language.get("fast_machine.CARD_MAKER.name")), ReplaceCard.ReplaceType.MATERIAL)
             .register());
     public static final ReplaceCard REPLACE_SF_CARD=(ReplaceCard) new ReplaceCard(MANUAL,LogiTechSlimefunItemStacks.REPLACE_SF_CARD,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.CARD_MAKER,Language.get("manuals.CARD_MAKER.name")), ReplaceCard.ReplaceType.SLIMEFUN)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.CARD_MAKER,Language.get("fast_machine.CARD_MAKER.name")), ReplaceCard.ReplaceType.SLIMEFUN)
             .register();
     public static final  SlimefunItem CARD_MAKER=new EWorkBench(MANUAL, LogiTechSlimefunItemStacks.CARD_MAKER,ENHANCED_CRAFTING_TABLE,
             recipe(LogiTechSlimefunItemStacks.MANUAL_CORE,LogiTechSlimefunItemStacks.MANUAL_CORE,LogiTechSlimefunItemStacks.MANUAL_CORE,LogiTechSlimefunItemStacks.MANUAL_CORE,"CRAFTING_TABLE",LogiTechSlimefunItemStacks.MANUAL_CORE,

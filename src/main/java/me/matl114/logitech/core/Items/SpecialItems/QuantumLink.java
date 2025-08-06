@@ -38,7 +38,7 @@ public class QuantumLink extends DataRecordedItem {
                                 "&a建议:推荐使用该物品绑定存储性方块放入终极机器,方便且会降低卡顿!"),
                         null,
                         AddUtils.getInfoShow("&7机制 -&c 代理存储",
-                                "&7本物品可以类似%s一样绑定某个方块".formatted(Language.get("item.HYPER_LINK.name")),
+                                "&7本物品可以类似%s一样绑定某个方块".formatted(Language.get("item.hyperlink.name")),
                                 "&7若该方块是支持的存储性方块,则该物品会与此存储建立纠缠链接",
                                 "&7当该物品被放入终极机器的槽位中时,",
                                 "&7可以代理绑定的存储中的物品&e直接参与合成!",
