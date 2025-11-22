@@ -388,11 +388,11 @@ item:
     name: '重金核心'
     lore:
       - '凝聚概念'
-  refined_core:
+  metal_core:
     name: '精炼核心'
     lore:
       - '凝聚概念'
-  matter_core:
+  material_core:
     name: '物质核心'
     lore:
       - '凝聚概念'
@@ -400,7 +400,7 @@ item:
     name: '科技核心'
     lore:
       - '凝聚概念'
-  space_reinforcement_plate:
+  dimensional_reinforcement_plate:
     name: '空间强化板'
   logic_core:
     name: '逻辑核心'
@@ -443,7 +443,7 @@ item:
     lore:
       - '用于编辑通用货运配置卡'
   chip:
-    name: 'CHIP'
+    name: 'Chip'
     lore:
       - '可存储32位数据的芯片'
   smart_control_unit:
@@ -558,7 +558,7 @@ item:
     lore:
       - '丢出后进行随机传送,期间请不要移动'
       - '丢出数目越多,传送范围越大!'
-  space_disk:
+  spatial_cell:
     name: '空间磁盘'
     lore:
       - '可以存储一片空间...'
@@ -676,72 +676,71 @@ item:
       - 'shift+右键清除玩家信息'
 
 machine:
-  LOGIC_REACTOR:
+  logic_reactor:
     name: '逻辑反应堆'
     lore:
       - '一切复杂逻辑的起源...'
       - '始于True和False'
-  BOOL_GENERATOR:
+  boolean_generator:
     name: '布尔生成器'
-  BUG_CRAFTER:
+  bug_workbench:
     name: 'BUG工作台'
     lore:
       - '虽然他是由bug制成'
       - '但他不仅仅能制造bug...'
-  HEAD_ANALYZER:
+  head_analyzer:
     name: '头颅解析仪'
     lore:
       - '支持解码头颅hash'
       - '支持通过hash获取头颅纹理'
       - '支持修改头颅物品的纹理'
-  RECIPE_LOGGER:
+  registration_code_generator:
     name: '注册代码生成器'
     lore:
       - '支持将槽位中的配方转为本附属支持的代码格式'
       - '支持生成本附属的物品注册格式代码'
       - '支持生成本附属的粘液物品注册格式代码'
       - '仅对开发者有用'
-  ENDFRAME_MACHINE:
+  space_framework_constructor:
     name: '空间框架构建机'
-  LVOID_GENERATOR:
+  quantum_void_generator:
     name: '虚空量子发电机'
     lore:
       - '尝试在虚拟虚空中捕捉量子能量'
       - '似乎还捕捉到了奇怪的东西..'
       - '速率: 1x'
-  INFINITY_AUTOCRAFT:
+  auto_infinity_workbench:
     name: '无尽自动合成台'
     lore:
       - '消耗大量电力自动化合成无尽配方'
-  SPECIAL_CRAFTER:
+  logic_workbench_simulator:
     name: '逻辑模拟合成站'
     lore:
       - '通过逻辑空间模拟任意特殊工作台/工作站'
       - '进行无序合成'
-  STAR_SMELTERY:
+  astral_gold_smeltery:
     name: '星辰金锻铸炉'
     lore:
       - '铸造稀有的合金'
-  CHIP_MAKER:
+  simple_lithography_machine:
     name: '简易光刻机'
     lore:
       - '迈向高科技的第一步...'
       - '制造可以存储信息的芯片'
-  CHIP_CONSUMER:
+  unary_bitwise_operation_unit:
     name: '单目位运算执行单元'
     lore:
       - '对芯片上的数据进行位运算'
-  CHIP_BICONSUMER:
+  binary_bitwise_operation_unit:
     name: '双目位运算执行单元'
     lore:
       - '对芯片上的数据进行位运算'
-  SEQ_CONSTRUCTOR:
+  core_constructor:
     name: '概念化序列构造器'
     lore:
       - '反复凝聚概念...'
       - '序列进度机器'
-
-  STACKMACHINE:
+  recipe_machine_stacker:
     name: '堆叠配方机器'
     lore:
       - '传说中的堆叠机器'
@@ -749,7 +748,7 @@ machine:
       - '堆叠效率: 2.00'
       - '支持范围: 全部配方机器'
       - '生成器请在堆叠生成器中使用'
-  QUANTUM_STACKMACHINE:
+  QUANTUM_STACKMACHINE: #Not available
     name: '量子化堆叠配方机器'
     lore:
       - '将支持的配方机器插入指定槽位以载入配方'
@@ -759,32 +758,32 @@ machine:
       - '堆叠效率: 2.00'
       - '支持范围: 全部配方机器'
       - '生成器请在堆叠生成器中使用'
-  ENERGY_TRASH:
+  energy_trash_can:
     name: '能源垃圾桶'
     lore:
       - '将电网中多余的电销毁'
       - '会优先保证用电器的供需'
-  OPPO_GEN:
+  opposite_generator:
     name: '正反发电机'
     lore:
       - '拥有正反两面的发电机'
       - '这难道不令人感到奇怪末'
-  ARC_REACTOR:
+  arc_reactor:
     name: '方舟反应堆'
     lore:
       - 'IronMan 同款~'
-  CHIP_REACTOR:
+  chip_reactor:
     name: '芯片反应堆'
     lore:
       - '终极发电机'
       - '燃烧芯片存储的数据发电'
-  ADVANCED_CHIP_MAKER:
+  advanced_lithography_machine:
     name: '高效芯片光刻机'
     lore:
       - '拥有复刻二进制位的能力'
       - '周期性的选择01数据的位'
       - '从样本芯片复制此位数据到目标芯片'
-  ENERGY_AMPLIFIER:
+  energy_generator_stacker:
     name: '量子发电机超频装置'
     lore:
       - '传说中的堆叠发电机'
@@ -793,14 +792,14 @@ machine:
       - '该机器可以按上方电机倍率发电'
       - '&e无法堆叠自身!😡'
       - '堆叠效率: 2.0'
-  FINAL_SEQUENTIAL:
+  ultimate_core_constructor:
     name: '终极概念凝聚者'
     lore:
       - '凝聚终极概念'
       - '序列进度机器'
       - '终极机器'
       - '输入槽位&e支持"终极合成"的特性'
-  FINAL_STACKMACHINE:
+  ultimate_recipe_machine_stacker:
     name: '终极堆叠 - 配方机器'
     lore:
       - '传说中的终极堆叠机器'
@@ -809,37 +808,37 @@ machine:
       - '所有槽位&e支持"终极合成"的特性'
       - '堆叠效率: 16.00'
       - '支持范围: 全部配方机器'
-  DUST_EXTRACTOR:
+  dust_factory:
     name: '磨粉工厂'
     lore:
       - '一次处理全部输入的圆石'
       - '处理器数量 9x'
-  FURNACE_FACTORY:
+  smelting_factory:
     name: '熔炼工厂'
     lore:
       - '一次性可以冶炼9种配方'
       - '处理器数量 9x'
-  INGOT_FACTORY:
+  ingot_factory:
     name: '铸锭工厂'
     lore:
       - '一次性处理全部输入的矿粉'
       - '处理器数量 9x'
-  SMELTRY:
+  alloy_factory:
     name: '高级精炼工厂'
     lore:
       - '冶炼合金'
-  CRAFTER:
+  crafting_factory:
     name: '逻辑合成工厂'
     lore:
       - '在逻辑空间中执行合成任务'
       - '插入对应快捷机器,数量越多,进程数越多'
       - '无序输入,立刻合成'
-  PRESSOR_FACTORY:
+  compression_factory:
     name: '压缩工厂'
     lore:
       - '一次性压缩9种配方'
       - '处理器数量 9x'
-  EASYSTACKMACHINE:
+  makeshift_recipe_machine_stacker:
     name: '堆叠工厂'
     lore:
       - '丐版堆叠机器,看起来很不靠谱的样子'
@@ -848,18 +847,18 @@ machine:
       - '支持范围: 全部配方机器'
       - '生成器请在堆叠生成器中使用'
       - '&e...要不还是看看正版堆叠机?'
-  CONVERTOR:
+  material_converter:
     name: '逻辑转换工厂'
     lore:
       - '仅能转换一小部分物质'
-  FINAL_LASER:
+  laser_cannon:
     name: '宏激光发射器'
     lore:
       - '使用红石激发,或置于终极祭坛上激活'
       - '用于激活终极机器'
       - '⇨ 二级终极祭坛的构成部分'
       - '&e小心激光!'
-  FINAL_CONVERTOR:
+  ultimate_material_converter:
     name: '物质量化重塑器'
     lore:
       - '"物质在它看来不过是一串数字"'
@@ -869,17 +868,17 @@ machine:
     lore:
       - '"物质在它看来不过是一串数字"'
       - '随机增幅物品的附魔等属性'
-  VIRTUAL_KILLER:
+  spawner_simulator:
     name: '屠宰工厂'
     lore:
       - '插入刷怪笼以获取该类型生物的特殊掉落物'
       - '或许你们需要一个"灵魂罐"附属'
       - '堆叠效率: 1.0'
-  INF_MOBSIMULATION:
+  infinity_mob_simulation_chamber:
     name: '无尽生物模拟室'
     lore:
       - '使用生物芯片激活'
-  INF_GEOQUARRY:
+  infinity_geo_quarry:
     name: '无尽地理资源矿机'
     lore:
       - '利用电力缓慢获取地理资源'
@@ -890,38 +889,38 @@ machine:
       - '置于结构中任意"工坊接口"的位置即可工作'
       - '⇨ 在物品之间转移附魔/属性增幅符'
       - '⇨ 支持自动运行'
-  CUSTOM_CHARGER:
+  universal_charger:
     name: '锻铸工坊接口 - 万用充电桩'
     lore:
       - '置于结构中任意"工坊接口"的位置即可工作'
       - '⇨ 给可充电物品充电且支持本附属自定义可充电物品'
       - '⇨ 支持远程对玩家进行充电'
-  GRIND_FACTORY:
+  ore_grinding_factory:
     name: '碎矿工厂'
     lore:
       - '一次性碎矿9种配方'
       - '处理器数量 9x'
-  TNT_GEN:
+  tnt_duplicator:
     name: '便携式TNT复制机'
     lore:
       - '赤石科技的基础元件'
       - '启动后使用红石激活'
       - '支持调整生成频率,爆炸延时,生成位置'
-  ADVANCE_BREWER:
+  ADVANCE_BREWER: #Not available
     name: '酿造工厂'
     lore:
       - '更快的自动酿造机'
-  SIMU_LVOID:
+  virtual_quantum_generator:
     name: '虚拟量子发电机'
     lore:
       - '在逻辑空间中模拟能源网络运行'
       - '无需接入能源网络即可产生大量悖论'
       - '速率: 5x~35x'
-  SPACETOWER_FRAME:
+  spatial_pylon:
     name: '空间塔框架'
     lore:
       - '用于延展和标注空间塔IO范围'
-  SPACETOWER:
+  spatial_io_port:
     name: '空间塔'
     lore:
       - 'AE2同款空间塔'

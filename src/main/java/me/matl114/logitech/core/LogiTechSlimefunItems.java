@@ -190,7 +190,7 @@ public class LogiTechSlimefunItems {
     public static final CustomRecipeType STARSMELTERY=new CustomRecipeType(
             getNameKey("star_smeltery"),
             new CustomItemStack(LogiTechSlimefunItemStacks.STAR_SMELTERY, LogiTechSlimefunItemStacks.STAR_SMELTERY.getDisplayName(),
-                    "", "&c在%s中锻造!".formatted(Language.get("machine.STAR_SMELTERY.name")))
+                    "", "&c在%s中锻造!".formatted(Language.get("machine.astral_gold_smeltery.name")))
     );
     public static HashMap<SlimefunItem,RecipeType> CRAFTTYPE_MANUAL_RECIPETYPE=new HashMap<>();
     public static final SlimefunItem MATL114=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL, LogiTechSlimefunItemStacks.MATL114,
@@ -209,10 +209,10 @@ public class LogiTechSlimefunItems {
             .register();
 
     public static final SlimefunItem TRUE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.BOOLEAN_TRUE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.BOOL_GENERATOR,Language.get("machine.BOOL_GENERATOR.name")))
+            formatInfoRecipe(LogiTechSlimefunItemStacks.BOOL_GENERATOR,Language.get("machine.boolean_generator.name")))
             .register();
     public static final SlimefunItem FALSE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.BOOLEAN_FALSE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.BOOL_GENERATOR,Language.get("machine.BOOL_GENERATOR.name")))
+            formatInfoRecipe(LogiTechSlimefunItemStacks.BOOL_GENERATOR,Language.get("machine.boolean_generator.name")))
             .register();
     public static final SlimefunItem LOGIGATE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.LOGIC_GATE,ENHANCED_CRAFTING_TABLE,
             recipe("SILVER_INGOT","REDSTONE_TORCH","SILVER_INGOT",
@@ -220,23 +220,23 @@ public class LogiTechSlimefunItems {
                     "SILVER_INGOT","REDSTONE_TORCH","SILVER_INGOT"))
             .register().setOutput(setC(LogiTechSlimefunItemStacks.LOGIC_GATE,3));
     public static final SlimefunItem LOGIC=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.LOGIC,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")))
+            formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.logic_reactor.name")))
             .register();
     public static final SlimefunItem NOLOGIC=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.NOLOGIC,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")))
+            formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.logic_reactor.name")))
             .register();
 
 
 
         //generated
     public static final SlimefunItem EXISTE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.EXISTE,NULL,
-                formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")),null)
+                formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.logic_reactor.name")),null)
             .register();
     public static final SlimefunItem UNIQUE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.UNIQUE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.LOGIC_REACTOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.LOGIC_REACTOR,Language.get("machine.logic_reactor.name")),null)
             .register();
     public static final SlimefunItem PARADOX=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.PARADOX,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.LVOID_GENERATOR,Language.get("machine.LVOID_GENERATOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.LVOID_GENERATOR,Language.get("machine.quantum_void_generator.name")),null)
             .register();
 
     public static final SlimefunItem LENGINE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.LENGINE,COMMON_TYPE,
@@ -322,7 +322,7 @@ public class LogiTechSlimefunItems {
         put(Biome.MUSHROOM_FIELDS,1);
     }}) .registerGeo();
     public static final SlimefunItem DIMENSIONAL_SINGULARITY=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.DIMENSIONAL_SINGULARITY,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.core_constructor.name")),null)
             .register();
     public static final SlimefunItem STAR_GOLD=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.STAR_GOLD,NULL    ,
             recipe(null,LogiTechSlimefunItemStacks.END_MINER,null,null,getInfoShow("&f获取方式","&7在本附属的矿机中获取")),null)
@@ -367,16 +367,16 @@ public class LogiTechSlimefunItems {
 
 
     public static final SlimefunItem METAL_CORE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.METAL_CORE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.core_constructor.name")),null)
             .register();
     public static final SlimefunItem SMELERY_CORE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.SMELERY_CORE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.core_constructor.name")),null)
             .register();
     public static final SlimefunItem MASS_CORE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.MASS_CORE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.core_constructor.name")),null)
             .register();
     public static final SlimefunItem TECH_CORE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.TECH_CORE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.core_constructor.name")),null)
             .register();
     public static final SlimefunItem LSINGULARITY=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.LSINGULARITY,NULL,
             formatInfoRecipe(LogiTechSlimefunItemStacks.SOLAR_REACTOR,Language.get("multiblock.SOLAR_REACTOR.name")),null)
@@ -479,7 +479,7 @@ public class LogiTechSlimefunItems {
             .register();
 
     public static final SlimefunItem SAMPLE_HEAD=new AbstractBlock(SPECIAL,LogiTechSlimefunItemStacks.SAMPLE_HEAD,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.HEAD_ANALYZER,Language.get("machine.HEAD_ANALYZER.name")))
+            formatInfoRecipe(LogiTechSlimefunItemStacks.HEAD_ANALYZER,Language.get("machine.head_analyzer.name")))
             .register();
     public static final SlimefunItem PLAYER_IDCARD=new PlayerIdCard(SPECIAL,LogiTechSlimefunItemStacks.PLAYER_IDCARD,ENHANCED_CRAFTING_TABLE,
             recipe(LogiTechSlimefunItemStacks.LPLATE,null,LogiTechSlimefunItemStacks.LPLATE,"PLAYER_HEAD",LogiTechSlimefunItemStacks.HYPER_LINK,"PLAYER_HEAD",
@@ -489,17 +489,17 @@ public class LogiTechSlimefunItems {
             formatInfoRecipe(LogiTechSlimefunItemStacks.ENTITY_FEAT,Language.get("item.entity_feature.name")))
             .register();
     public static final SlimefunItem CHIP=new ChipCard(ADVANCED,LogiTechSlimefunItemStacks.CHIP,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.CHIP_MAKER,Language.get("machine.CHIP_MAKER.name")))
+            formatInfoRecipe(LogiTechSlimefunItemStacks.CHIP_MAKER,Language.get("machine.simple_lithography_machine.name")))
             .register();
     public static final SlimefunItem CHIP_CORE=new MaterialItem(ADVANCED,LogiTechSlimefunItemStacks.CHIP_CORE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.CHIP_MAKER,Language.get("machine.CHIP_MAKER.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.CHIP_MAKER,Language.get("machine.simple_lithography_machine.name")),null)
             .register();
 
     public static final SlimefunItem LOGIC_CORE=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.LOGIC_CORE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.FINAL_SEQUENTIAL,Language.get("machine.FINAL_SEQUENTIAL.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.FINAL_SEQUENTIAL,Language.get("machine.ultimate_core_constructor.name")),null)
             .register();
     public static final SlimefunItem FINAL_FRAME=new MultiPart(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.FINAL_FRAME,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.FINAL_SEQUENTIAL,Language.get("machine.FINAL_SEQUENTIAL.name")),"final.frame"){
+            formatInfoRecipe(LogiTechSlimefunItemStacks.FINAL_SEQUENTIAL,Language.get("machine.ultimate_core_constructor.name")),"final.frame"){
             public boolean redirectMenu(){
                 return false;
             }
@@ -523,7 +523,7 @@ public class LogiTechSlimefunItems {
                     LogiTechSlimefunItemStacks.HYDRAGYRUM,LogiTechSlimefunItemStacks.MOLYBDENUM,LogiTechSlimefunItemStacks.BORON,LogiTechSlimefunItemStacks.BORON,LogiTechSlimefunItemStacks.MOLYBDENUM,LogiTechSlimefunItemStacks.HYDRAGYRUM),null)
             .register();
     public static final SlimefunItem VIRTUALWORLD=new MaterialItem(LogiTechItemGroups.BASIC_MATERIAL,LogiTechSlimefunItemStacks.VIRTUALWORLD,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.FINAL_CONVERTOR,Language.get("machine.FINAL_CONVERTOR.name")),null)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.FINAL_CONVERTOR,Language.get("machine.ultimate_material_converter.name")),null)
             .register();
 
 
@@ -850,7 +850,7 @@ public class LogiTechSlimefunItems {
                     setC(LogiTechSlimefunItemStacks.PLATINUM_INGOT,6),setC(LogiTechSlimefunItemStacks.PLATINUM_INGOT,6),setC(LogiTechSlimefunItemStacks.PLATINUM_INGOT,6),setC(LogiTechSlimefunItemStacks.PLATINUM_INGOT,6),setC(LogiTechSlimefunItemStacks.PLATINUM_INGOT,6),setC(LogiTechSlimefunItemStacks.PLATINUM_INGOT,6)), 200_000_000,0.1,300)
             .register();
     public static final SlimefunItem ENERGY_AMPLIFIER=new EnergyAmplifier(ENERGY,LogiTechSlimefunItemStacks.ENERGY_AMPLIFIER,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),1_000_000_000,2.0)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),1_000_000_000,2.0)
             .register();
     public static final  SlimefunItem ENERGY_PIPE=new EnergyPipe(ENERGY, LogiTechSlimefunItemStacks.ENERGY_PIPE,ENHANCED_CRAFTING_TABLE,
             recipe("COPPER_INGOT","SILVER_INGOT","COPPER_INGOT","COPPER_INGOT","SILVER_INGOT","COPPER_INGOT",
@@ -1043,11 +1043,11 @@ public class LogiTechSlimefunItems {
                     LogiTechSlimefunItemStacks.LENGINE,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.LPLATE,LogiTechSlimefunItemStacks.LPLATE,LogiTechSlimefunItemStacks.ABSTRACT_INGOT,LogiTechSlimefunItemStacks.LENGINE),8_000,1_000)
             .register();
     public static final SlimefunItem EASYSTACKMACHINE=new StackMachine(BASIC,LogiTechSlimefunItemStacks.EASYSTACKMACHINE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.SEQ_CONSTRUCTOR.name")),Material.IRON_PICKAXE,
+            formatInfoRecipe(LogiTechSlimefunItemStacks.SEQ_CONSTRUCTOR,Language.get("machine.core_constructor.name")),Material.IRON_PICKAXE,
             20_000,4_000_000,0.5)
             .register();
     public static final SlimefunItem STACKMACHINE=new StackMachine(ADVANCED,LogiTechSlimefunItemStacks.STACKMACHINE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),Material.IRON_PICKAXE,
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),Material.IRON_PICKAXE,
             2_000,40_000_000,2.0)
             .register();
     //
@@ -1692,7 +1692,7 @@ public class LogiTechSlimefunItems {
             }})
             .register();
     public static final SlimefunItem STACKMGENERATOR=new StackMGenerator(GENERATORS, LogiTechSlimefunItemStacks.STACKMGENERATOR,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),1,40_000_000,2_000,2)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),1,40_000_000,2_000,2)
             .register();
 
 
@@ -1729,7 +1729,7 @@ public class LogiTechSlimefunItems {
             .register()
             .setOutput(setC(LogiTechSlimefunItemStacks.PORTAL_CORE,2));
     public static final SlimefunItem PORTAL_FRAME=new MultiPart(SPACE,LogiTechSlimefunItemStacks.PORTAL_FRAME,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"portal.part")
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),"portal.part")
             .register();
     public static final SlimefunItem SOLAR_REACTOR=new SolarReactorCore(SPACE,LogiTechSlimefunItemStacks.SOLAR_REACTOR,COMMON_TYPE,
             recipe(LogiTechSlimefunItemStacks.LPLATE,LogiTechSlimefunItemStacks.STAR_GOLD_INGOT,LogiTechSlimefunItemStacks.PARADOX,LogiTechSlimefunItemStacks.PARADOX,LogiTechSlimefunItemStacks.STAR_GOLD_INGOT,LogiTechSlimefunItemStacks.LPLATE,
@@ -1818,10 +1818,10 @@ public class LogiTechSlimefunItems {
             )
             .register();
     public static final SlimefunItem SOLAR_REACTOR_FRAME=new MultiPart(SPACE,LogiTechSlimefunItemStacks.SOLAR_REACTOR_FRAME,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"solar.frame")
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),"solar.frame")
             .register();
     public static final SlimefunItem SOLAR_REACTOR_GLASS=new MultiPart(SPACE,LogiTechSlimefunItemStacks.SOLAR_REACTOR_GLASS,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"solar.glass")
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),"solar.glass")
             .register();
     public static final SlimefunItem SOLAR_INPUT=new MultiIOPort(SPACE,LogiTechSlimefunItemStacks.SOLAR_INPUT,ANCIENT_ALTAR,
             recipe(LogiTechSlimefunItemStacks.STAR_GOLD_INGOT,LogiTechSlimefunItemStacks.PARADOX,LogiTechSlimefunItemStacks.STAR_GOLD_INGOT,LogiTechSlimefunItemStacks.PARADOX,LogiTechSlimefunItemStacks.HYPER_LINK,LogiTechSlimefunItemStacks.PARADOX,
@@ -1832,13 +1832,13 @@ public class LogiTechSlimefunItems {
                     LogiTechSlimefunItemStacks.PARADOX,LogiTechSlimefunItemStacks.STAR_GOLD_INGOT,LogiTechSlimefunItemStacks.PARADOX),"solar.frame",false,false)
             .register() ;
     public static final SlimefunItem TRANSMUTATOR_FRAME=new MultiPart(ADVANCED,LogiTechSlimefunItemStacks.TRANSMUTATOR_FRAME,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"nuclear.frame")
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),"nuclear.frame")
             .register();
     public static final SlimefunItem TRANSMUTATOR_GLASS=new MultiPart(ADVANCED,LogiTechSlimefunItemStacks.TRANSMUTATOR_GLASS,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"nuclear.glass")
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),"nuclear.glass")
             .register();
     public static final SlimefunItem TRANSMUTATOR_ROD=new MultiPart(ADVANCED,LogiTechSlimefunItemStacks.TRANSMUTATOR_ROD,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),"nuclear.rod")
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),"nuclear.rod")
             .register();
     public static final  SlimefunItem TRANSMUTATOR=new Transmutator(ADVANCED, LogiTechSlimefunItemStacks.TRANSMUTATOR,COMMON_TYPE,
             recipe(setC(LogiTechSlimefunItemStacks.TECH_CORE,64),LogiTechSlimefunItemStacks.TRANSMUTATOR_ROD,LogiTechSlimefunItemStacks.SPACE_PLATE,LogiTechSlimefunItemStacks.SPACE_PLATE,LogiTechSlimefunItemStacks.TRANSMUTATOR_ROD,setC(LogiTechSlimefunItemStacks.MASS_CORE,64),
@@ -2872,10 +2872,10 @@ public class LogiTechSlimefunItems {
                     setC(LogiTechSlimefunItemStacks.SPACE_PLATE,8),setC(LogiTechSlimefunItemStacks.SPACE_PLATE,8),LogiTechSlimefunItemStacks.FINAL_FRAME,LogiTechSlimefunItemStacks.FINAL_FRAME,setC(LogiTechSlimefunItemStacks.SPACE_PLATE,8),setC(LogiTechSlimefunItemStacks.SPACE_PLATE,8)), 200_000_000,25_000_000)
             .register();
     public static final  SlimefunItem FINAL_STACKMACHINE=new FinalStackMachine(BEYOND, LogiTechSlimefunItemStacks.FINAL_STACKMACHINE,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")), Material.NETHERITE_PICKAXE,100,400_000_000,16)
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")), Material.NETHERITE_PICKAXE,100,400_000_000,16)
             .register();
     public static final SlimefunItem FINAL_STACKMGENERATOR=new FinalStackMGenerator(BEYOND, LogiTechSlimefunItemStacks.FINAL_STACKMGENERATOR,NULL,
-            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.ENDFRAME_MACHINE.name")),1,400_000_000,100,
+            formatInfoRecipe(LogiTechSlimefunItemStacks.ENDFRAME_MACHINE,Language.get("machine.space_framework_constructor.name")),1,400_000_000,100,
             16)
             .register();
     //stack machine maker

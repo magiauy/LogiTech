@@ -236,13 +236,13 @@ public class LogiTechSlimefunItemStacks {
     public static final SlimefunItemStack METAL_CORE=themed("METAL_CORE",Material.NETHERITE_BLOCK,Theme.ITEM1,
             get("item.heavy_metal_core.name"),getList("item.heavy_metal_core.lore"));
     public static final SlimefunItemStack SMELERY_CORE=themed("SMELERY_CORE",Material.IRON_BLOCK,Theme.ITEM1,
-            get("item.refined_core.name"),getList("item.refined_core.lore"));
+            get("item.metal_core.name"),getList("item.metal_core.lore"));
     public static final SlimefunItemStack MASS_CORE=themed("MASS_CORE",Material.COAL_BLOCK,Theme.ITEM1,
-            get("item.matter_core.name"),getList("item.matter_core.lore"));
+            get("item.material_core.name"),getList("item.material_core.lore"));
     public static final SlimefunItemStack TECH_CORE=themed("TECH_CORE",Material.BEACON,Theme.ITEM1,
             get("item.technology_core.name"),getList("item.technology_core.lore"));
     public static final SlimefunItemStack SPACE_PLATE=themed("SPACE_PLATE",Material.PAPER,Theme.ITEM1,
-            get("item.space_reinforcement_plate.name"),getList("item.space_reinforcement_plate.lore"));
+            get("item.dimensional_reinforcement_plate.name"),getList("item.dimensional_reinforcement_plate.lore"));
     public static final SlimefunItemStack LOGIC_CORE=themed("LOGIC_CORE",Material.NETHER_STAR,Theme.ITEM1,
             get("item.logic_core.name"),getList("item.logic_core.lore"));
     public static final SlimefunItemStack FINAL_FRAME=themed("FINAL_FRAME",Material.BUDDING_AMETHYST,Theme.MULTIBLOCK1,
@@ -304,7 +304,7 @@ public class LogiTechSlimefunItemStacks {
     public static final SlimefunItemStack RTP_RUNE=themed("RTP_RUNE", CustomFireworkStar.RTP_RUNE.getItem(),Theme.ITEM1,
             get("item.rtp_rune.name"),getList("item.rtp_rune.lore"));
     public static final SlimefunItemStack SPACE_CARD=themed("SPACE_CARD",Material.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE,Theme.ITEM1,
-            get("item.space_disk.name"),getList("item.space_disk.lore"));
+            get("item.spatial_cell.name"),getList("item.spatial_cell.lore"));
 
     public static final SlimefunItemStack UNBREAKING_SHIELD=themed("UNBREAKING_SHIELD",Material.SHIELD, Theme.TOOL,
             get("item.armored_shield.name"),getList("item.armored_shield.lore"));
@@ -356,92 +356,94 @@ public class LogiTechSlimefunItemStacks {
             get("item.demo_functional_unit.name"),getList("item.demo_functional_unit.lore"));
     public static final SlimefunItemStack PLAYER_IDCARD=themed("PLAYER_IDCARD",Material.PAPER,Theme.ITEM1,
             get("item.player_id_card.name"),getList("item.player_id_card.lore"));
-    //nachines
+    //Machines
     public static final SlimefunItemStack HEAD_ANALYZER=themed("HEAD_ANALYZER",Material.SOUL_CAMPFIRE, Theme.MACHINE1,
-            get("machine.HEAD_ANALYZER.name"),getList("machine.HEAD_ANALYZER.lore"));
+            get("machine.head_analyzer.name"),getList("machine.head_analyzer.lore"));
+    //
     public static final SlimefunItemStack RECIPE_LOGGER=themed("RECIPE_LOGGER",Material.FLETCHING_TABLE, Theme.MACHINE1,
-            get("machine.RECIPE_LOGGER.name"),getList("machine.RECIPE_LOGGER.lore"));
+            get("machine.registration_code_generator.name"),getList("machine.registration_code_generator.lore"));
     public static final SlimefunItemStack BOOL_GENERATOR=themed("BOOL_GENERATOR",Material.REDSTONE_TORCH,Theme.MACHINE1,
-            get("machine.BOOL_GENERATOR.name"),getList("machine.BOOL_GENERATOR.lore"));
+            get("machine.boolean_generator.name"),getList("machine.boolean_generator.lore"));
     public static final SlimefunItemStack LOGIC_REACTOR=themed("LOGIC_REACTOR",CustomHead.logicReactorHead.getItem(),Theme.MACHINE1,
-            get("machine.LOGIC_REACTOR.name"),getList("machine.LOGIC_REACTOR.lore"));
+            get("machine.logic_reactor.name"),getList("machine.logic_reactor.lore"));
     public static final SlimefunItemStack BUG_CRAFTER=themed("BUG_CRAFTER",CustomHead.bugCrafterHead.getItem(),Theme.MACHINE1,
-            get("machine.BUG_CRAFTER.name"),getList("machine.BUG_CRAFTER.lore"));
+            get("machine.bug_workbench.name"),getList("machine.bug_workbench.lore"));
     public static final SlimefunItemStack ENDFRAME_MACHINE=themed("ENDFRAME_MACHINE",Material.END_PORTAL_FRAME,Theme.MACHINE1,
-            get("machine.ENDFRAME_MACHINE.name"),getList("machine.ENDFRAME_MACHINE.lore"));
+            get("machine.space_framework_constructor.name"),getList("machine.space_framework_constructor.lore"));
     public static final SlimefunItemStack LVOID_GENERATOR=themed("LVOID_GENERATOR",Material.SOUL_LANTERN,Theme.MACHINE1,
-            get("machine.LVOID_GENERATOR.name"),getList("machine.LVOID_GENERATOR.lore"));
+            get("machine.quantum_void_generator.name"),getList("machine.quantum_void_generator.lore"));
     public static final SlimefunItemStack SPECIAL_CRAFTER=themed("SPECIAL_CRAFTER",Material.LOOM,Theme.MACHINE1,
-            get("machine.SPECIAL_CRAFTER.name"),getList("machine.SPECIAL_CRAFTER.lore"));
+            get("machine.logic_workbench_simulator.name"),getList("machine.logic_workbench_simulator.lore"));
     public static final SlimefunItemStack STAR_SMELTERY=themed("STAR_SMELTERY",Material.BLAST_FURNACE,Theme.MACHINE1,
-            get("machine.STAR_SMELTERY.name"),getList("machine.STAR_SMELTERY.lore"));
+            get("machine.astral_gold_smeltery.name"),getList("machine.astral_gold_smeltery.lore"));
 
     public static final SlimefunItemStack INFINITY_AUTOCRAFT=themed("INFINITY_AUTOCRAFT",Material.CRYING_OBSIDIAN,Theme.MACHINE1,
-            get("machine.INFINITY_AUTOCRAFT.name"),getList("machine.INFINITY_AUTOCRAFT.lore"));
+            get("machine.auto_infinity_workbench.name"),getList("machine.auto_infinity_workbench.lore"));
     public static final SlimefunItemStack CHIP_MAKER=themed("CHIP_MAKER",Material.CHISELED_BOOKSHELF,Theme.MACHINE1,
-            get("machine.CHIP_MAKER.name"),getList("machine.CHIP_MAKER.lore"));
+            get("machine.simple_lithography_machine.name"),getList("machine.simple_lithography_machine.lore"));
     public static final SlimefunItemStack CHIP_CONSUMER=themed("CHIP_CONSUMER",Material.TORCH,Theme.MACHINE1,
-            get("machine.CHIP_CONSUMER.name"),getList("machine.CHIP_CONSUMER.lore"));
+            get("machine.unary_bitwise_operation_unit.name"),getList("machine.unary_bitwise_operation_unit.lore"));
     public static final SlimefunItemStack CHIP_BICONSUMER=themed("CHIP_BICONSUMER",Material.LANTERN,Theme.MACHINE1,
-            get("machine.CHIP_BICONSUMER.name"),getList("machine.CHIP_BICONSUMER.lore"));
+            get("machine.binary_bitwise_operation_unit.name"),getList("machine.binary_bitwise_operation_unit.lore"));
     public static final SlimefunItemStack SEQ_CONSTRUCTOR=themed("SEQ_CONSTRUCTOR",Material.BAMBOO_MOSAIC,Theme.MACHINE1,
-            get("machine.SEQ_CONSTRUCTOR.name"),getList("machine.SEQ_CONSTRUCTOR.lore"));
+            get("machine.core_constructor.name"),getList("machine.core_constructor.lore"));
     public static final SlimefunItemStack STACKMACHINE=themed("STACKMACHINE",Material.FURNACE,Theme.MACHINE1,
-            get("machine.STACKMACHINE.name"),getList("machine.STACKMACHINE.lore"));
+            get("machine.recipe_machine_stacker.name"),getList("machine.recipe_machine_stacker.lore"));
     public static final SlimefunItemStack ENERGY_TRASH=themed("ENERGY_TRASH", SlimefunItems.PORTABLE_DUSTBIN.getItem().getItem().clone()
-            ,Theme.MACHINE1, get("machine.ENERGY_TRASH.name"),getList("machine.ENERGY_TRASH.lore"));
+            ,Theme.MACHINE1, get("machine.energy_trash_can.name"),getList("machine.energy_trash_can.lore"));
     public static final SlimefunItemStack OPPO_GEN=themed("OPPO_GEN",CustomHead.HOT_MACHINE.getItem(), Theme.MACHINE1,
-            get("machine.OPPO_GEN.name"),getList("machine.OPPO_GEN.lore"));
+            get("machine.opposite_generator.name"),getList("machine.opposite_generator.lore"));
     public static final SlimefunItemStack ARC_REACTOR=themed("ARC_REACTOR",CustomHead.REACTOR.getItem(),Theme.MACHINE1,
-            get("machine.ARC_REACTOR.name"),getList("machine.ARC_REACTOR.lore"));
+            get("machine.arc_reactor.name"),getList("machine.arc_reactor.lore"));
     public static final SlimefunItemStack ENERGY_AMPLIFIER=themed("ENERGY_AMPLIFIER",Material.NETHERITE_BLOCK,Theme.MACHINE1,
-            get("machine.ENERGY_AMPLIFIER.name"),getList("machine.ENERGY_AMPLIFIER.lore"));
+            get("machine.energy_generator_stacker.name"),getList("machine.energy_generator_stacker.lore"));
     public static final SlimefunItemStack ADVANCED_CHIP_MAKER=themed("ADVANCED_CHIP_MAKER",Material.CHISELED_BOOKSHELF,Theme.MACHINE1,
-            get("machine.ADVANCED_CHIP_MAKER.name"),getList("machine.ADVANCED_CHIP_MAKER.lore"));
+            get("machine.advanced_lithography_machine.name"),getList("machine.advanced_lithography_machine.lore"));
     public static final SlimefunItemStack CHIP_REACTOR=themed("CHIP_REACTOR",Material.JUKEBOX,Theme.MACHINE1,
-            get("machine.CHIP_REACTOR.name"),getList("machine.CHIP_REACTOR.lore"));
+            get("machine.chip_reactor.name"),getList("machine.chip_reactor.lore"));
     public static final SlimefunItemStack DUST_EXTRACTOR=themed("DUST_EXTRACTOR",Material.CHISELED_STONE_BRICKS,Theme.MACHINE1,
-            get("machine.DUST_EXTRACTOR.name"),getList("machine.DUST_EXTRACTOR.lore"));
+            get("machine.dust_factory.name"),getList("machine.dust_factory.lore"));
     public static final SlimefunItemStack FURNACE_FACTORY=themed("FURNACE_FACTORY",Material.FURNACE,Theme.MACHINE1,
-            get("machine.FURNACE_FACTORY.name"),getList("machine.FURNACE_FACTORY.lore"));
+            get("machine.smelting_factory.name"),getList("machine.smelting_factory.lore"));
     public static final SlimefunItemStack INGOT_FACTORY=themed("INGOT_FACTORY",Material.RED_GLAZED_TERRACOTTA,Theme.MACHINE1,
-            get("machine.INGOT_FACTORY.name"),getList("machine.INGOT_FACTORY.lore"));
+            get("machine.ingot_factory.name"),getList("machine.ingot_factory.lore"));
+    //Laser Cannon (material:dispenser) GUI shouldn't be opened by shift right click as the machine don't have its GUI
     public static final SlimefunItemStack FINAL_LASER=themed("FINAL_LASER",Material.DROPPER,Theme.MACHINE1,
-            get("machine.FINAL_LASER.name"),getList("machine.FINAL_LASER.lore"));
+            get("machine.laser_cannon.name"),getList("machine.laser_cannon.lore"));
     public static final SlimefunItemStack FINAL_CONVERTOR=themed("FINAL_CONVERTOR",Material.WARPED_HYPHAE,Theme.MACHINE1,
-            get("machine.FINAL_CONVERTOR.name"),getList("machine.FINAL_CONVERTOR.lore"));
+            get("machine.ultimate_material_converter.name"),getList("machine.ultimate_material_converter.lore"));
     public static final SlimefunItemStack PRESSOR_FACTORY=themed("PRESSOR_FACTORY",Material.PISTON,Theme.MACHINE1,
-            get("machine.PRESSOR_FACTORY.name"),getList("machine.PRESSOR_FACTORY.lore"));
+            get("machine.compression_factory.name"),getList("machine.compression_factory.lore"));
     public static final SlimefunItemStack CRAFTER=themed("CRAFTER",Material.CRAFTING_TABLE,Theme.MACHINE1,
-            get("machine.CRAFTER.name"),getList("machine.CRAFTER.lore"));
+            get("machine.crafting_factory.name"),getList("machine.crafting_factory.lore"));
     public static final SlimefunItemStack EASYSTACKMACHINE=themed("EASYSTACKMACHINE",Material.FURNACE,Theme.MACHINE1,
-            get("machine.EASYSTACKMACHINE.name"),getList("machine.EASYSTACKMACHINE.lore"));
+            get("machine.makeshift_recipe_machine_stacker.name"),getList("machine.makeshift_recipe_machine_stacker.lore"));
     public static final SlimefunItemStack CONVERTOR=themed("CONVERTOR",Material.SEA_LANTERN,Theme.MACHINE1,
-            get("machine.CONVERTOR.name"),getList("machine.CONVERTOR.lore"));
+            get("machine.material_converter.name"),getList("machine.material_converter.lore"));
     public static final SlimefunItemStack VIRTUAL_KILLER=themed("VIRTUAL_KILLER",Material.STONECUTTER,Theme.MACHINE1,
-            get("machine.VIRTUAL_KILLER.name"),getList("machine.VIRTUAL_KILLER.lore"));
+            get("machine.spawner_simulator.name"),getList("machine.spawner_simulator.lore"));
     public static final SlimefunItemStack INF_MOBSIMULATION=themed("INF_MOBSIMULATION",Material.GILDED_BLACKSTONE,Theme.MACHINE1,
-            get("machine.INF_MOBSIMULATION.name"),getList("machine.INF_MOBSIMULATION.lore"));
+            get("machine.infinity_mob_simulation_chamber.name"),getList("machine.infinity_mob_simulation_chamber.lore"));
     public static final SlimefunItemStack INF_GEOQUARRY=themed("INF_GEOQUARRY",Material.CHISELED_QUARTZ_BLOCK,Theme.MACHINE1,
-            get("machine.INF_GEOQUARRY.name"),getList("machine.INF_GEOQUARRY.lore"));
+            get("machine.infinity_geo_quarry.name"),getList("machine.infinity_geo_quarry.lore"));
     public static final SlimefunItemStack RAND_EDITOR=themed("RAND_EDITOR",Material.ENCHANTING_TABLE,Theme.MACHINE1,
             get("machine.RAND_EDITOR.name"),getList("machine.RAND_EDITOR.lore"));
     public static final SlimefunItemStack ATTR_OP=themed("ATTR_OP",Material.ENCHANTING_TABLE,Theme.MACHINE1,
             get("machine.ATTR_OP.name"),getList("machine.ATTR_OP.lore"));
     public static final SlimefunItemStack CUSTOM_CHARGER=themed("CUSTOM_CHARGER",Material.LODESTONE,Theme.MACHINE1,
-            get("machine.CUSTOM_CHARGER.name"),getList("machine.CUSTOM_CHARGER.lore"));
+            get("machine.universal_charger.name"),getList("machine.universal_charger.lore"));
     public static final SlimefunItemStack GRIND_FACTORY=themed("GRIND_FACTORY",Material.GRINDSTONE,Theme.MACHINE1,
-            get("machine.GRIND_FACTORY.name"),getList("machine.GRIND_FACTORY.lore"));
+            get("machine.ore_grinding_factory.name"),getList("machine.ore_grinding_factory.lore"));
     public static final SlimefunItemStack TNT_GEN=themed("TNT_GEN",Material.NOTE_BLOCK,Theme.MACHINE1,
-            get("machine.TNT_GEN.name"),getList("machine.TNT_GEN.lore"));
+            get("machine.tnt_duplicator.name"),getList("machine.tnt_duplicator.lore"));
     public static final SlimefunItemStack ADVANCE_BREWER=themed("ADVANCE_BREWER",Material.SMOKER,Theme.MACHINE1,
             get("machine.ADVANCE_BREWER.name"),getList("machine.ADVANCE_BREWER.lore"));
     public static final SlimefunItemStack SIMU_LVOID=themed("SIMU_LVOID",Material.SOUL_TORCH,Theme.MACHINE1,
-            get("machine.SIMU_LVOID.name"),getList("machine.SIMU_LVOID.lore"));
+            get("machine.virtual_quantum_generator.name"),getList("machine.virtual_quantum_generator.lore"));
     public static final SlimefunItemStack SPACETOWER =themed("SPACETOWER",Material.SHROOMLIGHT,Theme.MACHINE1,
-            get("machine.SPACETOWER.name"),getList("machine.SPACETOWER.lore"));
+            get("machine.spatial_io_port.name"),getList("machine.spatial_io_port.lore"));
     public static final SlimefunItemStack SPACETOWER_FRAME=themed("SPACETOWER_FRAME",Material.AMETHYST_BLOCK,Theme.MACHINE1,
-            get("machine.SPACETOWER_FRAME.name"),getList("machine.SPACETOWER_FRAME.lore"));
+            get("machine.spatial_pylon.name"),getList("machine.spatial_pylon.lore"));
     public static final SlimefunItemStack ITEM_OP=themed("ITEM_OP",Material.SMITHING_TABLE,Theme.MACHINE1,
             get("machine.ITEM_OP.name"),getList("machine.ITEM_OP.lore"));
     public static final SlimefunItemStack CHUNK_CHARGER=themed("CHUNK_CHARGER",Material.SCULK_SHRIEKER,Theme.MACHINE1,
@@ -602,7 +604,7 @@ public class LogiTechSlimefunItemStacks {
     public static final SlimefunItemStack END_PLANT=themed("END_PLANT",Material.END_STONE,Theme.MACHINE2,
             get("generator.END_PLANT.name"),getList("generator.END_PLANT.lore"));
     public static final SlimefunItemStack SMELTRY=themed("SMELTRY",Material.FURNACE,Theme.MACHINE1,
-            get("machine.SMELTRY.name"),getList("machine.SMELTRY.lore"));
+            get("machine.alloy_factory.name"),getList("machine.alloy_factory.lore"));
     public static final SlimefunItemStack STONE_FACTORY=themed("STONE_FACTORY",Material.STONE_BRICKS,Theme.MACHINE2,
             get("generator.STONE_FACTORY.name"),getList("generator.STONE_FACTORY.lore"));
     public static final SlimefunItemStack TNT_MG=themed("TNT_MG",Material.ANCIENT_DEBRIS,Theme.MACHINE2,
@@ -751,10 +753,10 @@ public class LogiTechSlimefunItemStacks {
             themed("WORKBENCH1",new ItemStack(Material.ENCHANTING_TABLE),Theme.BENCH1,"测试工作站","测试测试");
     //final
     public static final SlimefunItemStack FINAL_SEQUENTIAL=themed("FINAL_SEQUENTIAL",Material.STRIPPED_BAMBOO_BLOCK,Theme.MACHINE1,
-            get("machine.FINAL_SEQUENTIAL.name"),getList("machine.FINAL_SEQUENTIAL.lore"));
+            get("machine.ultimate_core_constructor.name"),getList("machine.ultimate_core_constructor.lore"));
 
     public static final SlimefunItemStack FINAL_STACKMACHINE=themed("FINAL_STACKMACHINE",Material.BLAST_FURNACE,Theme.MACHINE1,
-            get("machine.FINAL_STACKMACHINE.name"),getList("machine.FINAL_STACKMACHINE.lore"));
+            get("machine.ultimate_recipe_machine_stacker.name"),getList("machine.ultimate_recipe_machine_stacker.lore"));
     public static final SlimefunItemStack FINAL_STACKMGENERATOR=themed("FINAL_STACKMGENERATOR",Material.POLISHED_ANDESITE,Theme.MACHINE2,
             get("generator.FINAL_STACKMGENERATOR.name"),getList("generator.FINAL_STACKMGENERATOR.lore"));
     public static final SlimefunItemStack FINAL_STONE_MG=themed("FINAL_STONE_MG",Material.DEEPSLATE_TILES,Theme.MACHINE2,
